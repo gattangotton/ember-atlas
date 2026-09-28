@@ -1,0 +1,1461 @@
+{
+  "エーテル生産": {
+    "path": "assets/research/icon-000.png",
+    "video": 1,
+    "second": 7.5,
+    "crop960": [
+      177,
+      140,
+      229,
+      192
+    ]
+  },
+  "装備製作エーテル効率": {
+    "path": "assets/research/icon-001.png",
+    "video": 1,
+    "second": 7.5,
+    "crop960": [
+      177,
+      243,
+      229,
+      295
+    ]
+  },
+  "食料採集速度": {
+    "path": "assets/research/icon-002.png",
+    "video": 1,
+    "second": 7.5,
+    "crop960": [
+      439,
+      89,
+      491,
+      141
+    ]
+  },
+  "木材採集速度": {
+    "path": "assets/research/icon-003.png",
+    "video": 1,
+    "second": 7.5,
+    "crop960": [
+      439,
+      192,
+      491,
+      244
+    ]
+  },
+  "金属採集速度": {
+    "path": "assets/research/icon-004.png",
+    "video": 1,
+    "second": 7.5,
+    "crop960": [
+      439,
+      295,
+      491,
+      347
+    ]
+  },
+  "エーテル採集速度": {
+    "path": "assets/research/icon-005.png",
+    "video": 1,
+    "second": 7.5,
+    "crop960": [
+      700,
+      89,
+      752,
+      141
+    ]
+  },
+  "研究速度": {
+    "path": "assets/research/icon-006.png",
+    "video": 1,
+    "second": 7.5,
+    "crop960": [
+      700,
+      192,
+      752,
+      244
+    ]
+  },
+  "資源保護(エーテル以外)": {
+    "path": "assets/research/icon-007.png",
+    "video": 1,
+    "second": 7.5,
+    "crop960": [
+      700,
+      295,
+      752,
+      347
+    ]
+  },
+  "行軍速度": {
+    "path": "assets/research/icon-008.png",
+    "video": 1,
+    "second": 22.5,
+    "crop960": [
+      85,
+      140,
+      137,
+      192
+    ]
+  },
+  "運搬量": {
+    "path": "assets/research/icon-009.png",
+    "video": 1,
+    "second": 22.5,
+    "crop960": [
+      85,
+      243,
+      137,
+      295
+    ]
+  },
+  "食料生産": {
+    "path": "assets/research/icon-010.png",
+    "video": 1,
+    "second": 22.5,
+    "crop960": [
+      346,
+      89,
+      398,
+      141
+    ]
+  },
+  "木材生産": {
+    "path": "assets/research/icon-011.png",
+    "video": 1,
+    "second": 22.5,
+    "crop960": [
+      346,
+      192,
+      398,
+      244
+    ]
+  },
+  "金属生産": {
+    "path": "assets/research/icon-012.png",
+    "video": 1,
+    "second": 22.5,
+    "crop960": [
+      346,
+      295,
+      398,
+      347
+    ]
+  },
+  "施設防衛時攻撃力": {
+    "path": "assets/research/icon-013.png",
+    "video": 1,
+    "second": 112.5,
+    "crop960": [
+      603,
+      89,
+      655,
+      141
+    ]
+  },
+  "建設速度": {
+    "path": "assets/research/icon-014.png",
+    "video": 1,
+    "second": 112.5,
+    "crop960": [
+      603,
+      192,
+      655,
+      244
+    ]
+  },
+  "最大病院収用兵士数": {
+    "path": "assets/research/icon-015.png",
+    "video": 1,
+    "second": 112.5,
+    "crop960": [
+      603,
+      295,
+      655,
+      347
+    ]
+  },
+  "集結部隊時攻撃力": {
+    "path": "assets/research/icon-016.png",
+    "video": 1,
+    "second": 127.5,
+    "crop960": [
+      131,
+      192,
+      183,
+      244
+    ]
+  },
+  "兵士治癒速度": {
+    "path": "assets/research/icon-017.png",
+    "video": 1,
+    "second": 127.5,
+    "crop960": [
+      392,
+      192,
+      444,
+      244
+    ]
+  },
+  "食料採集量": {
+    "path": "assets/research/icon-018.png",
+    "video": 1,
+    "second": 127.5,
+    "crop960": [
+      655,
+      89,
+      707,
+      141
+    ]
+  },
+  "木材採集量": {
+    "path": "assets/research/icon-019.png",
+    "video": 1,
+    "second": 127.5,
+    "crop960": [
+      655,
+      192,
+      707,
+      244
+    ]
+  },
+  "金属採集量": {
+    "path": "assets/research/icon-020.png",
+    "video": 1,
+    "second": 127.5,
+    "crop960": [
+      655,
+      295,
+      707,
+      347
+    ]
+  },
+  "攻撃力": {
+    "path": "assets/research/icon-021.png",
+    "video": 2,
+    "second": 7.5,
+    "crop960": [
+      429,
+      140,
+      481,
+      192
+    ]
+  },
+  "チャージスキル攻撃力": {
+    "path": "assets/research/icon-022.png",
+    "video": 2,
+    "second": 7.5,
+    "crop960": [
+      429,
+      243,
+      481,
+      295
+    ]
+  },
+  "上級歩兵解放": {
+    "path": "assets/research/icon-023.png",
+    "video": 2,
+    "second": 7.5,
+    "crop960": [
+      692,
+      89,
+      744,
+      141
+    ]
+  },
+  "上級弓兵解放": {
+    "path": "assets/research/icon-024.png",
+    "video": 2,
+    "second": 7.5,
+    "crop960": [
+      692,
+      192,
+      744,
+      244
+    ]
+  },
+  "上級騎兵解放": {
+    "path": "assets/research/icon-025.png",
+    "video": 2,
+    "second": 7.5,
+    "crop960": [
+      692,
+      295,
+      744,
+      347
+    ]
+  },
+  "闇属性リーダー攻撃力": {
+    "path": "assets/research/icon-026.png",
+    "video": 2,
+    "second": 22.5,
+    "crop960": [
+      335,
+      140,
+      387,
+      192
+    ]
+  },
+  "光属性リーダー攻撃力": {
+    "path": "assets/research/icon-027.png",
+    "video": 2,
+    "second": 22.5,
+    "crop960": [
+      335,
+      243,
+      387,
+      295
+    ]
+  },
+  "対施設攻撃力": {
+    "path": "assets/research/icon-028.png",
+    "video": 2,
+    "second": 22.5,
+    "crop960": [
+      598,
+      140,
+      650,
+      192
+    ]
+  },
+  "対資源地攻撃力": {
+    "path": "assets/research/icon-029.png",
+    "video": 2,
+    "second": 22.5,
+    "crop960": [
+      598,
+      243,
+      650,
+      295
+    ]
+  },
+  "歩兵行軍速度": {
+    "path": "assets/research/icon-030.png",
+    "video": 2,
+    "second": 37.5,
+    "crop960": [
+      295,
+      89,
+      347,
+      141
+    ]
+  },
+  "弓兵行軍速度": {
+    "path": "assets/research/icon-031.png",
+    "video": 2,
+    "second": 37.5,
+    "crop960": [
+      295,
+      192,
+      347,
+      244
+    ]
+  },
+  "騎兵行軍速度": {
+    "path": "assets/research/icon-032.png",
+    "video": 2,
+    "second": 37.5,
+    "crop960": [
+      295,
+      295,
+      347,
+      347
+    ]
+  },
+  "歩兵攻撃力": {
+    "path": "assets/research/icon-033.png",
+    "video": 2,
+    "second": 52.5,
+    "crop960": [
+      99,
+      89,
+      151,
+      141
+    ]
+  },
+  "弓兵攻撃力": {
+    "path": "assets/research/icon-034.png",
+    "video": 2,
+    "second": 52.5,
+    "crop960": [
+      99,
+      192,
+      151,
+      244
+    ]
+  },
+  "騎兵攻撃力": {
+    "path": "assets/research/icon-035.png",
+    "video": 2,
+    "second": 52.5,
+    "crop960": [
+      99,
+      295,
+      151,
+      347
+    ]
+  },
+  "歩兵防御効率": {
+    "path": "assets/research/icon-036.png",
+    "video": 2,
+    "second": 52.5,
+    "crop960": [
+      363,
+      89,
+      415,
+      141
+    ]
+  },
+  "弓兵防御効率": {
+    "path": "assets/research/icon-037.png",
+    "video": 2,
+    "second": 52.5,
+    "crop960": [
+      363,
+      192,
+      415,
+      244
+    ]
+  },
+  "騎兵防御効率": {
+    "path": "assets/research/icon-038.png",
+    "video": 2,
+    "second": 52.5,
+    "crop960": [
+      363,
+      295,
+      415,
+      347
+    ]
+  },
+  "近衛歩兵解放": {
+    "path": "assets/research/icon-039.png",
+    "video": 2,
+    "second": 52.5,
+    "crop960": [
+      625,
+      89,
+      677,
+      141
+    ]
+  },
+  "近衛弓兵解放": {
+    "path": "assets/research/icon-040.png",
+    "video": 2,
+    "second": 52.5,
+    "crop960": [
+      625,
+      192,
+      677,
+      244
+    ]
+  },
+  "近衛騎兵解放": {
+    "path": "assets/research/icon-041.png",
+    "video": 2,
+    "second": 52.5,
+    "crop960": [
+      625,
+      295,
+      677,
+      347
+    ]
+  },
+  "火属性リーダー攻撃力": {
+    "path": "assets/research/icon-042.png",
+    "video": 2,
+    "second": 67.5,
+    "crop960": [
+      113,
+      89,
+      165,
+      141
+    ]
+  },
+  "水属性リーダー攻撃力": {
+    "path": "assets/research/icon-043.png",
+    "video": 2,
+    "second": 67.5,
+    "crop960": [
+      113,
+      192,
+      165,
+      244
+    ]
+  },
+  "風属性リーダー攻撃力": {
+    "path": "assets/research/icon-044.png",
+    "video": 2,
+    "second": 67.5,
+    "crop960": [
+      113,
+      295,
+      165,
+      347
+    ]
+  },
+  "雷属性リーダー攻撃力": {
+    "path": "assets/research/icon-045.png",
+    "video": 2,
+    "second": 67.5,
+    "crop960": [
+      377,
+      140,
+      429,
+      192
+    ]
+  },
+  "土属性リーダー攻撃力": {
+    "path": "assets/research/icon-046.png",
+    "video": 2,
+    "second": 67.5,
+    "crop960": [
+      377,
+      243,
+      429,
+      295
+    ]
+  },
+  "集結部隊行軍速度": {
+    "path": "assets/research/icon-047.png",
+    "video": 2,
+    "second": 82.5,
+    "crop960": [
+      145,
+      243,
+      197,
+      295
+    ]
+  },
+  "対宝庫攻撃力": {
+    "path": "assets/research/icon-048.png",
+    "video": 2,
+    "second": 97.5,
+    "crop960": [
+      93,
+      140,
+      145,
+      192
+    ]
+  },
+  "最大集結部隊兵士数": {
+    "path": "assets/research/icon-049.png",
+    "video": 2,
+    "second": 97.5,
+    "crop960": [
+      617,
+      192,
+      669,
+      244
+    ]
+  },
+  "集結部隊時防御効率": {
+    "path": "assets/research/icon-050.png",
+    "video": 2,
+    "second": 97.5,
+    "crop960": [
+      617,
+      295,
+      669,
+      347
+    ]
+  },
+  "対魔獣メモリ倍化率": {
+    "path": "assets/research/icon-051.png",
+    "video": 3,
+    "second": 7.5,
+    "crop960": [
+      168,
+      140,
+      220,
+      192
+    ]
+  },
+  "アクティブスキル攻撃力": {
+    "path": "assets/research/icon-052.png",
+    "video": 3,
+    "second": 7.5,
+    "crop960": [
+      429,
+      192,
+      481,
+      244
+    ]
+  },
+  "Lv2集結魔獣討伐解放": {
+    "path": "assets/research/icon-053.png",
+    "video": 3,
+    "second": 7.5,
+    "crop960": [
+      692,
+      192,
+      744,
+      244
+    ]
+  },
+  "対魔獣素材倍化率": {
+    "path": "assets/research/icon-054.png",
+    "video": 3,
+    "second": 22.5,
+    "crop960": [
+      264,
+      140,
+      316,
+      192
+    ]
+  },
+  "対魔獣獲得経験値": {
+    "path": "assets/research/icon-055.png",
+    "video": 3,
+    "second": 22.5,
+    "crop960": [
+      264,
+      243,
+      316,
+      295
+    ]
+  },
+  "Lv4集結魔獣討伐解放": {
+    "path": "assets/research/icon-056.png",
+    "video": 3,
+    "second": 22.5,
+    "crop960": [
+      526,
+      192,
+      578,
+      244
+    ]
+  },
+  "対超獣攻撃力": {
+    "path": "assets/research/icon-057.png",
+    "video": 3,
+    "second": 22.5,
+    "crop960": [
+      787,
+      89,
+      839,
+      141
+    ]
+  },
+  "対精霊攻撃力": {
+    "path": "assets/research/icon-058.png",
+    "video": 3,
+    "second": 22.5,
+    "crop960": [
+      787,
+      192,
+      839,
+      244
+    ]
+  },
+  "対堕天攻撃力": {
+    "path": "assets/research/icon-059.png",
+    "video": 3,
+    "second": 22.5,
+    "crop960": [
+      787,
+      295,
+      839,
+      347
+    ]
+  },
+  "Lv5集結魔獣討伐解放": {
+    "path": "assets/research/icon-060.png",
+    "video": 3,
+    "second": 37.5,
+    "crop960": [
+      105,
+      192,
+      157,
+      244
+    ]
+  },
+  "対超獣メモリ倍化率": {
+    "path": "assets/research/icon-061.png",
+    "video": 3,
+    "second": 37.5,
+    "crop960": [
+      630,
+      89,
+      682,
+      141
+    ]
+  },
+  "対精霊メモリ倍化率": {
+    "path": "assets/research/icon-062.png",
+    "video": 3,
+    "second": 37.5,
+    "crop960": [
+      630,
+      192,
+      682,
+      244
+    ]
+  },
+  "対堕天メモリ倍化率": {
+    "path": "assets/research/icon-063.png",
+    "video": 3,
+    "second": 37.5,
+    "crop960": [
+      630,
+      295,
+      682,
+      347
+    ]
+  },
+  "Lv6集結魔獣討伐解放": {
+    "path": "assets/research/icon-064.png",
+    "video": 3,
+    "second": 52.5,
+    "crop960": [
+      220,
+      192,
+      272,
+      244
+    ]
+  },
+  "対不浄攻撃力": {
+    "path": "assets/research/icon-065.png",
+    "video": 3,
+    "second": 52.5,
+    "crop960": [
+      482,
+      89,
+      534,
+      141
+    ]
+  },
+  "対キザハシ攻撃力": {
+    "path": "assets/research/icon-066.png",
+    "video": 3,
+    "second": 52.5,
+    "crop960": [
+      482,
+      192,
+      534,
+      244
+    ]
+  },
+  "対機甲攻撃力": {
+    "path": "assets/research/icon-067.png",
+    "video": 3,
+    "second": 52.5,
+    "crop960": [
+      482,
+      295,
+      534,
+      347
+    ]
+  },
+  "対妖魔攻撃力": {
+    "path": "assets/research/icon-068.png",
+    "video": 3,
+    "second": 52.5,
+    "crop960": [
+      744,
+      140,
+      796,
+      192
+    ]
+  },
+  "対悪魔攻撃力": {
+    "path": "assets/research/icon-069.png",
+    "video": 3,
+    "second": 52.5,
+    "crop960": [
+      744,
+      243,
+      796,
+      295
+    ]
+  },
+  "対不浄防御効率": {
+    "path": "assets/research/icon-070.png",
+    "video": 3,
+    "second": 67.5,
+    "crop960": [
+      105,
+      89,
+      157,
+      141
+    ]
+  },
+  "対機甲防御効率": {
+    "path": "assets/research/icon-071.png",
+    "video": 3,
+    "second": 67.5,
+    "crop960": [
+      105,
+      295,
+      157,
+      347
+    ]
+  },
+  "対妖魔防御効率": {
+    "path": "assets/research/icon-072.png",
+    "video": 3,
+    "second": 67.5,
+    "crop960": [
+      368,
+      140,
+      420,
+      192
+    ]
+  },
+  "対悪魔防御効率": {
+    "path": "assets/research/icon-073.png",
+    "video": 3,
+    "second": 67.5,
+    "crop960": [
+      368,
+      243,
+      420,
+      295
+    ]
+  },
+  "対集結魔獣攻撃力": {
+    "path": "assets/research/icon-074.png",
+    "video": 3,
+    "second": 82.5,
+    "crop960": [
+      304,
+      89,
+      356,
+      141
+    ]
+  },
+  "対龍防御効率": {
+    "path": "assets/research/icon-075.png",
+    "video": 3,
+    "second": 82.5,
+    "crop960": [
+      567,
+      140,
+      619,
+      192
+    ]
+  },
+  "対龍素材倍化率": {
+    "path": "assets/research/icon-076.png",
+    "video": 3,
+    "second": 82.5,
+    "crop960": [
+      567,
+      243,
+      619,
+      295
+    ]
+  },
+  "精鋭歩兵治癒速度": {
+    "path": "assets/research/icon-077.png",
+    "video": 4,
+    "second": 7.5,
+    "crop960": [
+      496,
+      89,
+      548,
+      141
+    ]
+  },
+  "精鋭弓兵治癒速度": {
+    "path": "assets/research/icon-078.png",
+    "video": 4,
+    "second": 7.5,
+    "crop960": [
+      496,
+      192,
+      548,
+      244
+    ]
+  },
+  "精鋭騎兵治癒速度": {
+    "path": "assets/research/icon-079.png",
+    "video": 4,
+    "second": 7.5,
+    "crop960": [
+      496,
+      295,
+      548,
+      347
+    ]
+  },
+  "部隊スロット": {
+    "path": "assets/research/icon-080.png",
+    "video": 4,
+    "second": 22.5,
+    "crop960": [
+      796,
+      192,
+      848,
+      244
+    ]
+  },
+  "近衛歩兵基礎攻撃力": {
+    "path": "assets/research/icon-081.png",
+    "video": 4,
+    "second": 37.5,
+    "crop960": [
+      318,
+      89,
+      370,
+      141
+    ]
+  },
+  "近衛弓兵基礎攻撃力": {
+    "path": "assets/research/icon-082.png",
+    "video": 4,
+    "second": 37.5,
+    "crop960": [
+      318,
+      192,
+      370,
+      244
+    ]
+  },
+  "近衛騎兵基礎攻撃力": {
+    "path": "assets/research/icon-083.png",
+    "video": 4,
+    "second": 37.5,
+    "crop960": [
+      318,
+      295,
+      370,
+      347
+    ]
+  },
+  "兵士訓練資源効率": {
+    "path": "assets/research/icon-084.png",
+    "video": 4,
+    "second": 37.5,
+    "crop960": [
+      580,
+      192,
+      632,
+      244
+    ]
+  },
+  "メモリサブアビリティ強化": {
+    "path": "assets/research/icon-085.png",
+    "video": 4,
+    "second": 67.5,
+    "crop960": [
+      205,
+      192,
+      257,
+      244
+    ]
+  },
+  "近衛歩兵治癒速度": {
+    "path": "assets/research/icon-086.png",
+    "video": 4,
+    "second": 67.5,
+    "crop960": [
+      728,
+      89,
+      780,
+      141
+    ]
+  },
+  "近衛弓兵治癒速度": {
+    "path": "assets/research/icon-087.png",
+    "video": 4,
+    "second": 67.5,
+    "crop960": [
+      728,
+      192,
+      780,
+      244
+    ]
+  },
+  "近衛騎兵治癒速度": {
+    "path": "assets/research/icon-088.png",
+    "video": 4,
+    "second": 67.5,
+    "crop960": [
+      728,
+      295,
+      780,
+      347
+    ]
+  },
+  "対超獣素材倍化率": {
+    "path": "assets/research/icon-089.png",
+    "video": 5,
+    "second": 22.5,
+    "crop960": [
+      402,
+      89,
+      454,
+      141
+    ]
+  },
+  "対精霊素材倍化率": {
+    "path": "assets/research/icon-090.png",
+    "video": 5,
+    "second": 22.5,
+    "crop960": [
+      402,
+      192,
+      454,
+      244
+    ]
+  },
+  "対堕天素材倍化率": {
+    "path": "assets/research/icon-091.png",
+    "video": 5,
+    "second": 22.5,
+    "crop960": [
+      402,
+      295,
+      454,
+      347
+    ]
+  },
+  "対不浄素材倍化率": {
+    "path": "assets/research/icon-092.png",
+    "video": 5,
+    "second": 22.5,
+    "crop960": [
+      665,
+      89,
+      717,
+      141
+    ]
+  },
+  "装備サブアビリティ強化": {
+    "path": "assets/research/icon-093.png",
+    "video": 5,
+    "second": 22.5,
+    "crop960": [
+      665,
+      192,
+      717,
+      244
+    ]
+  },
+  "対機甲素材倍化率": {
+    "path": "assets/research/icon-094.png",
+    "video": 5,
+    "second": 22.5,
+    "crop960": [
+      665,
+      295,
+      717,
+      347
+    ]
+  },
+  "対不浄メモリ倍化率": {
+    "path": "assets/research/icon-095.png",
+    "video": 5,
+    "second": 37.5,
+    "crop960": [
+      550,
+      89,
+      602,
+      141
+    ]
+  },
+  "対機甲メモリ倍化率": {
+    "path": "assets/research/icon-096.png",
+    "video": 5,
+    "second": 37.5,
+    "crop960": [
+      550,
+      295,
+      602,
+      347
+    ]
+  },
+  "対妖魔メモリ倍化率": {
+    "path": "assets/research/icon-097.png",
+    "video": 5,
+    "second": 37.5,
+    "crop960": [
+      813,
+      89,
+      865,
+      141
+    ]
+  },
+  "対龍メモリ倍化率": {
+    "path": "assets/research/icon-098.png",
+    "video": 5,
+    "second": 37.5,
+    "crop960": [
+      813,
+      192,
+      865,
+      244
+    ]
+  },
+  "対悪魔メモリ倍化率": {
+    "path": "assets/research/icon-099.png",
+    "video": 5,
+    "second": 37.5,
+    "crop960": [
+      813,
+      295,
+      865,
+      347
+    ]
+  },
+  "サポートエンバース解放": {
+    "path": "assets/research/icon-100.png",
+    "video": 5,
+    "second": 52.5,
+    "crop960": [
+      391,
+      192,
+      443,
+      244
+    ]
+  },
+  "対龍攻撃力": {
+    "path": "assets/research/icon-101.png",
+    "video": 5,
+    "second": 52.5,
+    "crop960": [
+      653,
+      192,
+      705,
+      244
+    ]
+  },
+  "対妖魔素材倍化率": {
+    "path": "assets/research/icon-102.png",
+    "video": 5,
+    "second": 67.5,
+    "crop960": [
+      411,
+      89,
+      463,
+      141
+    ]
+  },
+  "対悪魔素材倍化率": {
+    "path": "assets/research/icon-103.png",
+    "video": 5,
+    "second": 67.5,
+    "crop960": [
+      411,
+      295,
+      463,
+      347
+    ]
+  },
+  "採集速度": {
+    "path": "assets/research/icon-104.png",
+    "video": 1,
+    "second": 47.5,
+    "crop960": [
+      248,
+      192,
+      300,
+      244
+    ]
+  },
+  "対魔獣攻撃力": {
+    "path": "assets/research/icon-105.png",
+    "video": 1,
+    "second": 47.5,
+    "crop960": [
+      510,
+      192,
+      562,
+      244
+    ]
+  },
+  "資源地防衛時攻撃力": {
+    "path": "assets/research/icon-106.png",
+    "video": 1,
+    "second": 92.5,
+    "crop960": [
+      480,
+      192,
+      532,
+      244
+    ]
+  },
+  "最大歩兵収容数": {
+    "path": "assets/research/icon-107.png",
+    "video": 1,
+    "second": 107.5,
+    "crop960": [
+      322,
+      89,
+      374,
+      141
+    ]
+  },
+  "最大弓兵収容数": {
+    "path": "assets/research/icon-108.png",
+    "video": 1,
+    "second": 107.5,
+    "crop960": [
+      322,
+      192,
+      374,
+      244
+    ]
+  },
+  "最大騎兵収容数": {
+    "path": "assets/research/icon-109.png",
+    "video": 1,
+    "second": 107.5,
+    "crop960": [
+      322,
+      295,
+      374,
+      347
+    ]
+  },
+  "エーテル採集量": {
+    "path": "assets/research/icon-110.png",
+    "video": 1,
+    "second": 132.5,
+    "crop960": [
+      581,
+      140,
+      633,
+      192
+    ]
+  },
+  "精鋭歩兵解放": {
+    "path": "assets/research/icon-111.png",
+    "video": 2,
+    "second": 32.5,
+    "crop960": [
+      238,
+      89,
+      290,
+      141
+    ]
+  },
+  "精鋭弓兵解放": {
+    "path": "assets/research/icon-112.png",
+    "video": 2,
+    "second": 32.5,
+    "crop960": [
+      238,
+      192,
+      290,
+      244
+    ]
+  },
+  "精鋭騎兵解放": {
+    "path": "assets/research/icon-113.png",
+    "video": 2,
+    "second": 32.5,
+    "crop960": [
+      238,
+      295,
+      290,
+      347
+    ]
+  },
+  "歩兵訓練数": {
+    "path": "assets/research/icon-114.png",
+    "video": 2,
+    "second": 57.49999999999999,
+    "crop960": [
+      377,
+      89,
+      429,
+      141
+    ]
+  },
+  "弓兵訓練数": {
+    "path": "assets/research/icon-115.png",
+    "video": 2,
+    "second": 57.49999999999999,
+    "crop960": [
+      377,
+      192,
+      429,
+      244
+    ]
+  },
+  "騎兵訓練数": {
+    "path": "assets/research/icon-116.png",
+    "video": 2,
+    "second": 57.49999999999999,
+    "crop960": [
+      377,
+      295,
+      429,
+      347
+    ]
+  },
+  "Lv3集結魔獣討伐解放": {
+    "path": "assets/research/icon-117.png",
+    "video": 3,
+    "second": 17.5,
+    "crop960": [
+      406,
+      192,
+      458,
+      244
+    ]
+  },
+  "Lv7集結魔獣討伐解放": {
+    "path": "assets/research/icon-118.png",
+    "video": 3,
+    "second": 62.50000000000001,
+    "crop960": [
+      171,
+      89,
+      223,
+      141
+    ]
+  },
+  "対超獣防御効率": {
+    "path": "assets/research/icon-119.png",
+    "video": 3,
+    "second": 62.50000000000001,
+    "crop960": [
+      432,
+      89,
+      484,
+      141
+    ]
+  },
+  "対精霊防御効率": {
+    "path": "assets/research/icon-120.png",
+    "video": 3,
+    "second": 62.50000000000001,
+    "crop960": [
+      432,
+      192,
+      484,
+      244
+    ]
+  },
+  "対堕天防御効率": {
+    "path": "assets/research/icon-121.png",
+    "video": 3,
+    "second": 62.50000000000001,
+    "crop960": [
+      432,
+      295,
+      484,
+      347
+    ]
+  },
+  "上級歩兵基礎攻撃力": {
+    "path": "assets/research/icon-122.png",
+    "video": 4,
+    "second": 2.499999999999999,
+    "crop960": [
+      388,
+      89,
+      440,
+      141
+    ]
+  },
+  "上級弓兵基礎攻撃力": {
+    "path": "assets/research/icon-123.png",
+    "video": 4,
+    "second": 2.499999999999999,
+    "crop960": [
+      388,
+      192,
+      440,
+      244
+    ]
+  },
+  "上級騎兵基礎攻撃力": {
+    "path": "assets/research/icon-124.png",
+    "video": 4,
+    "second": 2.499999999999999,
+    "crop960": [
+      388,
+      295,
+      440,
+      347
+    ]
+  },
+  "精鋭歩兵基礎攻撃力": {
+    "path": "assets/research/icon-125.png",
+    "video": 4,
+    "second": 17.5,
+    "crop960": [
+      306,
+      89,
+      358,
+      141
+    ]
+  },
+  "精鋭弓兵基礎攻撃力": {
+    "path": "assets/research/icon-126.png",
+    "video": 4,
+    "second": 17.5,
+    "crop960": [
+      306,
+      192,
+      358,
+      244
+    ]
+  },
+  "精鋭騎兵基礎攻撃力": {
+    "path": "assets/research/icon-127.png",
+    "video": 4,
+    "second": 17.5,
+    "crop960": [
+      306,
+      295,
+      358,
+      347
+    ]
+  },
+  "メモリスロット解放": {
+    "path": "assets/research/icon-128.png",
+    "video": 4,
+    "second": 77.5,
+    "crop960": [
+      364,
+      192,
+      416,
+      244
+    ]
+  },
+  "alchemist": {
+    "path": "assets/research/alchemist.png",
+    "source": "IMG_5715.PNG",
+    "crop2048": [
+      358,
+      501,
+      484,
+      632
+    ]
+  },
+  "research-resource": {
+    "path": "assets/research/research-resource.png",
+    "source": "IMG_5714.PNG",
+    "crop2048": [
+      564,
+      442,
+      727,
+      607
+    ]
+  },
+  "building-resource": {
+    "path": "assets/research/building-resource.png",
+    "source": "IMG_5713.PNG",
+    "crop2048": [
+      378,
+      442,
+      543,
+      607
+    ]
+  },
+  "blacksmith": {
+    "path": "assets/research/blacksmith.png",
+    "source": "IMG_5717.PNG",
+    "crop2048": [
+      358,
+      455,
+      484,
+      584
+    ]
+  }
+}

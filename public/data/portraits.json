@@ -1,0 +1,715 @@
+{
+  "characters-3c88f95b8922dc": {
+    "path": "assets/portraits/characters-3c88f95b8922dc.jpg",
+    "source": "DPTW4024.MP4 480s",
+    "crop": {
+      "width": 1400,
+      "x": 119,
+      "y": 97,
+      "size": 122
+    }
+  },
+  "characters-f033f1e55af0cb": {
+    "path": "assets/portraits/characters-f033f1e55af0cb.jpg",
+    "source": "DPTW4024.MP4 480s",
+    "crop": {
+      "width": 1400,
+      "x": 431,
+      "y": 97,
+      "size": 122
+    }
+  },
+  "characters-8192e602022eb3": {
+    "path": "assets/portraits/characters-8192e602022eb3.jpg",
+    "source": "DPTW4024.MP4 480s",
+    "crop": {
+      "width": 1400,
+      "x": 587,
+      "y": 97,
+      "size": 122
+    }
+  },
+  "characters-18d730ace2b5e1": {
+    "path": "assets/portraits/characters-18d730ace2b5e1.jpg",
+    "source": "DPTW4024.MP4 480s",
+    "crop": {
+      "width": 1400,
+      "x": 743,
+      "y": 97,
+      "size": 122
+    }
+  },
+  "characters-7e4ca240547732": {
+    "path": "assets/portraits/characters-7e4ca240547732.jpg",
+    "source": "DPTW4024.MP4 480s",
+    "crop": {
+      "width": 1400,
+      "x": 899,
+      "y": 97,
+      "size": 122
+    }
+  },
+  "characters-5054bf1bd5375f": {
+    "path": "assets/portraits/characters-5054bf1bd5375f.jpg",
+    "source": "DPTW4024.MP4 480s",
+    "crop": {
+      "width": 1400,
+      "x": 1055,
+      "y": 97,
+      "size": 122
+    }
+  },
+  "characters-c58dfe6dc02c1c": {
+    "path": "assets/portraits/characters-c58dfe6dc02c1c.jpg",
+    "source": "DPTW4024.MP4 480s",
+    "crop": {
+      "width": 1400,
+      "x": 1211,
+      "y": 97,
+      "size": 122
+    }
+  },
+  "characters-5b1de0c4dd2459": {
+    "path": "assets/portraits/characters-5b1de0c4dd2459.jpg",
+    "source": "DPTW4024.MP4 480s",
+    "crop": {
+      "width": 1400,
+      "x": 119,
+      "y": 328,
+      "size": 122
+    }
+  },
+  "characters-5c19c5dfd9c3b4": {
+    "path": "assets/portraits/characters-5c19c5dfd9c3b4.jpg",
+    "source": "DPTW4024.MP4 480s",
+    "crop": {
+      "width": 1400,
+      "x": 275,
+      "y": 328,
+      "size": 122
+    }
+  },
+  "characters-c21461d7fa0d94": {
+    "path": "assets/portraits/characters-c21461d7fa0d94.jpg",
+    "source": "DPTW4024.MP4 480s",
+    "crop": {
+      "width": 1400,
+      "x": 431,
+      "y": 328,
+      "size": 122
+    }
+  },
+  "characters-6ff104c4cf1547": {
+    "path": "assets/portraits/characters-6ff104c4cf1547.jpg",
+    "source": "DPTW4024.MP4 480s",
+    "crop": {
+      "width": 1400,
+      "x": 587,
+      "y": 328,
+      "size": 122
+    }
+  },
+  "characters-8d6dc31ae1d0b3": {
+    "path": "assets/portraits/characters-8d6dc31ae1d0b3.jpg",
+    "source": "DPTW4024.MP4 480s",
+    "crop": {
+      "width": 1400,
+      "x": 743,
+      "y": 328,
+      "size": 122
+    }
+  },
+  "characters-b7e697a6f7f182": {
+    "path": "assets/portraits/characters-b7e697a6f7f182.jpg",
+    "source": "DPTW4024.MP4 480s",
+    "crop": {
+      "width": 1400,
+      "x": 899,
+      "y": 328,
+      "size": 122
+    }
+  },
+  "characters-f5a44e040bc9c5": {
+    "path": "assets/portraits/characters-f5a44e040bc9c5.jpg",
+    "source": "DPTW4024.MP4 480s",
+    "crop": {
+      "width": 1400,
+      "x": 1055,
+      "y": 328,
+      "size": 122
+    }
+  },
+  "characters-440a28ef782ea8": {
+    "path": "assets/portraits/characters-440a28ef782ea8.jpg",
+    "source": "DPTW4024.MP4 30s",
+    "crop": {
+      "width": 1000,
+      "x": 184,
+      "y": 72,
+      "size": 83
+    }
+  },
+  "characters-64776704d00b57": {
+    "path": "assets/portraits/characters-64776704d00b57.jpg",
+    "source": "DPTW4024.MP4 30s",
+    "crop": {
+      "width": 1000,
+      "x": 296,
+      "y": 72,
+      "size": 83
+    }
+  },
+  "characters-1fc38c2a36427c": {
+    "path": "assets/portraits/characters-1fc38c2a36427c.jpg",
+    "source": "DPTW4024.MP4 30s",
+    "crop": {
+      "width": 1000,
+      "x": 520,
+      "y": 72,
+      "size": 83
+    }
+  },
+  "characters-56d4d6a9a2ebb3": {
+    "path": "assets/portraits/characters-56d4d6a9a2ebb3.jpg",
+    "source": "DPTW4024.MP4 30s",
+    "crop": {
+      "width": 1000,
+      "x": 632,
+      "y": 72,
+      "size": 83
+    }
+  },
+  "characters-eb51ad57e71583": {
+    "path": "assets/portraits/characters-eb51ad57e71583.jpg",
+    "source": "DPTW4024.MP4 30s",
+    "crop": {
+      "width": 1000,
+      "x": 744,
+      "y": 72,
+      "size": 83
+    }
+  },
+  "characters-a9b41f6ce19866": {
+    "path": "assets/portraits/characters-a9b41f6ce19866.jpg",
+    "source": "DPTW4024.MP4 30s",
+    "crop": {
+      "width": 1000,
+      "x": 856,
+      "y": 72,
+      "size": 83
+    }
+  },
+  "characters-c487df72af2864": {
+    "path": "assets/portraits/characters-c487df72af2864.jpg",
+    "source": "DPTW4024.MP4 30s",
+    "crop": {
+      "width": 1000,
+      "x": 72,
+      "y": 236,
+      "size": 83
+    }
+  },
+  "characters-5fe90a499c46ce": {
+    "path": "assets/portraits/characters-5fe90a499c46ce.jpg",
+    "source": "DPTW4024.MP4 35s",
+    "crop": {
+      "width": 1400,
+      "x": 604,
+      "y": 100,
+      "size": 120
+    }
+  },
+  "characters-cf15cfebb7a8ac": {
+    "path": "assets/portraits/characters-cf15cfebb7a8ac.jpg",
+    "source": "DPTW4024.MP4 30s",
+    "crop": {
+      "width": 1000,
+      "x": 296,
+      "y": 236,
+      "size": 83
+    }
+  },
+  "characters-4af567ce870d78": {
+    "path": "assets/portraits/characters-4af567ce870d78.jpg",
+    "source": "DPTW4024.MP4 30s",
+    "crop": {
+      "width": 1000,
+      "x": 408,
+      "y": 236,
+      "size": 83
+    }
+  },
+  "characters-4aefd9df8d0049": {
+    "path": "assets/portraits/characters-4aefd9df8d0049.jpg",
+    "source": "DPTW4024.MP4 30s",
+    "crop": {
+      "width": 1000,
+      "x": 520,
+      "y": 236,
+      "size": 83
+    }
+  },
+  "characters-ae1a994740add3": {
+    "path": "assets/portraits/characters-ae1a994740add3.jpg",
+    "source": "DPTW4024.MP4 30s",
+    "crop": {
+      "width": 1000,
+      "x": 632,
+      "y": 236,
+      "size": 83
+    }
+  },
+  "characters-6a6634270dfe80": {
+    "path": "assets/portraits/characters-6a6634270dfe80.jpg",
+    "source": "DPTW4024.MP4 30s",
+    "crop": {
+      "width": 1000,
+      "x": 744,
+      "y": 236,
+      "size": 83
+    }
+  },
+  "characters-db7e822e9bff84": {
+    "path": "assets/portraits/characters-db7e822e9bff84.jpg",
+    "source": "DPTW4024.MP4 30s",
+    "crop": {
+      "width": 1000,
+      "x": 856,
+      "y": 236,
+      "size": 83
+    }
+  },
+  "characters-0e0fe8e6e984a2": {
+    "path": "assets/portraits/characters-0e0fe8e6e984a2.jpg",
+    "source": "DPTW4024.MP4 570s",
+    "crop": {
+      "width": 1000,
+      "x": 471,
+      "y": 72,
+      "size": 83
+    }
+  },
+  "characters-5667fbfe034add": {
+    "path": "assets/portraits/characters-5667fbfe034add.jpg",
+    "source": "DPTW4024.MP4 570s",
+    "crop": {
+      "width": 1000,
+      "x": 583,
+      "y": 72,
+      "size": 83
+    }
+  },
+  "characters-9b760cb1dad1f3": {
+    "path": "assets/portraits/characters-9b760cb1dad1f3.jpg",
+    "source": "DPTW4024.MP4 570s",
+    "crop": {
+      "width": 1000,
+      "x": 695,
+      "y": 72,
+      "size": 83
+    }
+  },
+  "characters-8db88140429d09": {
+    "path": "assets/portraits/characters-8db88140429d09.jpg",
+    "source": "DPTW4024.MP4 570s",
+    "crop": {
+      "width": 1000,
+      "x": 807,
+      "y": 72,
+      "size": 83
+    }
+  },
+  "characters-cd3422c4685e8e": {
+    "path": "assets/portraits/characters-cd3422c4685e8e.jpg",
+    "source": "DPTW4024.MP4 570s",
+    "crop": {
+      "width": 1000,
+      "x": 919,
+      "y": 72,
+      "size": 83
+    }
+  },
+  "characters-e2aa67d1e5ce83": {
+    "path": "assets/portraits/characters-e2aa67d1e5ce83.jpg",
+    "source": "DPTW4024.MP4 570s",
+    "crop": {
+      "width": 1000,
+      "x": 471,
+      "y": 236,
+      "size": 83
+    }
+  },
+  "characters-dad57c5e040da2": {
+    "path": "assets/portraits/characters-dad57c5e040da2.jpg",
+    "source": "DPTW4024.MP4 570s",
+    "crop": {
+      "width": 1000,
+      "x": 583,
+      "y": 236,
+      "size": 83
+    }
+  },
+  "characters-5c52e5ab9a0445": {
+    "path": "assets/portraits/characters-5c52e5ab9a0445.jpg",
+    "source": "DPTW4024.MP4 570s",
+    "crop": {
+      "width": 1000,
+      "x": 695,
+      "y": 236,
+      "size": 83
+    }
+  },
+  "characters-2150ff6a97fa6e": {
+    "path": "assets/portraits/characters-2150ff6a97fa6e.jpg",
+    "source": "DPTW4024.MP4 570s",
+    "crop": {
+      "width": 1000,
+      "x": 807,
+      "y": 236,
+      "size": 83
+    }
+  },
+  "characters-b458c97475bb67": {
+    "path": "assets/portraits/characters-b458c97475bb67.jpg",
+    "source": "DPTW4024.MP4 570s",
+    "crop": {
+      "width": 1000,
+      "x": 919,
+      "y": 236,
+      "size": 83
+    }
+  },
+  "characters-57bc609ba0adb2": {
+    "path": "assets/portraits/characters-57bc609ba0adb2.jpg",
+    "source": "DPTW4024.MP4 20s",
+    "crop": {
+      "width": 1400,
+      "x": 1072,
+      "y": 100,
+      "size": 120
+    }
+  },
+  "characters-c8727d12d04fef": {
+    "path": "assets/portraits/characters-c8727d12d04fef.jpg",
+    "source": "DPTW4024.MP4 20s",
+    "crop": {
+      "width": 1400,
+      "x": 1228,
+      "y": 100,
+      "size": 120
+    }
+  },
+  "characters-5b9e4a08e72e30": {
+    "path": "assets/portraits/characters-5b9e4a08e72e30.jpg",
+    "source": "DPTW4024.MP4 20s",
+    "crop": {
+      "width": 1400,
+      "x": 136,
+      "y": 332,
+      "size": 120
+    }
+  },
+  "characters-7f0a2057d62605": {
+    "path": "assets/portraits/characters-7f0a2057d62605.jpg",
+    "source": "DPTW4024.MP4 20s",
+    "crop": {
+      "width": 1400,
+      "x": 1072,
+      "y": 332,
+      "size": 120
+    }
+  },
+  "characters-54762601d58632": {
+    "path": "assets/portraits/characters-54762601d58632.jpg",
+    "source": "DPTW4024.MP4 30s",
+    "crop": {
+      "width": 1000,
+      "x": 408,
+      "y": 72,
+      "size": 83
+    }
+  },
+  "characters-f476f0590332ec": {
+    "path": "assets/portraits/characters-f476f0590332ec.jpg",
+    "source": "DPTW4024.MP4 30s",
+    "crop": {
+      "width": 1000,
+      "x": 184,
+      "y": 236,
+      "size": 83
+    }
+  },
+  "characters-9d3f4739ee2506": {
+    "path": "assets/portraits/characters-9d3f4739ee2506.jpg",
+    "source": "DPTW4024.MP4 35s",
+    "crop": {
+      "width": 1400,
+      "x": 760,
+      "y": 100,
+      "size": 120
+    }
+  },
+  "characters-c03d1724417458": {
+    "path": "assets/portraits/characters-c03d1724417458.jpg",
+    "source": "DPTW4024.MP4 35s",
+    "crop": {
+      "width": 1400,
+      "x": 916,
+      "y": 100,
+      "size": 120
+    }
+  },
+  "characters-d2610d3943975e": {
+    "path": "assets/portraits/characters-d2610d3943975e.jpg",
+    "source": "DPTW4024.MP4 35s",
+    "crop": {
+      "width": 1400,
+      "x": 1072,
+      "y": 100,
+      "size": 120
+    }
+  },
+  "characters-0c373231db6d2d": {
+    "path": "assets/portraits/characters-0c373231db6d2d.jpg",
+    "source": "DPTW4024.MP4 35s",
+    "crop": {
+      "width": 1400,
+      "x": 1228,
+      "y": 100,
+      "size": 120
+    }
+  },
+  "characters-4bd23ce9f5b48f": {
+    "path": "assets/portraits/characters-4bd23ce9f5b48f.jpg",
+    "source": "DPTW4024.MP4 35s",
+    "crop": {
+      "width": 1400,
+      "x": 604,
+      "y": 332,
+      "size": 120
+    }
+  },
+  "characters-367454b2e27164": {
+    "path": "assets/portraits/characters-367454b2e27164.jpg",
+    "source": "DPTW4024.MP4 35s",
+    "crop": {
+      "width": 1400,
+      "x": 760,
+      "y": 332,
+      "size": 120
+    }
+  },
+  "characters-b58ed5cf5a7662": {
+    "path": "assets/portraits/characters-b58ed5cf5a7662.jpg",
+    "source": "DPTW4024.MP4 35s",
+    "crop": {
+      "width": 1400,
+      "x": 916,
+      "y": 332,
+      "size": 120
+    }
+  },
+  "characters-1465fb05fe2597": {
+    "path": "assets/portraits/characters-1465fb05fe2597.jpg",
+    "source": "DPTW4024.MP4 35s",
+    "crop": {
+      "width": 1400,
+      "x": 1072,
+      "y": 332,
+      "size": 120
+    }
+  },
+  "characters-1cfffa16ea0eff": {
+    "path": "assets/portraits/characters-1cfffa16ea0eff.jpg",
+    "source": "DPTW4024.MP4 35s",
+    "crop": {
+      "width": 1400,
+      "x": 1228,
+      "y": 332,
+      "size": 120
+    }
+  },
+  "characters-3e4ba57f2fc464": {
+    "path": "assets/portraits/characters-3e4ba57f2fc464.jpg",
+    "source": "DPTW4024.MP4 40s",
+    "crop": {
+      "width": 1400,
+      "x": 688,
+      "y": 100,
+      "size": 120
+    }
+  },
+  "characters-ed15ee0606cf41": {
+    "path": "assets/portraits/characters-ed15ee0606cf41.jpg",
+    "source": "DPTW4024.MP4 40s",
+    "crop": {
+      "width": 1400,
+      "x": 844,
+      "y": 100,
+      "size": 120
+    }
+  },
+  "characters-333b400adf68b4": {
+    "path": "assets/portraits/characters-333b400adf68b4.jpg",
+    "source": "DPTW4024.MP4 40s",
+    "crop": {
+      "width": 1400,
+      "x": 688,
+      "y": 332,
+      "size": 120
+    }
+  },
+  "characters-a3f0c6470792ae": {
+    "path": "assets/portraits/characters-a3f0c6470792ae.jpg",
+    "source": "DPTW4024.MP4 50s",
+    "crop": {
+      "width": 1400,
+      "x": 271,
+      "y": 100,
+      "size": 120
+    }
+  },
+  "characters-1bb1ed4b254a1e": {
+    "path": "assets/portraits/characters-1bb1ed4b254a1e.jpg",
+    "source": "DPTW4024.MP4 50s",
+    "crop": {
+      "width": 1400,
+      "x": 427,
+      "y": 100,
+      "size": 120
+    }
+  },
+  "characters-2bda62176d5069": {
+    "path": "assets/portraits/characters-2bda62176d5069.jpg",
+    "source": "DPTW4024.MP4 50s",
+    "crop": {
+      "width": 1400,
+      "x": 583,
+      "y": 100,
+      "size": 120
+    }
+  },
+  "characters-db0f5c32fa2857": {
+    "path": "assets/portraits/characters-db0f5c32fa2857.jpg",
+    "source": "DPTW4024.MP4 50s",
+    "crop": {
+      "width": 1400,
+      "x": 739,
+      "y": 100,
+      "size": 120
+    }
+  },
+  "characters-fda87f117c0f91": {
+    "path": "assets/portraits/characters-fda87f117c0f91.jpg",
+    "source": "DPTW4024.MP4 50s",
+    "crop": {
+      "width": 1400,
+      "x": 895,
+      "y": 100,
+      "size": 120
+    }
+  },
+  "characters-8148464efdae30": {
+    "path": "assets/portraits/characters-8148464efdae30.jpg",
+    "source": "DPTW4024.MP4 50s",
+    "crop": {
+      "width": 1400,
+      "x": 1051,
+      "y": 100,
+      "size": 120
+    }
+  },
+  "characters-773d92ec90b8b4": {
+    "path": "assets/portraits/characters-773d92ec90b8b4.jpg",
+    "source": "DPTW4024.MP4 50s",
+    "crop": {
+      "width": 1400,
+      "x": 1207,
+      "y": 100,
+      "size": 120
+    }
+  },
+  "characters-ede1ff47d9d504": {
+    "path": "assets/portraits/characters-ede1ff47d9d504.jpg",
+    "source": "DPTW4024.MP4 50s",
+    "crop": {
+      "width": 1400,
+      "x": 115,
+      "y": 332,
+      "size": 120
+    }
+  },
+  "characters-3dc3b0a7d470a6": {
+    "path": "assets/portraits/characters-3dc3b0a7d470a6.jpg",
+    "source": "DPTW4024.MP4 50s",
+    "crop": {
+      "width": 1400,
+      "x": 271,
+      "y": 332,
+      "size": 120
+    }
+  },
+  "characters-3f424e46e80938": {
+    "path": "assets/portraits/characters-3f424e46e80938.jpg",
+    "source": "DPTW4024.MP4 50s",
+    "crop": {
+      "width": 1400,
+      "x": 427,
+      "y": 332,
+      "size": 120
+    }
+  },
+  "characters-4e0b6caefa8cf8": {
+    "path": "assets/portraits/characters-4e0b6caefa8cf8.jpg",
+    "source": "DPTW4024.MP4 50s",
+    "crop": {
+      "width": 1400,
+      "x": 583,
+      "y": 332,
+      "size": 120
+    }
+  },
+  "characters-b1e983d4fea472": {
+    "path": "assets/portraits/characters-b1e983d4fea472.jpg",
+    "source": "DPTW4024.MP4 50s",
+    "crop": {
+      "width": 1400,
+      "x": 739,
+      "y": 332,
+      "size": 120
+    }
+  },
+  "characters-a8ec8ef0c81561": {
+    "path": "assets/portraits/characters-a8ec8ef0c81561.jpg",
+    "source": "DPTW4024.MP4 50s",
+    "crop": {
+      "width": 1400,
+      "x": 895,
+      "y": 332,
+      "size": 120
+    }
+  },
+  "characters-c79e89380bd05d": {
+    "path": "assets/portraits/characters-c79e89380bd05d.jpg",
+    "source": "DPTW4024.MP4 50s",
+    "crop": {
+      "width": 1400,
+      "x": 1051,
+      "y": 332,
+      "size": 120
+    }
+  },
+  "characters-48460443dbafca": {
+    "path": "assets/portraits/characters-48460443dbafca.jpg",
+    "source": "IMG_5688.PNG",
+    "crop": {
+      "width": 2048,
+      "box": [
+        400,
+        140,
+        585,
+        325
+      ]
+    }
+  }
+}

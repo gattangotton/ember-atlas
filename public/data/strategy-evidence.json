@@ -1,0 +1,1221 @@
+{
+  "version": 1,
+  "abilities": [
+    {
+      "category": "内政",
+      "name": "精鋭騎兵治療速度",
+      "unit": "%",
+      "reference": {
+        "total": 2,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 2
+      }
+    },
+    {
+      "category": "内政",
+      "name": "精鋭歩兵治療速度",
+      "unit": "%",
+      "reference": {
+        "total": 20,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 2
+      }
+    },
+    {
+      "category": "内政",
+      "name": "近衛騎兵治療速度",
+      "unit": "%",
+      "reference": {
+        "total": 20,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 2
+      }
+    },
+    {
+      "category": "内政",
+      "name": "近衛弓兵治療速度",
+      "unit": "%",
+      "reference": {
+        "total": 20,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 2
+      }
+    },
+    {
+      "category": "内政",
+      "name": "近衛歩兵治療速度",
+      "unit": "%",
+      "reference": {
+        "total": 40,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 2
+      }
+    },
+    {
+      "category": "内政",
+      "name": "研究加速(秒)",
+      "unit": "秒",
+      "reference": {
+        "total": 1500,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 10
+      }
+    },
+    {
+      "category": "内政",
+      "name": "建設加速(秒)",
+      "unit": "秒",
+      "reference": {
+        "total": 1200,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 10
+      }
+    },
+    {
+      "category": "内政",
+      "name": "研究速度",
+      "unit": "%",
+      "reference": {
+        "total": 68,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 10
+      }
+    },
+    {
+      "category": "内政",
+      "name": "建設速度",
+      "unit": "%",
+      "reference": {
+        "total": 67,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 10
+      }
+    },
+    {
+      "category": "内政",
+      "name": "兵士訓練資源効率",
+      "unit": "%",
+      "reference": {
+        "total": 30,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 10
+      }
+    },
+    {
+      "category": "内政",
+      "name": "兵士治療速度",
+      "unit": "%",
+      "reference": {
+        "total": 30,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 10
+      }
+    },
+    {
+      "category": "内政",
+      "name": "装備製作エーテル効率",
+      "unit": "%",
+      "reference": {
+        "total": 50,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 14
+      }
+    },
+    {
+      "category": "内政",
+      "name": "研究資源効率",
+      "unit": "%",
+      "reference": {
+        "total": 23,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 14
+      }
+    },
+    {
+      "category": "内政",
+      "name": "建設資源効率",
+      "unit": "%",
+      "reference": {
+        "total": 22,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 14
+      }
+    },
+    {
+      "category": "内政",
+      "name": "資源保護(エーテル)",
+      "unit": "",
+      "reference": {
+        "total": 2390000,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 14
+      }
+    },
+    {
+      "category": "内政",
+      "name": "資源保護(エーテル以外)",
+      "unit": "",
+      "reference": {
+        "total": 4780000,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 14
+      }
+    },
+    {
+      "category": "内政",
+      "name": "兵士治療資源効率",
+      "unit": "%",
+      "reference": {
+        "total": 20,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 18
+      }
+    },
+    {
+      "category": "内政",
+      "name": "最大病院収容兵士数",
+      "unit": "",
+      "reference": {
+        "total": 915000,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 18
+      }
+    },
+    {
+      "category": "内政",
+      "name": "騎兵訓練数",
+      "unit": "",
+      "reference": {
+        "total": 4800,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 22
+      }
+    },
+    {
+      "category": "内政",
+      "name": "弓兵訓練数",
+      "unit": "",
+      "reference": {
+        "total": 4400,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 22
+      }
+    },
+    {
+      "category": "内政",
+      "name": "歩兵訓練数",
+      "unit": "",
+      "reference": {
+        "total": 5200,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 22
+      }
+    },
+    {
+      "category": "内政",
+      "name": "最大騎兵収容数",
+      "unit": "",
+      "reference": {
+        "total": 3400000,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 22
+      }
+    },
+    {
+      "category": "内政",
+      "name": "最大弓兵収容数",
+      "unit": "",
+      "reference": {
+        "total": 3000000,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 26
+      }
+    },
+    {
+      "category": "内政",
+      "name": "最大歩兵収容数",
+      "unit": "",
+      "reference": {
+        "total": 2850000,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 26
+      }
+    },
+    {
+      "category": "内政",
+      "name": "エーテル採集速度",
+      "unit": "%",
+      "reference": {
+        "total": 20,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 26
+      }
+    },
+    {
+      "category": "内政",
+      "name": "金属採集速度",
+      "unit": "%",
+      "reference": {
+        "total": 20,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 26
+      }
+    },
+    {
+      "category": "内政",
+      "name": "木材採集速度",
+      "unit": "%",
+      "reference": {
+        "total": 20,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 26
+      }
+    },
+    {
+      "category": "内政",
+      "name": "食料採集速度",
+      "unit": "%",
+      "reference": {
+        "total": 20,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 30
+      }
+    },
+    {
+      "category": "内政",
+      "name": "採集速度",
+      "unit": "%",
+      "reference": {
+        "total": 80,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 30
+      }
+    },
+    {
+      "category": "内政",
+      "name": "採集量",
+      "unit": "%",
+      "reference": {
+        "total": 34,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 30
+      }
+    },
+    {
+      "category": "内政",
+      "name": "エーテル生産量",
+      "unit": "",
+      "reference": {
+        "total": 97630,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 38
+      }
+    },
+    {
+      "category": "内政",
+      "name": "金属生産量",
+      "unit": "",
+      "reference": {
+        "total": 217620,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 38
+      }
+    },
+    {
+      "category": "内政",
+      "name": "木材生産量",
+      "unit": "",
+      "reference": {
+        "total": 194300,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 38
+      }
+    },
+    {
+      "category": "内政",
+      "name": "食料生産量",
+      "unit": "",
+      "reference": {
+        "total": 198120,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 38
+      }
+    },
+    {
+      "category": "内政",
+      "name": "運搬量",
+      "unit": "%",
+      "reference": {
+        "total": 76,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 38
+      }
+    },
+    {
+      "category": "内政",
+      "name": "最大同盟支援資源数",
+      "unit": "",
+      "reference": {
+        "total": 30,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 38
+      }
+    },
+    {
+      "category": "内政",
+      "name": "装備製作レベル",
+      "unit": "",
+      "reference": {
+        "total": 27,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 38
+      }
+    },
+    {
+      "category": "内政",
+      "name": "パワー",
+      "unit": "",
+      "reference": {
+        "total": 66813795,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 42,
+        "breakdown": {
+          "施設": 34533255,
+          "研究": 32280540
+        }
+      }
+    },
+    {
+      "category": "軍事",
+      "name": "集結部隊時防御効率",
+      "unit": "%",
+      "reference": {
+        "total": 5,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 46
+      }
+    },
+    {
+      "category": "軍事",
+      "name": "騎兵防御効率",
+      "unit": "%",
+      "reference": {
+        "total": 5,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 46
+      }
+    },
+    {
+      "category": "軍事",
+      "name": "弓兵防御効率",
+      "unit": "%",
+      "reference": {
+        "total": 5,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 46
+      }
+    },
+    {
+      "category": "軍事",
+      "name": "歩兵防御効率",
+      "unit": "%",
+      "reference": {
+        "total": 10,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 46
+      }
+    },
+    {
+      "category": "軍事",
+      "name": "集結部隊行軍速度",
+      "unit": "%",
+      "reference": {
+        "total": 10,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 46
+      }
+    },
+    {
+      "category": "軍事",
+      "name": "騎兵行軍速度",
+      "unit": "%",
+      "reference": {
+        "total": 10.5,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 46
+      }
+    },
+    {
+      "category": "軍事",
+      "name": "弓兵行軍速度",
+      "unit": "%",
+      "reference": {
+        "total": 8,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 50
+      }
+    },
+    {
+      "category": "軍事",
+      "name": "歩兵行軍速度",
+      "unit": "%",
+      "reference": {
+        "total": 10.5,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 50
+      }
+    },
+    {
+      "category": "軍事",
+      "name": "行軍速度",
+      "unit": "%",
+      "reference": {
+        "total": 10,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 50
+      }
+    },
+    {
+      "category": "軍事",
+      "name": "対キザハシ攻撃力",
+      "unit": "%",
+      "reference": {
+        "total": 15,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 50
+      }
+    },
+    {
+      "category": "軍事",
+      "name": "対資源地攻撃力",
+      "unit": "%",
+      "reference": {
+        "total": 15,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 54
+      }
+    },
+    {
+      "category": "軍事",
+      "name": "対施設攻撃力",
+      "unit": "%",
+      "reference": {
+        "total": 15,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 54
+      }
+    },
+    {
+      "category": "軍事",
+      "name": "対宝庫攻撃力",
+      "unit": "%",
+      "reference": {
+        "total": 45,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 54
+      }
+    },
+    {
+      "category": "軍事",
+      "name": "近衛騎兵基礎攻撃力",
+      "unit": "",
+      "reference": {
+        "total": 105,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 58
+      }
+    },
+    {
+      "category": "軍事",
+      "name": "近衛弓兵基礎攻撃力",
+      "unit": "",
+      "reference": {
+        "total": 107,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 58
+      }
+    },
+    {
+      "category": "軍事",
+      "name": "近衛歩兵基礎攻撃力",
+      "unit": "",
+      "reference": {
+        "total": 109,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 58
+      }
+    },
+    {
+      "category": "軍事",
+      "name": "精鋭歩兵基礎攻撃力",
+      "unit": "",
+      "reference": {
+        "total": 31,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 58
+      }
+    },
+    {
+      "category": "軍事",
+      "name": "上級歩兵基礎攻撃力",
+      "unit": "",
+      "reference": {
+        "total": 21,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 58
+      }
+    },
+    {
+      "category": "軍事",
+      "name": "アクティブスキル攻撃力",
+      "unit": "%",
+      "reference": {
+        "total": 20,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 58
+      }
+    },
+    {
+      "category": "軍事",
+      "name": "チャージスキル攻撃力",
+      "unit": "%",
+      "reference": {
+        "total": 40,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 58
+      }
+    },
+    {
+      "category": "軍事",
+      "name": "資源地防衛時攻撃力",
+      "unit": "%",
+      "reference": {
+        "total": 1,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 62
+      }
+    },
+    {
+      "category": "軍事",
+      "name": "拠点防衛時攻撃力",
+      "unit": "%",
+      "reference": {
+        "total": 320,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 62
+      }
+    },
+    {
+      "category": "軍事",
+      "name": "集結部隊時攻撃力",
+      "unit": "%",
+      "reference": {
+        "total": 50,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 66
+      }
+    },
+    {
+      "category": "軍事",
+      "name": "闇属性リーダー攻撃力",
+      "unit": "%",
+      "reference": {
+        "total": 260,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 70,
+        "breakdown": {
+          "施設": 55,
+          "研究": 30,
+          "コアアビリティ": 175
+        }
+      }
+    },
+    {
+      "category": "軍事",
+      "name": "光属性リーダー攻撃力",
+      "unit": "%",
+      "reference": {
+        "total": 285,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 74
+      }
+    },
+    {
+      "category": "軍事",
+      "name": "雷属性リーダー攻撃力",
+      "unit": "%",
+      "reference": {
+        "total": 235,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 74
+      }
+    },
+    {
+      "category": "軍事",
+      "name": "土属性リーダー攻撃力",
+      "unit": "%",
+      "reference": {
+        "total": 185,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 74
+      }
+    },
+    {
+      "category": "軍事",
+      "name": "風属性リーダー攻撃力",
+      "unit": "%",
+      "reference": {
+        "total": 144,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 74
+      }
+    },
+    {
+      "category": "軍事",
+      "name": "水属性リーダー攻撃力",
+      "unit": "%",
+      "reference": {
+        "total": 155,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 74
+      }
+    },
+    {
+      "category": "軍事",
+      "name": "火属性リーダー攻撃力",
+      "unit": "%",
+      "reference": {
+        "total": 281,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 74
+      }
+    },
+    {
+      "category": "軍事",
+      "name": "騎兵攻撃力",
+      "unit": "%",
+      "reference": {
+        "total": 359.5,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 78
+      }
+    },
+    {
+      "category": "軍事",
+      "name": "弓兵攻撃力",
+      "unit": "%",
+      "reference": {
+        "total": 276.5,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 78
+      }
+    },
+    {
+      "category": "軍事",
+      "name": "歩兵攻撃力",
+      "unit": "%",
+      "reference": {
+        "total": 606,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 78
+      }
+    },
+    {
+      "category": "軍事",
+      "name": "攻撃力",
+      "unit": "%",
+      "reference": {
+        "total": 216,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 78
+      }
+    },
+    {
+      "category": "軍事",
+      "name": "最大援軍収容兵士数",
+      "unit": "",
+      "reference": {
+        "total": 1000000,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 82
+      }
+    },
+    {
+      "category": "軍事",
+      "name": "最大防衛部隊兵士数",
+      "unit": "",
+      "reference": {
+        "total": 2900000,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 82
+      }
+    },
+    {
+      "category": "軍事",
+      "name": "最大集結部隊兵士数",
+      "unit": "",
+      "reference": {
+        "total": 2200000,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 82
+      }
+    },
+    {
+      "category": "軍事",
+      "name": "部隊スロット",
+      "unit": "",
+      "reference": {
+        "total": 5,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 82
+      }
+    },
+    {
+      "category": "魔獣討伐",
+      "name": "対ヨルムンガンド攻撃力",
+      "unit": "%",
+      "reference": {
+        "total": 112.5,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 86
+      }
+    },
+    {
+      "category": "魔獣討伐",
+      "name": "対集結魔獣攻撃力",
+      "unit": "%",
+      "reference": {
+        "total": 30,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 86
+      }
+    },
+    {
+      "category": "魔獣討伐",
+      "name": "対精霊攻撃力",
+      "unit": "%",
+      "reference": {
+        "total": 31,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 90
+      }
+    },
+    {
+      "category": "魔獣討伐",
+      "name": "対不浄攻撃力",
+      "unit": "%",
+      "reference": {
+        "total": 30,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 90
+      }
+    },
+    {
+      "category": "魔獣討伐",
+      "name": "対機甲攻撃力",
+      "unit": "%",
+      "reference": {
+        "total": 15,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 90
+      }
+    },
+    {
+      "category": "魔獣討伐",
+      "name": "対堕天攻撃力",
+      "unit": "%",
+      "reference": {
+        "total": 15,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 90
+      }
+    },
+    {
+      "category": "魔獣討伐",
+      "name": "対妖魔攻撃力",
+      "unit": "%",
+      "reference": {
+        "total": 15,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 98
+      }
+    },
+    {
+      "category": "魔獣討伐",
+      "name": "対龍攻撃力",
+      "unit": "%",
+      "reference": {
+        "total": 20,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 98
+      }
+    },
+    {
+      "category": "魔獣討伐",
+      "name": "対超獣攻撃力",
+      "unit": "%",
+      "reference": {
+        "total": 30,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 98
+      }
+    },
+    {
+      "category": "魔獣討伐",
+      "name": "対悪魔攻撃力",
+      "unit": "%",
+      "reference": {
+        "total": 16,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 98
+      }
+    },
+    {
+      "category": "魔獣討伐",
+      "name": "対魔獣攻撃力",
+      "unit": "%",
+      "reference": {
+        "total": 65,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 98
+      }
+    },
+    {
+      "category": "魔獣討伐",
+      "name": "昏葉コイン獲得量",
+      "unit": "%",
+      "reference": {
+        "total": 30,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 98
+      }
+    },
+    {
+      "category": "魔獣討伐",
+      "name": "エプレ[情夏]コイン獲得量",
+      "unit": "%",
+      "reference": {
+        "total": 50,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 102
+      }
+    },
+    {
+      "category": "魔獣討伐",
+      "name": "FF10コラボコイン獲得量",
+      "unit": "%",
+      "reference": {
+        "total": 100,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 102
+      }
+    },
+    {
+      "category": "魔獣討伐",
+      "name": "FFBEコラボコイン獲得量",
+      "unit": "%",
+      "reference": {
+        "total": 100,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 102
+      }
+    },
+    {
+      "category": "魔獣討伐",
+      "name": "エルフリーデコイン獲得量",
+      "unit": "%",
+      "reference": {
+        "total": 50,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 102
+      }
+    },
+    {
+      "category": "魔獣討伐",
+      "name": "ステラコイン獲得量",
+      "unit": "%",
+      "reference": {
+        "total": 100,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 102
+      }
+    },
+    {
+      "category": "魔獣討伐",
+      "name": "ガイアコイン獲得量",
+      "unit": "%",
+      "reference": {
+        "total": 100,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 106
+      }
+    },
+    {
+      "category": "魔獣討伐",
+      "name": "ライラコイン獲得量",
+      "unit": "%",
+      "reference": {
+        "total": 50,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 106
+      }
+    },
+    {
+      "category": "魔獣討伐",
+      "name": "ニュクス[蒼炎]コイン獲得量",
+      "unit": "%",
+      "reference": {
+        "total": 100,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 106
+      }
+    },
+    {
+      "category": "魔獣討伐",
+      "name": "対魔獣獲得経験値",
+      "unit": "%",
+      "reference": {
+        "total": 73,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 110
+      }
+    },
+    {
+      "category": "魔獣討伐",
+      "name": "対精霊メモリ倍化率",
+      "unit": "%",
+      "reference": {
+        "total": 5,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 110
+      }
+    },
+    {
+      "category": "魔獣討伐",
+      "name": "対不浄メモリ倍化率",
+      "unit": "%",
+      "reference": {
+        "total": 15,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 110
+      }
+    },
+    {
+      "category": "魔獣討伐",
+      "name": "対堕天メモリ倍化率",
+      "unit": "%",
+      "reference": {
+        "total": 15,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 110
+      }
+    },
+    {
+      "category": "魔獣討伐",
+      "name": "対悪魔メモリ倍化率",
+      "unit": "%",
+      "reference": {
+        "total": 5,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 114
+      }
+    },
+    {
+      "category": "魔獣討伐",
+      "name": "対不浄素材倍化率",
+      "unit": "%",
+      "reference": {
+        "total": 15,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 114
+      }
+    },
+    {
+      "category": "魔獣討伐",
+      "name": "対妖魔素材倍化率",
+      "unit": "%",
+      "reference": {
+        "total": 15,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 114
+      }
+    },
+    {
+      "category": "魔獣討伐",
+      "name": "対超獣素材倍化率",
+      "unit": "%",
+      "reference": {
+        "total": 27,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 114
+      }
+    },
+    {
+      "category": "魔獣討伐",
+      "name": "対魔獣素材倍化率",
+      "unit": "%",
+      "reference": {
+        "total": 46.5,
+        "source": "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+        "second": 118,
+        "breakdown": {
+          "研究": 7.5,
+          "コアアビリティ": 39
+        }
+      }
+    }
+  ],
+  "edges": {
+    "research-0-6": [
+      "research-0-4"
+    ],
+    "research-0-7": [
+      "research-0-4",
+      "research-0-5"
+    ],
+    "research-0-8": [
+      "research-0-5"
+    ],
+    "research-0-9": [
+      "research-0-6",
+      "research-0-7"
+    ],
+    "research-0-10": [
+      "research-0-7",
+      "research-0-8"
+    ],
+    "research-0-11": [
+      "research-0-9"
+    ],
+    "research-0-12": [
+      "research-0-9",
+      "research-0-10"
+    ],
+    "research-0-13": [
+      "research-0-10"
+    ],
+    "research-0-14": [
+      "research-0-11"
+    ],
+    "research-0-15": [
+      "research-0-12"
+    ],
+    "research-0-16": [
+      "research-0-13"
+    ],
+    "research-1-8": [
+      "research-1-7"
+    ],
+    "research-1-9": [
+      "research-1-7"
+    ],
+    "research-1-10": [
+      "research-1-8"
+    ],
+    "research-1-11": [
+      "research-1-8",
+      "research-1-9"
+    ],
+    "research-1-12": [
+      "research-1-9"
+    ],
+    "research-2-9": [
+      "research-2-7",
+      "research-2-8"
+    ],
+    "research-2-10": [
+      "research-2-9"
+    ],
+    "research-3-11": [
+      "research-3-10"
+    ],
+    "research-3-12": [
+      "research-3-10"
+    ],
+    "research-3-13": [
+      "research-3-10"
+    ],
+    "research-3-14": [
+      "research-3-11"
+    ],
+    "research-3-15": [
+      "research-3-12"
+    ],
+    "research-3-16": [
+      "research-3-13"
+    ],
+    "research-4-5": [
+      "research-4-4"
+    ],
+    "research-4-6": [
+      "research-4-4"
+    ],
+    "research-4-7": [
+      "research-4-4"
+    ],
+    "research-4-8": [
+      "research-4-5"
+    ],
+    "research-4-13": [
+      "research-4-6"
+    ],
+    "research-4-9": [
+      "research-4-7"
+    ],
+    "research-4-10": [
+      "research-4-8"
+    ],
+    "research-4-12": [
+      "research-4-13"
+    ],
+    "research-4-11": [
+      "research-4-9"
+    ]
+  },
+  "edgeEvidence": {
+    "note": "画面の接続線だけを転記。必須条件・選択条件・必要Lvは未確定。計画はユーザーが確認して登録した前提条件だけを使用。",
+    "sources": [
+      {
+        "file": "09-38-46",
+        "seconds": [
+          7.5,
+          22.5
+        ]
+      },
+      {
+        "file": "09-41-55",
+        "seconds": [
+          7.5
+        ]
+      },
+      {
+        "file": "09-44-00",
+        "seconds": [
+          7.5
+        ]
+      },
+      {
+        "file": "10-09-42",
+        "seconds": [
+          7.5
+        ]
+      },
+      {
+        "file": "10-11-23",
+        "seconds": [
+          7.5
+        ]
+      }
+    ]
+  },
+  "specs": {},
+  "sources": [
+    "ScreenRecording_09-27-2026 09-36-08_1.MP4",
+    "ScreenRecording_09-27-2026 09-38-46_1.MP4",
+    "ScreenRecording_09-27-2026 09-41-55_1.MP4",
+    "ScreenRecording_09-27-2026 09-44-00_1.MP4",
+    "ScreenRecording_09-27-2026 10-09-42_1.MP4",
+    "ScreenRecording_09-27-2026 10-11-23_1.MP4"
+  ],
+  "note": "動画の合計は参考値。現在のプレイヤーの手入力値や各研究の段階別効果として自動登録しない。研究動画は主にツリーの表示であり、研究効果の各Lv値や必要前提Lvは確認できない。"
+}

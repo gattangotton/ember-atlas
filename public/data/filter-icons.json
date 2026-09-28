@@ -1,0 +1,101 @@
+{
+  "火": {
+    "path": "assets/filters/fire.png",
+    "source": "IMG_5688.PNG",
+    "center": [
+      188,
+      419
+    ],
+    "size": 38
+  },
+  "土": {
+    "path": "assets/filters/earth.png",
+    "source": "IMG_5688.PNG",
+    "center": [
+      418,
+      419
+    ],
+    "size": 38
+  },
+  "水": {
+    "path": "assets/filters/water.png",
+    "source": "IMG_5688.PNG",
+    "center": [
+      648,
+      419
+    ],
+    "size": 38
+  },
+  "光": {
+    "path": "assets/filters/light.png",
+    "source": "IMG_5688.PNG",
+    "center": [
+      1566,
+      419
+    ],
+    "size": 38
+  },
+  "闇": {
+    "path": "assets/filters/dark.png",
+    "source": "IMG_5688.PNG",
+    "center": [
+      1336,
+      419
+    ],
+    "size": 38
+  },
+  "雷": {
+    "path": "assets/filters/thunder.png",
+    "source": "IMG_5688.PNG",
+    "center": [
+      1107,
+      755
+    ],
+    "size": 38
+  },
+  "歩兵": {
+    "path": "assets/filters/infantry.png",
+    "source": "IMG_5688.PNG",
+    "center": [
+      224,
+      419
+    ],
+    "size": 38
+  },
+  "統率": {
+    "path": "assets/filters/leader.png",
+    "source": "IMG_5688.PNG",
+    "center": [
+      1141,
+      419
+    ],
+    "size": 38
+  },
+  "弓兵": {
+    "path": "assets/filters/archer.png",
+    "source": "IMG_5688.PNG",
+    "center": [
+      1372,
+      419
+    ],
+    "size": 38
+  },
+  "騎兵": {
+    "path": "assets/filters/cavalry.png",
+    "source": "IMG_5688.PNG",
+    "center": [
+      913,
+      755
+    ],
+    "size": 38
+  },
+  "風": {
+    "path": "assets/filters/wind.png",
+    "source": "DPTW4024.MP4 20s",
+    "center": [
+      460,
+      286
+    ],
+    "size": 30
+  }
+}

@@ -1,0 +1,87 @@
+"""Extract only user-requested game icons from supplied recordings/screenshots.
+Coordinates are recorded against 960px video and 2048px screenshot previews.
+"""
+from pathlib import Path
+from PIL import Image,ImageDraw
+import json
+root=Path(__file__).resolve().parents[1];out=root/'public/assets/research';out.mkdir(parents=True,exist_ok=True)
+rows=[]
+def add(g,f,x,y,names):
+ for i,name in enumerate(names.split('|')):
+  if name: rows.append((name,g,f,x,y+i*103))
+add(1,1,203,166,'エーテル生産|装備製作エーテル効率')
+add(1,1,465,115,'食料採集速度|木材採集速度|金属採集速度')
+add(1,1,726,115,'エーテル採集速度|研究速度|資源保護(エーテル以外)')
+add(1,2,111,166,'行軍速度|運搬量')
+add(1,2,372,115,'食料生産|木材生産|金属生産')
+add(1,8,629,115,'施設防衛時攻撃力|建設速度|最大病院収用兵士数')
+add(1,9,157,218,'集結部隊時攻撃力')
+add(1,9,418,218,'兵士治癒速度')
+add(1,9,681,115,'食料採集量|木材採集量|金属採集量')
+add(2,1,455,166,'攻撃力|チャージスキル攻撃力')
+add(2,1,718,115,'上級歩兵解放|上級弓兵解放|上級騎兵解放')
+add(2,2,361,166,'闇属性リーダー攻撃力|光属性リーダー攻撃力')
+add(2,2,624,166,'対施設攻撃力|対資源地攻撃力')
+add(2,3,321,115,'歩兵行軍速度|弓兵行軍速度|騎兵行軍速度')
+add(2,4,125,115,'歩兵攻撃力|弓兵攻撃力|騎兵攻撃力')
+add(2,4,389,115,'歩兵防御効率|弓兵防御効率|騎兵防御効率')
+add(2,4,651,115,'近衛歩兵解放|近衛弓兵解放|近衛騎兵解放')
+add(2,5,139,115,'火属性リーダー攻撃力|水属性リーダー攻撃力|風属性リーダー攻撃力')
+add(2,5,403,166,'雷属性リーダー攻撃力|土属性リーダー攻撃力')
+add(2,6,171,269,'集結部隊行軍速度')
+add(2,7,119,166,'対宝庫攻撃力')
+add(2,7,643,218,'最大集結部隊兵士数|集結部隊時防御効率')
+add(3,1,194,166,'対魔獣メモリ倍化率')
+add(3,1,455,218,'アクティブスキル攻撃力')
+add(3,1,718,218,'Lv2集結魔獣討伐解放')
+add(3,2,290,166,'対魔獣素材倍化率|対魔獣獲得経験値')
+add(3,2,552,218,'Lv4集結魔獣討伐解放')
+add(3,2,813,115,'対超獣攻撃力|対精霊攻撃力|対堕天攻撃力')
+add(3,3,131,218,'Lv5集結魔獣討伐解放')
+add(3,3,656,115,'対超獣メモリ倍化率|対精霊メモリ倍化率|対堕天メモリ倍化率')
+add(3,4,246,218,'Lv6集結魔獣討伐解放')
+add(3,4,508,115,'対不浄攻撃力|対キザハシ攻撃力|対機甲攻撃力')
+add(3,4,770,166,'対妖魔攻撃力|対悪魔攻撃力')
+add(3,5,131,115,'対不浄防御効率||対機甲防御効率')
+add(3,5,394,166,'対妖魔防御効率|対悪魔防御効率')
+add(3,6,330,115,'対集結魔獣攻撃力')
+add(3,6,593,166,'対龍防御効率|対龍素材倍化率')
+add(4,1,522,115,'精鋭歩兵治癒速度|精鋭弓兵治癒速度|精鋭騎兵治癒速度')
+add(4,2,822,218,'部隊スロット')
+add(4,3,344,115,'近衛歩兵基礎攻撃力|近衛弓兵基礎攻撃力|近衛騎兵基礎攻撃力')
+add(4,3,606,218,'兵士訓練資源効率')
+add(4,5,231,218,'メモリサブアビリティ強化')
+add(4,5,754,115,'近衛歩兵治癒速度|近衛弓兵治癒速度|近衛騎兵治癒速度')
+add(5,2,428,115,'対超獣素材倍化率|対精霊素材倍化率|対堕天素材倍化率')
+add(5,2,691,115,'対不浄素材倍化率|装備サブアビリティ強化|対機甲素材倍化率')
+add(5,3,576,115,'対不浄メモリ倍化率||対機甲メモリ倍化率')
+add(5,3,839,115,'対妖魔メモリ倍化率|対龍メモリ倍化率|対悪魔メモリ倍化率')
+add(5,4,417,218,'サポートエンバース解放')
+add(5,4,679,218,'対龍攻撃力')
+add(5,5,437,115,'対妖魔素材倍化率||対悪魔素材倍化率')
+def add5(g,f,x,y,names): add(g,(f+1)/3,x,y,names)
+add5(1,10,274,218,'採集速度')
+add5(1,10,536,218,'対魔獣攻撃力')
+add5(1,19,506,218,'資源地防衛時攻撃力')
+add5(1,22,348,115,'最大歩兵収容数|最大弓兵収容数|最大騎兵収容数')
+add5(1,27,607,166,'エーテル採集量')
+add5(2,7,264,115,'精鋭歩兵解放|精鋭弓兵解放|精鋭騎兵解放')
+add5(2,12,403,115,'歩兵訓練数|弓兵訓練数|騎兵訓練数')
+add5(3,4,432,218,'Lv3集結魔獣討伐解放')
+add5(3,13,197,115,'Lv7集結魔獣討伐解放')
+add5(3,13,458,115,'対超獣防御効率|対精霊防御効率|対堕天防御効率')
+add5(4,1,414,115,'上級歩兵基礎攻撃力|上級弓兵基礎攻撃力|上級騎兵基礎攻撃力')
+add5(4,4,332,115,'精鋭歩兵基礎攻撃力|精鋭弓兵基礎攻撃力|精鋭騎兵基礎攻撃力')
+add5(4,16,390,218,'メモリスロット解放')
+manifest={}
+for i,(name,g,f,x,y) in enumerate(rows):
+ src=root/f'.work/research-redesign/{g}/{round(3*f-1):03d}.jpg';im=Image.open(src).convert('RGB');scale=im.width/960
+ box=[round(v*scale) for v in (x-26,y-26,x+26,y+26)];crop=im.crop(box).resize((96,96),Image.Resampling.LANCZOS).convert('RGBA')
+ mask=Image.new('L',(96,96));ImageDraw.Draw(mask).polygon([(12,0),(84,0),(96,12),(96,84),(84,96),(12,96),(0,84),(0,12)],fill=255);crop.putalpha(mask)
+ key=f'icon-{i:03d}';crop.save(out/f'{key}.png');manifest[name]={'path':f'assets/research/{key}.png','video':g,'second':(f-1)*15+7.5,'crop960':[x-26,y-26,x+26,y+26]}
+# Uploaded item screenshots: use the research resource-efficiency item, not the adjacent building item.
+for key,file,box in [('alchemist','IMG_5715.PNG',(358,501,484,632)),('research-resource','IMG_5714.PNG',(564,442,727,607)),('building-resource','IMG_5713.PNG',(378,442,543,607)),('blacksmith','IMG_5717.PNG',(358,455,484,584))]:
+ im=Image.open(root/'.work/research-redesign'/file).convert('RGB').resize((2048,945));im.crop(box).resize((128,128),Image.Resampling.LANCZOS).save(out/f'{key}.png');manifest[key]={'path':f'assets/research/{key}.png','source':file,'crop2048':box}
+(root/'public/data/research-icons.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf-8')
+(root/'public/research-icon-data.js').write_text('export const RESEARCH_ICON_DATA='+json.dumps(manifest,ensure_ascii=False)+';\n',encoding='utf-8')
+print('Icons:',len(manifest))

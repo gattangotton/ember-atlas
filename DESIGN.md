@@ -10,7 +10,7 @@
 
 Background #f6f7fb, white panels, text #25263d, violet #6650cf, muted green for saved/owned status. Desktop side navigation becomes a horizontally scrollable menu on narrow screens. All attributes also have text labels; color is supplementary. Native dialogs, labelled forms, visible keyboard focus, and reduced motion are supported.
 
-The dashboard begins with database actions and real counts. No invented player progress, member names, rankings, or game images. Character attributes use textual emblems instead of fabricated portraits. Cards support browsing; tables and a three-item comparison support detailed decisions.
+The dashboard begins with database actions and real counts. No invented player progress, member names, rankings, or game images. Version 0.2 includes 71 character portraits cropped from the supplied gameplay video; remaining entries use textual placeholders. Cards support browsing; tables and a three-item comparison support detailed decisions.
 
 ## Excel analysis
 
@@ -32,4 +32,10 @@ Progress snapshots carry a schema version, stable player ID, export timestamp an
 
 ## Online phase
 
+Version 0.2 separates local profiles (profile, progress, favorites, research) while sharing catalog overrides, growth patterns and imported member snapshots. These are local profiles, not authenticated accounts. Backup validates and restores active and inactive profiles. Share schema v2 adds current/target skill levels and research; v1 remains supported. Source supplements are generated in mechanics.json, separate from the original read-only cell library. Unknown effect values remain null, and only observed research edges are drawn. Growth patterns copy explicit value arrays; they never infer unobserved ratios.
+
 Local file exchange is implemented; hosting, authentication and live multi-user synchronization are not. To add them, move persistence behind a repository adapter and provide tables for users, alliances, memberships, catalog_items and progress. Enforce alliance membership on the server, restrict progress writes to the owning user, restrict catalog writes to editors, and use record revisions for conflicts. Do not expose the prototype server as an unauthenticated shared backend. The current server listens on loopback only.
+
+
+## Construction and equipment additions
+Construction uses a searchable facility picker beside a level detail panel, four resource tiles, base duration, prerequisite navigation and a collapsible complete level table. Source disagreements remain visible beside the selected level. Unknown and zero values are distinct. Equipment uses slot subnavigation and search-first main-effect cards with grade-specific power at the upper right. Patterns copy effect matrices for a matching G1 power; they do not infer unknown growth.
