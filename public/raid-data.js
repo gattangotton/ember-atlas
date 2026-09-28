@@ -12,4 +12,4 @@ export const RAID_BOSSES=[
 ];
 const byEquipment=new Map(RAID_BOSSES.flatMap(b=>b.gear.filter(Boolean).map(id=>[id,b])));
 export const raidBossFor=id=>byEquipment.get(id)||null;
-export function raidBadge(record,esc){const b=raidBossFor(record.id);return b||record.raid==='yes'?`<a class="raid-badge" href="#raids">◆ レイド武具${b?' · '+esc(b.name):''}</a>`:'';}
+export function raidBadge(record,esc){const b=raidBossFor(record.id);return b||record.raid==='yes'?`<a class="raid-badge" href="#raids" data-action="raid-index">◆ レイド武具${b?' · '+esc(b.name):''}</a>`:'';}

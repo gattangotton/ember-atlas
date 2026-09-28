@@ -1,26 +1,44 @@
 [
   {
     "id": "eclipse",
-    "imageUrl": "https://lh3.googleusercontent.com/ZTmwsZb50R5Afg1xdhwQpKOpN6RdbktobfxVezop_3xFfMmb9jI_ofKyCbJoLM0IziAw57Weg7nI76-fRurEwZXZIeqEmARzrPJTBYvz2Ef4FQ"
+    "imageUrl": "https://lh3.googleusercontent.com/ZTmwsZb50R5Afg1xdhwQpKOpN6RdbktobfxVezop_3xFfMmb9jI_ofKyCbJoLM0IziAw57Weg7nI76-fRurEwZXZIeqEmARzrPJTBYvz2Ef4FQ",
+    "pageUrl": "https://kamigame.jp/emberstoria/page/381409561128494771.html",
+    "localPath": "assets/raids/eclipse.png",
+    "checkedAt": "2026-09-28"
   },
   {
     "id": "magatsu",
-    "imageUrl": "https://lh3.googleusercontent.com/QM0K27TDXE8xfuKhKXQ2hjZpQwxBgzVMZsYb91kubfroOR3b0ctOHhF1ZiYIUPAVlNwnFkwMWjq06T_Yv408hzd6BKWMqk7zrXW6hRq3qRo=s0"
+    "imageUrl": "https://lh3.googleusercontent.com/QM0K27TDXE8xfuKhKXQ2hjZpQwxBgzVMZsYb91kubfroOR3b0ctOHhF1ZiYIUPAVlNwnFkwMWjq06T_Yv408hzd6BKWMqk7zrXW6hRq3qRo=s0",
+    "pageUrl": "https://kamigame.jp/emberstoria/page/395021699696874205.html",
+    "localPath": "assets/raids/magatsu.png",
+    "checkedAt": "2026-09-28"
   },
   {
     "id": "jormungand",
-    "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/F/Faranerk/20260420/20260420205224.jpg"
+    "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/F/Faranerk/20260420/20260420205224.jpg",
+    "pageUrl": "https://faranerk.hatenablog.com/entry/2026/04/20/205259",
+    "localPath": "assets/raids/jormungand.png",
+    "checkedAt": "2026-09-28"
   },
   {
     "id": "malboro",
-    "imageUrl": "https://lh3.googleusercontent.com/9eSJr4lSAt_il5LGkweSX_O29swD8_1IS6X9KOrKd_Nx2p4VX2J3PAa129z7HRoLUpkvsk3X0u7x0x7gSgg4E0zXhvgwfJGceYLYE2G0SSw"
+    "imageUrl": "https://lh3.googleusercontent.com/9eSJr4lSAt_il5LGkweSX_O29swD8_1IS6X9KOrKd_Nx2p4VX2J3PAa129z7HRoLUpkvsk3X0u7x0x7gSgg4E0zXhvgwfJGceYLYE2G0SSw",
+    "pageUrl": "https://kamigame.jp/emberstoria/page/372681457153379523.html",
+    "localPath": "assets/raids/malboro.png",
+    "checkedAt": "2026-09-28"
   },
   {
     "id": "malacoda",
-    "imageUrl": "https://www.jp.square-enix.com/emberstoria/shared/img/top/monster_1_visual.jpg"
+    "imageUrl": "https://www.jp.square-enix.com/emberstoria/shared/img/top/monster_1_visual.jpg",
+    "pageUrl": "https://www.jp.square-enix.com/emberstoria/",
+    "localPath": "assets/raids/malacoda.jpg",
+    "checkedAt": "2026-09-28"
   },
   {
     "id": "chiliat",
-    "imageUrl": "https://www.jp.square-enix.com/emberstoria/shared/img/top/monster_4_visual.jpg"
+    "imageUrl": "https://www.jp.square-enix.com/emberstoria/shared/img/top/monster_4_visual.jpg",
+    "pageUrl": "https://www.jp.square-enix.com/emberstoria/",
+    "localPath": "assets/raids/chiliat.jpg",
+    "checkedAt": "2026-09-28"
   }
 ]
