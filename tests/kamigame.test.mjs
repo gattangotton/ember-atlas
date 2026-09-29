@@ -2,6 +2,7 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile,access} from 'node:fs/promises';
 import {checkSourceDatabase,enrichFromSource,reusablePattern,sourceSkillSpec} from '../public/kamigame-model.js';
+import {coreEffects} from '../public/mechanics.js';
 import {validateRecord} from '../public/model.js';
 const data=JSON.parse(await readFile(new URL('../public/data/kamigame-embers.json',import.meta.url),'utf8'));
 const catalog=JSON.parse(await readFile(new URL('../public/data/catalog.json',import.meta.url),'utf8'));
@@ -58,7 +59,7 @@ test('Source enrichment fills empty skills, preserves verified data and explicit
  for(const r of catalog.records.filter(r=>r.kind==='characters')){
   const base={...r,...mechanics.additions[r.id]},c=data.characters.find(c=>c.recordId===r.id);
   const enriched=enrichFromSource(base,undefined,c);validateRecord(enriched);
-  if(base.coreEffects)for(let i=0;i<base.coreEffects.length;i++)base.coreEffects[i].values.forEach((v,j)=>{if(v!==null)assert.equal(enriched.coreEffects[i].values[j],v);});assert.equal(enriched.portrait,base.portrait);
+  if(base.coreEffects)for(let i=0;i<base.coreEffects.length;i++)coreEffects(base)[i].values.forEach((v,j)=>{if(v!==null)assert.equal(enriched.coreEffects[i].values[j],v);});assert.equal(enriched.portrait,base.portrait);
   assert.ok(!JSON.stringify(enriched).includes('siteEvidence'));
  }
  const c=sources('ニュクス'),r=catalog.records.find(r=>r.id===c.recordId),original={...r,...mechanics.additions[r.id]};
@@ -67,7 +68,7 @@ test('Source enrichment fills empty skills, preserves verified data and explicit
  const customCore={coreEffects:[{name:'個人値',unit:'%',values:[1,2,3,4,5,6]}]};
  assert.deepEqual(enrichFromSource(original,customCore,c).coreEffects,customCore.coreEffects);
  const old=sources('エレボス'),oldBase=catalog.records.find(r=>r.id===old.recordId);
- assert.deepEqual(enrichFromSource(oldBase,undefined,old).coreEffects[0].values,[null,null,null,null,null,80]);
+ assert.deepEqual(enrichFromSource(oldBase,undefined,old).coreEffects[0].values,[null,null,null,null,80,null]);
  assert.deepEqual(enrichFromSource(original,custom,c).skills,custom.skills);
  const verified={...original,skills:{...original.skills,charge:{...original.skills.charge,effects:[{name:'威力',unit:'',values:[88,null,null,null,null,null,null]}]}}};
  assert.equal(enrichFromSource(verified,undefined,c).skills.charge.effects[0].values[0],88);

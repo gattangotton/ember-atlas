@@ -1,4 +1,4 @@
-import {validateMechanics,coreEffects,inferCharge} from './mechanics.js';
+import {validateMechanics,coreThresholds,coreEffects,inferCharge} from './mechanics.js';
 export const FOUNDATION_TYPES={charge:'チャージ',active:'アクティブ',trigger:'トリガー',core:'コアアビリティ'};
 export const foundationSlot=t=>t==='trigger'?'trigger1':t;
 export function validateFoundation(input=[]){
@@ -25,7 +25,7 @@ export function seedFoundations(records){
 export function applyFoundation(record,template,slot){
  const t=validateFoundation([template])[0],r=structuredClone(record);
  if(r.kind!=='characters')throw Error('エンバースを選んでください。');
- if(t.type==='core'){r.coreEffects=structuredClone(t.spec.effects);r.ability=r.coreEffects.map(e=>e.name).join('/');r.maximum=r.coreEffects.map(e=>e.values[5]===null?'未確認':e.values[5]+e.unit).join('/');}
+ if(t.type==='core'){r.coreEffects=coreEffects({...r,coreEffects:structuredClone(t.spec.effects)});r.ability=r.coreEffects.map(e=>e.name).join('/');r.maximum=r.coreEffects.map(e=>e.values[coreThresholds(r).length-1]===null?'未確認':e.values[coreThresholds(r).length-1]+e.unit).join('/');}
  else {if(t.type==='trigger'?!['trigger1','trigger2','trigger3'].includes(slot):slot!==t.type)throw Error('適用先のスキル分類が違います。');r.skills={...r.skills,[slot]:structuredClone(t.spec)};r[slot]=t.spec.name||t.name;}
  return r;
 }

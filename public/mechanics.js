@@ -4,7 +4,9 @@ export const SKILLS={charge:{label:'チャージ',max:7},active:{label:'アク�
 export const ROMAN=['Ⅰ','Ⅱ','Ⅲ','Ⅳ','Ⅴ','Ⅵ'];
 export const CORE_THRESHOLDS=[0,10,15,20,25,30];
 export function skillLevels(v={}){const out={};for(const [k,s] of Object.entries(SKILLS)){const n=v[k]??0;if(!Number.isInteger(n)||n<0||n>s.max)throw Error(`${s.label}は0～${s.max}で入力してください。`);out[k]=n;}return out;}
-export function coreStage(owned,skills={}){if(!owned)return 0;const total=Object.values(skillLevels(skills)).reduce((a,b)=>a+b,0);return CORE_THRESHOLDS.filter(n=>total>=n).length;}
+export function coreThresholds(r={}){return /[34]/.test(String(r.rarity??r).normalize("NFKC"))?[10,15,20,25,30]:CORE_THRESHOLDS;}
+export function coreUnlockText(r){return coreThresholds(r).map((n,i)=>ROMAN[i]+"："+(n?"合計"+n:"獲得時")).join(" ／ ");}
+export function coreStage(owned,skills={},r={}){if(!owned)return 0;const total=Object.values(skillLevels(skills)).reduce((a,b)=>a+b,0);return coreThresholds(r).filter(n=>total>=n).length;}
 export function series(values,length){if(!Array.isArray(values)||values.length!==length||values.some(v=>v!==null&&(typeof v!=='number'||!Number.isFinite(v)||Math.abs(v)>1e7)))throw Error(`${length}段階の数値を確認してください。`);return [...values];}
 export function parseSeries(text,length){const parts=text.split(/[,、]/).map(s=>s.trim());return series(parts.map(s=>s===''||s==='?'?null:Number(s)),length);}
 const short=(v,max=200)=>{if(typeof v!=='string'||v.length>max)throw Error('文字数・形式を確認してください。');return v;};
@@ -24,7 +26,7 @@ export function validateMechanics(v){
 }
 function effects(v,length){if(!Array.isArray(v)||v.length>20)throw Error('効果は20件以内です。');return v.map(e=>({name:short(e.name),unit:short(e.unit??'%',20),values:series(e.values,length),pattern:short(e.pattern??'',100)}));}
 export function inferCharge(text=''){return {target:/単体/.test(text)?'single':/扇形|円形/.test(text)?'multiple':'unknown',shape:/扇形/.test(text)?'fan':/円形/.test(text)?'circle':/単体/.test(text)?'none':'unknown',extra:'unknown',effects:[],note:''};}
-export function coreEffects(r){if(r.coreEffects)return r.coreEffects;const names=String(r.ability||'未登録').split('/'),maxima=String(r.maximum||'').normalize('NFKC').split('/');return names.map((name,i)=>({name,unit:'%',values:[null,null,null,null,null,/^\d+(\.\d+)?%$/.test(maxima[i]??'')?Number(maxima[i].slice(0,-1)):null],pattern:''}));}
+export function coreEffects(r){const count=coreThresholds(r).length;if(r.coreEffects)return r.coreEffects.map(e=>{const values=[...e.values];if(count===5&&values.slice(0,5).every(v=>v===null)&&values[5]!==null){values[4]=values[5];values[5]=null;}return {...e,values};});const names=String(r.ability||'未登録').split('/'),maxima=String(r.maximum||'').normalize('NFKC').split('/');return names.map((name,i)=>({name,unit:'%',values:Array.from({length:6},(_,j)=>j===count-1&&/^\d+(\.\d+)?%$/.test(maxima[i]??'')?Number(maxima[i].slice(0,-1)):null),pattern:''}));}
 export function groupCore(records){const groups=new Map();for(const r of records.filter(r=>r.kind==='characters'))for(const effect of coreEffects(r)){const name=effect.name.replace('建築資源効率','建設資源効率');if(!groups.has(name))groups.set(name,[]);groups.get(name).push({character:r,effect});}return [...groups].sort(([a],[b])=>a.localeCompare(b,'ja'));}
 export function unlockedSlots(r,grade){return [grade>=1,grade>=5,grade>=6&&(r.raid==='yes'||!!raidBossFor(r.id))];}
 export function validateResearch(v={}){const out={};if(!v||typeof v!=='object'||Array.isArray(v)||Object.keys(v).length>2000)throw Error('研究記録が不正です。');for(const [id,n] of Object.entries(v)){if(!/^research-[a-z0-9-]+$/.test(id)||!Number.isInteger(n)||n<0||n>5)throw Error('研究レベルは0～5です。');out[id]=n;}return out;}

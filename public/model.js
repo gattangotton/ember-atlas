@@ -1,9 +1,10 @@
+import {abilityName} from './ability-names.js';
 import {validateCopies} from './equipment-inventory.js';
 import {validateMechanics,skillLevels,validateResearch} from './mechanics.js';
 export const STORE_KEY='ember-atlas-v1';
 export const KINDS={characters:'エンバース',equipment:'装備',abilities:'コアアビリティ'};
 const validId=id=>typeof id==='string'&&/^[a-zA-Z0-9_-]{1,80}$/.test(id)&&!['__proto__','constructor','prototype'].includes(id);
-export const normalize=s=>String(s??'').normalize('NFKC').toLocaleLowerCase('ja');
+export const normalize=s=>abilityName(s).toLocaleLowerCase('ja');
 export function filterRecords(records,{kind,query='',element='',troop='',owned=false,progress={}}={}) {
  return records.filter(r=>(!kind||r.kind===kind)&&(!element||r.element===element)&&(!troop||r.troop===troop||r.slot===troop)&&(!owned||progress[r.id]?.owned)&&normalize([...Object.entries(r).filter(([k,v])=>k!=='portrait'&&typeof v==='string').map(([,v])=>v),...(r.mainAbilities||[]).map(e=>e.name),...(r.coreEffects||[]).map(e=>e.name),...(r.subCandidates||[]).map(e=>e.name),...Object.values(r.skills||{}).flatMap(s=>[s.note,...(s.effects||[]).map(e=>e.name)])].join(' ')).includes(normalize(query)));
 }
