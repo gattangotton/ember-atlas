@@ -22,8 +22,8 @@ test('Only raid equipment opens slot three at G6',()=>{
  assert.deepEqual(unlockedSlots({raid:'yes'},5),[true,true,false]);
  assert.deepEqual(unlockedSlots({raid:'yes'},6),[true,true,true]);
  assert.deepEqual(unlockedSlots({raid:'no'},6),[true,true,false]);
- assert.deepEqual(unlockedSlots({raid:'unknown',unlockGrades:[null,5,6]},6),[null,true,null]);
- assert.deepEqual(unlockedSlots({raid:'yes'},3),[true,null,false]);
+ assert.deepEqual(unlockedSlots({raid:'unknown',unlockGrades:[null,5,6]},6),[true,true,false]);
+ assert.deepEqual(unlockedSlots({raid:'yes'},3),[true,false,false]);
 });
 test('Effect values and probability validation distinguish missing and zero',()=>{
  const values=[0,null,3,4,5,6];const r=validateMechanics({mainAbilities:[{name:'攻撃',unit:'%',values}],subCandidates:[{slot:1,name:'攻撃',value:0,probability:null}]});assert.equal(r.mainAbilities[0].values[0],0);assert.equal(r.mainAbilities[0].values[1],null);assert.equal(r.subCandidates[0].probability,null);

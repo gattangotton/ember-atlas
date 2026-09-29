@@ -1,3 +1,4 @@
+import {raidBossFor} from './raid-data.js';
 // Domain rules. Unknown source values remain null, never an inferred zero.
 export const SKILLS={charge:{label:'チャージ',max:7},active:{label:'アクティブ',max:5},trigger1:{label:'トリガー1',max:7},trigger2:{label:'トリガー2',max:7},trigger3:{label:'トリガー3',max:7}};
 export const ROMAN=['Ⅰ','Ⅱ','Ⅲ','Ⅳ','Ⅴ','Ⅵ'];
@@ -25,7 +26,7 @@ function effects(v,length){if(!Array.isArray(v)||v.length>20)throw Error('効果
 export function inferCharge(text=''){return {target:/単体/.test(text)?'single':/扇形|円形/.test(text)?'multiple':'unknown',shape:/扇形/.test(text)?'fan':/円形/.test(text)?'circle':/単体/.test(text)?'none':'unknown',extra:'unknown',effects:[],note:''};}
 export function coreEffects(r){if(r.coreEffects)return r.coreEffects;const names=String(r.ability||'未登録').split('/'),maxima=String(r.maximum||'').normalize('NFKC').split('/');return names.map((name,i)=>({name,unit:'%',values:[null,null,null,null,null,/^\d+(\.\d+)?%$/.test(maxima[i]??'')?Number(maxima[i].slice(0,-1)):null],pattern:''}));}
 export function groupCore(records){const groups=new Map();for(const r of records.filter(r=>r.kind==='characters'))for(const effect of coreEffects(r)){const name=effect.name.replace('建築資源効率','建設資源効率');if(!groups.has(name))groups.set(name,[]);groups.get(name).push({character:r,effect});}return [...groups].sort(([a],[b])=>a.localeCompare(b,'ja'));}
-export function unlockedSlots(r,grade){const g=r.unlockGrades??[1,null,r.raid==='yes'?6:null];return g.map((n,i)=>{if(i===2)return grade<6||r.raid==='no'?false:r.raid==='yes'?true:null;if(i===1&&n===null)return grade>=5?true:grade===1?false:null;return n===null?null:grade>=n;});}
+export function unlockedSlots(r,grade){return [grade>=1,grade>=5,grade>=6&&(r.raid==='yes'||!!raidBossFor(r.id))];}
 export function validateResearch(v={}){const out={};if(!v||typeof v!=='object'||Array.isArray(v)||Object.keys(v).length>2000)throw Error('研究記録が不正です。');for(const [id,n] of Object.entries(v)){if(!/^research-[a-z0-9-]+$/.test(id)||!Number.isInteger(n)||n<0||n>5)throw Error('研究レベルは0～5です。');out[id]=n;}return out;}
 export function validatePatterns(v=[]){if(!Array.isArray(v)||v.length>100)throw Error('パターンは100件以内です。');return v.map(p=>{if(![5,6,7].includes(p.values?.length))throw Error('パターンは5・6・7段階で登録してください。');return {name:short(p.name),values:series(p.values,p.values.length)};});}
 
