@@ -7,3 +7,4 @@ Thumbs.db
 .local-tools/
 .work/
 source-database.xlsx
+tools/.kamigame-cache/
