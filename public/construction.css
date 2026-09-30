@@ -1,0 +1,60 @@
+/* Warm, compact facility workspace. Scoped to avoid changing other pages. */
+.construction-page{--line:#e7ded1;--purple:#956042;--muted:#796c60;color:#3f352d;background:#f7f3ec;border-radius:20px;padding:20px}
+.construction-page .page-heading{margin-bottom:18px;align-items:center}
+.construction-page .page-heading h1{font-size:27px;margin:3px 0}
+.construction-page .eyebrow{color:#8c654a;letter-spacing:2px}
+.construction-page .subtitle{font-size:13px;margin:0;color:#796c60}
+.construction-page .badge{background:#efe4d4;color:#755b41;font-size:11px}
+.construction-page .building-layout{grid-template-columns:210px minmax(0,1fr);gap:16px}
+.construction-page .panel{padding:16px;border:1px solid #e7ded1;background:#fffdf9;box-shadow:0 3px 14px #55432c05;border-radius:14px;margin:0}
+.construction-page .building-picker{top:16px}
+.construction-page .building-picker .field{font-size:12px;margin-bottom:10px}
+.construction-page input,.construction-page select{background:#fffefd;border-color:#dbd0c1;border-radius:8px;min-width:0;max-width:100%;padding:7px 9px}
+.construction-page #building-list{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.construction-page .building-option{flex-direction:column;align-items:flex-start;gap:2px;padding:8px 6px;margin:0;min-height:52px;line-height:1.35}
+.construction-page .building-option b{font-size:12px;overflow-wrap:anywhere}
+.construction-page .building-option small{font-size:10px;color:#786b5b}
+.construction-page .building-option.selected{background:#ecddc7;color:#654629;box-shadow:inset 3px 0 #a16b42}
+.construction-page button:hover{background:#f0e7da}
+.construction-page button.primary{background:#956042;border-color:#956042;color:#fff}
+.construction-page button.primary:hover{background:#7e4d33}
+.construction-page button:focus-visible,.construction-page summary:focus-visible{outline:3px solid #ab754f;outline-offset:2px}
+.construction-page .building-title{gap:12px;margin-bottom:12px}
+.construction-page .building-title h2{font-size:22px;margin:3px 0;line-height:1.4}
+.construction-page .building-title h2 span{color:#9a7350;font-size:17px}
+.construction-page .building-title .field{font-size:11px;min-width:96px}
+.construction-page .building-personal{margin:0 0 14px;padding:14px;background:#f3ede2;border:1px solid #e9ddca;border-radius:12px}
+.construction-page h3{font-size:15px;margin:0 0 10px}
+.construction-page .building-copies{grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}
+.construction-page .building-copies .field{font-size:11px;gap:4px}
+.construction-page .building-copies select{width:100%;font-size:13px;padding:7px 4px}
+.construction-page .building-copies .field:only-child{grid-column:span 2}
+.construction-page .form-actions{margin-top:10px;padding:0;gap:8px}
+.construction-page button{font-size:12px;padding:7px 10px;min-height:34px}
+.construction-page .building-ability-head{display:flex;align-items:center;justify-content:space-between;gap:8px;border-top:1px solid #dfd4c4;margin-top:12px;padding-top:10px}
+.construction-page h4{font-size:13px;margin:0}
+.construction-page .building-personal ul{padding-left:18px;margin:6px 0;font-size:13px}
+.construction-page .hint{font-size:11px;line-height:1.6;margin:7px 0;color:#796c60}
+.construction-page .building-help{font-size:11px;color:#796c60;margin-top:7px}
+.construction-page summary{cursor:pointer}
+.construction-page .building-cost{margin:0 0 12px}
+.construction-page .building-time{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 12px;background:transparent;padding:0;margin:0 0 9px;border-radius:0}
+.construction-page .building-time strong{font-size:19px;color:#805535}
+.construction-page .building-time span,.construction-page .building-time small{font-size:11px;color:#796c60}
+.construction-page .building-resources{grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.construction-page .building-resources>div{padding:8px 10px;gap:2px;border-color:#e5ddcf;border-top-width:2px;background:#fffdfa;border-radius:8px}
+.construction-page .building-resources strong{font-size:18px;color:#4e4436}
+.construction-page .building-resources small{font-size:11px;color:#796c60}
+.construction-page .building-condition,.construction-page .building-level-table,.construction-page .building-differences{margin:0;padding:0;border:0;border-top:1px solid #e7ded1;background:transparent;border-radius:0;font-size:12px}
+.construction-page .building-condition>summary,.construction-page .building-level-table>summary,.construction-page .building-differences>summary{padding:10px 0;font-size:12px;font-weight:600}
+.construction-page .building-condition>summary span{float:right;font-size:11px;color:#796c60;font-weight:400}
+.construction-page .building-condition-body{padding:6px 0 12px}
+.construction-page .building-condition .panel-head{margin-bottom:6px}
+.construction-page .building-requirements{margin:8px 0;gap:6px}
+.construction-page .building-selected-row{background:#f0e5d5}
+@media(max-width:1100px){.construction-page{padding:14px}.construction-page .building-layout{grid-template-columns:170px minmax(0,1fr)}.construction-page .building-picker{position:static}.construction-page .building-copies{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:760px){.construction-page .building-layout{grid-template-columns:1fr}.construction-page #building-list{grid-template-columns:repeat(4,minmax(0,1fr))}.construction-page .building-picker{padding:12px}.construction-page .building-picker>.field{display:inline-flex;width:48%;vertical-align:top}.construction-page .building-picker>.field+ .field{margin-left:3%}.construction-page .building-copies{grid-template-columns:repeat(5,minmax(0,1fr))}.construction-page button{min-height:40px}}
+@media(max-width:480px){.construction-page{padding:10px}.construction-page .page-heading{gap:8px}.construction-page .page-heading h1{font-size:23px}.construction-page .page-heading>.badge{display:none}.construction-page .panel{padding:12px}.construction-page #building-list{grid-template-columns:repeat(3,minmax(0,1fr))}.construction-page .building-copies{grid-template-columns:repeat(3,minmax(0,1fr))}.construction-page .building-resources{grid-template-columns:repeat(2,minmax(0,1fr))}.construction-page .building-title h2{font-size:20px}.construction-page .building-personal{padding:10px}}
+
+.construction-page .building-picker-toggle{display:none}
+@media(max-width:760px){.construction-page .building-picker-toggle{display:block;width:100%;text-align:left;background:#f2e8d8;color:#67492f;border-color:#e0ceb5;min-height:44px}.construction-page .building-picker.is-collapsed #building-picker-content{display:none}.construction-page #building-picker-content{padding-top:10px}.construction-page #building-picker-content>.field{display:inline-flex;width:48%;vertical-align:top}.construction-page #building-picker-content>.field+.field{margin-left:3%}}
