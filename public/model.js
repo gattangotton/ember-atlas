@@ -1,3 +1,4 @@
+import {validateBuildingProgress} from './building-progress.js';
 import {abilityName} from './ability-names.js';
 import {validateCopies} from './equipment-inventory.js';
 import {validateMechanics,skillLevels,validateResearch} from './mechanics.js';
@@ -31,9 +32,9 @@ export function validateShare(v){
  });
  if(new Set(items.map(x=>x.id)).size!==items.length)throw Error('育成データに重複があります。');
  if(!Number.isFinite(Date.parse(v.exportedAt)))throw Error('共有日時が不正です。');
- return {type:v.type,version:v.version,profile:{id:p.id,name:p.name,alliance:String(p.alliance??'').slice(0,60)},exportedAt:v.exportedAt,items,...(v.version===2?{research:validateResearch(v.research)}:{})};
+ return {type:v.type,version:v.version,profile:{id:p.id,name:p.name,alliance:String(p.alliance??'').slice(0,60)},exportedAt:v.exportedAt,items,...(v.version===2?{buildingProgress:validateBuildingProgress(v.buildingProgress||{}),research:validateResearch(v.research)}:{})};
 }
-export function buildShare(profile,progress,records,research){return {type:'ember-atlas-progress',version:research?2:1,profile:{id:profile.id,name:profile.name,alliance:profile.alliance},exportedAt:new Date().toISOString(),items:records.filter(r=>progress[r.id]).map(r=>({...((r.kind==='equipment'&&progress[r.id].instances!==undefined)?{instances:validateCopies(progress[r.id].instances,r)}:{}),id:r.id,name:r.name,kind:r.kind,owned:!!progress[r.id].owned,level:progress[r.id].level??0,target:progress[r.id].target??0,...(progress[r.id].skills?{skills:skillLevels(progress[r.id].skills)}:{}),...(progress[r.id].targetSkills?{targetSkills:skillLevels(progress[r.id].targetSkills)}:{})})),...(research?{research:validateResearch(research)}:{})};}
+export function buildShare(profile,progress,records,research,buildingProgress={}){return {type:'ember-atlas-progress',version:research?2:1,profile:{id:profile.id,name:profile.name,alliance:profile.alliance},exportedAt:new Date().toISOString(),items:records.filter(r=>progress[r.id]).map(r=>({...((r.kind==='equipment'&&progress[r.id].instances!==undefined)?{instances:validateCopies(progress[r.id].instances,r)}:{}),id:r.id,name:r.name,kind:r.kind,owned:!!progress[r.id].owned,level:progress[r.id].level??0,target:progress[r.id].target??0,...(progress[r.id].skills?{skills:skillLevels(progress[r.id].skills)}:{}),...(progress[r.id].targetSkills?{targetSkills:skillLevels(progress[r.id].targetSkills)}:{})})),...(research?{buildingProgress:validateBuildingProgress(buildingProgress),research:validateResearch(research)}:{})};}
 export function equipmentTotal(records,selections){
  const values=selections.map(s=>{const r=records.find(r=>r.id===s.id);return r?.grades?.[s.grade-1]??null;});
  return values.some(v=>v===null)?null:Math.round(values.reduce((a,b)=>a+b,0)*10)/10;

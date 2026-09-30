@@ -16,7 +16,7 @@ test('Saved patterns survive backup validation and offer individual compatible e
  const saved=validateEquipmentPatterns(JSON.parse(JSON.stringify([p])));
  assert.equal(saved[0].slot,'武器');assert.equal(equipmentCurves(weapon,'対龍素材倍化率','%',[],saved).length,1);
  assert.equal(equipmentCurves(weapon,'対宝庫攻撃力','%',[],saved).length,0);
- assert.equal(equipmentCurves(weapon,'対妖魔攻撃力','%',[],saved).length,0);
+ assert.deepEqual(equipmentCurves(weapon,'対妖魔攻撃力','%',[],saved)[0].values,[1,null,null,null,null,null]);
  assert.equal(equipmentCurves({...weapon,slot:'頭部'},'対妖魔素材倍化率','%',[],saved).length,0);
 });
 test('Conflicting recorded curves remain selectable and do not invent missing values',()=>{

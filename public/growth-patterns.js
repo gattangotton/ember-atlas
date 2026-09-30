@@ -7,7 +7,7 @@ const complete=values=>Array.isArray(values)&&values.every(v=>typeof v==='number
 const unitKey=unit=>String(unit??'%').normalize('NFKC');
 export function equipmentCurves(record,name,unit,records=[],patterns=[]){
  const family=abilityFamily(name),out=[];
- const add=(label,e,power,slot)=>{if(power!==record.power||slot&&slot!==record.slot||abilityFamily(e.name)!==family||unitKey(e.unit)!==unitKey(unit)||e.values?.length!==6||!complete(e.values))return;
+ const add=(label,e,power,slot)=>{if(power!==record.power||slot&&slot!==record.slot||abilityFamily(e.name)!==family||unitKey(e.unit)!==unitKey(unit)||e.values?.length!==6||!e.values.some(v=>typeof v==='number'&&Number.isFinite(v))||e.values.some(v=>v!==null&&!(typeof v==='number'&&Number.isFinite(v))))return;
   const same=out.find(p=>JSON.stringify(p.values)===JSON.stringify(e.values));if(same){same.sources.push(label);return;}
   out.push({name:label,values:[...e.values],sources:[label]});};
  add('標準登録：12000武器・属性リーダー攻撃力',{name:'属性リーダー攻撃力',unit:'%',values:[26.5,33.1,39.7,46.3,53,59.6]},12000,'武器');

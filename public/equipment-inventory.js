@@ -18,6 +18,17 @@ export function validateCopies(items,record){
 }
 export function copyProgress(p,items,record){const instances=validateCopies(items,record);return {...p,instances,owned:instances.length>0,level:Math.max(0,...instances.map(x=>x.grade)),target:Math.max(instances.length?0:p.target||0,...instances.map(x=>x.target)),updatedAt:new Date().toISOString()};}
 
+export function normalizeEquipmentProgress(progress,records){
+ const result=structuredClone(progress||{});
+ for(const [id,p] of Object.entries(result)){
+  const r=records.find(r=>r.id===id);if(r?.kind!=='equipment')continue;
+  // Individual copies are authoritative over stale summary flags in backups.
+  const normalized=copyProgress(p,equipmentCopies(p),r);
+  result[id]={...normalized,note:p.note??'',updatedAt:p.updatedAt||''};
+ }
+ return result;
+}
+
 // Equal G1 percentages use the same growth curve, irrespective of effect name.
 export function growthUpdates(before,next,records){
  const curves=new Map(),percent=e=>String(e.unit??'%').normalize('NFKC').trim()==='%';

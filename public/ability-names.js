@@ -1,3 +1,4 @@
+import {isGuardianGear} from './raid-data.js';
 // Canonical labels follow the base-ability screen. Only equivalent effects are aliases.
 export function abilityName(value){
  let s=String(value??'').normalize('NFKC').trim().replace(/倍加/g,'倍化').replace(/竜/g,'龍').replace(/建築/g,'建設').replace(/装備制作/g,'装備製作').replace(/治癒速度/g,'治療速度').replace(/収用兵士数/g,'収容兵士数');
@@ -10,6 +11,14 @@ export const abilityList=value=>String(value??'').split('/').map(abilityName).jo
 export const canonicalAbilityKey=key=>{const at=key.lastIndexOf('|');return at<0?key:abilityName(key.slice(0,at))+'|'+key.slice(at+1).normalize('NFKC');};
 export function normalizeAbilityRecord(record){
  const r=structuredClone(record);
+ if(isGuardianGear(r)){r.raid='no';r.unlockGrades=[1,5,6];}
+ if(r.name==='ゲラルデスカ'||r.character==='ゲラルデスカ'){
+  const names=['近衛歩兵基礎攻撃力','近衛弓兵基礎攻撃力','近衛騎兵基礎攻撃力'];
+  if(r.coreEffects?.some(e=>e.name==='T4基礎値')){const legacy=r.coreEffects.find(e=>e.name==='T4基礎値');r.coreEffects=r.coreEffects.filter(e=>e.name!=='T4基礎値');for(const name of names)if(!r.coreEffects.some(e=>e.name===name))r.coreEffects.push({name,unit:'',values:[3,6,9,15,21,27].map((v,i)=>legacy.values?.[i]??v)});}
+  if(r.ability?.includes('T4基礎値')){r.ability=r.ability.replace('T4基礎値',names.join('/'));r.maximum=String(r.maximum||'').replace(/\+27/, '27/27/27');}
+  if(r.kind==='abilities')r.name=r.character+' / '+r.ability;
+ }
+
  const effects=list=>list?.map(e=>({...e,name:abilityName(e.name)}));
  for(const key of ['ability','effect'])if(typeof r[key]==='string')r[key]=abilityList(r[key]);
  for(const key of ['coreEffects','mainAbilities','subCandidates'])if(r[key])r[key]=effects(r[key]);

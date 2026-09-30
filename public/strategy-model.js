@@ -1,3 +1,4 @@
+import {buildingSources} from './building-progress.js';
 import {abilityName,canonicalAbilityKey} from './ability-names.js';
 import {coreStage,coreThresholds,coreEffects} from './mechanics.js';
 export const RESEARCH_GROUPS={'拠点①':'拠点','軍事①':'軍事','討伐①':'討伐','軍事②':'軍事Ⅱ','討伐②':'討伐Ⅱ'};
@@ -15,6 +16,7 @@ export function aggregateAbilities({records=[],nodes=[],state={},evidence={}}){c
  const add=s=>{const g=ensure(s.ability,s.unit);g.sources.push(s);if(s.value===null)g.unknown++;else g.total+=s.value;};
  for(const n of nodes){const spec=researchSpec(n,state.researchSpecs,evidence),level=state.research?.[n.id]||0;if(/解放/.test(spec.ability))continue;add({id:n.id,type:'research',kind:'研究',label:n.name,location:`研究 ＞ ${RESEARCH_GROUPS[n.group]} ＞ 研究所Lv.${n.lab} ＞ ${n.name}`,ability:spec.ability,unit:spec.unit,level,acquired:level>0,value:level===0?0:spec.values[level-1]??null,available:spec.values.at(-1),source:n.source});}
  for(const r of records.filter(r=>r.kind==='characters')){const p=state.progress?.[r.id]||{},stage=coreStage(p.owned,p.skills,r);for(const [i,e] of coreEffects(r).entries())add({id:r.id+'-'+i,recordId:r.id,type:'core',kind:'コアアビリティ',label:r.name,location:`エンバース ＞ ${r.name} ＞ コアアビリティ`,ability:abilityName(e.name),unit:e.unit,level:stage,acquired:stage>0,value:stage===0?0:e.values[stage-1]??null,available:e.values[coreThresholds(r).length-1]});}
+ for(const source of buildingSources(state))add(source);
  for(const e of state.abilityUser?.extras||[])add({...e,type:'extra',location:`${e.kind} ＞ ${e.label}`,value:e.acquired?e.value:0,available:e.value});
  for(const key of Object.keys(state.abilityUser?.manual||{})){const at=key.lastIndexOf('|');ensure(key.slice(0,at),key.slice(at+1));}
  return [...groups.values()].map(g=>({...g,total:Math.round(g.total*1e6)/1e6,manual:manualFor(g.key,state.abilityUser?.manual).value,manualConflicts:manualFor(g.key,state.abilityUser?.manual).conflicts})).sort((a,b)=>a.name.localeCompare(b.name,'ja'));

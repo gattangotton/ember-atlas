@@ -134,3 +134,25 @@ dialog:has(.ember-detail){padding:22px;max-height:94dvh}dialog:has(.ember-detail
 
 #equipment-power-form .grade-grid{grid-template-columns:repeat(6,minmax(0,1fr));min-width:0}#equipment-power-form .grade-grid input{min-width:0;width:100%}.growth-custom summary{font-size:11px;color:#62718b;padding:5px 0;cursor:pointer}.growth-editor .form-grid{grid-template-columns:minmax(0,4fr) minmax(70px,1fr)}
 @media(max-width:640px){#equipment-power-form .grade-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.equipment-card.is-owned-equipment .equipment-ownership{background:#e6f5ef;border-radius:10px;padding:10px 12px;color:#216c55}
+.equipment-ownership{display:flex;justify-content:space-between;gap:8px;align-items:center;padding:9px 12px;margin-bottom:12px;border-radius:9px;background:#f2f3f6;color:#747783}
+.equipment-ownership.owned{background:#e6f5ed;color:#20664f}
+.equipment-ownership small{font-weight:600}
+.ce-tabs{display:flex;gap:6px;overflow-x:auto;position:sticky;top:-1px;background:#fff;padding:12px 0;z-index:3;border-bottom:1px solid #ded9eb;margin-bottom:18px}
+.ce-tabs button{white-space:nowrap;flex:1;min-width:90px}.ce-tabs [aria-selected=true]{background:#6350af;color:white;border-color:#6350af}
+.ce-save{position:sticky;bottom:-1px;display:flex;align-items:center;gap:12px;background:#fff;padding:14px 0;border-top:1px solid #ddd7eb;z-index:3;margin-top:20px}.ce-save span{flex:1;color:#526559;font-size:13px}
+.ce-state{border:1px solid #d5cdea;border-radius:12px;padding:16px;margin:16px 0}.ce-meta{margin:18px 0}.ce-advanced{margin:18px 0;padding:14px;border:1px solid #dfdce6;border-radius:10px}.ce-advanced summary{cursor:pointer;font-weight:600}
+.ability-suggestions{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}.ability-suggestions:empty{display:none}.ability-suggestions button{padding:7px 10px;font-size:12px;background:#f3effb;color:#493786;border:1px solid #d7cdea}
+#character-editor-form input::placeholder,#foundation-form input::placeholder{color:#858394;opacity:1}#character-editor-form [role=tabpanel][hidden]{display:none}#character-editor-form .grade-grid{grid-template-columns:repeat(auto-fit,minmax(82px,1fr))}
+@media(max-width:650px){.ce-save{flex-wrap:wrap}.ce-save span{flex-basis:100%}.ce-tabs button{min-width:100px}.ce-state{padding:10px}.ce-advanced{padding:10px}}
+
+#character-editor-form .ce-meta{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:14px}#character-editor-form .ce-meta select{width:100%;min-width:0}#character-editor-form .hint{color:#646579}#character-editor-form input::placeholder{color:#76778a}
+@media(max-width:650px){#character-editor-form .ce-meta{grid-template-columns:1fr}.ce-tabs button{min-height:44px}.ability-suggestions button{min-height:44px}}
+
+@media(max-width:650px){.ce-tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}.ce-tabs button{min-width:0;padding:8px 3px;font-size:12px}}
+
+.ember-current-effects>div{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin:4px 0}.ember-current-effects small{white-space:nowrap}.building-personal{margin:18px 0;padding:18px;background:#f5f3fc;border-radius:14px}.building-copies{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px}.building-effect-levels{display:grid;grid-template-columns:repeat(auto-fit,minmax(86px,1fr));gap:10px}.building-effect-row{border:1px solid var(--line);border-radius:12px;padding:16px;margin:16px 0}.building-effect-row input{min-width:0;width:100%}.building-personal [role=status]{color:#236b53}
+
+.guardian-section{margin:24px 0;padding:24px;border:1px solid #c7c6e4;border-radius:18px;background:#f5f4fc}.guardian-section h2{margin:8px 0}.guardian-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}.guardian-grid article{background:#fff;border-radius:12px;padding:12px;min-width:0}.guardian-grid .raid-gear{width:100%;min-width:0}.guardian-rule{color:#534688}.guardian-badge{background:#eeebfa;color:#51417d;border-color:#c9c0e1}.guardian-badge:hover{background:#e4def5;color:#352652}@media(max-width:900px){.guardian-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:600px){.guardian-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.guardian-section{padding:16px}}
+
+.raid-page .guardian-section{color:#302b45}.guardian-section .eyebrow{color:#65528c}.guardian-section .raid-gear{color:#302b45;background:transparent}.guardian-section .raid-gear:hover{background:#eeeafa}.guardian-section .raid-gear span,.guardian-section .raid-gear small{color:#686077}.guardian-section .raid-gear b{color:#67528b}

@@ -1,0 +1,158 @@
+{
+  "type": "ember-atlas-backup",
+  "version": 1,
+  "exportedAt": "2026-09-30T00:21:20.051Z",
+  "state": {
+    "version": 1,
+    "profile": {
+      "id": "equipment-qa",
+      "name": "復元検証",
+      "alliance": ""
+    },
+    "custom": [],
+    "members": [],
+    "favorites": [],
+    "overrides": {
+      "equipment-97f2b0d381cf5a": {
+        "id": "equipment-97f2b0d381cf5a",
+        "kind": "equipment",
+        "name": "ヨルムンアーマー",
+        "slot": "身体",
+        "grades": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "effect": "",
+        "note": "",
+        "source": {
+          "sheet": "レイド装備",
+          "row": 19
+        },
+        "raid": "yes",
+        "unlockGrades": [
+          1,
+          null,
+          6
+        ],
+        "power": 13000,
+        "powerGrades": [
+          13000,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "equipmentEvidence": "ScreenRecording_09-28-2026 20-24-01_1.MP4 1.5秒：画像・G1パワー・全メインアビリティ数値を確認。 以前の確認記録：DPTW4024.MP4 335秒：G1一覧の名称・パワー・メイン効果を確認。",
+        "mainAbilities": [
+          {
+            "name": "防御効率",
+            "unit": "%",
+            "values": [
+              10.5,
+              13.75,
+              16.5,
+              null,
+              null,
+              null
+            ],
+            "pattern": ""
+          },
+          {
+            "name": "水属性リーダー攻撃力",
+            "unit": "%",
+            "values": [
+              22.5,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "pattern": ""
+          },
+          {
+            "name": "集結部隊時攻撃力",
+            "unit": "%",
+            "values": [
+              64,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "pattern": ""
+          }
+        ],
+        "portrait": "assets/portraits/equipment-sep28-3-1.jpg"
+      }
+    },
+    "progress": {
+      "equipment-97f2b0d381cf5a": {
+        "owned": false,
+        "level": 0,
+        "target": 0,
+        "note": "復元テスト",
+        "instances": [
+          {
+            "id": "test-a",
+            "grade": 5,
+            "target": 6,
+            "subAbilities": [
+              {
+                "name": "攻撃力",
+                "value": 3.25
+              },
+              {
+                "name": "防御効率",
+                "value": 5.5
+              },
+              null
+            ]
+          },
+          {
+            "id": "test-b",
+            "grade": 6,
+            "target": 6,
+            "subAbilities": [
+              null,
+              null,
+              {
+                "name": "攻撃力",
+                "value": 9
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "equipmentPatterns": [
+      {
+        "id": "ep-restore-test",
+        "name": "復元検証パターン",
+        "power": 13000,
+        "slot": "身体",
+        "mainAbilities": [
+          {
+            "name": "防御効率",
+            "unit": "%",
+            "values": [
+              10.5,
+              13.75,
+              16.5,
+              null,
+              null,
+              null
+            ],
+            "pattern": ""
+          }
+        ]
+      }
+    ]
+  }
+}

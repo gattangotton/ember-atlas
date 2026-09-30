@@ -12,4 +12,9 @@ export const RAID_BOSSES=[
 ];
 const byEquipment=new Map(RAID_BOSSES.flatMap(b=>b.gear.filter(Boolean).map(id=>[id,b])));
 export const raidBossFor=id=>byEquipment.get(id)||null;
-export function raidBadge(record,esc){const b=raidBossFor(record.id);return b||record.raid==='yes'?`<a class="raid-badge" href="#raids" data-action="raid-index">◆ レイド武具${b?' · '+esc(b.name):''}</a>`:'';}
+export function raidBadge(record,esc){if(isGuardianGear(record))return `<a class="raid-badge guardian-badge" href="#raids" data-action="raid-index">◇ 特殊武具 · G6でサブ3枠</a>`;const b=raidBossFor(record.id);return b||record.raid==='yes'?`<a class="raid-badge" href="#raids" data-action="raid-index">◆ レイド武具${b?' · '+esc(b.name):''}</a>`:'';}
+
+// User-confirmed special equipment: Guardian motif, not raid-material equipment.
+export const GUARDIAN_GEAR=['equipment-cb10930b422891','equipment-d412bf1bb736ce','equipment-a7f0cb806ec093','equipment-cb7c3c9a0271c3','equipment-2a3bca30311f9f'];
+export const isGuardianGear=record=>GUARDIAN_GEAR.includes(typeof record==='string'?record:record.id);
+export const hasThirdSubSlot=record=>isGuardianGear(record)||record.raid==='yes'||!!raidBossFor(record.id);

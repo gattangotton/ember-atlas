@@ -1226,15 +1226,41 @@
           "pattern": ""
         },
         {
-          "name": "T4基礎値",
-          "unit": "%",
+          "name": "近衛歩兵基礎攻撃力",
+          "unit": "",
           "values": [
-            null,
-            null,
-            null,
-            null,
-            null,
-            null
+            3,
+            6,
+            9,
+            15,
+            21,
+            27
+          ],
+          "pattern": ""
+        },
+        {
+          "name": "近衛弓兵基礎攻撃力",
+          "unit": "",
+          "values": [
+            3,
+            6,
+            9,
+            15,
+            21,
+            27
+          ],
+          "pattern": ""
+        },
+        {
+          "name": "近衛騎兵基礎攻撃力",
+          "unit": "",
+          "values": [
+            3,
+            6,
+            9,
+            15,
+            21,
+            27
           ],
           "pattern": ""
         }
@@ -2269,7 +2295,7 @@
         }
       ],
       "note": " 動画90秒でG1メインアビリティを確認。",
-      "raid": "unknown",
+      "raid": "no",
       "name": "セルヴァンス",
       "slot": "武器",
       "power": 12000,
@@ -2282,7 +2308,12 @@
         null
       ],
       "equipmentEvidence": "ScreenRecording_09-28-2026 20-20-28_1.MP4 4.5秒：画像・G1パワー・全メインアビリティ数値を確認。 以前の確認記録：DPTW4024.MP4 65秒：G1一覧の名称・パワー・メイン効果を確認。",
-      "portrait": "assets/portraits/equipment-sep28-1-2.jpg"
+      "portrait": "assets/portraits/equipment-sep28-1-2.jpg",
+      "unlockGrades": [
+        1,
+        5,
+        6
+      ]
     },
     "equipment-d412bf1bb736ce": {
       "mainAbilities": [
@@ -2327,7 +2358,7 @@
         }
       ],
       "note": " 動画330秒でG1メインアビリティを確認。",
-      "raid": "unknown",
+      "raid": "no",
       "name": "エレメンタルヘルム",
       "slot": "頭部",
       "power": 12000,
@@ -2340,7 +2371,12 @@
         null
       ],
       "equipmentEvidence": "ScreenRecording_09-28-2026 20-22-36_1.MP4 1.5秒：画像・G1パワー・全メインアビリティ数値を確認。 以前の確認記録：DPTW4024.MP4 295秒：G1一覧の名称・パワー・メイン効果を確認。",
-      "portrait": "assets/portraits/equipment-sep28-2-1.jpg"
+      "portrait": "assets/portraits/equipment-sep28-2-1.jpg",
+      "unlockGrades": [
+        1,
+        5,
+        6
+      ]
     },
     "equipment-cb7c3c9a0271c3": {
       "mainAbilities": [
@@ -2385,7 +2421,7 @@
         }
       ],
       "note": " 動画390秒でG1メインアビリティを確認。",
-      "raid": "unknown",
+      "raid": "no",
       "name": "エレメンタルカリガ",
       "slot": "脚部",
       "power": 12000,
@@ -2398,7 +2434,12 @@
         null
       ],
       "equipmentEvidence": "ScreenRecording_09-28-2026 20-25-29_1.MP4 1.5秒：画像・G1パワー・全メインアビリティ数値を確認。 以前の確認記録：DPTW4024.MP4 390秒：G1一覧の名称・パワー・メイン効果を確認。",
-      "portrait": "assets/portraits/equipment-sep28-4-1.jpg"
+      "portrait": "assets/portraits/equipment-sep28-4-1.jpg",
+      "unlockGrades": [
+        1,
+        5,
+        6
+      ]
     },
     "equipment-cb4f57d39f3640": {
       "raid": "yes",
@@ -6465,7 +6506,13 @@
           "pattern": ""
         }
       ],
-      "portrait": "assets/portraits/equipment-sep28-3-2.jpg"
+      "portrait": "assets/portraits/equipment-sep28-3-2.jpg",
+      "raid": "no",
+      "unlockGrades": [
+        1,
+        5,
+        6
+      ]
     },
     "equipment-64fda0a5c81c4a": {
       "name": "オルムアーマー",
@@ -8045,7 +8092,13 @@
           "pattern": ""
         }
       ],
-      "portrait": "assets/portraits/equipment-sep28-5-1.jpg"
+      "portrait": "assets/portraits/equipment-sep28-5-1.jpg",
+      "raid": "no",
+      "unlockGrades": [
+        1,
+        5,
+        6
+      ]
     },
     "equipment-ac544a03df3fb1": {
       "name": "冒涜のネックレス",
