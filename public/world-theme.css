@@ -1,0 +1,19 @@
+/* Decorative artwork stays separate from interactive content. */
+.main{position:relative;isolation:isolate;--world-art:url('./assets/world/battlefield.png')}
+.main[data-scene="embers"]{--world-art:url('./assets/world/embers.png')}
+.main[data-scene="city"]{--world-art:url('./assets/world/city.png')}
+.main[data-scene="arca"]{--world-art:url('./assets/world/arca.png')}
+.main[data-scene="ensemble"]{--world-art:url('./assets/world/ensemble.png')}
+.main[data-scene="confrontation"]{--world-art:url('./assets/world/confrontation.png')}
+.main[data-scene="ensemble"]::before{background-image:linear-gradient(180deg,rgba(250,248,251,.86),rgba(250,248,251,.93)),var(--world-art)}
+.main::before{content:"";position:fixed;inset:0 0 0 244px;z-index:-1;pointer-events:none;background-image:linear-gradient(180deg,rgba(247,249,252,.78),rgba(247,249,252,.88)),var(--world-art);background-size:cover;background-position:center}
+.main[data-scene="city"]::before{background-size:cover,auto 125%;background-position:center}
+.main .topbar{background:rgba(255,255,255,.94)}
+.construction-page{background:rgba(247,243,236,.78)}
+.altar-tabs{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 18px;padding:0 0 14px;border-bottom:1px solid #e5dccd}
+.altar-tabs [role="tab"]{flex:1;min-width:62px;min-height:58px;padding:8px;border:1px solid #ded6c9;border-radius:12px;background:#faf7f1;color:#514839;font-weight:700}
+.altar-tabs small{display:block;font-size:11px;margin-top:4px;font-weight:400}
+.altar-tabs [aria-selected="true"]{background:#725b3b;color:white;border-color:#725b3b;box-shadow:0 3px 8px #725b3b20}
+.altar-tabs [role="tab"]:focus-visible{outline:3px solid #5476a9;outline-offset:3px}
+@media(max-width:760px){.main::before{left:0}.altar-tabs{gap:5px}.altar-tabs [role="tab"]{min-width:58px;flex:1 0 20%}}
+@media print{.main::before{display:none}}

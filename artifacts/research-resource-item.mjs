@@ -1,0 +1,2 @@
+import fs from 'node:fs';
+let p='public/research-plan-view.js',s=fs.readFileSync(p,'utf8');s=s.replace('資源効率アイテム（所持量×1.1）','資源効率アイテム（用意量÷1.1）');s=s.replace("${c.alchemist?' ／ アルケミストあり':''}","${c.alchemist?' ／ アルケミストあり':''}${c.resourceItem?' ／ 資源効率アイテム適用（用意量）':''}");s=s.replace('各段階の資源＝基本資源÷（1＋研究資源効率÷100）。','各段階の必要資源＝基本資源÷（1＋研究資源効率÷100）を切り上げ。資源効率アイテム選択時は、さらに÷1.1を切り上げた「使用前に用意する量」を表示します。');fs.writeFileSync(p,s);

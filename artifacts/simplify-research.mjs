@@ -1,0 +1,31 @@
+import fs from 'node:fs';
+const p='public/research-ui.js';let s=fs.readFileSync(p,'utf8');
+s="import {openResearchLevels} from './research-level-dialog.js';\n"+s;
+s=s.replace(/<button data-lab="toggle-plan">.*?<\/button>/,'');
+s=s.replace('必要な前提Lvは各項目で確認・登録できます。','項目の詳細から育成状況と効果を登録できます。');
+const a=s.indexOf('<details class="research-disclosure"><summary>各Lvの資源・時間</summary>'),b=s.indexOf('<details class="research-disclosure"><summary>アビリティ効果',a);
+s=s.slice(0,a)+s.slice(b);
+s=s.replace('</strong></div>${planner(c,true)}','</strong><button type="button" data-lab="levels" data-id="${id}">各Lvの資源・時間</button></div>${planner(c,true)}');
+s=s.replace('アビリティ効果・前提研究の詳細と登録','アビリティ効果の詳細と登録');
+const c=s.indexOf('<h3>前提研究</h3>'),d=s.indexOf('<button data-lab="spec"',c);s=s.slice(0,c)+s.slice(d);s=s.replace('効果値・前提Lvを登録','効果値を登録');
+const e=s.indexOf(' function requirementRow('),f=s.indexOf(' function editSpec(',e);s=s.slice(0,e)+s.slice(f);
+const g=s.indexOf('<h3>前提研究と必要Lv</h3>'),h=s.indexOf('<label class="field">出典・確認メモ',g);s=s.slice(0,g)+s.slice(h);
+s=s.replace(/<label class="check"><input name="includeParents".*?<\/label>/,'');
+s=s.replace("c.includeParents=d.has('includeParents');",'c.includeParents=false;');
+s=s.replace(/c.stock=\[0,1,2,3\]\.map\(i=>\{.*?\}\);return validatePlan/, 'return validatePlan');
+s=s.replace('const actual=effective(c),r=planResearch', 'const actual={...effective(c),includeParents:false},r=planResearch');
+s=s.replace("if(action==='spec')editSpec(id);", "if(action==='levels')openResearchLevels(nBy(id),spec(nBy(id)),current(nBy(id)),esc);if(action==='spec')editSpec(id);");
+s=s.replace("if(action==='toggle-plan'){planning=!planning;render();}",'');
+s=s.replace("if(action==='add-parent')$('#lab-parents').insertAdjacentHTML('beforeend',requirementRow({},nBy(id)));if(action==='remove-parent')b.closest('.lab-requirement-row').remove();",'');
+s=s.replace("requirementsKnown:d.has('known'),requirements:[...f.querySelectorAll('.lab-requirement-row')].map(el=>({id:el.querySelector('[name=parent-id]').value,level:Number(el.querySelector('[name=parent-level]').value)}))", "requirementsKnown:spec(n).requirementsKnown,requirements:spec(n).requirements");
+fs.writeFileSync(p,s);
+p='public/research-plan-view.js';s=fs.readFileSync(p,'utf8');
+const extraStart=s.indexOf('<div class="calc-extra">'),extraEnd=s.indexOf('</div><p class="hint">所持資源',extraStart);const extra=s.slice(extraStart+24,extraEnd); // use explicit substring below
+const extras=s.slice(s.indexOf('<label class="field">雫',extraStart),extraEnd);
+const nestStart=s.indexOf('<details class="research-disclosure"><summary>追加補正・所持資源'),nestEnd=s.indexOf('</details></details></div>`;',nestStart);
+s=s.slice(0,nestStart)+s.slice(nestEnd+10); // retain outer disclosure closing
+s=s.replace('</select></label></div><details class="research-disclosure"><summary>研究速度', '</select></label>'+extras+'</div><details class="research-disclosure"><summary>研究速度');
+const stockStart=s.indexOf('<details class="research-disclosure"><summary>所持資源と不足量'),stockEnd=s.indexOf('<details class="research-disclosure"><summary>研究ごとの資源・時間',stockStart);s=s.slice(0,stockStart)+s.slice(stockEnd);
+s=s.replace('partial=!r.complete||unknown','partial=r.missing.some(Boolean)||unknown');s=s.replace('所持量は資源効率アイテム選択時のみ×1.1。不足量は最低0。','');s=s.replace('未確認の前提・費用は総額に含められません。','未確認の費用は小計に含めません。表示した研究・Lvのみを計算します。');
+fs.writeFileSync(p,s);
+p='public/research-route-ui.js';s=fs.readFileSync(p,'utf8').replace('includeParents:true','includeParents:false').replace('登録済みの前提研究も含めた見積もりです。','選択した研究・Lvの残り分を計算します。');fs.writeFileSync(p,s);

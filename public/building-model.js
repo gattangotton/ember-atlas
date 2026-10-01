@@ -4,7 +4,7 @@ export function validateBuildingRules(input={},buildings=[]){
  if(!input||typeof input!=='object'||Array.isArray(input)||Object.keys(input).length>1000)throw Error('施設条件の形式が違います。');
  const result={},byId=new Map(buildings.map(b=>[b.id,b]));
  for(const [key,value] of Object.entries(input)){
-  const match=key.match(/^(building-\d+):(\d+)$/),b=match&&byId.get(match[1]),lv=match&&+match[2];
+  const match=key.match(/^(building-\d+(?:-(?:fire|water|wind|thunder|earth|light|dark))?):(\d+)$/),b=match&&byId.get(match[1]),lv=match&&+match[2];
   if(!b?.levels.some(l=>l.level===lv)||!value||!['unknown','known','none'].includes(value.status)||!Array.isArray(value.requirements)||value.requirements.length>30||typeof value.note!=='string'||value.note.length>1500)throw Error('施設・レベル・前提条件を確認してください。');
   const seen=new Set(),requirements=value.requirements.map(r=>{const target=byId.get(r.buildingId);if(!target?.levels.some(l=>l.level===r.level)||seen.has(r.buildingId)||(r.buildingId===b.id&&r.level>=lv))throw Error('前提施設のレベルや重複を確認してください。');seen.add(r.buildingId);return {buildingId:r.buildingId,level:r.level};});
   if(value.status==='known'&&!requirements.length||value.status!=='known'&&requirements.length)throw Error('前提条件の確認状態と施設の登録内容を一致させてください。');

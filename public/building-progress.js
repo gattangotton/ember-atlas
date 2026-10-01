@@ -25,7 +25,7 @@ export function validateBuildingEffects(input={}){
 export function buildingSources(state={}){
  return BUILDINGS.flatMap(b=>(state.buildingEffects?.[b.id]||[]).flatMap((effect,i)=>
   (state.buildingProgress?.[b.id]||[]).map((level,j)=>({
-   id:b.id+'-'+j+'-'+i,buildingId:b.id,type:'building',kind:'施設',label:b.name+' '+(j+1)+'棟目',
+   id:b.id+'-'+j+'-'+i,buildingId:b.id,type:'building',kind:'施設',label:(b.id==='building-3'?'祭壇（属性未設定）':b.name)+' '+(j+1)+'棟目',
    location:`施設建設 ＞ ${b.name} ＞ ${j+1}棟目 Lv.${level}`,ability:effect.name,unit:effect.unit,level,
    acquired:level>0,value:level===0?0:effect.values[level-1]??null,available:effect.values.at(-1)
   }))));
