@@ -1,3 +1,4 @@
+import {compareCoreNames,coreFamily} from './core-order.js';
 import {abilityName} from './ability-names.js';
 import {abilityCategory} from './strategy-model.js';
 import {groupCore,coreStage,coreThresholds,ROMAN} from './mechanics.js';
@@ -6,11 +7,11 @@ import {gameIcon} from './game-icons.js';
 export function createCoreBrowser({records,state,esc,portrait,val}){
  let tab='内政',query='';
  const selected=new Set(),tabs=['内政','軍事','魔獣討伐'];
- const groups=()=>groupCore(records());
+ const groups=()=>groupCore(records()).sort(([a],[b])=>compareCoreNames(a,b));
  function results(){
   const q=abilityName(query).toLowerCase();
   const shown=groups().filter(([name])=>abilityCategory(name)===tab&&(!selected.size||selected.has(name))).map(([name,rows])=>[name,rows.filter(({character})=>(name+' '+character.name).normalize('NFKC').toLowerCase().includes(q))]).filter(([,rows])=>rows.length);
-  return `<p class="hint" role="status">${shown.length}種類を表示 · 色付きの数値は現在の解放段階</p>${shown.length?shown.map(([name,rows])=>`<section class="panel core-group"><div class="panel-head"><h2>${esc(name)}</h2><span class="badge">${rows.length}人</span></div>${[6,5].map(count=>{
+  return `<p class="hint" role="status">${shown.length}種類を表示 · 色付きの数値は現在の解放段階</p>${shown.length?shown.map(([name,rows])=>`<section class="panel core-group"><div class="panel-head"><h2><small class="core-family">${esc(coreFamily(name))}</small>${esc(name)}</h2><span class="badge">${rows.length}人</span></div>${[6,5].map(count=>{
    const subset=rows.filter(({character})=>coreThresholds(character).length===count);if(!subset.length)return '';
    const thresholds=coreThresholds(subset[0].character);
    return `<div class="table-wrap"><table class="core-values"><caption>${count===6?'☆5スタート':'☆3・☆4スタート'}</caption><thead><tr><th scope="col">エンバース</th>${thresholds.map((n,i)=>`<th scope="col">${ROMAN[i]} <small>（${n?'合計'+n:'獲得時'}）</small></th>`).join('')}<th scope="col">登録</th></tr></thead><tbody>${subset.map(({character:r,effect:e})=>{
