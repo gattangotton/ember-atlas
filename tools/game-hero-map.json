@@ -1,0 +1,286 @@
+{
+  "characters-440a28ef782ea8": {
+    "masterId": 2,
+    "previousName": "サクヤ"
+  },
+  "characters-5c52e5ab9a0445": {
+    "masterId": 3,
+    "previousName": "ニュクス"
+  },
+  "characters-8db88140429d09": {
+    "masterId": 4,
+    "previousName": "アリアディス"
+  },
+  "characters-5b9e4a08e72e30": {
+    "masterId": 5,
+    "previousName": "紫津乃"
+  },
+  "characters-a9b41f6ce19866": {
+    "masterId": 6,
+    "previousName": "ヴァルト"
+  },
+  "characters-eb51ad57e71583": {
+    "masterId": 7,
+    "previousName": "ジュード"
+  },
+  "characters-2150ff6a97fa6e": {
+    "masterId": 8,
+    "previousName": "シグルド"
+  },
+  "characters-4aefd9df8d0049": {
+    "masterId": 9,
+    "previousName": "ダリューシュ"
+  },
+  "characters-cd3422c4685e8e": {
+    "masterId": 10,
+    "previousName": "アイテール"
+  },
+  "characters-b458c97475bb67": {
+    "masterId": 11,
+    "previousName": "ケイオス"
+  },
+  "characters-3f424e46e80938": {
+    "masterId": 12,
+    "previousName": "エレボス"
+  },
+  "characters-5b1de0c4dd2459": {
+    "masterId": 13,
+    "previousName": "ヘーメラー"
+  },
+  "characters-c79e89380bd05d": {
+    "masterId": 14,
+    "previousName": "コンドウィン"
+  },
+  "characters-db0f5c32fa2857": {
+    "masterId": 15,
+    "previousName": "グウィン"
+  },
+  "characters-3dc3b0a7d470a6": {
+    "masterId": 16,
+    "previousName": "キエルガン"
+  },
+  "characters-6a6634270dfe80": {
+    "masterId": 17,
+    "previousName": "エリアノン"
+  },
+  "characters-1bb1ed4b254a1e": {
+    "masterId": 18,
+    "previousName": "暁"
+  },
+  "characters-4e0b6caefa8cf8": {
+    "masterId": 19,
+    "previousName": "美鈴"
+  },
+  "characters-8148464efdae30": {
+    "masterId": 20,
+    "previousName": "葉 早雲"
+  },
+  "characters-b58ed5cf5a7662": {
+    "masterId": 21,
+    "previousName": "白幽姫"
+  },
+  "characters-773d92ec90b8b4": {
+    "masterId": 22,
+    "previousName": "ニャマ"
+  },
+  "characters-57bc609ba0adb2": {
+    "masterId": 23,
+    "previousName": "サバナ"
+  },
+  "characters-2bda62176d5069": {
+    "masterId": 24,
+    "previousName": "チモシー"
+  },
+  "characters-d2610d3943975e": {
+    "masterId": 25,
+    "previousName": "ライガ"
+  },
+  "characters-1465fb05fe2597": {
+    "masterId": 26,
+    "previousName": "リアム"
+  },
+  "characters-0c373231db6d2d": {
+    "masterId": 27,
+    "previousName": "アレクシア"
+  },
+  "characters-7f0a2057d62605": {
+    "masterId": 28,
+    "previousName": "シーピー"
+  },
+  "characters-c8727d12d04fef": {
+    "masterId": 29,
+    "previousName": "ノアレス"
+  },
+  "characters-a8ec8ef0c81561": {
+    "masterId": 30,
+    "previousName": "カーラ"
+  },
+  "characters-b1e983d4fea472": {
+    "masterId": 31,
+    "previousName": "エイル"
+  },
+  "characters-c487df72af2864": {
+    "masterId": 32,
+    "previousName": "ブリュンヒルド"
+  },
+  "characters-f476f0590332ec": {
+    "masterId": 33,
+    "previousName": "ノート"
+  },
+  "characters-fda87f117c0f91": {
+    "masterId": 34,
+    "previousName": "アイーシャ"
+  },
+  "characters-ede1ff47d9d504": {
+    "masterId": 35,
+    "previousName": "カリーム"
+  },
+  "characters-a3f0c6470792ae": {
+    "masterId": 36,
+    "previousName": "シーリーン"
+  },
+  "characters-3c88f95b8922dc": {
+    "masterId": 37,
+    "previousName": "レイン"
+  },
+  "characters-5054bf1bd5375f": {
+    "masterId": 38,
+    "previousName": "フィーナ"
+  },
+  "characters-8192e602022eb3": {
+    "masterId": 39,
+    "previousName": "ガイア"
+  },
+  "characters-0e0fe8e6e984a2": {
+    "masterId": 40,
+    "previousName": "ヘラネア"
+  },
+  "characters-db7e822e9bff84": {
+    "masterId": 41,
+    "previousName": "メリケ"
+  },
+  "characters-5fe90a499c46ce": {
+    "masterId": 42,
+    "previousName": "ウラノス"
+  },
+  "characters-c03d1724417458": {
+    "masterId": 43,
+    "previousName": "マエル"
+  },
+  "characters-1cfffa16ea0eff": {
+    "masterId": 44,
+    "previousName": "ビランディ"
+  },
+  "characters-ae1a994740add3": {
+    "masterId": 45,
+    "previousName": "イヴァール"
+  },
+  "characters-367454b2e27164": {
+    "masterId": 46,
+    "previousName": "ウルファ"
+  },
+  "characters-48460443dbafca": {
+    "masterId": 47,
+    "previousName": "エプレ"
+  },
+  "characters-9d3f4739ee2506": {
+    "masterId": 48,
+    "previousName": "朱天残夜"
+  },
+  "characters-4bd23ce9f5b48f": {
+    "masterId": 49,
+    "previousName": "叢雲昏葉"
+  },
+  "characters-3e4ba57f2fc464": {
+    "masterId": 51,
+    "previousName": "シャオレイ"
+  },
+  "characters-8d6dc31ae1d0b3": {
+    "masterId": 54,
+    "previousName": "ロウ"
+  },
+  "characters-18d730ace2b5e1": {
+    "masterId": 55,
+    "previousName": "ステラ"
+  },
+  "characters-c58dfe6dc02c1c": {
+    "masterId": 56,
+    "previousName": "エルフリーデ"
+  },
+  "characters-ed15ee0606cf41": {
+    "masterId": 57,
+    "previousName": "エーリカ"
+  },
+  "characters-56d4d6a9a2ebb3": {
+    "masterId": 58,
+    "previousName": "アレフ"
+  },
+  "characters-9b760cb1dad1f3": {
+    "masterId": 59,
+    "previousName": "ライラ"
+  },
+  "characters-64776704d00b57": {
+    "masterId": 60,
+    "previousName": "ジタン"
+  },
+  "characters-cf15cfebb7a8ac": {
+    "masterId": 61,
+    "previousName": "ビビ"
+  },
+  "characters-e2aa67d1e5ce83": {
+    "masterId": 62,
+    "previousName": "水着・ウルファ"
+  },
+  "characters-54762601d58632": {
+    "masterId": 63,
+    "previousName": "水着・紫津乃"
+  },
+  "characters-5c19c5dfd9c3b4": {
+    "masterId": 64,
+    "previousName": "2B"
+  },
+  "characters-5667fbfe034add": {
+    "masterId": 65,
+    "previousName": "フィオ"
+  },
+  "characters-dad57c5e040da2": {
+    "masterId": 66,
+    "previousName": "カイネ"
+  },
+  "characters-c21461d7fa0d94": {
+    "masterId": 67,
+    "previousName": "ゲラルデスカ"
+  },
+  "characters-f033f1e55af0cb": {
+    "masterId": 68,
+    "previousName": "【蒼炎】ニュクス"
+  },
+  "characters-6ff104c4cf1547": {
+    "masterId": 69,
+    "previousName": "ギュスターヴ"
+  },
+  "characters-333b400adf68b4": {
+    "masterId": 70,
+    "previousName": "ジニー"
+  },
+  "characters-b7e697a6f7f182": {
+    "masterId": 71,
+    "previousName": "ティーダ"
+  },
+  "characters-4af567ce870d78": {
+    "masterId": 72,
+    "previousName": "ユウナ"
+  },
+  "characters-7e4ca240547732": {
+    "masterId": 73,
+    "previousName": "魔人・フィーナ"
+  },
+  "characters-1fc38c2a36427c": {
+    "masterId": 75,
+    "previousName": "[情夏]エプレ"
+  },
+  "characters-f5a44e040bc9c5": {
+    "masterId": 76,
+    "previousName": "[爽涼]サクヤ"
+  }
+}

@@ -1,12 +1,12 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {validatePlan,planResearch} from '../public/strategy-model.js';
+import {validatePlan,planResearch,applyAllianceSupport} from '../public/strategy-model.js';
 import {researchResource,researchTime,researchPreparation} from '../public/research-plan-view.js';
 const nodes=['a','b'].map(id=>({id,name:id,lab:1,group:'拠点①',documentedMax:2,levels:[[1000,2000,3000,4000,10000],[2000,4000,6000,8000,20000]]}));
 test('Fountain adds five points to research speed; support reduces remaining time and survives restore',()=>{
  const c={targetId:'a',targetLevel:1,includeParents:false,speed:95,fountain:true,support:30,fixed:100,alchemist:true,efficiency:25};
  const r=planResearch(nodes,{}, {},c);
- assert.equal(r.totals[4],Math.ceil((10000/2/1.1-100)*.7));
+ assert.equal(r.totals[4],2646); // Each of 30 supports removes the 60-second minimum.
  assert.deepEqual(r.totals.slice(0,4),[800,1600,2400,3200]);
  const restored=validatePlan(JSON.parse(JSON.stringify(validatePlan(c,nodes))),nodes);
  assert.equal(restored.fountain,5);assert.equal(restored.support,30);
@@ -22,11 +22,18 @@ test('Route totals use the same modifiers and per-level rounding as individual e
  const route=planResearch(nodes,{a:1},{},{...c,routeTargets:[{id:'b',level:1}]});
  assert.deepEqual(route.totals,a.totals.map((n,i)=>n+b.totals[i]));
 });
-test('Research estimates display two decimals without rounding the calculation inputs',()=>{
+test('Research estimates omit fractional zeros and retain up to two decimal places',()=>{
  assert.equal(researchResource(1234567),'1.23M');assert.equal(researchResource(1250),'1.25K');
- assert.equal(researchResource(12),'12.00');assert.equal(researchResource(null),'未確認');
- assert.equal(researchTime(3600),'1.00時間');assert.equal(researchTime(90000),'1.04日');
- assert.equal(researchTime(0),'0.00秒');assert.equal(researchTime(null),'未確認');
+ assert.equal(researchResource(12),'12');assert.equal(researchResource(null),'未確認');
+ assert.equal(researchTime(3600),'1時間');assert.equal(researchTime(90000),'1.04日');
+ assert.equal(researchTime(0),'0秒');assert.equal(researchTime(null),'未確認');
+});
+test('Alliance help compounds remaining time and clamps at zero',()=>{
+ assert.equal(applyAllianceSupport(10000,2),9801);
+ assert.equal(applyAllianceSupport(6000,2),5880);
+ assert.equal(applyAllianceSupport(61,1),1);
+ assert.equal(applyAllianceSupport(59,1),0);
+ assert.equal(applyAllianceSupport(59.2,0),60);
 });
 
 test('Fountain 2.5 percent stays distinct from five and boolean legacy records migrate safely',()=>{

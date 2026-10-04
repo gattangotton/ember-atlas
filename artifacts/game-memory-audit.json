@@ -1,0 +1,51 @@
+{
+  "total": 90,
+  "imported": 82,
+  "unnamedExcluded": [
+    1,
+    4,
+    5,
+    6,
+    7,
+    9,
+    11,
+    12
+  ],
+  "mainEffectsUnconfirmed": [
+    {
+      "id": "memory-10007",
+      "name": "忘れられし者"
+    },
+    {
+      "id": "memory-10009",
+      "name": "テンプルドラゴン"
+    }
+  ],
+  "images": 82,
+  "generationCosts": 82,
+  "paidSources": 43,
+  "eventExchangeOrMonsterSources": 34,
+  "acquisitionUnconfirmed": [
+    {
+      "id": "memory-10017",
+      "name": "ウンギャ"
+    },
+    {
+      "id": "memory-10018",
+      "name": "コルテロ"
+    },
+    {
+      "id": "memory-10019",
+      "name": "ロストキッズ"
+    },
+    {
+      "id": "memory-10023",
+      "name": "骸"
+    },
+    {
+      "id": "memory-10029",
+      "name": "オルム"
+    }
+  ],
+  "subAbilityCandidates": "Enhancer field 8 contains empty objects; candidate values and probabilities are not inferred."
+}

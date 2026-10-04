@@ -353,7 +353,7 @@
     },
     {
       "category": "内政",
-      "name": "最大同盟支援資源数",
+      "name": "最大同盟支援要請数",
       "unit": "",
       "reference": {
         "total": 30,

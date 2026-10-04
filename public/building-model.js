@@ -1,3 +1,5 @@
+export const formatBuildingNumber=v=>v==null?'未確認':v.toLocaleString('ja-JP',{maximumFractionDigits:1});
+export const formatBuildingResource=v=>v==null?'未確認':Math.abs(v)>=1e6?formatBuildingNumber(v/1e6)+'M':Math.abs(v)>=1e3?formatBuildingNumber(v/1e3)+'K':formatBuildingNumber(v);
 export const formatResource=v=>v===null||v===undefined?'未確認':Math.abs(v)>=1e6?(v/1e6).toLocaleString('en-US',{maximumFractionDigits:6,useGrouping:false})+'M':Math.abs(v)>=1e3?(v/1e3).toLocaleString('en-US',{maximumFractionDigits:3,useGrouping:false})+'K':v.toLocaleString('en-US',{maximumFractionDigits:3});
 export function formatDuration(seconds){if(seconds===null||seconds===undefined)return '未確認';let n=Math.round(seconds);const days=Math.floor(n/86400);n%=86400;const hours=Math.floor(n/3600);n%=3600;const minutes=Math.floor(n/60);n%=60;return [[days,'日'],[hours,'時間'],[minutes,'分'],[n,'秒']].filter(([v])=>v).map(([v,u])=>v+u).join(' ')||'0秒';}
 export function validateBuildingRules(input={},buildings=[]){

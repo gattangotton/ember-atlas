@@ -1,0 +1,4432 @@
+{
+  "version": 1,
+  "capturedAt": "2026-10-03",
+  "files": {
+    "Enhancer": {
+      "sha256": "b6bda402e092a56b143a97461754fc8a5558d2e3ff89e14bb268709c449458b8",
+      "bytes": 67701
+    },
+    "Ability": {
+      "sha256": "04083826fc3186eb3b9063c6c1c810cbe1376f5a10a2abcc11ed135dcb41382a",
+      "bytes": 26481
+    },
+    "ShopPack": {
+      "sha256": "5f79c01f9250b82cd1ffc7d3633eb50d45a9bf9e381ddb8df1af7aff0b2c8d9e",
+      "bytes": 330705
+    },
+    "ShopItem": {
+      "sha256": "fb4d81c75322944dbeaf83a19f3e90814c6268f3e0ecdc2b5c7beb451a1e05b5",
+      "bytes": 40405
+    },
+    "Shop": {
+      "sha256": "37583c11d04f329a7dc64adac614eda69b98e837b4527f0ac14c6a69eac14ead",
+      "bytes": 40367
+    },
+    "Event": {
+      "sha256": "14478d6d81c408a0c80a8f29878a72c737ea3778c93c7141d5e56aa78cb7fa1a",
+      "bytes": 598366
+    },
+    "Consumable": {
+      "sha256": "fc089d4e6df2aa12b7dec3561865cb91a77b237ffd6765469b5f469063d32bfc",
+      "bytes": 81819
+    },
+    "Piece": {
+      "sha256": "1a0ecf8871ae6988e7991970504a7d8d9d0b930b1320f5e059c31cb5a801c20a",
+      "bytes": 21969
+    },
+    "Announcement": {
+      "sha256": "c0d221aaf6157fe8a6315f0f5fdea5d411ca2b2aea2c256fac27268a4caa574c",
+      "bytes": 3323339
+    }
+  },
+  "records": [
+    {
+      "id": "memory-2",
+      "masterId": 2,
+      "name": "盤上の師弟対決",
+      "rarity": 5,
+      "description": "休憩室は静かな熱気に包まれていた。\n戦術ボードゲームで対戦しているのは\nケイオスとエレボスのふたり。\nかつては天才科学者であるエレボスに師事したケイオスも\n今や司令官、多忙なふたりが揃って息抜きをしている姿を\n見ることは珍しい。\n\n「私の勝利は10手先から決まっていましたよ」\n今回の対戦はエレボスに軍配が上がったようだ。\n\n「見事だ。―――だが手の内を明かしすぎたようだな“わが師”よ」\nケイオスが悔しげな表情を見せる。\nだが、その裏で彼の頭脳は次の勝ち筋を模索していた。\n\n知者は敗戦より学び同じ轍を二度とは踏まない。\n次の対決は、いったいどのような結末となるのだろうか。",
+      "mainEffects": [
+        {
+          "abilityId": 1101,
+          "name": "対悪魔攻撃力",
+          "unit": "%",
+          "value": 55
+        },
+        {
+          "abilityId": 501,
+          "name": "対悪魔素材倍化率",
+          "unit": "%",
+          "value": 15
+        },
+        {
+          "abilityId": 1005,
+          "name": "水属性リーダー攻撃力",
+          "unit": "%",
+          "value": 23
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00002.png",
+      "imageId": 2,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 2"
+      },
+      "acquisition": [
+        {
+          "type": "paid",
+          "name": "盤上の師弟対決メモリ オーブパック (初回)",
+          "master": "ShopPack 11521",
+          "detail": "メモリのかけらを含むパック"
+        },
+        {
+          "type": "paid",
+          "name": "盤上の師弟対決メモリ オーブパック",
+          "master": "ShopPack 11522",
+          "detail": "メモリのかけらを含むパック"
+        }
+      ],
+      "paidAvailable": true,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 2（2026-10-03取得）"
+    },
+    {
+      "id": "memory-3",
+      "masterId": 3,
+      "name": "青いバラの花言葉",
+      "rarity": 5,
+      "description": "青いバラ……かつては“不可能”の代名詞と呼ばれた儚き花。\n遺伝子操作が当たり前となったプロメテアにおいてはそれも過去の逸話だ。\n\n植物、動物、ありとあらゆるものを人は都合の良いように作り変えてきた。\n人間自身でさえその例外ではなかった。\n\n変容を重ねた人間は、自己の本質を見失いつつあるのではないか。\nいや、すでに人ではなくなった存在が求めるべきは、人間とは異なる本質なのではないか。\n\n実存と本質の順序が曖昧になっていく世界で、ニュクスはいつしか青いバラに自分を重ねるようになっていった。",
+      "mainEffects": [
+        {
+          "abilityId": 1100,
+          "name": "対魔獣攻撃力",
+          "unit": "%",
+          "value": 25
+        },
+        {
+          "abilityId": 500,
+          "name": "対魔獣素材倍化率",
+          "unit": "%",
+          "value": 9
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00003.png",
+      "imageId": 3,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 3"
+      },
+      "acquisition": [
+        {
+          "type": "paid",
+          "name": "青いバラの花言葉メモリ オーブパック (初回)",
+          "master": "ShopPack 10511",
+          "detail": "メモリのかけらを含むパック"
+        },
+        {
+          "type": "paid",
+          "name": "青いバラの花言葉メモリ オーブパック",
+          "master": "ShopPack 10512",
+          "detail": "メモリのかけらを含むパック"
+        }
+      ],
+      "paidAvailable": true,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 3（2026-10-03取得）"
+    },
+    {
+      "id": "memory-8",
+      "masterId": 8,
+      "name": "茶道も武人の嗜み",
+      "rarity": 5,
+      "description": "茶の道は心を養う道。\n戦いに明け暮れる戦士たちも、平時には茶道にてその精神を\n鍛える。\nそれは天狗の一族の若き当主である美鈴も例外ではなかった。\n\n人の上に立つものは何事にも動じない山のような心を身につけなくてはならない。\n目付け役の早雲は期待と愛情を込め厳しく指導する。\n\n「美鈴様……？　落ち着きがないようですぞ？」\n「あ、脚が痺れたのじゃ……助けてくれー！」\n\n千里の道も一歩から。\n美鈴の成長にはまだまだ長い時間が必要なようだ。",
+      "mainEffects": [
+        {
+          "abilityId": 1000,
+          "name": "攻撃力",
+          "unit": "%",
+          "value": 15
+        },
+        {
+          "abilityId": 1015,
+          "name": "集結部隊時攻撃力",
+          "unit": "%",
+          "value": 36
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00008.png",
+      "imageId": 8,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 8"
+      },
+      "acquisition": [
+        {
+          "type": "paid",
+          "name": "茶道も武人の嗜みメモリ オーブパック (初回)",
+          "master": "ShopPack 10541",
+          "detail": "メモリのかけらを含むパック"
+        },
+        {
+          "type": "paid",
+          "name": "茶道も武人の嗜みメモリ オーブパック",
+          "master": "ShopPack 10542",
+          "detail": "メモリのかけらを含むパック"
+        }
+      ],
+      "paidAvailable": true,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 8（2026-10-03取得）"
+    },
+    {
+      "id": "memory-10",
+      "masterId": 10,
+      "name": "氷の枷",
+      "rarity": 5,
+      "description": "一歩先も見えないほどの吹雪。\nこの状況で山を越えるなど人間には不可能だろう。\n……そう、人間では。\n\nヴァルキリーは戦うために生まれた。\nいつからか人間に使役され、今やそれ以外の生き方を知らない。\n吹雪の中、山を越えての奇襲。\nそんな無茶な要求でさえ拒否することはできない。\n\n先の見えない白い闇は、ブリュンヒルドの心を映しているかのようだった。\n彼女を信じ、ついてきてくれる仲間を守り抜けるのだろうか。\n背中の翼は凍り付き、もはや羽ばたくことを忘れてしまっていた。",
+      "mainEffects": [
+        {
+          "abilityId": 1003,
+          "name": "騎兵攻撃力",
+          "unit": "%",
+          "value": 30
+        },
+        {
+          "abilityId": 1900,
+          "name": "行軍速度",
+          "unit": "%",
+          "value": 5
+        },
+        {
+          "abilityId": 1014,
+          "name": "部隊時攻撃力",
+          "unit": "%",
+          "value": 30
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00010.png",
+      "imageId": 10,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 10"
+      },
+      "acquisition": [
+        {
+          "type": "paid",
+          "name": "氷の枷メモリ オーブパック(初回)",
+          "master": "ShopPack 12921",
+          "detail": "メモリのかけらを含むパック"
+        },
+        {
+          "type": "paid",
+          "name": "氷の枷メモリ オーブパック",
+          "master": "ShopPack 12922",
+          "detail": "メモリのかけらを含むパック"
+        }
+      ],
+      "paidAvailable": true,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 10（2026-10-03取得）"
+    },
+    {
+      "id": "memory-13",
+      "masterId": 13,
+      "name": "ｽｶﾍﾞﾝｼﾞｬｰﾊﾝﾄの季節",
+      "rarity": 5,
+      "description": "「大漁大漁～！　こんだけあればなんでも作れそう！」\n廃工場に響く少女の歓声に、けたたましい破壊音が続く。\n\nここはかつて人とロボットがともに働く生産工場だった場所。\n労働環境の劣悪さから人々は暴動をおこし、事態を収拾できないまま工場は廃棄された。\n\n今では主人と目的を失ったロボット“ラスティ”たちが徘徊する危険地帯だが、機械作りを趣味とするアリア＝ディスにとっては宝の山だ。\n\n次に作るのは新しい武器か、新しい乗り物か、創作意欲に果てはない。\n今日も彼女の手によって、朽ちた機械に新たな命が吹き込まれる。",
+      "mainEffects": [
+        {
+          "abilityId": 1008,
+          "name": "雷属性リーダー攻撃力",
+          "unit": "%",
+          "value": 45
+        },
+        {
+          "abilityId": 1900,
+          "name": "行軍速度",
+          "unit": "%",
+          "value": 5
+        },
+        {
+          "abilityId": 1000,
+          "name": "攻撃力",
+          "unit": "%",
+          "value": 10
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00013.png",
+      "imageId": 13,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 13"
+      },
+      "acquisition": [
+        {
+          "type": "paid",
+          "name": "スカベンジャーハントの季節メモリ オーブパック(初回)",
+          "master": "ShopPack 12721",
+          "detail": "メモリのかけらを含むパック"
+        },
+        {
+          "type": "paid",
+          "name": "スカベンジャーハントの季節メモリ オーブパック",
+          "master": "ShopPack 12722",
+          "detail": "メモリのかけらを含むパック"
+        }
+      ],
+      "paidAvailable": true,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 13（2026-10-03取得）"
+    },
+    {
+      "id": "memory-14",
+      "masterId": 14,
+      "name": "新しい絵本",
+      "rarity": 5,
+      "description": "マスターさん、早く来ないかな。\n今日は新しい絵本を一緒に読んでくれるって約束だったのに……\n毎日毎日、色んな人がマスターさんに仕事押し付けていくんだもん。\n何人かこっそり“あんさつ”しちゃおうかな、なんて。\n\n今日の絵本は特に楽しみなの。\n絵がなんだかズィーヤードみたいでちょっと懐かしい。\nダリューシュを退治する話だといいな。\n\n……あっ、マスターさんの足音が聞こえてきた。\nあんさつしゃの耳は鋭いのです。\nでも、ずーっと待ってたって思われたらちょっとはずかしいから、今来たばっかりみたいな顔しないと。",
+      "mainEffects": [
+        {
+          "abilityId": 1001,
+          "name": "歩兵攻撃力",
+          "unit": "%",
+          "value": 27.5
+        },
+        {
+          "abilityId": 1900,
+          "name": "行軍速度",
+          "unit": "%",
+          "value": 5
+        },
+        {
+          "abilityId": 1011,
+          "name": "闇属性リーダー攻撃力",
+          "unit": "%",
+          "value": 23
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00014.png",
+      "imageId": 14,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 14"
+      },
+      "acquisition": [
+        {
+          "type": "paid",
+          "name": "新しい絵本メモリ オーブパック (初回)",
+          "master": "ShopPack 11201",
+          "detail": "メモリのかけらを含むパック"
+        },
+        {
+          "type": "paid",
+          "name": "新しい絵本メモリ オーブパック",
+          "master": "ShopPack 11202",
+          "detail": "メモリのかけらを含むパック"
+        }
+      ],
+      "paidAvailable": true,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 14（2026-10-03取得）"
+    },
+    {
+      "id": "memory-15",
+      "masterId": 15,
+      "name": "VISIONS of MANA",
+      "rarity": 5,
+      "description": "わたしたちは、マナの恵みを授かって暮らしています。\n御子がマナの樹に魂を捧げることでマナは循環し、ふたたびマナを授かることができるからです。\n\nはるか昔から、わたしたちは、こうして暮らしてきました。\nこれからも、きっと、マナの樹に魂を捧げながら、生きていくのだと思います。",
+      "mainEffects": [
+        {
+          "abilityId": 1102,
+          "name": "対超獣攻撃力",
+          "unit": "%",
+          "value": 50
+        },
+        {
+          "abilityId": 502,
+          "name": "対超獣素材倍化率",
+          "unit": "%",
+          "value": 13.5
+        },
+        {
+          "abilityId": 1007,
+          "name": "土属性リーダー攻撃力",
+          "unit": "%",
+          "value": 21
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00026.png",
+      "imageId": 26,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 15"
+      },
+      "acquisition": [
+        {
+          "type": "paid",
+          "name": "聖剣伝説シリーズ メモリオーブパック (初回)",
+          "master": "ShopPack 70171",
+          "detail": "メモリのかけらを含むパック"
+        },
+        {
+          "type": "paid",
+          "name": "聖剣伝説シリーズ メモリオーブパック",
+          "master": "ShopPack 70172",
+          "detail": "メモリのかけらを含むパック"
+        }
+      ],
+      "paidAvailable": true,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 15（2026-10-03取得）"
+    },
+    {
+      "id": "memory-16",
+      "masterId": 16,
+      "name": "楽しい夢を見ていって！",
+      "rarity": 5,
+      "description": "「ようこそ、スプリングラビットへ！」\n\nチモシーとニャマとエプレがあなたを出迎える。\nここはスプリングラビット。\nひと時の夢を見せてくれる店。\n\n小さいけれど居心地がよくて、料理はどれも美味しくて。\nどんなに疲れている時だって、ここへ来れば元気が出る。\nまるで魔法のような場所。\n\n今日も彼女たちはあなたを歓迎してくれる。\n他愛ない話に笑い声をあげ、同じ時間を一緒に過ごす。\n\n「明日も来てね。絶対だよ？」\n\n最後にお決まりの約束をひとつ。\nきっと明日も、彼女たちに会いに行こう。",
+      "mainEffects": [
+        {
+          "abilityId": 1001,
+          "name": "歩兵攻撃力",
+          "unit": "%",
+          "value": 27.5
+        },
+        {
+          "abilityId": 1900,
+          "name": "行軍速度",
+          "unit": "%",
+          "value": 5
+        },
+        {
+          "abilityId": 1007,
+          "name": "土属性リーダー攻撃力",
+          "unit": "%",
+          "value": 23
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00016.png",
+      "imageId": 16,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 16"
+      },
+      "acquisition": [
+        {
+          "type": "paid",
+          "name": "楽しい夢を見ていって!メモリ オーブパック (初回)",
+          "master": "ShopPack 11511",
+          "detail": "メモリのかけらを含むパック"
+        },
+        {
+          "type": "paid",
+          "name": "楽しい夢を見ていって!メモリ オーブパック",
+          "master": "ShopPack 11512",
+          "detail": "メモリのかけらを含むパック"
+        }
+      ],
+      "paidAvailable": true,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 16（2026-10-03取得）"
+    },
+    {
+      "id": "memory-17",
+      "masterId": 17,
+      "name": "ぬいぐる眠(みん)",
+      "rarity": 5,
+      "description": "ふわぁ～……ねむ……\nただいま、ネコやんたち、会いたかったよ～。\n最近の私は、ぬいに囲まれて寝るために生きてるといっても過言じゃない……\n\n今日だってと～っても忙しかったんだから。\n朝一番にマスターたちとの朝食兼ミーティング。\nその後は市場を視察……いやいやただのショッピングじゃないよ！\n次にお茶会でみんなとの親交を深めたでしょ～。\nそれについさっきまでは……\nあれ、さっきまで何してたっけ？\n\nあ、もうダメ……\n目が開かない……\nすぅ……",
+      "mainEffects": [
+        {
+          "abilityId": 1003,
+          "name": "騎兵攻撃力",
+          "unit": "%",
+          "value": 27.5
+        },
+        {
+          "abilityId": 1900,
+          "name": "行軍速度",
+          "unit": "%",
+          "value": 5
+        },
+        {
+          "abilityId": 1008,
+          "name": "雷属性リーダー攻撃力",
+          "unit": "%",
+          "value": 23
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00017.png",
+      "imageId": 17,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 17"
+      },
+      "acquisition": [
+        {
+          "type": "paid",
+          "name": "ぬいぐる眠(みん)メモリ オーブパック (初回)",
+          "master": "ShopPack 11401",
+          "detail": "メモリのかけらを含むパック"
+        },
+        {
+          "type": "paid",
+          "name": "ぬいぐる眠(みん)メモリ オーブパック",
+          "master": "ShopPack 11402",
+          "detail": "メモリのかけらを含むパック"
+        }
+      ],
+      "paidAvailable": true,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 17（2026-10-03取得）"
+    },
+    {
+      "id": "memory-18",
+      "masterId": 18,
+      "name": "美しき覚悟",
+      "rarity": 5,
+      "description": "「あなたの本気を、わたくしに見せなさい。紫津乃……！」\n白幽姫の刃が、紫津乃めがけて振り下ろされる。\nその美しくも苛烈な一閃は、まばたきを許さぬほどの鮮やかさで\n好敵手の首を叩き斬らんとしていた。\nそれはちょうど、かよわき獲物に牙を剥く非情なる蛇のごとく。\nだが彼女が宿命と定めし獲物は、彼女がただひとつ狙うのは、\nかつて最強と謳われた鬼の首である。\n\n何も背負わぬふたりだから、雌雄を決することができる。\n真の強者となるため、麗しき白蛇の姫は気高き誇りを刃に託した。",
+      "mainEffects": [
+        {
+          "abilityId": 1001,
+          "name": "歩兵攻撃力",
+          "unit": "%",
+          "value": 25
+        },
+        {
+          "abilityId": 1900,
+          "name": "行軍速度",
+          "unit": "%",
+          "value": 4.5
+        },
+        {
+          "abilityId": 1006,
+          "name": "風属性リーダー攻撃力",
+          "unit": "%",
+          "value": 21
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00018.png",
+      "imageId": 18,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 18"
+      },
+      "acquisition": [
+        {
+          "type": "paid",
+          "name": "美しき覚悟メモリ オーブパック (初回)",
+          "master": "ShopPack 10641",
+          "detail": "メモリのかけらを含むパック"
+        },
+        {
+          "type": "paid",
+          "name": "美しき覚悟メモリ オーブパック",
+          "master": "ShopPack 10642",
+          "detail": "メモリのかけらを含むパック"
+        }
+      ],
+      "paidAvailable": true,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 18（2026-10-03取得）"
+    },
+    {
+      "id": "memory-19",
+      "masterId": 19,
+      "name": "明日、ここで、あなたと",
+      "rarity": 5,
+      "description": "空が破れて、大地が割れて、\nすべての命が焼き尽くされた。\n\n燃えて、燃えて、燃やし尽くして――\n\n絶望の叫びも、怨嗟の声も、\n何も聞こえなくなった。\n\n長い長い時間が過ぎた。\n\n今でも私は待っている。\nあの人が来てくれるのを。\n\n何万何億の明日が過ぎて、\n私の身体が石になって、砂になって、風に運ばれても――\n\n私はここで待ち続ける。\n\nだって、知っているから。\nあの人は必ず迎えに来てくれることを。\n\nだから、静かに明日を待つ。\n\nまだかな……もうすぐかな……\n明日にはきっと……会えるかな……\n\nねえ…………待ってるよ――\n\n――お姉ちゃん。",
+      "mainEffects": [
+        {
+          "abilityId": 1105,
+          "name": "対堕天攻撃力",
+          "unit": "%",
+          "value": 55
+        },
+        {
+          "abilityId": 505,
+          "name": "対堕天素材倍化率",
+          "unit": "%",
+          "value": 15
+        },
+        {
+          "abilityId": 1010,
+          "name": "光属性リーダー攻撃力",
+          "unit": "%",
+          "value": 23
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00019.png",
+      "imageId": 19,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 19"
+      },
+      "acquisition": [
+        {
+          "type": "paid",
+          "name": "明日、ここで、あなたとメモリ オーブパック (初回)",
+          "master": "ShopPack 11061",
+          "detail": "メモリのかけらを含むパック"
+        },
+        {
+          "type": "paid",
+          "name": "明日、ここで、あなたとメモリ オーブパック",
+          "master": "ShopPack 11062",
+          "detail": "メモリのかけらを含むパック"
+        }
+      ],
+      "paidAvailable": true,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 19（2026-10-03取得）"
+    },
+    {
+      "id": "memory-20",
+      "masterId": 20,
+      "name": "とある昼下がりの対話篇",
+      "rarity": 5,
+      "description": "「はいはい、メモを取るのはおしまい。お茶が冷めてしまうわ」\n\n穏やかな午後の日、陽光が降り注ぐいつもの席で。\nテーブルの上にはイチゴのケーキとシンプルなクッキー、ジャムとクリームを添えたスコーン。\nそして忘れちゃいけない、ポットにたっぷり入った熱々の紅茶。もちろんミルクも忘れずに。\n特別なものなんて何も必要ない。\nお気に入りのクロスをかけたテーブルにお茶とお菓子を並べれば、とっても素敵なお茶会が始まるのだから。\n\n「せっかくのお話、全てメモしないと……美味しーっ！？」\n「このスコーンやっば、何これ！？　えっヤバ、うまっ」\n「うふふ、気に入った？　たくさん食べてね」\n\n頭を使う技術者には糖分が必要だの、煮詰まった時には休憩を入れてリフレッシュすべきだの、あれこれ言い訳しながらお茶を飲んでいたのは遠い昔の話。\n今では純粋にお茶が好きで、お菓子が好きで、誰かと話をするのが大好きだから。胸を張って堂々とお客様を招待する。\n何度でも何度でも。今日が特別な日になるように、これからも大切な人たちとお茶会を。",
+      "mainEffects": [
+        {
+          "abilityId": 1002,
+          "name": "弓兵攻撃力",
+          "unit": "%",
+          "value": 25
+        },
+        {
+          "abilityId": 1900,
+          "name": "行軍速度",
+          "unit": "%",
+          "value": 4.5
+        },
+        {
+          "abilityId": 1007,
+          "name": "土属性リーダー攻撃力",
+          "unit": "%",
+          "value": 21
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00020.png",
+      "imageId": 20,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 20"
+      },
+      "acquisition": [
+        {
+          "type": "paid",
+          "name": "とある昼下がりの対話篇メモリ オーブパック (初回)",
+          "master": "ShopPack 10711",
+          "detail": "メモリのかけらを含むパック"
+        },
+        {
+          "type": "paid",
+          "name": "とある昼下がりの対話篇メモリ オーブパック",
+          "master": "ShopPack 10712",
+          "detail": "メモリのかけらを含むパック"
+        }
+      ],
+      "paidAvailable": true,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 20（2026-10-03取得）"
+    },
+    {
+      "id": "memory-21",
+      "masterId": 21,
+      "name": "発展を支える力",
+      "rarity": 5,
+      "description": "「この調子だとあと5日……いや、加速が入って4日ってところか」\n\n遥か上空、雲の間に浮かぶ街、生き生きとした人の営みの中で今日も着実に建設工事が進められていた。\n最新鋭のテクノロジーと作業員のスキルにより艦上の施設は常に進化を続ける。\n\n工事は安全第一で、過去アニマ・アルカにおいては一度も事故は起きていない。\n周囲への配慮も怠らず、現場は防護壁で覆われ安全確保しつつ騒音も低減させる。\n（これは当然「危ないから近づくな」という意味であり、「はしごを使って覗き込みましょう」というメッセージではない。わかったか？アリア＝ディス？）\n\n住民にとっては見慣れた何気ない生活の風景だが、アニマ・アルカの発展には欠かせないのがこの建設だ。\n時にはこうして艦上で働く影の功労者たちに目を向けてみてほしい。",
+      "mainEffects": [
+        {
+          "abilityId": 120,
+          "name": "採集量",
+          "unit": "%",
+          "value": 13.5
+        },
+        {
+          "abilityId": 1900,
+          "name": "行軍速度",
+          "unit": "%",
+          "value": 5
+        },
+        {
+          "abilityId": 101,
+          "name": "運搬量",
+          "unit": "%",
+          "value": 40
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00021.png",
+      "imageId": 21,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 21"
+      },
+      "acquisition": [
+        {
+          "type": "paid",
+          "name": "発展を支える力メモリ オーブパック(初回)",
+          "master": "ShopPack 12461",
+          "detail": "メモリのかけらを含むパック"
+        },
+        {
+          "type": "paid",
+          "name": "発展を支える力メモリ オーブパック",
+          "master": "ShopPack 12462",
+          "detail": "メモリのかけらを含むパック"
+        }
+      ],
+      "paidAvailable": true,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 21（2026-10-03取得）"
+    },
+    {
+      "id": "memory-25",
+      "masterId": 25,
+      "name": "同盟の真価",
+      "rarity": 5,
+      "description": "「北東に冒涜の女神の出現を確認、直ちに戦力を集結し討伐せよ！」\n\nレンゴクに現れる魔獣の中には、その危険度から複数マスターたちによる集結部隊での討伐が推奨されているものもいる―冒涜の女神はその典型的な例だ。\n醜悪な瘴気を放ち近づくものを容赦なく穢す習性のため、かつて単独で討伐を試みた部隊の多くが再起不能となっていった……\n\nそんな中、危険な狩りを次々と成功させていったのはとある有志連合だった。\n次第にそれは明確な目的と組織構造を持った同盟へと変化していった。\n\n「集結攻撃」とは単に兵力を足して数的優位をとる行為ではない。\n特異な能力を持つマスター同士がその力とリソースを合わせることにより、強力な魔獣にも対抗しうる部隊を作り上げることができる。\n同盟の真価はまさにこうした場面で発揮されるのだ。",
+      "mainEffects": [
+        {
+          "abilityId": 1002,
+          "name": "弓兵攻撃力",
+          "unit": "%",
+          "value": 27.5
+        },
+        {
+          "abilityId": 1005,
+          "name": "水属性リーダー攻撃力",
+          "unit": "%",
+          "value": 35
+        },
+        {
+          "abilityId": 1219,
+          "name": "対施設攻撃力",
+          "unit": "%",
+          "value": 25.5
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00025.png",
+      "imageId": 25,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 25"
+      },
+      "acquisition": [
+        {
+          "type": "paid",
+          "name": "同盟の真価メモリ オーブパック (初回)",
+          "master": "ShopPack 11611",
+          "detail": "メモリのかけらを含むパック"
+        },
+        {
+          "type": "paid",
+          "name": "同盟の真価メモリ オーブパック",
+          "master": "ShopPack 11612",
+          "detail": "メモリのかけらを含むパック"
+        }
+      ],
+      "paidAvailable": true,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 25（2026-10-03取得）"
+    },
+    {
+      "id": "memory-26",
+      "masterId": 26,
+      "name": "残火の七重奏",
+      "rarity": 5,
+      "description": "「……という経緯で事後報告にはなるけど脅威は排除したわ」\n\n艦に帰還後すぐにニュクスから任務の報告を受けた。\nどうやらアルカマスターである自分が不在の間に任せていた簡単な偵察が思わぬ冒険となったようだ。\nエンバースたちのチームワークにまだ不安があることは否めないが、話を聞く限り彼らなりに改善していっているように思える。\n\nかつて生きていた世界が滅び、その残り火として召喚される心持ちは想像もできない。\nただ、目の前の彼らの表情には霧が晴れたような覚悟を決めた強さを感じた。",
+      "mainEffects": [
+        {
+          "abilityId": 1003,
+          "name": "騎兵攻撃力",
+          "unit": "%",
+          "value": 30
+        },
+        {
+          "abilityId": 1900,
+          "name": "行軍速度",
+          "unit": "%",
+          "value": 5
+        },
+        {
+          "abilityId": 1005,
+          "name": "水属性リーダー攻撃力",
+          "unit": "%",
+          "value": 25
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00015.png",
+      "imageId": 15,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 26"
+      },
+      "acquisition": [
+        {
+          "type": "paid",
+          "name": "残火の七重奏メモリ オーブパック(初回)",
+          "master": "ShopPack 11941",
+          "detail": "メモリのかけらを含むパック"
+        },
+        {
+          "type": "paid",
+          "name": "残火の七重奏メモリ オーブパック",
+          "master": "ShopPack 11942",
+          "detail": "メモリのかけらを含むパック"
+        }
+      ],
+      "paidAvailable": true,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 26（2026-10-03取得）"
+    },
+    {
+      "id": "memory-27",
+      "masterId": 27,
+      "name": "新たなクリスタルの物語",
+      "rarity": 5,
+      "description": "「……ラスウェル、今頃何してんだろ。生真面目なあいつのことだから、まあ確実に消えた俺たちを探してるか。」\n\nクリスタルに導かれ、見知らぬ世界に迷い込んだレインとフィーナ。\n新たな仲間たちとも出会い、“レンゴク”の地にも慣れてきたが、ふとはぐれた親友の顔が頭をよぎる。\n\nまだ旅の途中。\n必ず元の世界に帰ると心に決めた。\nでもそれまでは……\n\n目の前で困っている人たちを助け、ラスウェルへのお土産話をたくさん持ち帰ろう。\n\n「グランシェルトの騎士として！」",
+      "mainEffects": [
+        {
+          "abilityId": 1107,
+          "name": "対不浄攻撃力",
+          "unit": "%",
+          "value": 50
+        },
+        {
+          "abilityId": 507,
+          "name": "対不浄素材倍化率",
+          "unit": "%",
+          "value": 13.5
+        },
+        {
+          "abilityId": 1004,
+          "name": "火属性リーダー攻撃力",
+          "unit": "%",
+          "value": 21
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00027.png",
+      "imageId": 27,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 27"
+      },
+      "acquisition": [
+        {
+          "type": "paid",
+          "name": "復刻新たなクリスタルの物語メモリオーブパック初回",
+          "master": "ShopPack 70261",
+          "detail": "メモリのかけらを含むパック"
+        },
+        {
+          "type": "paid",
+          "name": "復刻新たなクリスタルの物語メモリオーブパック",
+          "master": "ShopPack 70262",
+          "detail": "メモリのかけらを含むパック"
+        }
+      ],
+      "paidAvailable": true,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 27（2026-10-03取得）"
+    },
+    {
+      "id": "memory-30",
+      "masterId": 30,
+      "name": "黒のワルツ３号",
+      "rarity": 5,
+      "description": "「どうして！？どうしてあんなにひどいことを……仲間じゃないの！？」\n\n詰め寄るビビの声には怒りと困惑がこもっていた。\n同族であるはずの黒魔道士兵たちを薙ぎ払った黒のワルツ３号に悪びれた様子はない。\n任務遂行のためなら手段を選ばない冷酷で心の無い言動は、その流暢で人間的ともいえる語り口と奇妙な不協和音を鳴らしていた。\n\n義憤に駆られたスタイナーがすぐに追いつき、ダガーへの指示を終えたジタンも合流する。\n黒のワルツ３号はなおも余裕を見せ笑い飛ばす。\nそして……\n\n「任務をじゃまするものは全て排除する！！」\n\n黒のワルツ３号が繰り出す雷鳴の中、感情の高ぶりを見せるビビもまた魔法で応戦する。\nジタンとスタイナーも呼応し、激しい戦いの火蓋が切られたのだった……",
+      "mainEffects": [
+        {
+          "abilityId": 1003,
+          "name": "騎兵攻撃力",
+          "unit": "%",
+          "value": 25
+        },
+        {
+          "abilityId": 1900,
+          "name": "行軍速度",
+          "unit": "%",
+          "value": 4.5
+        },
+        {
+          "abilityId": 1006,
+          "name": "風属性リーダー攻撃力",
+          "unit": "%",
+          "value": 21
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00030.png",
+      "imageId": 30,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 30"
+      },
+      "acquisition": [
+        {
+          "type": "paid",
+          "name": "FF9 黒のワルツ3号メモリ オーブパック (初回)",
+          "master": "ShopPack 70441",
+          "detail": "メモリのかけらを含むパック"
+        },
+        {
+          "type": "paid",
+          "name": "FF9 黒のワルツ3号メモリ オーブパック",
+          "master": "ShopPack 70442",
+          "detail": "メモリのかけらを含むパック"
+        }
+      ],
+      "paidAvailable": true,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 30（2026-10-03取得）"
+    },
+    {
+      "id": "memory-31",
+      "masterId": 31,
+      "name": "ブレイブエクスヴィアス",
+      "rarity": 5,
+      "description": "Vision ビジョン ― それは具現化される人の想い\nLapis ラピス ― それはビジョンが込められたクリスタルが存在する世界\nクリスタルの力によって人々は満たされ\n各国は繁栄を続けていた\nしかし、闇が光を蝕むようにその平和は偽りのものと断罪される\nラピスが滅亡への時を刻むとき、\n2人の騎士がビジョンと共に闇へと立ち向かう\nこれは新たなクリスタルの物語――",
+      "mainEffects": [
+        {
+          "abilityId": 1010,
+          "name": "光属性リーダー攻撃力",
+          "unit": "%",
+          "value": 35
+        },
+        {
+          "abilityId": 1900,
+          "name": "行軍速度",
+          "unit": "%",
+          "value": 4.5
+        },
+        {
+          "abilityId": 1000,
+          "name": "攻撃力",
+          "unit": "%",
+          "value": 9
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00031.png",
+      "imageId": 31,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 31"
+      },
+      "acquisition": [
+        {
+          "type": "paid",
+          "name": "復刻FFBE ブレイブエクスヴィアスメモリ オーブパック(初回)",
+          "master": "ShopPack 70331",
+          "detail": "メモリのかけらを含むパック"
+        },
+        {
+          "type": "paid",
+          "name": "復刻FFBE ブレイブエクスヴィアスメモリ オーブパック",
+          "master": "ShopPack 70332",
+          "detail": "メモリのかけらを含むパック"
+        }
+      ],
+      "paidAvailable": true,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 31（2026-10-03取得）"
+    },
+    {
+      "id": "memory-32",
+      "masterId": 32,
+      "name": "我らがアニマ・アルカ",
+      "rarity": 5,
+      "description": "「アルカマスターはあれを指揮して、この世界を飛び回れるのよ。まさに一国一城の主！どう？そうと知ったらワクワクしてきたんじゃない？」\n\nアニマ・アルカはレンゴクが誇る技術の結晶、空を駆ける巨大戦闘艦。\nその巨大さは、艦上に街が一個丸ごと建設できるほどだ。\nリソースを自給自足できる内循環的エコシステムを持ち半永久的な単独行動が可能となっている。\n\nただ、やはり最大の特徴はその拡張性の高さだろう。\n艦のポテンシャルを最大限に引き出すには建設や研究を進めることが重要だ。\nアルカマスターによっては実用的な建設だけでなく装飾で艦を彩っている者もいるらしい。\n長く住むことになるからこそ、趣味と実用を兼ねた自分らしい艦を作り上げるのも一興だ。",
+      "mainEffects": [
+        {
+          "abilityId": 1020,
+          "name": "施設防衛時攻撃力",
+          "unit": "%",
+          "value": 50
+        },
+        {
+          "abilityId": 1000,
+          "name": "攻撃力",
+          "unit": "%",
+          "value": 13.5
+        },
+        {
+          "abilityId": 1005,
+          "name": "水属性リーダー攻撃力",
+          "unit": "%",
+          "value": 21
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00032.png",
+      "imageId": 32,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 32"
+      },
+      "acquisition": [
+        {
+          "type": "event",
+          "name": "アリーナ",
+          "master": "Event 4003",
+          "detail": "イベント報酬のメモリのかけら"
+        },
+        {
+          "type": "exchange",
+          "name": "アリーナポイント",
+          "master": "ShopItem 62003 / Shop 90008",
+          "detail": "我らがアニマ・アルカのメモリのかけら"
+        }
+      ],
+      "paidAvailable": false,
+      "nonPaidAvailable": true,
+      "source": "PC版 Enhancer 32（2026-10-03取得）"
+    },
+    {
+      "id": "memory-33",
+      "masterId": 33,
+      "name": "巨人の肩の上で見えるもの",
+      "rarity": 5,
+      "description": "「書庫にご用っすか？もちろん、ご自由に見て行ってください。オレはあっちにいるんで……」\n \nユーバーの気だるげな声に迎えられ、今日も書庫に足を運ぶ。 \n違う世界からやってきたエンバースたちにとってはもちろんだが、この地で生まれ育った人間にとってもこのレンゴクという世界は謎が多い。 \nそんな時はこの膨大な資料数を誇る書庫で調べ物をするのが一番だ。 \n\n調べ物に疲れたら冒険譚で息抜きするのもいいだろう。\n噂によれば、エンバースたちが生きた過去の世界の物語も復元が進んでいるらしい。 \n内政や戦闘に忙しい日々ではあると思うが、一度暇を見つけて立ち寄ってみてほしい。",
+      "mainEffects": [
+        {
+          "abilityId": 1015,
+          "name": "集結部隊時攻撃力",
+          "unit": "%",
+          "value": 40
+        },
+        {
+          "abilityId": 1915,
+          "name": "集結部隊行軍速度",
+          "unit": "%",
+          "value": 10
+        },
+        {
+          "abilityId": 500,
+          "name": "対魔獣素材倍化率",
+          "unit": "%",
+          "value": 6
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00033.png",
+      "imageId": 33,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 33"
+      },
+      "acquisition": [
+        {
+          "type": "event",
+          "name": "奈落討破",
+          "master": "Event 9003",
+          "detail": "イベント報酬のメモリのかけら"
+        },
+        {
+          "type": "event",
+          "name": "奈落討破/序章",
+          "master": "Event 9013",
+          "detail": "イベント報酬のメモリのかけら"
+        }
+      ],
+      "paidAvailable": false,
+      "nonPaidAvailable": true,
+      "source": "PC版 Enhancer 33（2026-10-03取得）"
+    },
+    {
+      "id": "memory-34",
+      "masterId": 34,
+      "name": "ファイナルファンタジーIX",
+      "rarity": 5,
+      "description": "アレクサンドリア王国の\n王女ガーネットの誕生日を祝うため、\n王国へとやってきた劇団タンタラスの一団。\nしかし劇団タンタラスの真の姿は盗賊団であり、\nその目的は王女の誘拐にあった。\n一方その頃、芝居を見にやってきた\n黒魔道士の少年ビビは偽物のチケットを\nつかまされひとり途方にくれていた─。\n\n絵本のようなファンタジックな世界を舞台に、\n盗賊ジタンや王女ガーネット、ビビが出会い、\nそれぞれの思いを抱えながら、\nクリスタルを巡る壮大な冒険へと\n巻き込まれていく。",
+      "mainEffects": [
+        {
+          "abilityId": 1005,
+          "name": "水属性リーダー攻撃力",
+          "unit": "%",
+          "value": 35
+        },
+        {
+          "abilityId": 1900,
+          "name": "行軍速度",
+          "unit": "%",
+          "value": 4.5
+        },
+        {
+          "abilityId": 1000,
+          "name": "攻撃力",
+          "unit": "%",
+          "value": 9
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00034.png",
+      "imageId": 34,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 34"
+      },
+      "acquisition": [
+        {
+          "type": "paid",
+          "name": "ファイナルファンタジーIXメモリ オーブパック (初回)",
+          "master": "ShopPack 70511",
+          "detail": "メモリのかけらを含むパック"
+        },
+        {
+          "type": "paid",
+          "name": "ファイナルファンタジーIXメモリ オーブパック",
+          "master": "ShopPack 70512",
+          "detail": "メモリのかけらを含むパック"
+        }
+      ],
+      "paidAvailable": true,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 34（2026-10-03取得）"
+    },
+    {
+      "id": "memory-35",
+      "masterId": 35,
+      "name": "NieRシリーズ",
+      "rarity": 5,
+      "description": "＜NieR Replicant ver.1.22474487139...＞\r\n遠い約束。千年の嘘。\r\n\r\n＜NieR:Automata＞\r\nこれは呪いか。それとも罰か。\r\n\r\n＜NieR Re[in]carnation＞\r\nすべての祈りは、「檻」の中に。",
+      "mainEffects": [
+        {
+          "abilityId": 1104,
+          "name": "対妖魔攻撃力",
+          "unit": "%",
+          "value": 60
+        },
+        {
+          "abilityId": 504,
+          "name": "対妖魔素材倍化率",
+          "unit": "%",
+          "value": 15
+        },
+        {
+          "abilityId": 1006,
+          "name": "風属性リーダー攻撃力",
+          "unit": "%",
+          "value": 25
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00035.png",
+      "imageId": 35,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 35"
+      },
+      "acquisition": [
+        {
+          "type": "paid",
+          "name": "NieRシリーズメモリ オーブパック (初回)",
+          "master": "ShopPack 70741",
+          "detail": "メモリのかけらを含むパック"
+        },
+        {
+          "type": "paid",
+          "name": "NieRシリーズメモリ オーブパック",
+          "master": "ShopPack 70742",
+          "detail": "メモリのかけらを含むパック"
+        }
+      ],
+      "paidAvailable": true,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 35（2026-10-03取得）"
+    },
+    {
+      "id": "memory-36",
+      "masterId": 36,
+      "name": "違う空、新たな試練",
+      "rarity": 5,
+      "description": "贖罪の地にまた外なるエンバースたちが降り立った。\n彼らの抱いた強い思念がレンゴクに惹かれ迷い込んだのか、それともこの地がそれらに特別なものを見出し招き入れたのか。\nどちらにせよ、エンバースとしてやってきた者たちに、レンゴクは新たな試練を与える。\n\n強き意思を持つ「マモノ憑き」の戦士、カイネ。\n人類の為に戦う「ヨルハ」のアンドロイド、２Ｂ。\n優しさに満ちた「山羊の民」の少女、フィオ。\n\nかつてとは違う空の下、彼らは何を成し遂げられるだろうか。",
+      "mainEffects": [
+        {
+          "abilityId": 1001,
+          "name": "歩兵攻撃力",
+          "unit": "%",
+          "value": 30
+        },
+        {
+          "abilityId": 1900,
+          "name": "行軍速度",
+          "unit": "%",
+          "value": 5
+        },
+        {
+          "abilityId": 1004,
+          "name": "火属性リーダー攻撃力",
+          "unit": "%",
+          "value": 25
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00036.png",
+      "imageId": 36,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 36"
+      },
+      "acquisition": [
+        {
+          "type": "paid",
+          "name": "NieRシリーズ違う空、新たな試練メモリ オーブパック (初回)",
+          "master": "ShopPack 70631",
+          "detail": "メモリのかけらを含むパック"
+        },
+        {
+          "type": "paid",
+          "name": "NieRシリーズ違う空、新たな試練メモリ オーブパック",
+          "master": "ShopPack 70632",
+          "detail": "メモリのかけらを含むパック"
+        }
+      ],
+      "paidAvailable": true,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 36（2026-10-03取得）"
+    },
+    {
+      "id": "memory-44",
+      "masterId": 44,
+      "name": "夏の日差しは水面に弾け",
+      "rarity": 5,
+      "description": "木陰に揺れる太陽の光、\n暑気を包み込む水のにおい。\n\n「そぉれ！　頭上ががら空き！」\n\n「うわっぷ！？　もう！　そっちがその気なら――！」\n\n「あ、ちょっと待って！？\n　それは無しそれはな――おぶっ――！」\n\nにぎやかな水音。\n子クジラたちのはしゃぐ声――\n私の求めていたものがすべてここにある。\n\n「飲み物のお代わりをお持ちしましょうか。メリケ様」\n\n「給仕はいいわ。それより私と遊びましょう」\n\n「ひょわっ！？」\n\n戯れに彼女の手を引き水辺へと駆け出す。\n良い仕事には、ふさわしい報酬が与えられるべきだ。\n\n「あの、わたしは侍従のお仕事がありますので！\n　それに、水は少々苦手でして……！」\n\nふふっ、ここは浅いから大丈夫よ。\nそれに――\n\nウルファにも味わってほしいの。\nあなたが作った、この素敵なオアシスの感動を。",
+      "mainEffects": [
+        {
+          "abilityId": 1002,
+          "name": "弓兵攻撃力",
+          "unit": "%",
+          "value": 27.5
+        },
+        {
+          "abilityId": 1900,
+          "name": "行軍速度",
+          "unit": "%",
+          "value": 5
+        },
+        {
+          "abilityId": 1004,
+          "name": "火属性リーダー攻撃力",
+          "unit": "%",
+          "value": 23
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00044.png",
+      "imageId": 44,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 44"
+      },
+      "acquisition": [
+        {
+          "type": "paid",
+          "name": "夏の日差しは水面に弾けメモリ オーブパック (初回)",
+          "master": "ShopPack 11281",
+          "detail": "メモリのかけらを含むパック"
+        },
+        {
+          "type": "paid",
+          "name": "夏の日差しは水面に弾けメモリ オーブパック",
+          "master": "ShopPack 11282",
+          "detail": "メモリのかけらを含むパック"
+        }
+      ],
+      "paidAvailable": true,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 44（2026-10-03取得）"
+    },
+    {
+      "id": "memory-45",
+      "masterId": 45,
+      "name": "キャンディハンターズ",
+      "rarity": 4,
+      "description": "「「トリックオアトリート！」」\n「お菓子くれなきゃ解体するぞ！」\n「……するぞ」\n\nいたずらどころではない脅迫を決めながら家々を訪ねるアリア＝ディスと、ためらいがちに彼女についてまわるシグルドリーヴァ。\n今夜の成果は上々、一軒、また一軒とカボチャ顔のバスケットにキャンディを詰め込んでいく。\n\n「ダリューシュ伯爵の屋敷にようこそ、アリ……いやロッピィにパムフルルのお二方」\n「おつ～……てかアンタなんでそんなにお菓子持ってんの？　まさか盗んだ！？」\n\nまったく人聞きの悪い、とダリューシュは呆れながらも二人にお菓子を手渡す。\nちょっとカリームのところから拝借しただけだというのに……\n\nお目当てのものを手にした二体の魔獣は次の標的を求めて歩き出す。\nそろそろマスターのところも襲いに行こうか。",
+      "mainEffects": [
+        {
+          "abilityId": 120,
+          "name": "採集量",
+          "unit": "%",
+          "value": 9
+        },
+        {
+          "abilityId": 1900,
+          "name": "行軍速度",
+          "unit": "%",
+          "value": 4
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00045.png",
+      "imageId": 45,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 25000,
+        "source": "Piece 45"
+      },
+      "acquisition": [
+        {
+          "type": "event",
+          "name": "パンプキンレリック",
+          "master": "Event 3011",
+          "detail": "イベント報酬のメモリのかけら"
+        },
+        {
+          "type": "exchange",
+          "name": "屍の姫に扮して専用ショップ",
+          "master": "ShopItem 71702 / Shop 90028",
+          "detail": "キャンディハンターズのメモリのかけら"
+        }
+      ],
+      "paidAvailable": false,
+      "nonPaidAvailable": true,
+      "source": "PC版 Enhancer 45（2026-10-03取得）"
+    },
+    {
+      "id": "memory-46",
+      "masterId": 46,
+      "name": "蒼炎いまだ燃え尽きず",
+      "rarity": 5,
+      "description": "世界は再生を繰り返す。\n\n仲間、幸福、野心。\n大切なものと出会い、積み上げ、\nそして、すべてが焼き尽くされる。\n\n誕生と破壊を繰り返し、\nその度に、罪と後悔が積み重なっていく。\n\n『――もう失いたくない』\n\nならば、立ち止まるか。\n地獄の底で思考を止め、動かぬ灰になれば\nこの循環は止まるだろう。\n\nだが、それは性に合わない。\n\n刻まれた傷が疼くうちは、\n業火に焼かれる痛みを感じるうちは――\n\nただひたすら、\n世界に抗い続けるのみ。",
+      "mainEffects": [
+        {
+          "abilityId": 1001,
+          "name": "歩兵攻撃力",
+          "unit": "%",
+          "value": 30
+        },
+        {
+          "abilityId": 1900,
+          "name": "行軍速度",
+          "unit": "%",
+          "value": 5
+        },
+        {
+          "abilityId": 1010,
+          "name": "光属性リーダー攻撃力",
+          "unit": "%",
+          "value": 25
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00046.png",
+      "imageId": 46,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 46"
+      },
+      "acquisition": [
+        {
+          "type": "paid",
+          "name": "蒼炎いまだ燃え尽きずメモリ オーブパック(初回)",
+          "master": "ShopPack 12011",
+          "detail": "メモリのかけらを含むパック"
+        },
+        {
+          "type": "paid",
+          "name": "蒼炎いまだ燃え尽きずメモリ オーブパック",
+          "master": "ShopPack 12012",
+          "detail": "メモリのかけらを含むパック"
+        }
+      ],
+      "paidAvailable": true,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 46（2026-10-03取得）"
+    },
+    {
+      "id": "memory-47",
+      "masterId": 47,
+      "name": "クリスマスナイト",
+      "rarity": 4,
+      "description": "クリスマスは人を平和な気分にさせるという。\n今夜もアニマ・アルカのどこかで意外な二人が仲良くデコレーションに勤しんでいる。\n\n「あなたがこういった美的なものに興味があったなんて知らなかったわ」\n「高貴な天狗族の長として当然、これが“わびさび”というやつじゃ！」\n\n早雲から教わったばかりであろう言葉を満足げに言い放った美鈴に対し、少し何か言いたげな表情を見せた白幽姫。\nしかし、聖夜の雰囲気を壊さないようすぐににこやかな表情を取り戻した。\n\n「まあ、素晴らしいわね。　わたくしたち、スオウではこんな話もできませんでしたから」\n\n元の世界では覇権を争う敵同士。\nレンゴクのクリスマスはそんな二人の心も溶かす。\n多少美鈴が感性のずれた装飾をしようとも、多少白幽姫が子ども扱いするような言葉遣いをしたとしても、今夜だけは笑顔のままで。",
+      "mainEffects": [
+        {
+          "abilityId": 1005,
+          "name": "水属性リーダー攻撃力",
+          "unit": "%",
+          "value": 31.5
+        },
+        {
+          "abilityId": 1915,
+          "name": "集結部隊行軍速度",
+          "unit": "%",
+          "value": 9
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00047.png",
+      "imageId": 47,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 25000,
+        "source": "Piece 47"
+      },
+      "acquisition": [
+        {
+          "type": "event",
+          "name": "フロスティレリック",
+          "master": "Event 3012",
+          "detail": "イベント報酬のメモリのかけら"
+        }
+      ],
+      "paidAvailable": false,
+      "nonPaidAvailable": true,
+      "source": "PC版 Enhancer 47（2026-10-03取得）"
+    },
+    {
+      "id": "memory-48",
+      "masterId": 48,
+      "name": "黄金の旋律に乗せて",
+      "rarity": 5,
+      "description": "「こうして誰かのために演奏するのって、いつぶりだろう」\n\n彼女は思い返す、かつての日々を。\n自分に向けられる無償の愛。弟の笑顔を。\n\n「みんながあたしの詩に、演奏に、物語の続きを待ち望んでる」\n\nかつての彼女は、復讐という憎悪に囚われていた。\n楽器とて姿を偽るための道具でしかなく、その演奏も戯れ。\n\nだが、それは過去の話。このレンゴクにおいて彼女を苦しめるものはない。\n今度こそは違う生き方を。人を苦しめるためではなく、人を楽しませるために。\n\n「アレフがあたしにくれた温かい大切な気持ち。」\n「今度はあたしがみんなにあげたいから！」\n\n彼女は弦を爪弾く。\nそのひとつひとつが誰かの心に届くことを信じて。\n\n大切な者と再会した時に、誇れる自分であるために。",
+      "mainEffects": [
+        {
+          "abilityId": 1002,
+          "name": "弓兵攻撃力",
+          "unit": "%",
+          "value": 30
+        },
+        {
+          "abilityId": 1900,
+          "name": "行軍速度",
+          "unit": "%",
+          "value": 5
+        },
+        {
+          "abilityId": 1008,
+          "name": "雷属性リーダー攻撃力",
+          "unit": "%",
+          "value": 25
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00048.png",
+      "imageId": 48,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 48"
+      },
+      "acquisition": [
+        {
+          "type": "paid",
+          "name": "黄金の旋律に乗せてメモリ オーブパック(初回)",
+          "master": "ShopPack 12281",
+          "detail": "メモリのかけらを含むパック"
+        },
+        {
+          "type": "paid",
+          "name": "黄金の旋律に乗せてメモリ オーブパック",
+          "master": "ShopPack 12282",
+          "detail": "メモリのかけらを含むパック"
+        }
+      ],
+      "paidAvailable": true,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 48（2026-10-03取得）"
+    },
+    {
+      "id": "memory-49",
+      "masterId": 49,
+      "name": "鬼の餅つき大会",
+      "rarity": 4,
+      "description": "「よいしょ～！！！」\n\n新年早々、アニマ・アルカに轟音が響き渡る。\nシーピーが見守る中、紫津乃と暁がスオウの伝統文化であるという「餅つき」に励んでいた。\n\n怪力で振り下ろされる杵は一定のリズムを刻み、臼の中の米を餅へと変えていく。\n暁は師匠の破壊力に気圧されながらも、迫り来る強打の合間を縫って必死に餅をこねる。\nこねる手を引っ込めるのが一瞬でも遅れれば自身も餅となるだろう。\n\n「餅ってよう伸びるやろ？　“長～く生きられますように”って、縁起ものなんよ」\n「とても興味深いですが、現在の威力では暁の生存確率が低下中……」\n\n騒ぎを聞きつけ人々が集まってくる。\n餅もそろそろ良い具合だ。\nつきたての餅を配り、みんなで新年を祝おうじゃないか。",
+      "mainEffects": [
+        {
+          "abilityId": 500,
+          "name": "対魔獣素材倍化率",
+          "unit": "%",
+          "value": 9
+        },
+        {
+          "abilityId": 700,
+          "name": "対魔獣獲得経験値",
+          "unit": "%",
+          "value": 12
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00049.png",
+      "imageId": 49,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 25000,
+        "source": "Piece 49"
+      },
+      "acquisition": [
+        {
+          "type": "event",
+          "name": "かがみもちレリック",
+          "master": "Event 3013",
+          "detail": "イベント報酬のメモリのかけら"
+        }
+      ],
+      "paidAvailable": false,
+      "nonPaidAvailable": true,
+      "source": "PC版 Enhancer 49（2026-10-03取得）"
+    },
+    {
+      "id": "memory-54",
+      "masterId": 54,
+      "name": "宿縁の輪(ﾛﾏﾝｼﾝｸﾞ ｻｶﾞ ﾘ･ﾕﾆﾊﾞｰｽ)",
+      "rarity": 5,
+      "description": "突如世界中に現れた“グレイヴ”という謎の塔。\nそこから召喚される異界の戦士たちを仲間に、ポルカは妹を探す旅に出る・・・\n\n８人の救世主がアビスの四魔貴族を退かせ、世界が平安を取り戻してから３００年あまり―。\nそれは突如として世界中に現れた。\n\nＧＲＡＶＥ　グレイヴ―\n異世界の過去の瞬間が囚われた塔。\nそして、グレイヴを攻略した者だけに与えられる力。\n\n失われた宿命の子の記憶―\n再び迫り来る死食の脅威―\n\n人は生を掴み取ることができるのか!?",
+      "mainEffects": [
+        {
+          "abilityId": 1006,
+          "name": "風属性リーダー攻撃力",
+          "unit": "%",
+          "value": 45
+        },
+        {
+          "abilityId": 1900,
+          "name": "行軍速度",
+          "unit": "%",
+          "value": 5
+        },
+        {
+          "abilityId": 1000,
+          "name": "攻撃力",
+          "unit": "%",
+          "value": 10
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00054.png",
+      "imageId": 54,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 25000,
+        "source": "Piece 54"
+      },
+      "acquisition": [
+        {
+          "type": "paid",
+          "name": "SaGaシリーズ宿縁の輪メモリ オーブパック (初回)",
+          "master": "ShopPack 71061",
+          "detail": "メモリのかけらを含むパック"
+        },
+        {
+          "type": "paid",
+          "name": "SaGaシリーズ宿縁の輪メモリ オーブパック",
+          "master": "ShopPack 71062",
+          "detail": "メモリのかけらを含むパック"
+        }
+      ],
+      "paidAvailable": true,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 54（2026-10-03取得）"
+    },
+    {
+      "id": "memory-55",
+      "masterId": 55,
+      "name": "Ember Frontier",
+      "rarity": 5,
+      "description": "砂煙吹き荒れる荒野に映る4つの影。\n彼らは共に剣を取り、邪悪な意志へと立ち向かう。\n\n「ニュクス、我々の役割をわかっているな？」\n「ええ、当然よ。\n　こいつをマスターに近づけさせたりしない！」\n\n妹を救わんと世界を破滅に導いた者、ニュクス。\n希望を求め運命に抗い続けた者、ダリューシュ。\n彼らは地獄の残火として、新たな世界で戦い続ける。\n――それは紡いだ絆を守るため。\n\n「エッグの好きになんてさせないわ！\n　ギュス様！最後の一撃、お願いします！」\n「ああ、俺の征く道を阻むのなら容赦はせん！」\n\n生まれの境遇を乗り越え世界に名を刻んだ者、ギュスターヴ13世。\n長きに渡る血の宿命を受け入れ戦いに身を投じる者、ヴァージニア・ナイツ。\n彼らは来訪者として、異なる世界で戦い続ける。\n――それは責務を全うするため。\n\nここに集うは、本来出会うことのない者たち。\nだが今だけはその邂逅を、アニマが導いた奇跡を見届けてほしい。",
+      "mainEffects": [
+        {
+          "abilityId": 1003,
+          "name": "騎兵攻撃力",
+          "unit": "%",
+          "value": 30
+        },
+        {
+          "abilityId": 1900,
+          "name": "行軍速度",
+          "unit": "%",
+          "value": 5
+        },
+        {
+          "abilityId": 1004,
+          "name": "火属性リーダー攻撃力",
+          "unit": "%",
+          "value": 25
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00055.png",
+      "imageId": 55,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 25000,
+        "source": "Piece 55"
+      },
+      "acquisition": [
+        {
+          "type": "paid",
+          "name": "SaGaシリーズEmber Frontierメモリ オーブパック (初回)",
+          "master": "ShopPack 70991",
+          "detail": "メモリのかけらを含むパック"
+        },
+        {
+          "type": "paid",
+          "name": "SaGaシリーズEmber Frontierメモリ オーブパック",
+          "master": "ShopPack 70992",
+          "detail": "メモリのかけらを含むパック"
+        }
+      ],
+      "paidAvailable": true,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 55（2026-10-03取得）"
+    },
+    {
+      "id": "memory-56",
+      "masterId": 56,
+      "name": "甘い秘密を召し上がれ",
+      "rarity": 5,
+      "description": "「ほら、あーん――」\n\nエプロン姿のガイアが一切れを差し出す。\n絵の具のように鮮やかな黒と赤のクリームに彩られた\nチョコレートケーキだ。\n\n「――そんなに警戒しなくていい。\n　これは経口摂取可能な材料を用いて作った、\n　一般的にはスイーツに分類される代物だよ。\n　ねえ。皆も証言してくれる？」\n\n振り返った先にはケーキ作りの共謀者。\nメリケ、シャオレイ、エプレの３人。\n\n「ええ、幾多の犠牲を経て完成した至極の逸品よ。\n　本当に奇跡のようなものだから\n　できればこのまま宝物庫に入れておきたいくらい」\n\n「大丈夫！　一度成功したんですもの。\n　今すぐ同じものを作って見せますわ！」\n\n「……え！？　ちょ、ちょっと火！\n　嘘……ヤバ、マジ火ついてる……！　何……入れたの！？」\n\n「ふふっ、その顔。どうやら君の不安は取り除けなかったようだ。\n　でも構わない。\n　危機への警戒によって味覚は研ぎ澄まされるというしね。\n　つまり、不安もひとつの調味料というやつさ」\n\nもはや退路はなかった。\n\n「さあ、口を開けて――――」",
+      "mainEffects": [
+        {
+          "abilityId": 1007,
+          "name": "土属性リーダー攻撃力",
+          "unit": "%",
+          "value": 45
+        },
+        {
+          "abilityId": 1900,
+          "name": "行軍速度",
+          "unit": "%",
+          "value": 5
+        },
+        {
+          "abilityId": 1000,
+          "name": "攻撃力",
+          "unit": "%",
+          "value": 10
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00056.png",
+      "imageId": 56,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 56"
+      },
+      "acquisition": [
+        {
+          "type": "paid",
+          "name": "甘い秘密を召し上がれメモリ オーブパック(初回)",
+          "master": "ShopPack 12371",
+          "detail": "メモリのかけらを含むパック"
+        },
+        {
+          "type": "paid",
+          "name": "甘い秘密を召し上がれメモリ オーブパック",
+          "master": "ShopPack 12372",
+          "detail": "メモリのかけらを含むパック"
+        }
+      ],
+      "paidAvailable": true,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 56（2026-10-03取得）"
+    },
+    {
+      "id": "memory-57",
+      "masterId": 57,
+      "name": "一年で一番特別な日",
+      "rarity": 5,
+      "description": "今日は特別な記念日。\n一年前、みんなと出会った日。\n旅が始まった日。アニマ・アルカに乗り込んだ日。\nそして、あなたと歩き始めた日。\n\nたくさんの出会いと別れ、争いと平穏、喜びと悲しみを経て、\n私たちはここまでやってきた。\nあなたと一緒だったから、挫けずに済んだ。\nあなたと一緒だったから、いつだって笑っていられた。\n一年分の感謝を今、あなたに伝えようと思う。\n\n「……実はね、手紙とか用意してたんです。お祝いの。\n　でもどう頑張ってもなーんか違うっていうか、\n　満足できる文章にならなくってぇ」\n\n「そうこうしてる間に先にお祝いされちゃったんですよ！\n　これもビーチェちゃんの日頃の行いのおかげですかね？\n　えへへへ、右からも左からもチヤホヤされてサイコー！」\n\n「お手紙はね、あとで読んでもらうとして……\n　ここは素直な気持ちを直接伝えようと思います！\n　ゴホン！　ンッンッ。ではでは……」\n\n「マスター！　一年間、私のマスターでいてくれてありがとう！\n　私は本当に幸せ者のナビです！　これからも精一杯\n　頑張りますので、どうぞよろしくお願いしますっ！」",
+      "mainEffects": [
+        {
+          "abilityId": 1003,
+          "name": "騎兵攻撃力",
+          "unit": "%",
+          "value": 30
+        },
+        {
+          "abilityId": 1900,
+          "name": "行軍速度",
+          "unit": "%",
+          "value": 5
+        },
+        {
+          "abilityId": 1011,
+          "name": "闇属性リーダー攻撃力",
+          "unit": "%",
+          "value": 25
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00057.png",
+      "imageId": 57,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 57"
+      },
+      "acquisition": [
+        {
+          "type": "paid",
+          "name": "一年で一番特別な日メモリ オーブパック(初回)",
+          "master": "ShopPack 12251",
+          "detail": "メモリのかけらを含むパック"
+        },
+        {
+          "type": "paid",
+          "name": "一年で一番特別な日メモリ オーブパック",
+          "master": "ShopPack 12252",
+          "detail": "メモリのかけらを含むパック"
+        }
+      ],
+      "paidAvailable": true,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 57（2026-10-03取得）"
+    },
+    {
+      "id": "memory-58",
+      "masterId": 58,
+      "name": "せんせい[秘宝庫の番人]",
+      "rarity": 4,
+      "description": "いよいよ私に声がかかったというわけだ。\nしばし教壇を離れ、世界を救う時が来たのだな。\nでは、いってくる諸君。\nしばらく自習になるが、勉学を怠らないように。\nすぐに戻る。\n安心したまえ。",
+      "mainEffects": [
+        {
+          "abilityId": 1004,
+          "name": "火属性リーダー攻撃力",
+          "unit": "%",
+          "value": 31.5
+        },
+        {
+          "abilityId": 1915,
+          "name": "集結部隊行軍速度",
+          "unit": "%",
+          "value": 9
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00058.png",
+      "imageId": 58,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 25000,
+        "source": "Piece 58"
+      },
+      "acquisition": [
+        {
+          "type": "event",
+          "name": "せんせいレリック",
+          "master": "Event 3014",
+          "detail": "イベント報酬のメモリのかけら"
+        },
+        {
+          "type": "exchange",
+          "name": "Ember Frontier専用ショップ",
+          "master": "ShopItem 71002 / Shop 90021",
+          "detail": "せんせい[秘宝庫の番人]のメモリのかけら"
+        }
+      ],
+      "paidAvailable": false,
+      "nonPaidAvailable": true,
+      "source": "PC版 Enhancer 58（2026-10-03取得）"
+    },
+    {
+      "id": "memory-59",
+      "masterId": 59,
+      "name": "満天の星に思いを馳せ",
+      "rarity": 5,
+      "description": "「倍率は……これでよし、と」\n\n真夜中のアニマ・アルカ甲板。\n街の灯りが届かない場所で、ステラは望遠鏡の調整を行っていた。\n頭上には満天の星が広がる。\n\n「この世界でも、やっぱりきれいだな……」\n\n子供の頃からステラは星空を眺めるのが大好きだった。\n星空は、奴らが攻めてくる怖い場所だったけれど、同時にとてもきれいなものでもあった。\n\nキラキラとまたたく星々、淡い光をたたえる星雲、夜空を横切る雄大な天の川の輝き。\n冷たいけれど、どこか安心もできる光の数々……\nどんな世界、どんな時代であろうとその輝きはきっと変わらない。\n\n「よし、設定完了！」\n\n今夜も思う存分楽しもう。\nはやる気持ちを抑えながら、ステラはレンズを覗き込んだ。",
+      "mainEffects": [
+        {
+          "abilityId": 1004,
+          "name": "火属性リーダー攻撃力",
+          "unit": "%",
+          "value": 45
+        },
+        {
+          "abilityId": 1900,
+          "name": "行軍速度",
+          "unit": "%",
+          "value": 5
+        },
+        {
+          "abilityId": 2015,
+          "name": "集結部隊時防御効率",
+          "unit": "%",
+          "value": 10
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00059.png",
+      "imageId": 59,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 59"
+      },
+      "acquisition": [
+        {
+          "type": "paid",
+          "name": "満天の星に思いを馳せメモリ オーブパック(初回)",
+          "master": "ShopPack 12621",
+          "detail": "メモリのかけらを含むパック"
+        },
+        {
+          "type": "paid",
+          "name": "満天の星に思いを馳せメモリ オーブパック",
+          "master": "ShopPack 12622",
+          "detail": "メモリのかけらを含むパック"
+        }
+      ],
+      "paidAvailable": true,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 59（2026-10-03取得）"
+    },
+    {
+      "id": "memory-60",
+      "masterId": 60,
+      "name": "のどかなお花見",
+      "rarity": 4,
+      "description": "「うわぁ、きれい！」\n「本当、満開。早起きしてよかったね」\n\n春のうららかな陽気にアニマ・アルカの桜も一斉に花を咲かせた。\n艦内でも穴場と言われるスポットを訪れたニュクスとヘーメラー。\n敷物をひろげ、ふたりきりで満開の桜を独占する。\n重箱いっぱいのお弁当は、昨晩一緒に用意したものだ。もちろん、デザートのお団子も欠かせない。\n\n「はい、どうぞ」\n「ありがとう、おねえちゃん！」\n\n取り分けてあげるのはついつい妹の好物ばかり。\nそんな子供扱いも、ヘーメラーにとってはたまらなく嬉しく、いつも以上に甘えてしまう。\n元の世界では過酷な運命に翻弄された姉と妹。\nけれど今このときは、どこにでもいる仲良し姉妹として、のどかな時間を楽しむのであった。",
+      "mainEffects": [
+        {
+          "abilityId": 1010,
+          "name": "光属性リーダー攻撃力",
+          "unit": "%",
+          "value": 31.5
+        },
+        {
+          "abilityId": 1915,
+          "name": "集結部隊行軍速度",
+          "unit": "%",
+          "value": 9
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00060.png",
+      "imageId": 60,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 25000,
+        "source": "Piece 60"
+      },
+      "acquisition": [
+        {
+          "type": "event",
+          "name": "さくらレリック",
+          "master": "Event 3015",
+          "detail": "イベント報酬のメモリのかけら"
+        }
+      ],
+      "paidAvailable": false,
+      "nonPaidAvailable": true,
+      "source": "PC版 Enhancer 60（2026-10-03取得）"
+    },
+    {
+      "id": "memory-61",
+      "masterId": 61,
+      "name": "たおやかなる黒い翼",
+      "rarity": 5,
+      "description": "「ふぅ……ブラッシングはこんなところかしら？」\n\nエルフリーデは毎晩の翼のケアを欠かさない。\n４枚の翼すべてに丹念にブラシを掛け、傷んだ羽根を抜き、薬草を漬けたオイルを塗り込んでいく。\n手間と時間がかかる作業を怠らないのは、決してこの翼を愛しているからではない。\n\nヴァルキリーの羽根は抜け落ちると硬質化し、鋭利な刃となる。\n黒翼のそれは、特に硬質化までの時間が早い。抜けた羽根が翼に紛れていれば、近しい人を傷つけてしまうかもしれない。\nエルフリーデの柔らかい翼は、そうさせまいとする努力のたまものだった。\n自分の翼は好きじゃない。けど……\n\n「とても……心地よさそうな顔をしていましたね」\n\n翼に触れた時のマスターの顔、そして優しい手つきを思いだす。\nそしてエルフリーデは、少しだけ自分の努力が誇らしくなるのだった。",
+      "mainEffects": [
+        {
+          "abilityId": 1011,
+          "name": "闇属性リーダー攻撃力",
+          "unit": "%",
+          "value": 45
+        },
+        {
+          "abilityId": 1900,
+          "name": "行軍速度",
+          "unit": "%",
+          "value": 5
+        },
+        {
+          "abilityId": 1000,
+          "name": "攻撃力",
+          "unit": "%",
+          "value": 10
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00061.png",
+      "imageId": 61,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 61"
+      },
+      "acquisition": [
+        {
+          "type": "paid",
+          "name": "たおやかなる黒い翼メモリ オーブパック(初回)",
+          "master": "ShopPack 12881",
+          "detail": "メモリのかけらを含むパック"
+        },
+        {
+          "type": "paid",
+          "name": "たおやかなる黒い翼メモリ オーブパック",
+          "master": "ShopPack 12882",
+          "detail": "メモリのかけらを含むパック"
+        }
+      ],
+      "paidAvailable": true,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 61（2026-10-03取得）"
+    },
+    {
+      "id": "memory-62",
+      "masterId": 62,
+      "name": "ふたりのフィーナ",
+      "rarity": 4,
+      "description": "クリスタルに封じ込められていた無垢なる少女“フィーナ”\n彼女の心の奥底に眠るもうひとつの人格“魔人フィーナ”\n\nクリスタルの力によって、ふたつの人格はそれぞれの身体を手に入れた。\nだが、その存在は非常に不安定でもあった。\n本来であれば同時に存在してはならないふたり。\nそのため、どちらかは消えなくてはならない運命にある。\n\nそんな中、ラピスに訪れる最大の危機。\n愛するレインがいる世界を守るため、魔人フィーナはある決意を固める。\nそして、もうひとりの自分に世界の命運を託すのだった。",
+      "mainEffects": [
+        {
+          "abilityId": 1011,
+          "name": "闇属性リーダー攻撃力",
+          "unit": "%",
+          "value": 31.5
+        },
+        {
+          "abilityId": 1915,
+          "name": "集結部隊行軍速度",
+          "unit": "%",
+          "value": 9
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00062.png",
+      "imageId": 62,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 25000,
+        "source": "Piece 62"
+      },
+      "acquisition": [
+        {
+          "type": "event",
+          "name": "ふたりのフィーナレリック",
+          "master": "Event 3016",
+          "detail": "イベント報酬のメモリのかけら"
+        },
+        {
+          "type": "exchange",
+          "name": "幻影の来訪者専用ショップ",
+          "master": "ShopItem 71302 / Shop 90024",
+          "detail": "ふたりのフィーナのメモリのかけら"
+        }
+      ],
+      "paidAvailable": false,
+      "nonPaidAvailable": true,
+      "source": "PC版 Enhancer 62（2026-10-03取得）"
+    },
+    {
+      "id": "memory-63",
+      "masterId": 63,
+      "name": "相対する信念",
+      "rarity": 5,
+      "description": "クリスタルと共にある世界“ラピス”での冒険は、思いがけぬ形で幕を閉じた。\nそして舞台は新たなる世界“パラデイア”へ――\n\n行方をくらませたレインを追って、ラスウェルとフィーナは、仲間たちとともにパラデイアへと旅立つ。\nそこは、皇帝が力による独裁を敷く恐怖の世界だった。\nラスウェルは、自らの信念を武器に皇帝を支える“オーダーズ”たちと熾烈な戦いを繰り広げていく。\nそしてついに、オーダーズ第4位の戦士“四闘星のヒョウ”が立ちはだかる。\nその仮面の奥に隠された正体は、ある事情からすべてを捨て、力のみを追い求めるようになったレインその人であった。",
+      "mainEffects": [
+        {
+          "abilityId": 1107,
+          "name": "対不浄攻撃力",
+          "unit": "%",
+          "value": 60
+        },
+        {
+          "abilityId": 507,
+          "name": "対不浄素材倍化率",
+          "unit": "%",
+          "value": 15
+        },
+        {
+          "abilityId": 1004,
+          "name": "火属性リーダー攻撃力",
+          "unit": "%",
+          "value": 25
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00063.png",
+      "imageId": 63,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 63"
+      },
+      "acquisition": [
+        {
+          "type": "paid",
+          "name": "FFBE 相対する信念メモリ オーブパック (初回)",
+          "master": "ShopPack 71351",
+          "detail": "メモリのかけらを含むパック"
+        },
+        {
+          "type": "paid",
+          "name": "FFBE 相対する信念メモリ オーブパック",
+          "master": "ShopPack 71352",
+          "detail": "メモリのかけらを含むパック"
+        }
+      ],
+      "paidAvailable": true,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 63（2026-10-03取得）"
+    },
+    {
+      "id": "memory-64",
+      "masterId": 64,
+      "name": "『想い』が織りなす物語",
+      "rarity": 5,
+      "description": "独裁者が支配する世界“パラデイア”を駆け抜ける戦士たち。\n\n“ラピス”で旅をともにした仲間たちに加え、かつては敵対していた“アルドールの六盟傑”たちとも行動をともにすることに。\n\nその共通の目的は、皇帝からの世界の解放――700年越しの戦いに決着をつけ、パラデイアに平和をもたらすことだ。\n\nさらには謎の剣士アクスターも登場。道に惑うラスウェルに、歩むべき道を教え説く。\n\n様々な想いが交わり、壮大な物語の新たな局面が紡がれていく……",
+      "mainEffects": [
+        {
+          "abilityId": 1001,
+          "name": "歩兵攻撃力",
+          "unit": "%",
+          "value": 30
+        },
+        {
+          "abilityId": 1900,
+          "name": "行軍速度",
+          "unit": "%",
+          "value": 5
+        },
+        {
+          "abilityId": 1014,
+          "name": "部隊時攻撃力",
+          "unit": "%",
+          "value": 30
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00064.png",
+      "imageId": 64,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 64"
+      },
+      "acquisition": [
+        {
+          "type": "paid",
+          "name": "FFBE 『想い』が織りなす物語メモリ オーブパック (初回)",
+          "master": "ShopPack 71441",
+          "detail": "メモリのかけらを含むパック"
+        },
+        {
+          "type": "paid",
+          "name": "FFBE 『想い』が織りなす物語メモリ オーブパック",
+          "master": "ShopPack 71442",
+          "detail": "メモリのかけらを含むパック"
+        }
+      ],
+      "paidAvailable": true,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 64（2026-10-03取得）"
+    },
+    {
+      "id": "memory-65",
+      "masterId": 65,
+      "name": "魔人と異界のモーグリ王",
+      "rarity": 5,
+      "description": "「余のコレクションと交換クポ～！」\n\n次元の狭間の先に広がる世界――“異界”\nそこには不可思議な生物モーグリたちが暮らす場所が存在し、中央の部屋に彼らを束ねる王様が鎮座している。\n王様は世界中の品々を集めており、珍しいものを持っていくと旅や戦いに必要な品物と交換してくれるらしい。\n魔人フィーナも、アイテムを引き換えてもらうために異界を訪れたが……\n\n「こ、これは……！」\n\n偉大なる王と彼を補佐する大臣の愛くるしい姿に、さしものヘスの魔人も本来の目的を忘れてしまいそうになるのであった。\n",
+      "mainEffects": [
+        {
+          "abilityId": 1002,
+          "name": "弓兵攻撃力",
+          "unit": "%",
+          "value": 30
+        },
+        {
+          "abilityId": 1900,
+          "name": "行軍速度",
+          "unit": "%",
+          "value": 5
+        },
+        {
+          "abilityId": 1014,
+          "name": "部隊時攻撃力",
+          "unit": "%",
+          "value": 30
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00065.png",
+      "imageId": 65,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 65"
+      },
+      "acquisition": [
+        {
+          "type": "paid",
+          "name": "FFBE 魔人と異界のモーグリ王メモリ オーブパック (初回)",
+          "master": "ShopPack 71371",
+          "detail": "メモリのかけらを含むパック"
+        },
+        {
+          "type": "paid",
+          "name": "FFBE 魔人と異界のモーグリ王メモリ オーブパック",
+          "master": "ShopPack 71372",
+          "detail": "メモリのかけらを含むパック"
+        }
+      ],
+      "paidAvailable": true,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 65（2026-10-03取得）"
+    },
+    {
+      "id": "memory-66",
+      "masterId": 66,
+      "name": "アルベドの少女",
+      "rarity": 4,
+      "description": "「『シン』をやっつけても……その時……ユウナは……」\n\nエボンの教えが禁じた機械を使い、寺院から異端とみなされているアルベド族。族長の娘リュックは、ユウナのガードとして『シン』を倒すための旅に加わった。\n\nアルベド族は、召喚士たちが究極召喚のために生贄となるのを止めるため、“召喚士の保護”を行っている。\nリュックも最初はそのつもりで、ユウナに近づいた。だが、ユウナのひたむきな思いを知り、彼女の命だけでなくその思いや決意も守りたいと思うようになっていく……",
+      "mainEffects": [
+        {
+          "abilityId": 1007,
+          "name": "土属性リーダー攻撃力",
+          "unit": "%",
+          "value": 31.5
+        },
+        {
+          "abilityId": 1915,
+          "name": "集結部隊行軍速度",
+          "unit": "%",
+          "value": 9
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00066.png",
+      "imageId": 66,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 25000,
+        "source": "Piece 66"
+      },
+      "acquisition": [
+        {
+          "type": "event",
+          "name": "アルベド族のお宝レリック",
+          "master": "Event 3017",
+          "detail": "イベント報酬のメモリのかけら"
+        },
+        {
+          "type": "exchange",
+          "name": "召喚士の旅路と夢専用ショップ",
+          "master": "ShopItem 71402 / Shop 90025",
+          "detail": "アルベドの少女のメモリのかけら"
+        }
+      ],
+      "paidAvailable": false,
+      "nonPaidAvailable": true,
+      "source": "PC版 Enhancer 66（2026-10-03取得）"
+    },
+    {
+      "id": "memory-67",
+      "masterId": 67,
+      "name": "聖なる泉にて",
+      "rarity": 5,
+      "description": "「できないよ……できないんだよ……」\n\n人々の死を許容する寺院の実態を知り、さらに彼らから反逆者の汚名を着せられたユウナ。\n仲間たちの助けにより、マカラーニャの森まで逃走し、そこで改めて自分の旅が何だったのかを自問する。\n\nもう旅なんかやめて楽しく暮らそう、と語りかけるティーダ。\nそれもいいかもと、応じるが『シン』を倒すという使命を捨て去ることはできない。\n\nここまで耐えてきたユウナの心はついに折れ、涙を流す。\nティーダは震える肩にそっと触れ、彼女を抱きしめるのだった。",
+      "mainEffects": [
+        {
+          "abilityId": 1001,
+          "name": "歩兵攻撃力",
+          "unit": "%",
+          "value": 32.5
+        },
+        {
+          "abilityId": 1900,
+          "name": "行軍速度",
+          "unit": "%",
+          "value": 5
+        },
+        {
+          "abilityId": 1008,
+          "name": "雷属性リーダー攻撃力",
+          "unit": "%",
+          "value": 27.5
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00067.png",
+      "imageId": 67,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 67"
+      },
+      "acquisition": [
+        {
+          "type": "paid",
+          "name": "FF10 聖なる泉にてメモリ オーブパック (初回)",
+          "master": "ShopPack 71691",
+          "detail": "メモリのかけらを含むパック"
+        },
+        {
+          "type": "paid",
+          "name": "FF10 聖なる泉にてメモリ オーブパック",
+          "master": "ShopPack 71692",
+          "detail": "メモリのかけらを含むパック"
+        }
+      ],
+      "paidAvailable": true,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 67（2026-10-03取得）"
+    },
+    {
+      "id": "memory-68",
+      "masterId": 68,
+      "name": "歴戦のガード",
+      "rarity": 5,
+      "description": "「ガードとしての最後のつとめ、果たさせていただきます」\n\n幼い頃から、自分の妹のようにユウナを見守ってきたルールーは、歴戦のガードでもある。魔道士としての腕を磨き、過去に２度ガードとして召喚士の旅に同行している。\nその旅は、彼女にとって苦い経験となった。\n\n成長したユウナは、召喚士として父の遺志を継ぐ決意を固める。\n召喚士の旅路は悲劇的な結末しかない。だからルールーは何度もユウナを止めた。しかし、その思いは変わらない。\n\nならばせめて、彼女の旅を助けよう。\nルールーはガードとして３度目の旅を始める。",
+      "mainEffects": [
+        {
+          "abilityId": 120,
+          "name": "採集量",
+          "unit": "%",
+          "value": 15
+        },
+        {
+          "abilityId": 1900,
+          "name": "行軍速度",
+          "unit": "%",
+          "value": 5
+        },
+        {
+          "abilityId": 113,
+          "name": "食料採集量",
+          "unit": "%",
+          "value": 10
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00068.png",
+      "imageId": 68,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 68"
+      },
+      "acquisition": [
+        {
+          "type": "paid",
+          "name": "FF10 歴戦のガードメモリ オーブパック(初回)",
+          "master": "ShopPack 71831",
+          "detail": "メモリのかけらを含むパック"
+        },
+        {
+          "type": "paid",
+          "name": "FF10 歴戦のガードメモリ オーブパック",
+          "master": "ShopPack 71832",
+          "detail": "メモリのかけらを含むパック"
+        }
+      ],
+      "paidAvailable": true,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 68（2026-10-03取得）"
+    },
+    {
+      "id": "memory-69",
+      "masterId": 69,
+      "name": "召喚士の旅路と夢",
+      "rarity": 5,
+      "description": "『シン』によってザナルカンドからスピラへ飛ばされたティーダ。\n『シン』を倒す決意を胸に召喚士となったユウナ。\n\nふたりは、仲間たちとともに『シン』を倒し、人々の心を安らげるための旅を続けてきた。\n\nそして――\n\n「ここって……どこッスか？　オレたち、どうしてここに……？」\n「わからない。誰かに呼ばれたような気がしたんだけど……」\n\n突如、レンゴクに呼び出されたティーダとユウナ。\nスピラとは全く異なる、『シン』の存在しない世界。\nしかしここにも、痛みと悲しみはあり、過酷な運命が人々の心を支配している……\n\nそんな見知らぬ世界で、召喚士とガードの新たなる旅が始まる。",
+      "mainEffects": [
+        {
+          "abilityId": 1010,
+          "name": "光属性リーダー攻撃力",
+          "unit": "%",
+          "value": 47.5
+        },
+        {
+          "abilityId": 1900,
+          "name": "行軍速度",
+          "unit": "%",
+          "value": 5
+        },
+        {
+          "abilityId": 1000,
+          "name": "攻撃力",
+          "unit": "%",
+          "value": 12.5
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00069.png",
+      "imageId": 69,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 69"
+      },
+      "acquisition": [
+        {
+          "type": "paid",
+          "name": "FF10 召喚士の旅路と夢メモリ オーブパック (初回)",
+          "master": "ShopPack 71751",
+          "detail": "メモリのかけらを含むパック"
+        },
+        {
+          "type": "paid",
+          "name": "FF10 召喚士の旅路と夢メモリ オーブパック",
+          "master": "ShopPack 71752",
+          "detail": "メモリのかけらを含むパック"
+        }
+      ],
+      "paidAvailable": true,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 69（2026-10-03取得）"
+    },
+    {
+      "id": "memory-70",
+      "masterId": 70,
+      "name": "祝！出航1.5周年♪",
+      "rarity": 5,
+      "description": "「おっめでと～～～！」\n\nぱんっ！　と勢いよく弾けたクラッカーから紙吹雪が舞う。\n今日は、出航1.5周年を祝うささやかなパーティー。ビーチェもマスターも、他のみんなも上機嫌だ。\n戦いばかりのレンゴクで、こんなふうに笑って過ごせること自体が奇跡みたいなものなのかもしれない。\nその奇跡の航程を振り返るように、思い出話に花が咲く。\n\n「いやーほんっと色々あったよね！　でもさ、まだ1.5周年だよ？\nこれからもっともっと楽しくなるんだから！」\n\nそう言ってビーチェは隠し持っていたクラッカーを取り出した。\n\n「と、いうわけで景気づけにもう一本いっちゃいまーす！」",
+      "mainEffects": [
+        {
+          "abilityId": 120,
+          "name": "採集量",
+          "unit": "%",
+          "value": 15
+        },
+        {
+          "abilityId": 1900,
+          "name": "行軍速度",
+          "unit": "%",
+          "value": 5
+        },
+        {
+          "abilityId": 115,
+          "name": "金属採集量",
+          "unit": "%",
+          "value": 10
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00070.png",
+      "imageId": 70,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 70"
+      },
+      "acquisition": [
+        {
+          "type": "paid",
+          "name": "祝!出航1.5周年♪メモリ オーブパック(初回)",
+          "master": "ShopPack 12981",
+          "detail": "メモリのかけらを含むパック"
+        },
+        {
+          "type": "paid",
+          "name": "祝!出航1.5周年♪メモリ オーブパック",
+          "master": "ShopPack 12982",
+          "detail": "メモリのかけらを含むパック"
+        }
+      ],
+      "paidAvailable": true,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 70（2026-10-03取得）"
+    },
+    {
+      "id": "memory-71",
+      "masterId": 71,
+      "name": "夏の宵の楽しみ",
+      "rarity": 4,
+      "description": "「……きれいだな」\n\nある夏の夜。エリ＝アノンとグウィン＝リンは、手持ち花火に火を灯していた。\nぱちぱちと弾ける小さな光に、グウィン＝リンは思わず目を細める。\n\n「花火というから、もっと騒がしいものを想像していたが……」\n「手持ち花火ですから……あの、こういうのもお嫌いですか？」\n\n少し不安げにエリ＝アノンが見つめる。グウィン＝リンは小さく笑った。\n\n「いや、こういうささやかなものなら、花火も悪くない」\n「ふふっ、よかったです。では線香花火も試してみましょう」\n\n差し出された細い花火を受け取り、グウィン＝リンは慎重に火を移す。\n小さな光の玉がぷるぷると揺れると、二人は声をひそめて笑った。\n夏の宵の楽しみは、まだもう少し続きそうだった。",
+      "mainEffects": [
+        {
+          "abilityId": 1006,
+          "name": "風属性リーダー攻撃力",
+          "unit": "%",
+          "value": 31.5
+        },
+        {
+          "abilityId": 1915,
+          "name": "集結部隊行軍速度",
+          "unit": "%",
+          "value": 9
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00071.png",
+      "imageId": 71,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 25000,
+        "source": "Piece 71"
+      },
+      "acquisition": [
+        {
+          "type": "event",
+          "name": "スイカレリック",
+          "master": "Event 3018",
+          "detail": "イベント報酬のメモリのかけら"
+        }
+      ],
+      "paidAvailable": false,
+      "nonPaidAvailable": true,
+      "source": "PC版 Enhancer 71（2026-10-03取得）"
+    },
+    {
+      "id": "memory-72",
+      "masterId": 72,
+      "name": "プールサイドの午睡",
+      "rarity": 5,
+      "description": "「しぃ～～……」\n\nマスターがビーチチェアに近づくと、エプレはそっと唇に指をあてた。\n隣のチェアでは、サクヤがすぅすぅと寝息を立てている。はしゃぎ疲れたのか、すっかり夢の中だ。\n\n「あ、えっと……別に、気を利かせたとかじゃなくて」\n「だってサクヤちゃん、こんな気持ちよさそうに寝てるのに、わざわざ起こすのも罪悪感あるっていうか……」\n\n言い訳のように早口で続ける。\nけど、彼女が少し前にパラソルの位置をずらしていたことを、マスターは知っている。\nサクヤの顔に、そっと影を作ってあげたのだろう。\nその不器用な優しさに、マスターも微笑みながらうなずく。\n\n「……笑わないでよ。こういうの、慣れてないんだから」\n\n夏の風が濡れた髪を揺らす。静かなプールサイドで、サクヤの眠りはもう少しだけ守られることになった。\n",
+      "mainEffects": [
+        {
+          "abilityId": 1007,
+          "name": "土属性リーダー攻撃力",
+          "unit": "%",
+          "value": 47.5
+        },
+        {
+          "abilityId": 1900,
+          "name": "行軍速度",
+          "unit": "%",
+          "value": 5
+        },
+        {
+          "abilityId": 1000,
+          "name": "攻撃力",
+          "unit": "%",
+          "value": 12.5
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00072.png",
+      "imageId": 72,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 72"
+      },
+      "acquisition": [
+        {
+          "type": "paid",
+          "name": "プールサイドの午睡メモリ オーブパック(初回)",
+          "master": "ShopPack 13231",
+          "detail": "メモリのかけらを含むパック"
+        },
+        {
+          "type": "paid",
+          "name": "プールサイドの午睡メモリ オーブパック",
+          "master": "ShopPack 13232",
+          "detail": "メモリのかけらを含むパック"
+        }
+      ],
+      "paidAvailable": true,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 72（2026-10-03取得）"
+    },
+    {
+      "id": "memory-73",
+      "masterId": 73,
+      "name": "赤くて甘くてジューシー",
+      "rarity": 5,
+      "description": "「みんなー、マスターから差し入れだって！」\n\nプールで遊ぶサクヤたちの元へ、アレクシアがよく冷えたスイカの皿を運んできた。強い日差しの下、はしゃぎ続けた三人の喉はすっかりカラカラだ。\n\n「ありがとう。塩はあるか？」\n「え、お塩ですか？」\n\nジュードの注文にサクヤは驚く。\n\n「甘さが引き立つんだよ。通だね、ジュード！」\n\nアレクシアが楽しげに笑う横で、サクヤは半信半疑のまま小皿を差し出す。\n大きめの一切れにかぶりついたジュードとサクヤの口いっぱいに、ひんやり甘い果汁が広がった。\n\n「……おいしいです」\n「でしょ？　まだまだあるから、みんなで食べよ！」\n\n水しぶきの名残をまとったプールサイドに、三人の明るい笑い声が弾けた。\n",
+      "mainEffects": [
+        {
+          "abilityId": 1005,
+          "name": "水属性リーダー攻撃力",
+          "unit": "%",
+          "value": 47.5
+        },
+        {
+          "abilityId": 1900,
+          "name": "行軍速度",
+          "unit": "%",
+          "value": 5
+        },
+        {
+          "abilityId": 1000,
+          "name": "攻撃力",
+          "unit": "%",
+          "value": 12.5
+        },
+        {
+          "abilityId": 3301,
+          "name": "スタン時間短縮(秒)",
+          "unit": "秒",
+          "value": 1
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00073.png",
+      "imageId": 73,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 73"
+      },
+      "acquisition": [
+        {
+          "type": "paid",
+          "name": "赤くて甘くてジューシーメモリ オーブパック(初回)",
+          "master": "ShopPack 13321",
+          "detail": "メモリのかけらを含むパック"
+        },
+        {
+          "type": "paid",
+          "name": "赤くて甘くてジューシーメモリ オーブパック",
+          "master": "ShopPack 13322",
+          "detail": "メモリのかけらを含むパック"
+        }
+      ],
+      "paidAvailable": true,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 73（2026-10-03取得）"
+    },
+    {
+      "id": "memory-74",
+      "masterId": 74,
+      "name": "しあわせを頬張って",
+      "rarity": 5,
+      "description": "「う～ん、おいしい～♪」\n\n陽の光が暖かい、昼下がり城下町。\n軒先に座る昏葉が、嬉しそうな声を上げる。\n\nこの店はスオウ風の菓子を出している甘味屋で、スオウ出身のエンバースたちの人気も高い。\n甘いものに目がない昏葉は、召喚されて以来この店に通い詰めている。\n\n三色団子は、もちもちの食感も優しい甘さも文句なし。一緒に出されたお茶も適度な渋さが嬉しい。\nおかわりしようか……でも、ちょっと食べ過ぎ？\nけど今日は訓練を頑張ったし、ちょっとぐらい自分を甘やかしても……\n\n「あ、あの～」\n\n意を決して奥にいる店主に声をかけるが返事はない。\n\n「あの……お、おかわりを……」\n\n狢（むじな）族に掛けられた呪いで極端に影が薄い昏葉は、常連になった今でも店主に忘れ去られてしまう。\nおかわりを頼めるようになるのはまだまだ先のようだ。\n",
+      "mainEffects": [
+        {
+          "abilityId": 120,
+          "name": "採集量",
+          "unit": "%",
+          "value": 16
+        },
+        {
+          "abilityId": 1900,
+          "name": "行軍速度",
+          "unit": "%",
+          "value": 6
+        },
+        {
+          "abilityId": 113,
+          "name": "食料採集量",
+          "unit": "%",
+          "value": 10
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00074.png",
+      "imageId": 74,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 74"
+      },
+      "acquisition": [
+        {
+          "type": "paid",
+          "name": "しあわせを頬張ってメモリ オーブパック(初回)",
+          "master": "ShopPack 13571",
+          "detail": "メモリのかけらを含むパック"
+        },
+        {
+          "type": "paid",
+          "name": "しあわせを頬張ってメモリ オーブパック",
+          "master": "ShopPack 13572",
+          "detail": "メモリのかけらを含むパック"
+        }
+      ],
+      "paidAvailable": true,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 74（2026-10-03取得）"
+    },
+    {
+      "id": "memory-75",
+      "masterId": 75,
+      "name": "最後の“真剣”勝負",
+      "rarity": 5,
+      "description": "「……やりすぎちまったなぁ」\n\n愛刀を拭紙で拭いながら、残夜はつぶやく。\n敵は、残夜の剣技で跡形もなく吹き飛んでいた。\n近隣の村を脅かす妖の退治を請け負ったのだが、いつの間にか見届け役の村人も姿を消していた。\n残夜に恐れをなして逃げたか。なら戻ったところで、村には入れてもらえまい。\n\n大妖の呪いにかかって以来、日に日に力を抑えられなくなってきている。\n力に魅入られ、殺戮に酔いしれる己を感じる。\n暁や紫津乃に迷惑をかけまいと一族を出奔したが、これではどこへ行っても同じだ。\n\n「決めたぞ。俺は金輪際、刀を抜かん！」\n\n幸い、愛刀は拵えも堅牢で、鞘のまま戦うことも出来る。\nそれでもいずれ呪いに飲み込まれるだろうが、“ケリをつける”までの一時しのぎにはなろう。\n\nそんな残夜の決意を、満月と野ウサギだけが見守っていた。",
+      "mainEffects": [
+        {
+          "abilityId": 1004,
+          "name": "火属性リーダー攻撃力",
+          "unit": "%",
+          "value": 50
+        },
+        {
+          "abilityId": 1900,
+          "name": "行軍速度",
+          "unit": "%",
+          "value": 6
+        },
+        {
+          "abilityId": 1000,
+          "name": "攻撃力",
+          "unit": "%",
+          "value": 15
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00075.png",
+      "imageId": 75,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 75"
+      },
+      "acquisition": [
+        {
+          "type": "paid",
+          "name": "最後の“真剣”勝負メモリ オーブパック(初回)",
+          "master": "ShopPack 13621",
+          "detail": "メモリのかけらを含むパック"
+        },
+        {
+          "type": "paid",
+          "name": "最後の“真剣”勝負メモリ オーブパック",
+          "master": "ShopPack 13622",
+          "detail": "メモリのかけらを含むパック"
+        }
+      ],
+      "paidAvailable": true,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 75（2026-10-03取得）"
+    },
+    {
+      "id": "memory-76",
+      "masterId": 76,
+      "name": "月より団子",
+      "rarity": 5,
+      "description": "「ふにゃああっ！！」\n\n甲高い声が月夜に響く。\n\n「つまみ食いはメッですよ～、ニャマちゃん」\n\n今夜はお月見。チモシーが準備に勤しんでいる隙に、ニャマがお月見団子を取ろうとしたのだった。\nしかし、彼女の目論見はあえなく失敗。その爪があと少しでお団子に届くという所で、チモシーに見つかってしまったのだ。\n\n「何してるんスか、ニャマ……」\n\n一部始終を見ていたヴァルトも、これには呆れ顔だ。\n\n「あとちょっと……あとちょっとだったのにぃ」\n\nチモシーにはたかれた手の甲をさすりながらニャマは悔しそうにつぶやく。\nそうしている間にもチモシーはせっせとお供え物を並べていた。\n\n「もう少しで準備も終わりますから。そうしたら皆でいただきましょう～」",
+      "mainEffects": [
+        {
+          "abilityId": 1103,
+          "name": "対龍攻撃力",
+          "unit": "%",
+          "value": 80
+        },
+        {
+          "abilityId": 503,
+          "name": "対龍素材倍化率",
+          "unit": "%",
+          "value": 20
+        },
+        {
+          "abilityId": 1008,
+          "name": "雷属性リーダー攻撃力",
+          "unit": "%",
+          "value": 30
+        },
+        {
+          "abilityId": 3301,
+          "name": "スタン時間短縮(秒)",
+          "unit": "秒",
+          "value": 1
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00076.png",
+      "imageId": 76,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 76"
+      },
+      "acquisition": [
+        {
+          "type": "paid",
+          "name": "月より団子メモリ オーブパック(初回)",
+          "master": "ShopPack 13661",
+          "detail": "メモリのかけらを含むパック"
+        },
+        {
+          "type": "paid",
+          "name": "月より団子メモリ オーブパック",
+          "master": "ShopPack 13662",
+          "detail": "メモリのかけらを含むパック"
+        }
+      ],
+      "paidAvailable": true,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 76（2026-10-03取得）"
+    },
+    {
+      "id": "memory-77",
+      "masterId": 77,
+      "name": "屍の姫に扮して",
+      "rarity": 5,
+      "description": "「ゾンビヴァルキリーの復活……がおー」\n\nハロウィンの仮装でゾンビのプリンセスに扮したシグルドリーヴァ。特設の撮影セットで記念撮影に興じる。\n棺桶の中からゆっくりと上体を起こし、レンズを一瞥する。死者の姫君らしい、冷たい視線。何度も練習した、渾身の表情だ。\n\n「……どう？　ちゃんと、怖い？」\n\nカメラマン役のマスターも笑ってうなずく。するとゾンビのプリンセスは小さな笑みを浮かべ、張り詰めた雰囲気もとたんにやわらいでしまう。\n\n「あ、今はだめ……ゾンビっぽくない顔してる」\n\nシグルドリーヴァもそれに気づいたようで、棺桶の中に戻ってしまった。\n\n「ゾンビの顔つくるの……準備がいる……」\n\nそう言ってなかなか出てこないプリンセス。撮影はもう少しだけ長引きそうだった。",
+      "mainEffects": [
+        {
+          "abilityId": 1010,
+          "name": "光属性リーダー攻撃力",
+          "unit": "%",
+          "value": 50
+        },
+        {
+          "abilityId": 1900,
+          "name": "行軍速度",
+          "unit": "%",
+          "value": 6
+        },
+        {
+          "abilityId": 1000,
+          "name": "攻撃力",
+          "unit": "%",
+          "value": 15
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00077.png",
+      "imageId": 77,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 77"
+      },
+      "acquisition": [
+        {
+          "type": "paid",
+          "name": "屍の姫に扮してメモリ オーブパック(初回)",
+          "master": "ShopPack 13921",
+          "detail": "メモリのかけらを含むパック"
+        },
+        {
+          "type": "paid",
+          "name": "屍の姫に扮してメモリ オーブパック",
+          "master": "ShopPack 13922",
+          "detail": "メモリのかけらを含むパック"
+        }
+      ],
+      "paidAvailable": true,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 77（2026-10-03取得）"
+    },
+    {
+      "id": "memory-80",
+      "masterId": 80,
+      "name": "仮装の支度",
+      "rarity": 4,
+      "description": "「あ、それいいかも。似合ってるよ、アレフ！」\n\nハロウィンのパレードに参加するため、弟の衣装を選ぶライラ。\n狼男の着ぐるみに身を包んだアレフは両手を持ち上げ、爪を構えてみる。\n\n「……こんな感じ？」\n「そうそう！」\n\n爪の先がぴくぴくと動く。うまく力が入らず、ぎこちない仕草だったけど、ライラは笑って頷いた。\n\n「そういえば、パレードには街の子どももたくさん来るみたい」\n\nその一言に、アレフの手が止まる。\n\n「……そうなんだ」\n\n弟の口元がかすかにほころんだ。\n裏稼業の日々には、こんな他愛のない時間さえ許されなかった。\nだからこそ今夜は、アレフに目いっぱい楽しんでほしいとライラは思うのだった。\n",
+      "mainEffects": [
+        {
+          "abilityId": 1008,
+          "name": "雷属性リーダー攻撃力",
+          "unit": "%",
+          "value": 31.5
+        },
+        {
+          "abilityId": 1915,
+          "name": "集結部隊行軍速度",
+          "unit": "%",
+          "value": 9
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00080.png",
+      "imageId": 80,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 25000,
+        "source": "Piece 80"
+      },
+      "acquisition": [
+        {
+          "type": "event",
+          "name": "パンプキンレリック",
+          "master": "Event 3019",
+          "detail": "イベント報酬のメモリのかけら"
+        }
+      ],
+      "paidAvailable": false,
+      "nonPaidAvailable": true,
+      "source": "PC版 Enhancer 80（2026-10-03取得）"
+    },
+    {
+      "id": "memory-10001",
+      "masterId": 10001,
+      "name": "ロッピィ",
+      "rarity": 3,
+      "description": "「見た目は可愛いが、“頭が固くて”厄介だ」\n-ベテランハンター\n\n兜を被った獣のような見た目の魔獣。\nふわふわとして一見愛らしいが気性は荒く、大人であっても怪我を負わされることがある。\n頭の兜は飾りではなくその硬度を攻撃にも防御にも活かしている。\n噂によると手懐けて背中に乗る者もいるらしいが基本的には推奨しない。",
+      "mainEffects": [
+        {
+          "abilityId": 1100,
+          "name": "対魔獣攻撃力",
+          "unit": "%",
+          "value": 20
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-10001.png",
+      "imageId": 10001,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 5000,
+        "source": "Piece 10001"
+      },
+      "acquisition": [
+        {
+          "type": "exchange",
+          "name": "メモリメダル",
+          "master": "ShopItem 40001 / Shop 90005",
+          "detail": "ロッピィのメモリのかけら"
+        },
+        {
+          "type": "box",
+          "name": "選べるメモリのかけらBOX v1",
+          "master": "Consumable 13071",
+          "detail": "フィールド通常魔獣のメモリのかけらを選択して獲得します"
+        }
+      ],
+      "paidAvailable": false,
+      "nonPaidAvailable": true,
+      "source": "PC版 Enhancer 10001（2026-10-03取得）"
+    },
+    {
+      "id": "memory-10002",
+      "masterId": 10002,
+      "name": "パムフルル",
+      "rarity": 3,
+      "description": "「おかあさ～ん、あのフワフワ浮いてるの、なに？」\n-街の子ども\n\n宙に浮かぶ幽霊のような魔獣。\n基本的にはその場を漂うだけであり危険性は低いがしばし気味悪がる住人等によって討伐依頼が出される。",
+      "mainEffects": [
+        {
+          "abilityId": 120,
+          "name": "採集量",
+          "unit": "%",
+          "value": 8
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-10002.png",
+      "imageId": 10002,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 5000,
+        "source": "Piece 10002"
+      },
+      "acquisition": [
+        {
+          "type": "exchange",
+          "name": "メモリメダル",
+          "master": "ShopItem 40002 / Shop 90005",
+          "detail": "パムフルルのメモリのかけら"
+        },
+        {
+          "type": "box",
+          "name": "選べるメモリのかけらBOX v1",
+          "master": "Consumable 13071",
+          "detail": "フィールド通常魔獣のメモリのかけらを選択して獲得します"
+        }
+      ],
+      "paidAvailable": false,
+      "nonPaidAvailable": true,
+      "source": "PC版 Enhancer 10002（2026-10-03取得）"
+    },
+    {
+      "id": "memory-10003",
+      "masterId": 10003,
+      "name": "スウィーパー",
+      "rarity": 3,
+      "description": "「さあ戦闘も終わったようだな。あの厄介なブヨブヨが来る前に回収するぞ」\n-戦場泥棒\n\nゼラチン質の本体に硬い殻のようなものを背負う魔獣。\n生物の死体を主食にしているとされ、戦場跡を這う姿をよく目撃される。\n背中の殻状の物体については学説が割れており、異世界の遺物とする見解が有力であるものの真相は依然謎のままである。",
+      "mainEffects": [
+        {
+          "abilityId": 1000,
+          "name": "攻撃力",
+          "unit": "%",
+          "value": 12.6
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-10003.png",
+      "imageId": 10003,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 10000,
+        "source": "Piece 10003"
+      },
+      "acquisition": [
+        {
+          "type": "exchange",
+          "name": "メモリメダル",
+          "master": "ShopItem 40003 / Shop 90005",
+          "detail": "スウィーパーのメモリのかけら"
+        },
+        {
+          "type": "box",
+          "name": "選べるメモリのかけらBOX v1",
+          "master": "Consumable 13071",
+          "detail": "フィールド通常魔獣のメモリのかけらを選択して獲得します"
+        }
+      ],
+      "paidAvailable": false,
+      "nonPaidAvailable": true,
+      "source": "PC版 Enhancer 10003（2026-10-03取得）"
+    },
+    {
+      "id": "memory-10004",
+      "masterId": 10004,
+      "name": "ラスティ",
+      "rarity": 3,
+      "description": "「ガワは錆びてるけどパーツはまだまだ使えるんだよね～」\n-アリア＝ディス\n\n永い時を経て錆びついた機械人形の魔獣。\n工業用だったものが軍事用に改造された形跡があり右腕に取り付けられた砲身がその典型といえる。\n人為的なものなのか自発的なものなのか原因は不明だが、人間に敵対する行動原理となっているため用心が必要。",
+      "mainEffects": [
+        {
+          "abilityId": 1105,
+          "name": "対堕天攻撃力",
+          "unit": "%",
+          "value": 42
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-10004.png",
+      "imageId": 10004,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 10000,
+        "source": "Piece 10004"
+      },
+      "acquisition": [
+        {
+          "type": "exchange",
+          "name": "メモリメダル",
+          "master": "ShopItem 40004 / Shop 90005",
+          "detail": "ラスティのメモリのかけら"
+        },
+        {
+          "type": "box",
+          "name": "選べるメモリのかけらBOX v1",
+          "master": "Consumable 13071",
+          "detail": "フィールド通常魔獣のメモリのかけらを選択して獲得します"
+        }
+      ],
+      "paidAvailable": false,
+      "nonPaidAvailable": true,
+      "source": "PC版 Enhancer 10004（2026-10-03取得）"
+    },
+    {
+      "id": "memory-10005",
+      "masterId": 10005,
+      "name": "ファルファラ",
+      "rarity": 3,
+      "description": "「森の妖精は歌と踊りで旅人を歓迎しました」\n-童話『森の歌声』\n\n人間の少女のような姿に蝶の羽が生えた魔獣。\nしばし物語の妖精と混同されるが人を襲うことが知られておりその姿に騙されて森で姿を消す旅人が後を絶たない。",
+      "mainEffects": [
+        {
+          "abilityId": 1006,
+          "name": "風属性リーダー攻撃力",
+          "unit": "%",
+          "value": 30.8
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-10005.png",
+      "imageId": 10005,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 15000,
+        "source": "Piece 10005"
+      },
+      "acquisition": [
+        {
+          "type": "event",
+          "name": "発展の軌跡",
+          "master": "Event 10005",
+          "detail": "イベント報酬のメモリのかけら"
+        },
+        {
+          "type": "exchange",
+          "name": "メモリメダル",
+          "master": "ShopItem 40005 / Shop 90005",
+          "detail": "ファルファラのメモリのかけら"
+        },
+        {
+          "type": "box",
+          "name": "選べるメモリのかけらBOX v1",
+          "master": "Consumable 13071",
+          "detail": "フィールド通常魔獣のメモリのかけらを選択して獲得します"
+        }
+      ],
+      "paidAvailable": false,
+      "nonPaidAvailable": true,
+      "source": "PC版 Enhancer 10005（2026-10-03取得）"
+    },
+    {
+      "id": "memory-10006",
+      "masterId": 10006,
+      "name": "ウォッチャー",
+      "rarity": 3,
+      "description": "「俺たちはいつも見られている。監視されているんだ！」\n-路地裏に住む物乞い\n\n胸の巨大な目をはじめ無数の目を持つ魔獣。\n地獄からこの世界を観察するために送り込まれたとされ、本体以外にも目を分けた眷属達を従えている。\n基本的には姿を隠しているが危険な存在であり、直接危害を加えられる前に討伐することが推奨される。",
+      "mainEffects": [
+        {
+          "abilityId": 1218,
+          "name": "対宝庫攻撃力",
+          "unit": "%",
+          "value": 34.2
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-10006.png",
+      "imageId": 10006,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 15000,
+        "source": "Piece 10006"
+      },
+      "acquisition": [
+        {
+          "type": "event",
+          "name": "練兵の軌跡",
+          "master": "Event 10006",
+          "detail": "イベント報酬のメモリのかけら"
+        },
+        {
+          "type": "exchange",
+          "name": "メモリメダル",
+          "master": "ShopItem 40006 / Shop 90005",
+          "detail": "ウォッチャーのメモリのかけら"
+        },
+        {
+          "type": "box",
+          "name": "選べるメモリのかけらBOX v1",
+          "master": "Consumable 13071",
+          "detail": "フィールド通常魔獣のメモリのかけらを選択して獲得します"
+        }
+      ],
+      "paidAvailable": false,
+      "nonPaidAvailable": true,
+      "source": "PC版 Enhancer 10006（2026-10-03取得）"
+    },
+    {
+      "id": "memory-10007",
+      "masterId": 10007,
+      "name": "忘れられし者",
+      "rarity": 3,
+      "description": "「神話の時代においては反逆者に対してその名も功績もすべて消し去るという記録抹消刑が科されたという」\n-『帝国法典入門』\n\n枷をはめられた巨人のような魔獣。\nかつては人々から崇められる英雄であったとされるが、神罰に遭いもはやその功績も名前すらも知るものはいない。\nどういうわけかその力までは奪われておらずその身を縛る枷も今や武器として振るわれている。",
+      "mainEffects": [],
+      "mainEffectsKnown": false,
+      "image": "assets/game/enhancer-thumbnail-10008.png",
+      "imageId": 10008,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 15000,
+        "source": "Piece 10007"
+      },
+      "acquisition": [
+        {
+          "type": "exchange",
+          "name": "メモリメダル",
+          "master": "ShopItem 40007 / Shop 90005",
+          "detail": "忘れられし者のメモリのかけら"
+        }
+      ],
+      "paidAvailable": false,
+      "nonPaidAvailable": true,
+      "source": "PC版 Enhancer 10007（2026-10-03取得）"
+    },
+    {
+      "id": "memory-10008",
+      "masterId": 10008,
+      "name": "グリュプス",
+      "rarity": 3,
+      "description": "「流れ星は神々がグリュプスに引かれた車で天上を駆けている姿だと信じられていた」\n-『教団以前の民間信仰について』\n\n猛禽類の翼と頭部に肉食動物のような胴体を持つ魔獣。\nその姿から神話に登場する“グリュプス”の名が付けられた。\n観測された生態には奇妙な点が多く、狩りを行うことはあるが獲物を捕食することはないという。\n遠くから見る分には荘厳だが、ひとたび近づけばその無慈悲な表情に底知れぬ不気味さを覚えるだろう。",
+      "mainEffects": [
+        {
+          "abilityId": 1101,
+          "name": "対悪魔攻撃力",
+          "unit": "%",
+          "value": 44
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-10007.png",
+      "imageId": 10007,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 15000,
+        "source": "Piece 10008"
+      },
+      "acquisition": [
+        {
+          "type": "event",
+          "name": "それは流星のように",
+          "master": "Event 8003",
+          "detail": "イベント報酬のメモリのかけら"
+        },
+        {
+          "type": "exchange",
+          "name": "メモリメダル",
+          "master": "ShopItem 40008 / Shop 90005",
+          "detail": "グリュプスのメモリのかけら"
+        }
+      ],
+      "paidAvailable": false,
+      "nonPaidAvailable": true,
+      "source": "PC版 Enhancer 10008（2026-10-03取得）"
+    },
+    {
+      "id": "memory-10009",
+      "masterId": 10009,
+      "name": "テンプルドラゴン",
+      "rarity": 3,
+      "description": "「拝めば願いが叶う？　その願いってのが“死”ならその通りかもな」\n-引退した冒険家\n\n古代寺院の近くに生息する黄金の龍。\n縄張り意識が強く近づく者に容赦しないため非常に危険。\n欲にかられ宝を独占しようとした僧のなれの果てと噂されるが、寺院そのものというよりもその土地から溢れる魔力により、強力な龍が生まれやすくなっているとする研究もある。",
+      "mainEffects": [],
+      "mainEffectsKnown": false,
+      "image": "assets/game/enhancer-thumbnail-10009.png",
+      "imageId": 10009,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 15000,
+        "source": "Piece 10009"
+      },
+      "acquisition": [
+        {
+          "type": "exchange",
+          "name": "メモリメダル",
+          "master": "ShopItem 40009 / Shop 90005",
+          "detail": "テンプルドラゴンのメモリのかけら"
+        }
+      ],
+      "paidAvailable": false,
+      "nonPaidAvailable": true,
+      "source": "PC版 Enhancer 10009（2026-10-03取得）"
+    },
+    {
+      "id": "memory-10010",
+      "masterId": 10010,
+      "name": "冒涜の女神",
+      "rarity": 4,
+      "description": "「かつては祝福の歌で豊穣をもたらす女神が広く信じられていたが、教団の布教に伴い邪神とみなされるようになった」\n-『教団以前の民間信仰について』\n\n触手に侵された邪悪な彫像のような魔獣。\nかつては人々に信仰される女神の像だったとされているが、何者かの呪いによって変質し大地を汚す冒涜の歌を叫び続けるようになったという。\n歌というのは比喩表現ではあるものの、強力な魔力が漏れ出しているため単なる像とあなどってはいけない。",
+      "mainEffects": [
+        {
+          "abilityId": 700,
+          "name": "対魔獣獲得経験値",
+          "unit": "%",
+          "value": 13.5
+        },
+        {
+          "abilityId": 500,
+          "name": "対魔獣素材倍化率",
+          "unit": "%",
+          "value": 8
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-10010.png",
+      "imageId": 10010,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 25000,
+        "source": "Piece 10010"
+      },
+      "acquisition": [
+        {
+          "type": "exchange",
+          "name": "メモリメダル",
+          "master": "ShopItem 40010 / Shop 90005",
+          "detail": "冒涜の女神のメモリのかけら"
+        }
+      ],
+      "paidAvailable": false,
+      "nonPaidAvailable": true,
+      "source": "PC版 Enhancer 10010（2026-10-03取得）"
+    },
+    {
+      "id": "memory-10011",
+      "masterId": 10011,
+      "name": "インダストリウス",
+      "rarity": 4,
+      "description": "「急に遺跡が動き出したと思ったら攻撃してきやがったんだ」\n-帝国軍大尉\n\n巨大な建造物を背負った甲殻類型の機械のような魔獣。\n背中の遺跡は資源の精錬を行う工場になっているらしく採集地近くで行動している姿を目撃されている。\n元々はアニマ・アルカに近い役割を果たしていたものと予想されるが、現状遭遇する個体は一種の暴走状態であり、精錬したエネルギーはほぼすべてが攻撃のために割り当てられている。",
+      "mainEffects": [
+        {
+          "abilityId": 1102,
+          "name": "対超獣攻撃力",
+          "unit": "%",
+          "value": 45
+        },
+        {
+          "abilityId": 502,
+          "name": "対超獣素材倍化率",
+          "unit": "%",
+          "value": 12
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-10011.png",
+      "imageId": 10011,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 25000,
+        "source": "Piece 10011"
+      },
+      "acquisition": [
+        {
+          "type": "exchange",
+          "name": "メモリメダル",
+          "master": "ShopItem 40011 / Shop 90005",
+          "detail": "インダストリウスのメモリのかけら"
+        }
+      ],
+      "paidAvailable": false,
+      "nonPaidAvailable": true,
+      "source": "PC版 Enhancer 10011（2026-10-03取得）"
+    },
+    {
+      "id": "memory-10012",
+      "masterId": 10012,
+      "name": "マラコーダ",
+      "rarity": 5,
+      "description": "「マレブランケのリーダーとされているが、遭遇した場合の生還率の低さゆえに情報が著しく少ない」\n-『マレブランケ調査書』\n\n邪悪なオーラを纏う巨大な龍のような魔獣。\n地獄から現れた悪魔系の魔獣種であるマレブランケの首領格とされており、その目的は不明だが出現した際には天災のごとき被害を生じさせる。\n存在するだけで非常に危険なため出現時には最優先の討伐命令が発布されるが、決して単独出撃はするべきではない。",
+      "mainEffects": [
+        {
+          "abilityId": 1004,
+          "name": "火属性リーダー攻撃力",
+          "unit": "%",
+          "value": 35
+        },
+        {
+          "abilityId": 1900,
+          "name": "行軍速度",
+          "unit": "%",
+          "value": 4.5
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-10012.png",
+      "imageId": 10012,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 10012"
+      },
+      "acquisition": [
+        {
+          "type": "event",
+          "name": "襲撃！超弩級！",
+          "master": "Event 6001",
+          "detail": "イベント報酬のメモリのかけら"
+        },
+        {
+          "type": "event",
+          "name": "深淵からの襲撃者",
+          "master": "Event 6002",
+          "detail": "イベント報酬のメモリのかけら"
+        },
+        {
+          "type": "event",
+          "name": "ゴールデンウイークチャンス",
+          "master": "Event 6004",
+          "detail": "イベント報酬のメモリのかけら"
+        },
+        {
+          "type": "exchange",
+          "name": "メモリメダル",
+          "master": "ShopItem 40012 / Shop 90005",
+          "detail": "マラコーダのメモリのかけら"
+        },
+        {
+          "type": "box",
+          "name": "選べるレイドボスメモリのかけらBOX v1",
+          "master": "Consumable 13073",
+          "detail": "レイドボスのメモリのかけらを選択して獲得します"
+        },
+        {
+          "type": "box",
+          "name": "選べるレイドボスメモリのかけらBOX v2",
+          "master": "Consumable 13074",
+          "detail": "レイドボスのメモリのかけらを選択して獲得します"
+        }
+      ],
+      "paidAvailable": false,
+      "nonPaidAvailable": true,
+      "source": "PC版 Enhancer 10012（2026-10-03取得）"
+    },
+    {
+      "id": "memory-10013",
+      "masterId": 10013,
+      "name": "チリアット",
+      "rarity": 5,
+      "description": "「帝都周辺にて目撃報告があるが市民の動揺を避けるため事態収束まで非公表とする」\n-『マレブランケ報告書』\n\n鋭い刃を身に纏った非常に俊敏な魔獣。\nアルカマスター選抜試験における襲撃が記憶に新しい。\nマレブランケの一種とされ帝国軍でも最大の警戒対象となっている。\nその動きの速さから走るだけでも周囲に衝撃波による被害を及ぼすといわれている。",
+      "mainEffects": [
+        {
+          "abilityId": 1008,
+          "name": "雷属性リーダー攻撃力",
+          "unit": "%",
+          "value": 35
+        },
+        {
+          "abilityId": 1900,
+          "name": "行軍速度",
+          "unit": "%",
+          "value": 4.5
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-10013.png",
+      "imageId": 10013,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 10013"
+      },
+      "acquisition": [
+        {
+          "type": "event",
+          "name": "衝突！超弩級！！",
+          "master": "Event 6003",
+          "detail": "イベント報酬のメモリのかけら"
+        },
+        {
+          "type": "event",
+          "name": "ゴールデンウイークチャンス",
+          "master": "Event 6004",
+          "detail": "イベント報酬のメモリのかけら"
+        },
+        {
+          "type": "exchange",
+          "name": "メモリメダル",
+          "master": "ShopItem 40013 / Shop 90005",
+          "detail": "チリアットのメモリのかけら"
+        },
+        {
+          "type": "box",
+          "name": "選べるレイドボスメモリのかけらBOX v1",
+          "master": "Consumable 13073",
+          "detail": "レイドボスのメモリのかけらを選択して獲得します"
+        },
+        {
+          "type": "box",
+          "name": "選べるレイドボスメモリのかけらBOX v2",
+          "master": "Consumable 13074",
+          "detail": "レイドボスのメモリのかけらを選択して獲得します"
+        }
+      ],
+      "paidAvailable": false,
+      "nonPaidAvailable": true,
+      "source": "PC版 Enhancer 10013（2026-10-03取得）"
+    },
+    {
+      "id": "memory-10014",
+      "masterId": 10014,
+      "name": "エクリプス",
+      "rarity": 5,
+      "description": "「ヘーメラー……私の世界を亡ぼす最後のひと押しになった怪物――私の……私の！　愛する妹だったものだ！」\n-ニュクス\n\n微かに人間の面影を残した凶悪な魔獣。\n旧世界のひとつであるプロメテア滅亡の原因とされその危険度は計り知れない。\n本来レンゴクに存在する魔獣ではなかったはずだが、”第一の試練”としてアルカマスターたちの前に立ちはだかるという。",
+      "mainEffects": [
+        {
+          "abilityId": 1011,
+          "name": "闇属性リーダー攻撃力",
+          "unit": "%",
+          "value": 35
+        },
+        {
+          "abilityId": 1900,
+          "name": "行軍速度",
+          "unit": "%",
+          "value": 4.5
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-10014.png",
+      "imageId": 10014,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 10014"
+      },
+      "acquisition": [
+        {
+          "type": "event",
+          "name": "神無月のレイドチャレンジ",
+          "master": "Event 6013",
+          "detail": "イベント報酬のメモリのかけら"
+        },
+        {
+          "type": "exchange",
+          "name": "メモリメダル",
+          "master": "ShopItem 40014 / Shop 90005",
+          "detail": "エクリプスのメモリのかけら"
+        },
+        {
+          "type": "box",
+          "name": "選べるレイドボスメモリのかけらBOX v2",
+          "master": "Consumable 13074",
+          "detail": "レイドボスのメモリのかけらを選択して獲得します"
+        }
+      ],
+      "paidAvailable": false,
+      "nonPaidAvailable": true,
+      "source": "PC版 Enhancer 10014（2026-10-03取得）"
+    },
+    {
+      "id": "memory-10015",
+      "masterId": 10015,
+      "name": "禍ツ神千刃",
+      "rarity": 5,
+      "description": "「千刃を討ち果たしけるもののふも決して逃さぬ大妖の禍」\n-詠み人知らず\n\n数多の武器を身に纏う武士の姿をした魔獣。\n旧世界スオウの滅亡に関わっているとされており、第二の試練としてレンゴクに顕現した。\n高い攻撃性に加え厄介な性質を持っており、討伐に成功したとしても禍に打ち勝つことができなければ新たな千刃として取り込まれてしまうといわれている。",
+      "mainEffects": [
+        {
+          "abilityId": 1007,
+          "name": "土属性リーダー攻撃力",
+          "unit": "%",
+          "value": 35
+        },
+        {
+          "abilityId": 1900,
+          "name": "行軍速度",
+          "unit": "%",
+          "value": 4.5
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-10015.png",
+      "imageId": 10015,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 10015"
+      },
+      "acquisition": [
+        {
+          "type": "event",
+          "name": "秋宵のレイドチャレンジ",
+          "master": "Event 6014",
+          "detail": "イベント報酬のメモリのかけら"
+        },
+        {
+          "type": "event",
+          "name": "霜月のレイドチャレンジ",
+          "master": "Event 6015",
+          "detail": "イベント報酬のメモリのかけら"
+        },
+        {
+          "type": "event",
+          "name": "出航記念のレイドチャレンジ",
+          "master": "Event 6016",
+          "detail": "イベント報酬のメモリのかけら"
+        },
+        {
+          "type": "event",
+          "name": "新年のレイドチャレンジ",
+          "master": "Event 6017",
+          "detail": "イベント報酬のメモリのかけら"
+        },
+        {
+          "type": "event",
+          "name": "睦月のレイドチャレンジ",
+          "master": "Event 6018",
+          "detail": "イベント報酬のメモリのかけら"
+        },
+        {
+          "type": "event",
+          "name": "如月のレイドチャレンジ",
+          "master": "Event 6020",
+          "detail": "イベント報酬のメモリのかけら"
+        },
+        {
+          "type": "event",
+          "name": "弥生のレイドチャレンジ",
+          "master": "Event 6021",
+          "detail": "イベント報酬のメモリのかけら"
+        },
+        {
+          "type": "exchange",
+          "name": "メモリメダル",
+          "master": "ShopItem 40015 / Shop 90005",
+          "detail": "禍ツ神千刃のメモリのかけら"
+        }
+      ],
+      "paidAvailable": false,
+      "nonPaidAvailable": true,
+      "source": "PC版 Enhancer 10015（2026-10-03取得）"
+    },
+    {
+      "id": "memory-10016",
+      "masterId": 10016,
+      "name": "ラビ",
+      "rarity": 3,
+      "description": "「こんなところにラビが！　や、やばいぞ！」\n-ランディ\n\nフワフワとウサギのような姿をした異世界の魔獣。\n手足が無いためほぼ顔が飛び跳ねているようにも見える。\n愛らしい見た目をしているが魔獣であることに違いはなく、近づけば大きな歯で噛みついてくるだろう。",
+      "mainEffects": [
+        {
+          "abilityId": 120,
+          "name": "採集量",
+          "unit": "%",
+          "value": 8.8
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-10019.png",
+      "imageId": 10019,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 15000,
+        "source": "Piece 10016"
+      },
+      "acquisition": [
+        {
+          "type": "monster",
+          "name": "聖剣伝説シリーズコラボ：ラビ討伐",
+          "detail": "コラボ期間中に出現するフィールド魔獣ラビの討伐で、メモリのかけらを獲得。",
+          "master": "Announcement 253"
+        }
+      ],
+      "paidAvailable": false,
+      "nonPaidAvailable": true,
+      "source": "PC版 Enhancer 10016（2026-10-03取得）"
+    },
+    {
+      "id": "memory-10017",
+      "masterId": 10017,
+      "name": "ウンギャ",
+      "rarity": 3,
+      "description": "「なぜウンギャがこんなところに……まさかマラコーダが出現したのか！？」\n-歴戦のアルカマスター\n\n赤く刺々しい大型の肉食獣のような魔獣。\n従来、マラコーダとともに出現し子分のように付き従う魔獣だと思われていたが、ここ最近単独で野生化した姿が目撃されている。\nマラコーダの爪や鱗などから発生するとされているが、幼体ではないため成長してもマラコーダにはならない。\nとはいっても持ち前の獰猛さやマラコーダ譲りの悪の力を持つ危険な魔獣であることに変わりはない。",
+      "mainEffects": [
+        {
+          "abilityId": 1001,
+          "name": "歩兵攻撃力",
+          "unit": "%",
+          "value": 22
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-10020.png",
+      "imageId": 10020,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 15000,
+        "source": "Piece 10017"
+      },
+      "acquisition": [],
+      "paidAvailable": false,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 10017（2026-10-03取得）"
+    },
+    {
+      "id": "memory-10018",
+      "masterId": 10018,
+      "name": "コルテロ",
+      "rarity": 3,
+      "description": "「クソ！　このままじゃ追いつかれる！」\n-荒野を行くキャラバン隊\n\n鋭利で素早いトカゲのような魔獣。\n従来、チリアットとともに出現し子分のように付き従う魔獣だと思われていたが、ここ最近単独で野生化した姿が目撃されている。\nマレブランケの生態には謎が多く、チリアットとコルテロの関係もよくはわかっていない。\n教団関係者はチリアットが起こした残像が魔力で実体化したものであるという説を唱えることが多いが、生物学者はアリやハチの「女王」に共通点を見出そうとしている。",
+      "mainEffects": [
+        {
+          "abilityId": 1003,
+          "name": "騎兵攻撃力",
+          "unit": "%",
+          "value": 22
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-10021.png",
+      "imageId": 10021,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 15000,
+        "source": "Piece 10018"
+      },
+      "acquisition": [],
+      "paidAvailable": false,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 10018（2026-10-03取得）"
+    },
+    {
+      "id": "memory-10019",
+      "masterId": 10019,
+      "name": "ロストキッズ",
+      "rarity": 3,
+      "description": "「子どもの笑い声ほど可愛いものはないだろう……それが夜の廃墟じゃなければな」\n-さすらいの語り部\n\n帽子で顔を隠した人間の子供のような魔獣。\n従来、エクリプスとともに出現し子分のように付き従う魔獣だと思われていたが、ここ最近単独で野生化した姿が目撃されている。\n無邪気そうな見た目とは裏腹に殺意の高い攻撃を放ってくる。\n彼らにとって遊びとはおもちゃが動かなくなるまで続くものなのだろう。",
+      "mainEffects": [
+        {
+          "abilityId": 1002,
+          "name": "弓兵攻撃力",
+          "unit": "%",
+          "value": 22
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-10022.png",
+      "imageId": 10022,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 15000,
+        "source": "Piece 10019"
+      },
+      "acquisition": [],
+      "paidAvailable": false,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 10019（2026-10-03取得）"
+    },
+    {
+      "id": "memory-10020",
+      "masterId": 10020,
+      "name": "モルボル",
+      "rarity": 5,
+      "description": "「森の動物たちがみんな死んどる……！？　こいつ毒吐き……！」\n-紫津乃\n\n無数の牙を持つ食虫植物のような魔獣。\nボムと同様、レンゴクとは違う世界から来たと考えられている。\n牙以外にも、鞭のような触手や「くさい息」と呼ばれる毒ガスなど危険な攻撃手段が多い。\nまた、頭から大量に生えた目のように見える器官は実際に視覚を司っているとされる。\n対峙する際は安全地帯は無いものと考えた方が良いだろう。",
+      "mainEffects": [
+        {
+          "abilityId": 1006,
+          "name": "風属性リーダー攻撃力",
+          "unit": "%",
+          "value": 35
+        },
+        {
+          "abilityId": 1900,
+          "name": "行軍速度",
+          "unit": "%",
+          "value": 4.5
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-10024.png",
+      "imageId": 10024,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 10020"
+      },
+      "acquisition": [
+        {
+          "type": "event",
+          "name": "衝突！超弩級！！",
+          "master": "Event 6005",
+          "detail": "イベント報酬のメモリのかけら"
+        },
+        {
+          "type": "event",
+          "name": "海の日レイドチャレンジ",
+          "master": "Event 6006",
+          "detail": "イベント報酬のメモリのかけら"
+        },
+        {
+          "type": "event",
+          "name": "盛夏のレイドチャレンジ",
+          "master": "Event 6008",
+          "detail": "イベント報酬のメモリのかけら"
+        },
+        {
+          "type": "event",
+          "name": "水無月のレイドチャレンジ",
+          "master": "Event 6025",
+          "detail": "イベント報酬のメモリのかけら"
+        },
+        {
+          "type": "event",
+          "name": "文月のレイドチャレンジ",
+          "master": "Event 6026",
+          "detail": "イベント報酬のメモリのかけら"
+        },
+        {
+          "type": "exchange",
+          "name": "メモリメダル",
+          "master": "ShopItem 40016 / Shop 90005",
+          "detail": "モルボルのメモリのかけら"
+        }
+      ],
+      "paidAvailable": false,
+      "nonPaidAvailable": true,
+      "source": "PC版 Enhancer 10020（2026-10-03取得）"
+    },
+    {
+      "id": "memory-10021",
+      "masterId": 10021,
+      "name": "ボム",
+      "rarity": 3,
+      "description": "「ようやく見たことある顔に会えたな。喜ぶ気にはならないけど……」\n-レイン\n\n全身が炎に包まれており、さながら宙を浮く火の玉のような魔獣。\n元々レンゴクには存在しなかったが、レインやフィーナと同じ世界から来たとされる。\nその彼らの経験によれば不用意に攻撃をしかけると爆発することがあったとのことで、討伐の際は細心の注意を払うことを推奨する。",
+      "mainEffects": [
+        {
+          "abilityId": 1107,
+          "name": "対不浄攻撃力",
+          "unit": "%",
+          "value": 44
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-10025.png",
+      "imageId": 10025,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 15000,
+        "source": "Piece 10021"
+      },
+      "acquisition": [
+        {
+          "type": "monster",
+          "name": "FFBEコラボ：ボム討伐",
+          "detail": "コラボ期間中に出現するフィールド魔獣ボムの討伐で、メモリのかけらを獲得。",
+          "master": "Announcement 323"
+        }
+      ],
+      "paidAvailable": false,
+      "nonPaidAvailable": true,
+      "source": "PC版 Enhancer 10021（2026-10-03取得）"
+    },
+    {
+      "id": "memory-10022",
+      "masterId": 10022,
+      "name": "トンベリ",
+      "rarity": 3,
+      "description": "右手にランタン、左手に包丁を持つフードを被った両生類のような見た目の魔獣。\n元々レンゴクに生息していたわけではなく、ジタンやビビが迷い込んできた際に同様にこの世界にやってきた。\n温厚そうにも見えるが、深い恨みを抱えているらしく、その包丁による一撃は致命傷になりかねない。",
+      "mainEffects": [
+        {
+          "abilityId": 507,
+          "name": "対不浄素材倍化率",
+          "unit": "%",
+          "value": 13.2
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-10026.png",
+      "imageId": 10026,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 15000,
+        "source": "Piece 10022"
+      },
+      "acquisition": [
+        {
+          "type": "monster",
+          "name": "FF9コラボ：トンベリ討伐",
+          "detail": "コラボ期間中に出現するフィールド魔獣トンベリの討伐で、メモリのかけらを獲得。",
+          "master": "Announcement 368"
+        }
+      ],
+      "paidAvailable": false,
+      "nonPaidAvailable": true,
+      "source": "PC版 Enhancer 10022（2026-10-03取得）"
+    },
+    {
+      "id": "memory-10023",
+      "masterId": 10023,
+      "name": "骸",
+      "rarity": 3,
+      "description": "「戦場には、死してなお争い以外に居場所を見出せない魂が漂うものだ」\n-巡礼の聖職者\n\n甲冑を身に着けた亡霊のような魔獣。\n従来、禍ツ神千刃とともに出現し子分のように付き従う魔獣だと思われていたが、ここ最近単独で野生化した姿が目撃されている。\n燃え尽きぬ闘争心がその朽ちた身体を突き動かしているとされている。\n死にぞこないがゆえに死をも恐れぬ蛮勇さで襲い掛かってくる。\n……ならば望み通り葬ってやるのも慈悲というものだろう。",
+      "mainEffects": [
+        {
+          "abilityId": 1103,
+          "name": "対龍攻撃力",
+          "unit": "%",
+          "value": 44
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-10023.png",
+      "imageId": 10023,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 15000,
+        "source": "Piece 10023"
+      },
+      "acquisition": [],
+      "paidAvailable": false,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 10023（2026-10-03取得）"
+    },
+    {
+      "id": "memory-10027",
+      "masterId": 10027,
+      "name": "機械生命体",
+      "rarity": 3,
+      "description": "「ニイチャン……ニイチャン……」\n-ある機械生命体\n\n丸っこい外見の機械の玩具のような異世界の魔獣。\n２Bと同じ世界から迷い込んできたと報告されている。\n人間の言葉を用いてお互いにコミュニケーションをとる姿が確認されているが、当の人間やエンバースに対しては敵対的なため速やかな討伐が推奨される。\n分析した情報によると身体はユニット構造になっており、本来は多くの形態をとることが可能なようだが、幸いなことにレンゴクには互換性のある部品はないようだ。",
+      "mainEffects": [
+        {
+          "abilityId": 504,
+          "name": "対妖魔素材倍化率",
+          "unit": "%",
+          "value": 13.2
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-10027.png",
+      "imageId": 10027,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 15000,
+        "source": "Piece 10027"
+      },
+      "acquisition": [
+        {
+          "type": "monster",
+          "name": "NieRシリーズコラボ：機械生命体討伐",
+          "detail": "コラボ期間中に出現するフィールド魔獣機械生命体の討伐で、メモリのかけらを獲得。",
+          "master": "Announcement 523"
+        }
+      ],
+      "paidAvailable": false,
+      "nonPaidAvailable": true,
+      "source": "PC版 Enhancer 10027（2026-10-03取得）"
+    },
+    {
+      "id": "memory-10028",
+      "masterId": 10028,
+      "name": "ヨルムンガンド",
+      "rarity": 5,
+      "description": "「大蛇の尽きぬ食欲はやがて最後の灯火を飲み込み、世界は瞬く間に凍り付く」\n-『フレイディスのエッダ』\n\n合体することで巨大な龍となる魔獣。\n旧世界イルドリムの滅亡に影響を与えたとされる伝説上の魔獣で、レンゴクにおいては第三の試練として姿を現した。\n神話においては世界を丸ごと飲み込む存在として記されており、もしそれが事実であれば我々に打つ手はないだろう。",
+      "mainEffects": [
+        {
+          "abilityId": 1005,
+          "name": "水属性リーダー攻撃力",
+          "unit": "%",
+          "value": 35
+        },
+        {
+          "abilityId": 1900,
+          "name": "行軍速度",
+          "unit": "%",
+          "value": 4.5
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-10018.png",
+      "imageId": 10018,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 10028"
+      },
+      "acquisition": [
+        {
+          "type": "event",
+          "name": "衝突！超弩級！！",
+          "master": "Event 6007",
+          "detail": "イベント報酬のメモリのかけら"
+        },
+        {
+          "type": "event",
+          "name": "山の日レイドチャレンジ",
+          "master": "Event 6010",
+          "detail": "イベント報酬のメモリのかけら"
+        },
+        {
+          "type": "event",
+          "name": "残暑のレイドチャレンジ",
+          "master": "Event 6012",
+          "detail": "イベント報酬のメモリのかけら"
+        },
+        {
+          "type": "event",
+          "name": "ヨルムンガンド登場記念レイドチャレンジ",
+          "master": "Event 6022",
+          "detail": "イベント報酬のメモリのかけら"
+        },
+        {
+          "type": "event",
+          "name": "ゴールデンウィークチャンス",
+          "master": "Event 6023",
+          "detail": "イベント報酬のメモリのかけら"
+        },
+        {
+          "type": "event",
+          "name": "皐月のレイドチャレンジ",
+          "master": "Event 6024",
+          "detail": "イベント報酬のメモリのかけら"
+        },
+        {
+          "type": "exchange",
+          "name": "メモリメダル",
+          "master": "ShopItem 40017 / Shop 90005",
+          "detail": "ヨルムンガンドのメモリのかけら"
+        }
+      ],
+      "paidAvailable": false,
+      "nonPaidAvailable": true,
+      "source": "PC版 Enhancer 10028（2026-10-03取得）"
+    },
+    {
+      "id": "memory-10029",
+      "masterId": 10029,
+      "name": "オルム",
+      "rarity": 3,
+      "description": "「アイツを見ても近寄らねぇのが一番さ。万が一親が出てこようもんならシャレになんねぇからな」\n-山間部に住まう民\n\n雪を纏って現れる、ドラゴンに似た魔獣。\n長い時を経て成熟した個体は伝説の魔獣ヨルムンガンドになると信じられている。\n見た目にはヨルムンガンドと似た特徴を備えているものの、実際に幼体であるかは不明。\n親と行動を共にするという噂もあるが、単独での目撃例が大半。\n気性が荒く、動くものにはなんでも襲い掛かるため、遭遇した場合は速やかに退避する必要がある。",
+      "mainEffects": [
+        {
+          "abilityId": 1104,
+          "name": "対妖魔攻撃力",
+          "unit": "%",
+          "value": 44
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-10028.png",
+      "imageId": 10028,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 15000,
+        "source": "Piece 10029"
+      },
+      "acquisition": [],
+      "paidAvailable": false,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 10029（2026-10-03取得）"
+    },
+    {
+      "id": "memory-10030",
+      "masterId": 10030,
+      "name": "ペッグ",
+      "rarity": 3,
+      "description": "「ぜんそくりょくーだヨー」\n-ペッグ\n\nピンク色の鳥のような姿の異世界の魔獣。\nギュスターヴやジニーと同じ世界から迷い込んできたと報告されている。\n生態については謎が多いが、翼が退化しており飛ぶことはできないようだ。\nまた、人間の言葉を発する様子が目撃されているが、コミュニケーションに成功した例はなく、基本的には討伐するほかないだろう。",
+      "mainEffects": [
+        {
+          "abilityId": 505,
+          "name": "対堕天素材倍化率",
+          "unit": "%",
+          "value": 13.2
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-10029.png",
+      "imageId": 10029,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 15000,
+        "source": "Piece 10030"
+      },
+      "acquisition": [
+        {
+          "type": "monster",
+          "name": "ロマサガRSコラボ：ペッグ討伐",
+          "detail": "コラボ期間中に出現するフィールド魔獣ペッグの討伐で、メモリのかけらを獲得。",
+          "master": "Announcement 668"
+        }
+      ],
+      "paidAvailable": false,
+      "nonPaidAvailable": true,
+      "source": "PC版 Enhancer 10030（2026-10-03取得）"
+    },
+    {
+      "id": "memory-10031",
+      "masterId": 10031,
+      "name": "フロートアイ",
+      "rarity": 3,
+      "description": "「ワッカがいれば飛んでる敵は任せるんだけどなぁ……」\n-ティーダ\n\n正体不明の単眼の魔獣。ティーダやユウナがレンゴクにやってきたのと、時を同じくして出現した。彼らが元いた世界“スピラ”にも同様の魔物がいたらしい。\n巨大な翼で滞空し、地上の敵をめがけて一気に急降下。鋭い牙と爪で襲いかかる攻撃を得意とする。また訓練を受けていない者が、その巨大な目に睨みつけられた場合、恐怖のあまり錯乱状態に陥ると報告されている。",
+      "mainEffects": [
+        {
+          "abilityId": 1218,
+          "name": "対宝庫攻撃力",
+          "unit": "%",
+          "value": 35
+        },
+        {
+          "abilityId": 1001,
+          "name": "歩兵攻撃力",
+          "unit": "%",
+          "value": 20
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-10030.png",
+      "imageId": 10030,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 15000,
+        "source": "Piece 10031"
+      },
+      "acquisition": [
+        {
+          "type": "monster",
+          "name": "FF10コラボ：フロートアイ討伐",
+          "detail": "コラボ期間中に出現するフィールド魔獣フロートアイの討伐で、メモリのかけらを獲得。",
+          "master": "Announcement 792"
+        }
+      ],
+      "paidAvailable": false,
+      "nonPaidAvailable": true,
+      "source": "PC版 Enhancer 10031（2026-10-03取得）"
+    }
+  ],
+  "abilityNames": [
+    "(使用しない)対闇属性リーダー攻撃力",
+    "(使用しない)対火属性リーダー攻撃力",
+    "(使用しない)対光属性リーダー攻撃力",
+    "(使用しない)対水属性リーダー攻撃力",
+    "(使用しない)対土属性リーダー攻撃力",
+    "(使用しない)対風属性リーダー攻撃力",
+    "(使用しない)対雷属性リーダー攻撃力",
+    "(使用しない)宝庫防衛時与ダメージ",
+    "10属性リーダー攻撃力",
+    "10属性リーダー被ダメージ",
+    "10属性リーダー防御効率",
+    "9属性リーダー攻撃力",
+    "9属性リーダー被ダメージ",
+    "9属性リーダー防御効率",
+    "AP最大値",
+    "FF10コラボコイン獲得量",
+    "FFBEコラボコイン獲得量",
+    "Lv.4集結魔獣NPC援軍参加",
+    "Lv.5集結魔獣NPC援軍参加",
+    "Lv.6集結魔獣NPC援軍参加",
+    "Lv.7集結魔獣NPC援軍参加",
+    "Lv.8集結魔獣NPC援軍参加",
+    "Lv.9集結魔獣NPC援軍参加",
+    "アクティブスキル攻撃力",
+    "アクティブスキル時与ダメージ",
+    "エーテル採集速度",
+    "エーテル採集量",
+    "エーテル生産量",
+    "エプレ[情夏]コイン獲得量",
+    "エプレチャージトリガー",
+    "エルフリーデコイン獲得量",
+    "ガイアコイン獲得量",
+    "カイネチャージトリガー",
+    "サクヤ[爽涼]チャージトリガー強化1",
+    "サクヤ[爽涼]チャージトリガー強化2",
+    "シールドバリア",
+    "シグルドリーヴァ[葬姫]コイン獲得量",
+    "スタン時間短縮(秒)",
+    "ステラコイン獲得量",
+    "ステラチャージトリガー強化1",
+    "ステラチャージトリガー強化2",
+    "チャージスキル攻撃力",
+    "チャージスキル時与ダメージ",
+    "チャージスキル被ダメージ",
+    "チャージスキル防御効率",
+    "ニュクス[蒼炎]コイン獲得量",
+    "パワー",
+    "ビビチャージトリガー",
+    "メモリサブアビリティ強化",
+    "メモリスロット付与補確率補正",
+    "ライラコイン獲得量",
+    "ロマサガRSコラボコイン獲得量",
+    "闇属性リーダー攻撃力",
+    "闇属性リーダー行軍速度",
+    "闇属性リーダー被ダメージ",
+    "闇属性リーダー防御効率",
+    "闇属性リーダー与ダメージ",
+    "運搬量",
+    "火属性リーダー攻撃力",
+    "火属性リーダー行軍速度",
+    "火属性リーダー被ダメージ",
+    "火属性リーダー防御効率",
+    "火属性リーダー与ダメージ",
+    "騎兵運搬量",
+    "騎兵訓練資源効率",
+    "騎兵訓練数",
+    "騎兵攻撃力",
+    "騎兵行軍速度",
+    "騎兵単兵種編成時攻撃力",
+    "騎兵単兵種編成時被ダメージ",
+    "騎兵単兵種編成時防御効率",
+    "騎兵単兵種編成時与ダメージ",
+    "騎兵被ダメージ",
+    "騎兵防御効率",
+    "騎兵与ダメージ",
+    "弓兵運搬量",
+    "弓兵訓練資源効率",
+    "弓兵訓練数",
+    "弓兵攻撃力",
+    "弓兵行軍速度",
+    "弓兵単兵種編成時攻撃力",
+    "弓兵単兵種編成時被ダメージ",
+    "弓兵単兵種編成時防御効率",
+    "弓兵単兵種編成時与ダメージ",
+    "弓兵被ダメージ",
+    "弓兵防御効率",
+    "弓兵与ダメージ",
+    "拠点防衛時攻撃力",
+    "拠点防衛時被ダメージ",
+    "拠点防衛時防御効率",
+    "近衛騎兵基礎攻撃力",
+    "近衛騎兵治療速度",
+    "近衛弓兵基礎攻撃力",
+    "近衛弓兵治療速度",
+    "近衛歩兵基礎攻撃力",
+    "近衛歩兵治療速度",
+    "金属採集速度",
+    "金属採集量",
+    "金属生産量",
+    "建設スロット",
+    "建設加速(秒)",
+    "建設資源効率",
+    "建設速度",
+    "研究加速(秒)",
+    "研究資源効率",
+    "研究速度",
+    "光属性リーダー攻撃力",
+    "光属性リーダー行軍速度",
+    "光属性リーダー被ダメージ",
+    "光属性リーダー防御効率",
+    "光属性リーダー与ダメージ",
+    "攻撃力",
+    "行軍速度",
+    "行軍速度(デバフ用重ね掛けなし)",
+    "昏葉コイン獲得量",
+    "最大援軍収容兵士数",
+    "最大騎兵収容数",
+    "最大弓兵収容数",
+    "最大集結部隊兵士数",
+    "最大同盟支援要請数",
+    "最大病院収容兵士数",
+    "最大部隊兵士数",
+    "最大歩兵収容数",
+    "最大防衛部隊兵士数",
+    "採集速度",
+    "採集量",
+    "施設防衛時攻撃力",
+    "施設防衛時被ダメージ",
+    "施設防衛時防御効率",
+    "施設防衛時与ダメージ",
+    "資源地防衛時攻撃力",
+    "資源地防衛時被ダメージ",
+    "資源地防衛時防御効率",
+    "資源保護(エーテル)",
+    "資源保護(エーテル以外)",
+    "集結部隊行軍速度",
+    "集結部隊時攻撃力",
+    "集結部隊時被ダメージ",
+    "集結部隊時防御効率",
+    "集結部隊時与ダメージ",
+    "重傷率低下",
+    "上級騎兵基礎攻撃力",
+    "上級弓兵基礎攻撃力",
+    "上級歩兵基礎攻撃力",
+    "食料採集速度",
+    "食料採集量",
+    "食料生産量",
+    "水属性リーダー攻撃力",
+    "水属性リーダー行軍速度",
+    "水属性リーダー被ダメージ",
+    "水属性リーダー防御効率",
+    "水属性リーダー与ダメージ",
+    "精鋭騎兵基礎攻撃力",
+    "精鋭騎兵治療速度",
+    "精鋭弓兵基礎攻撃力",
+    "精鋭弓兵治療速度",
+    "精鋭歩兵基礎攻撃力",
+    "精鋭歩兵治療速度",
+    "装備サブアビリティ強化",
+    "装備製作エーテル効率",
+    "装備製作レベル",
+    "属性10属性リーダー行軍速度",
+    "属性9属性リーダー行軍速度",
+    "属性リーダー10属性リーダー与ダメージ",
+    "対エクリプス攻撃力",
+    "対キザハシ攻撃力",
+    "対チリアット攻撃力",
+    "対フィールドボスメモリ倍化率",
+    "対フィールドボス素材倍化率",
+    "対マラコーダ攻撃力",
+    "対ヨルムンガンド攻撃力",
+    "対レイド魔獣メモリ倍化率",
+    "対レイド魔獣素材倍化率",
+    "対悪魔AP消費効率",
+    "対悪魔メモリ倍化率",
+    "対悪魔獲得経験値",
+    "対悪魔攻撃力",
+    "対悪魔攻撃力(ブースト",
+    "対悪魔素材倍化率",
+    "対悪魔被ダメージ",
+    "対悪魔防御効率",
+    "対悪魔与ダメージ",
+    "対移動速度低下部隊与ダメージ",
+    "対禍ツ神千刃攻撃力",
+    "対機甲AP消費効率",
+    "対機甲メモリ倍化率",
+    "対機甲獲得経験値",
+    "対機甲攻撃力",
+    "対機甲素材倍化率",
+    "対機甲被ダメージ",
+    "対機甲防御効率",
+    "対機甲与ダメージ",
+    "対騎兵チャージスキル攻撃力",
+    "対騎兵攻撃力",
+    "対騎兵単兵種編成攻撃力",
+    "対騎兵単兵種編成被ダメージ",
+    "対騎兵単兵種編成防御効率",
+    "対騎兵単兵種編成与ダメージ",
+    "対弓兵チャージスキル攻撃力",
+    "対弓兵攻撃力",
+    "対弓兵単兵種編成攻撃力",
+    "対弓兵単兵種編成被ダメージ",
+    "対弓兵単兵種編成防御効率",
+    "対弓兵単兵種編成与ダメージ",
+    "対拠点攻撃力",
+    "対拠点被ダメージ",
+    "対拠点防御効率",
+    "対拠点与ダメージ",
+    "対施設攻撃力",
+    "対施設被ダメージ",
+    "対施設防御効率",
+    "対施設与ダメージ",
+    "対資源地攻撃力",
+    "対資源地被ダメージ",
+    "対資源地防御効率",
+    "対資源地与ダメージ",
+    "対種族10AP消費効率",
+    "対種族10メモリ倍化率",
+    "対種族10獲得経験値",
+    "対種族10攻撃力",
+    "対種族10素材倍化率",
+    "対種族10被ダメージ",
+    "対種族10防御効率",
+    "対種族10与ダメージ",
+    "対種族9AP消費効率",
+    "対種族9メモリ倍化率",
+    "対種族9獲得経験値",
+    "対種族9攻撃力",
+    "対種族9素材倍化率",
+    "対種族9被ダメージ",
+    "対種族9防御効率",
+    "対種族9与ダメージ",
+    "対集結部隊攻撃力",
+    "対集結部隊被ダメージ",
+    "対集結部隊防御効率",
+    "対集結部隊与ダメージ",
+    "対集結魔獣AP消費効率",
+    "対集結魔獣メモリ倍化率",
+    "対集結魔獣獲得経験値",
+    "対集結魔獣攻撃力",
+    "対集結魔獣素材倍化率",
+    "対集結魔獣被ダメージ",
+    "対集結魔獣防御効率",
+    "対集結魔獣与ダメージ",
+    "対精霊AP消費効率",
+    "対精霊メモリ倍化率",
+    "対精霊獲得経験値",
+    "対精霊攻撃力",
+    "対精霊素材倍化率",
+    "対精霊被ダメージ",
+    "対精霊防御効率",
+    "対精霊与ダメージ",
+    "対堕天AP消費効率",
+    "対堕天メモリ倍化率",
+    "対堕天獲得経験値",
+    "対堕天攻撃力",
+    "対堕天素材倍化率",
+    "対堕天被ダメージ",
+    "対堕天防御効率",
+    "対堕天与ダメージ",
+    "対大型魔獣メモリ倍化率",
+    "対大型魔獣獲得経験値",
+    "対大型魔獣攻撃力",
+    "対大型魔獣素材倍化率",
+    "対大型魔獣被ダメージ",
+    "対大型魔獣防御効率",
+    "対大型魔獣与ダメージ",
+    "対超獣AP消費効率",
+    "対超獣メモリ倍化率",
+    "対超獣獲得経験値",
+    "対超獣攻撃力",
+    "対超獣素材倍化率",
+    "対超獣被ダメージ",
+    "対超獣防御効率",
+    "対超獣与ダメージ",
+    "対不浄AP消費効率",
+    "対不浄メモリ倍化率",
+    "対不浄獲得経験値",
+    "対不浄攻撃力",
+    "対不浄素材倍化率",
+    "対不浄被ダメージ",
+    "対不浄防御効率",
+    "対不浄与ダメージ",
+    "対部隊攻撃力",
+    "対部隊被ダメージ",
+    "対部隊防御効率",
+    "対部隊与ダメージ",
+    "対複合2兵種攻撃力",
+    "対複合2兵種被ダメージ",
+    "対複合2兵種防御効率",
+    "対複合2兵種与ダメージ",
+    "対複合3兵種攻撃力",
+    "対複合3兵種被ダメージ",
+    "対複合3兵種防御効率",
+    "対複合3兵種与ダメージ",
+    "対歩兵チャージスキル攻撃力",
+    "対歩兵攻撃力",
+    "対歩兵単兵種編成攻撃力",
+    "対歩兵単兵種編成被ダメージ",
+    "対歩兵単兵種編成防御効率",
+    "対歩兵単兵種編成与ダメージ",
+    "対宝庫攻撃力",
+    "対魔獣AP消費効率",
+    "対魔獣メモリ倍化率",
+    "対魔獣獲得経験値",
+    "対魔獣攻撃力",
+    "対魔獣素材倍化率",
+    "対魔獣被ダメージ",
+    "対魔獣防御効率",
+    "対魔獣与ダメージ",
+    "対妖魔AP消費効率",
+    "対妖魔メモリ倍化率",
+    "対妖魔獲得経験値",
+    "対妖魔攻撃力",
+    "対妖魔素材倍化率",
+    "対妖魔被ダメージ",
+    "対妖魔防御効率",
+    "対妖魔与ダメージ",
+    "対龍AP消費効率",
+    "対龍メモリ倍化率",
+    "対龍獲得経験値",
+    "対龍攻撃力",
+    "対龍素材倍化率",
+    "対龍被ダメージ",
+    "対龍防御効率",
+    "対龍与ダメージ",
+    "追加同盟支援回数",
+    "通常攻撃攻撃力",
+    "通常攻撃時与ダメージ",
+    "通常攻撃被ダメージ",
+    "通常攻撃防御効率",
+    "偵察スロット",
+    "偵察レベル",
+    "偵察部隊行軍速度",
+    "土属性リーダー攻撃力",
+    "土属性リーダー行軍速度",
+    "土属性リーダー被ダメージ",
+    "土属性リーダー防御効率",
+    "土属性リーダー与ダメージ",
+    "反撃攻撃力",
+    "反撃時与ダメージ",
+    "反撃被ダメージ",
+    "反撃防御効率",
+    "秘宝庫報酬倍化率",
+    "秘宝庫報酬枠追加",
+    "被ダメージ",
+    "部隊スロット",
+    "部隊時攻撃力",
+    "部隊時被ダメージ",
+    "部隊時防御効率",
+    "部隊時与ダメージ",
+    "風属性リーダー攻撃力",
+    "風属性リーダー行軍速度",
+    "風属性リーダー被ダメージ",
+    "風属性リーダー防御効率",
+    "風属性リーダー与ダメージ",
+    "複合2兵種時攻撃力",
+    "複合2兵種時被ダメージ",
+    "複合2兵種時防御効率",
+    "複合2兵種時与ダメージ",
+    "複合3兵種時攻撃力",
+    "複合3兵種時被ダメージ",
+    "複合3兵種時防御効率",
+    "複合3兵種時与ダメージ",
+    "兵士訓練資源効率",
+    "兵士訓練速度",
+    "兵士治療資源効率",
+    "兵士治療速度",
+    "編成ボーナス",
+    "歩兵運搬量",
+    "歩兵訓練資源効率",
+    "歩兵訓練数",
+    "歩兵攻撃力",
+    "歩兵行軍速度",
+    "歩兵単兵種編成時攻撃力",
+    "歩兵単兵種編成時被ダメージ",
+    "歩兵単兵種編成時防御効率",
+    "歩兵単兵種編成時与ダメージ",
+    "歩兵被ダメージ",
+    "歩兵防御効率",
+    "歩兵与ダメージ",
+    "宝庫制圧不可短縮(秒)",
+    "宝庫報酬倍化率",
+    "宝庫報酬枠追加",
+    "宝庫防衛時攻撃力",
+    "防御効率",
+    "木材採集速度",
+    "木材採集量",
+    "木材生産量",
+    "与ダメージ",
+    "雷属性リーダー攻撃力",
+    "雷属性リーダー行軍速度",
+    "雷属性リーダー被ダメージ",
+    "雷属性リーダー防御効率",
+    "雷属性リーダー与ダメージ"
+  ]
+}

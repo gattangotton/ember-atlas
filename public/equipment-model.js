@@ -11,8 +11,21 @@ export const EQUIPMENT_FILTERS={
  '採集': ['採集速度','採集量','運搬量']
 };
 export const effectKey=s=>abilityName(s).normalize('NFKC').replace(/倍加/g,'倍化').replace(/竜/g,'龍').replace('集結行軍速度','集結部隊行軍速度').replace('集結攻撃力','集結部隊時攻撃力').replace(/\s/g,'');
-export function equipmentMatches(r,{slot='',query='',power='',abilities=[],mode='all',knownOnly=false}={}){
- if(r.kind!=='equipment'||slot&&((r.slot||'未確認')!==slot)||power&&(power==='unknown'?r.power!=null:r.power!==Number(power)))return false;
+export const equipmentPower=(r,grade=1)=>r.powerGrades?.[grade-1]??(grade===1?r.power??null:null);
+const equipmentNames=new Intl.Collator('ja',{numeric:true,sensitivity:'base'});
+export function sortEquipment(records,{grade=1,key='power',direction='desc'}={}){
+ const sign=direction==='asc'?1:-1;
+ return [...records].sort((a,b)=>{
+  const byName=equipmentNames.compare(a.name,b.name);
+  if(key==='name')return sign*byName;
+  const av=equipmentPower(a,grade),bv=equipmentPower(b,grade);
+  if(av==null||bv==null)return av==null&&bv==null?byName:av==null?1:-1;
+  return sign*(av-bv)||byName;
+ });
+}
+export function equipmentMatches(r,{slot='',query='',power='',grade=1,abilities=[],mode='all',knownOnly=false}={}){
+ const actualPower=equipmentPower(r,grade);
+ if(r.kind!=='equipment'||slot&&((r.slot||'未確認')!==slot)||power&&(power==='unknown'?actualPower!=null:actualPower!==Number(power)))return false;
  const names=(r.mainAbilities||[]).map(e=>effectKey(e.name));
  if(knownOnly&&!names.length)return false;
  if(abilities.length&&!(mode==='any'?abilities.some(a=>names.includes(effectKey(a))):abilities.every(a=>names.includes(effectKey(a)))))return false;

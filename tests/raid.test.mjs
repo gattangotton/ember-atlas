@@ -19,7 +19,7 @@ test('Raid correspondence resolves every equipment ID once, with the correct slo
 });
 test('Unreleased slots and missing database entries remain distinct; all available weapons open database details',()=>{
  const page=raidPage(records,String);
- assert.equal((page.match(/data-action="detail"/g)||[]).length,32);
+ assert.equal((page.match(/data-action="detail"/g)||[]).length,33);
  assert.equal((page.match(/<small>未実装<\/small>/g)||[]).length,3);
  const missing=raidPage(records.filter(r=>r.id!==RAID_BOSSES[0].gear[0]),String);
  assert.match(missing,/データ未登録/);

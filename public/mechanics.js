@@ -12,10 +12,11 @@ export function parseSeries(text,length){const parts=text.split(/[,、]/).map(s=
 const short=(v,max=200)=>{if(typeof v!=='string'||v.length>max)throw Error('文字数・形式を確認してください。');return v;};
 export function validateMechanics(v){
  const out={};
+ if(v.commonRevision!==undefined)out.commonRevision=short(v.commonRevision,80);
  if(v.power!==undefined){if(v.power!==null&&(!Number.isInteger(v.power)||v.power<0||v.power>1e9))throw Error('パワーは0以上の整数です。');out.power=v.power;}
  if(v.powerGrades!==undefined){if(!Array.isArray(v.powerGrades)||v.powerGrades.length!==6||v.powerGrades.some(n=>n!==null&&(!Number.isInteger(n)||n<0||n>1e9)))throw Error('グレード別パワーは6段階の整数です。');out.powerGrades=[...v.powerGrades];}
  if(v.equipmentEvidence!==undefined)out.equipmentEvidence=short(v.equipmentEvidence,2000);
- if(v.portrait!==undefined){if(typeof v.portrait!=='string'||v.portrait.length>180000||!(/^(data:image\/(?:jpeg|png|webp);base64,[A-Za-z0-9+/=]+|assets\/portraits\/[a-zA-Z0-9_-]+\.jpg)$/.test(v.portrait)||v.portrait===''))throw Error('画像は圧縮した画像データにしてください。');out.portrait=v.portrait;}
+ if(v.portrait!==undefined){if(typeof v.portrait!=='string'||v.portrait.length>180000||!(/^(data:image\/(?:jpeg|png|webp);base64,[A-Za-z0-9+/=]+|assets\/(?:portraits\/[a-zA-Z0-9_-]+\.jpg|game\/[a-zA-Z0-9_-]+\.png))$/.test(v.portrait)||v.portrait===''))throw Error('画像は圧縮した画像データにしてください。');out.portrait=v.portrait;}
  if(v.skills!==undefined){out.skills={};for(const [k,s] of Object.entries(SKILLS)){const a=v.skills[k];if(!a)continue;if(!['unknown','single','multiple'].includes(a.target)||!['unknown','none','fan','circle','rectangle'].includes(a.shape)||!['unknown','none','buff','debuff','both'].includes(a.extra))throw Error('スキルの対象・範囲・追加効果を確認してください。');out.skills[k]={target:a.target,shape:a.shape,extra:a.extra,effects:effects(a.effects,s.max),note:short(a.note??'',1000),...(a.name!==undefined?{name:short(a.name)}:{}),...(a.stateMode!==undefined?{stateMode:short(a.stateMode,100)}:{}),...(a.stateRule!==undefined?{stateRule:short(a.stateRule,2000)}:{}),...(a.variants!==undefined?{variants:variants(a.variants,s.max)}:{})};}}
  if(v.coreEffects!==undefined)out.coreEffects=effects(v.coreEffects,6);
  if(v.mainAbilities!==undefined)out.mainAbilities=effects(v.mainAbilities,6);

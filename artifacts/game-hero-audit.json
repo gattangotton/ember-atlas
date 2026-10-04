@@ -1,0 +1,650 @@
+[
+  {
+    "id": "characters-440a28ef782ea8",
+    "masterId": 2,
+    "previousName": "サクヤ",
+    "name": "サクヤ",
+    "charge": "debuff",
+    "active": "none",
+    "levels": 33
+  },
+  {
+    "id": "characters-5c52e5ab9a0445",
+    "masterId": 3,
+    "previousName": "ニュクス",
+    "name": "ニュクス",
+    "charge": "none",
+    "active": "none",
+    "levels": 33
+  },
+  {
+    "id": "characters-8db88140429d09",
+    "masterId": 4,
+    "previousName": "アリアディス",
+    "name": "アリア＝ディス",
+    "charge": "none",
+    "active": "none",
+    "levels": 33
+  },
+  {
+    "id": "characters-5b9e4a08e72e30",
+    "masterId": 5,
+    "previousName": "紫津乃",
+    "name": "吉備 紫津乃",
+    "charge": "debuff",
+    "active": "none",
+    "levels": 33
+  },
+  {
+    "id": "characters-a9b41f6ce19866",
+    "masterId": 6,
+    "previousName": "ヴァルト",
+    "name": "星吠えのヴァルト",
+    "charge": "none",
+    "active": "none",
+    "levels": 33
+  },
+  {
+    "id": "characters-eb51ad57e71583",
+    "masterId": 7,
+    "previousName": "ジュード",
+    "name": "ジュード",
+    "charge": "buff",
+    "active": "buff",
+    "levels": 33
+  },
+  {
+    "id": "characters-2150ff6a97fa6e",
+    "masterId": 8,
+    "previousName": "シグルド",
+    "name": "シグルドリーヴァ",
+    "charge": "none",
+    "active": "none",
+    "levels": 33
+  },
+  {
+    "id": "characters-4aefd9df8d0049",
+    "masterId": 9,
+    "previousName": "ダリューシュ",
+    "name": "ダリューシュ",
+    "charge": "debuff",
+    "active": "buff",
+    "levels": 33
+  },
+  {
+    "id": "characters-cd3422c4685e8e",
+    "masterId": 10,
+    "previousName": "アイテール",
+    "name": "アイテール",
+    "charge": "debuff",
+    "active": "none",
+    "levels": 33
+  },
+  {
+    "id": "characters-b458c97475bb67",
+    "masterId": 11,
+    "previousName": "ケイオス",
+    "name": "ケイオス",
+    "charge": "none",
+    "active": "buff",
+    "levels": 33
+  },
+  {
+    "id": "characters-3f424e46e80938",
+    "masterId": 12,
+    "previousName": "エレボス",
+    "name": "エレボス",
+    "charge": "buff",
+    "active": "buff",
+    "levels": 33
+  },
+  {
+    "id": "characters-5b1de0c4dd2459",
+    "masterId": 13,
+    "previousName": "ヘーメラー",
+    "name": "ヘーメラー",
+    "charge": "none",
+    "active": "none",
+    "levels": 33
+  },
+  {
+    "id": "characters-c79e89380bd05d",
+    "masterId": 14,
+    "previousName": "コンドウィン",
+    "name": "コン＝ドウィン",
+    "charge": "none",
+    "active": "buff",
+    "levels": 33
+  },
+  {
+    "id": "characters-db0f5c32fa2857",
+    "masterId": 15,
+    "previousName": "グウィン",
+    "name": "グウィン＝リン",
+    "charge": "none",
+    "active": "buff",
+    "levels": 33
+  },
+  {
+    "id": "characters-3dc3b0a7d470a6",
+    "masterId": 16,
+    "previousName": "キエルガン",
+    "name": "キエル＝ガン",
+    "charge": "none",
+    "active": "none",
+    "levels": 33
+  },
+  {
+    "id": "characters-6a6634270dfe80",
+    "masterId": 17,
+    "previousName": "エリアノン",
+    "name": "エリ＝アノン",
+    "charge": "debuff",
+    "active": "none",
+    "levels": 33
+  },
+  {
+    "id": "characters-1bb1ed4b254a1e",
+    "masterId": 18,
+    "previousName": "暁",
+    "name": "朱天 暁",
+    "charge": "debuff",
+    "active": "buff",
+    "levels": 33
+  },
+  {
+    "id": "characters-4e0b6caefa8cf8",
+    "masterId": 19,
+    "previousName": "美鈴",
+    "name": "鵤 美鈴",
+    "charge": "debuff",
+    "active": "none",
+    "levels": 33
+  },
+  {
+    "id": "characters-8148464efdae30",
+    "masterId": 20,
+    "previousName": "葉 早雲",
+    "name": "葉 早雲",
+    "charge": "none",
+    "active": "buff",
+    "levels": 33
+  },
+  {
+    "id": "characters-b58ed5cf5a7662",
+    "masterId": 21,
+    "previousName": "白幽姫",
+    "name": "白幽姫",
+    "charge": "buff",
+    "active": "none",
+    "levels": 33
+  },
+  {
+    "id": "characters-773d92ec90b8b4",
+    "masterId": 22,
+    "previousName": "ニャマ",
+    "name": "爪撫でのニャマ",
+    "charge": "none",
+    "active": "none",
+    "levels": 33
+  },
+  {
+    "id": "characters-57bc609ba0adb2",
+    "masterId": 23,
+    "previousName": "サバナ",
+    "name": "鋼砕きのサバナ",
+    "charge": "none",
+    "active": "none",
+    "levels": 33
+  },
+  {
+    "id": "characters-2bda62176d5069",
+    "masterId": 24,
+    "previousName": "チモシー",
+    "name": "月歌いのチモシー",
+    "charge": "none",
+    "active": "none",
+    "levels": 33
+  },
+  {
+    "id": "characters-d2610d3943975e",
+    "masterId": 25,
+    "previousName": "ライガ",
+    "name": "銀光のライガ",
+    "charge": "debuff",
+    "active": "none",
+    "levels": 33
+  },
+  {
+    "id": "characters-1465fb05fe2597",
+    "masterId": 26,
+    "previousName": "リアム",
+    "name": "リアム",
+    "charge": "buff",
+    "active": "buff",
+    "levels": 33
+  },
+  {
+    "id": "characters-0c373231db6d2d",
+    "masterId": 27,
+    "previousName": "アレクシア",
+    "name": "アレクシア",
+    "charge": "debuff",
+    "active": "buff",
+    "levels": 33
+  },
+  {
+    "id": "characters-7f0a2057d62605",
+    "masterId": 28,
+    "previousName": "シーピー",
+    "name": "シーピー",
+    "charge": "debuff",
+    "active": "none",
+    "levels": 33
+  },
+  {
+    "id": "characters-c8727d12d04fef",
+    "masterId": 29,
+    "previousName": "ノアレス",
+    "name": "ノア＝レス",
+    "charge": "buff",
+    "active": "none",
+    "levels": 33
+  },
+  {
+    "id": "characters-a8ec8ef0c81561",
+    "masterId": 30,
+    "previousName": "カーラ",
+    "name": "カーラ",
+    "charge": "none",
+    "active": "none",
+    "levels": 33
+  },
+  {
+    "id": "characters-b1e983d4fea472",
+    "masterId": 31,
+    "previousName": "エイル",
+    "name": "エイル",
+    "charge": "none",
+    "active": "none",
+    "levels": 33
+  },
+  {
+    "id": "characters-c487df72af2864",
+    "masterId": 32,
+    "previousName": "ブリュンヒルド",
+    "name": "ブリュンヒルド",
+    "charge": "debuff",
+    "active": "none",
+    "levels": 33
+  },
+  {
+    "id": "characters-f476f0590332ec",
+    "masterId": 33,
+    "previousName": "ノート",
+    "name": "ノート",
+    "charge": "debuff",
+    "active": "buff",
+    "levels": 33
+  },
+  {
+    "id": "characters-fda87f117c0f91",
+    "masterId": 34,
+    "previousName": "アイーシャ",
+    "name": "アイーシャ",
+    "charge": "none",
+    "active": "none",
+    "levels": 33
+  },
+  {
+    "id": "characters-ede1ff47d9d504",
+    "masterId": 35,
+    "previousName": "カリーム",
+    "name": "カリーム",
+    "charge": "none",
+    "active": "none",
+    "levels": 33
+  },
+  {
+    "id": "characters-a3f0c6470792ae",
+    "masterId": 36,
+    "previousName": "シーリーン",
+    "name": "シーリーン",
+    "charge": "debuff",
+    "active": "none",
+    "levels": 33
+  },
+  {
+    "id": "characters-3c88f95b8922dc",
+    "masterId": 37,
+    "previousName": "レイン",
+    "name": "レイン",
+    "charge": "none",
+    "active": "none",
+    "levels": 33
+  },
+  {
+    "id": "characters-5054bf1bd5375f",
+    "masterId": 38,
+    "previousName": "フィーナ",
+    "name": "フィーナ",
+    "charge": "buff",
+    "active": "none",
+    "levels": 33
+  },
+  {
+    "id": "characters-8192e602022eb3",
+    "masterId": 39,
+    "previousName": "ガイア",
+    "name": "ガイア",
+    "charge": "debuff",
+    "active": "buff",
+    "levels": 33
+  },
+  {
+    "id": "characters-0e0fe8e6e984a2",
+    "masterId": 40,
+    "previousName": "ヘラネア",
+    "name": "ヘラ＝ネア",
+    "charge": "debuff",
+    "active": "none",
+    "levels": 33
+  },
+  {
+    "id": "characters-db7e822e9bff84",
+    "masterId": 41,
+    "previousName": "メリケ",
+    "name": "メリケ",
+    "charge": "buff",
+    "active": "none",
+    "levels": 33
+  },
+  {
+    "id": "characters-5fe90a499c46ce",
+    "masterId": 42,
+    "previousName": "ウラノス",
+    "name": "ウラノス",
+    "charge": "none",
+    "active": "buff",
+    "levels": 33
+  },
+  {
+    "id": "characters-c03d1724417458",
+    "masterId": 43,
+    "previousName": "マエル",
+    "name": "マエル＝イッド",
+    "charge": "buff",
+    "active": "none",
+    "levels": 33
+  },
+  {
+    "id": "characters-1cfffa16ea0eff",
+    "masterId": 44,
+    "previousName": "ビランディ",
+    "name": "大角のビランディ",
+    "charge": "debuff",
+    "active": "buff",
+    "levels": 33
+  },
+  {
+    "id": "characters-ae1a994740add3",
+    "masterId": 45,
+    "previousName": "イヴァール",
+    "name": "イヴァール",
+    "charge": "none",
+    "active": "none",
+    "levels": 33
+  },
+  {
+    "id": "characters-367454b2e27164",
+    "masterId": 46,
+    "previousName": "ウルファ",
+    "name": "ウルファ",
+    "charge": "none",
+    "active": "none",
+    "levels": 33
+  },
+  {
+    "id": "characters-48460443dbafca",
+    "masterId": 47,
+    "previousName": "エプレ",
+    "name": "闇酔いのエプレ",
+    "charge": "buff",
+    "active": "debuff",
+    "levels": 33
+  },
+  {
+    "id": "characters-9d3f4739ee2506",
+    "masterId": 48,
+    "previousName": "朱天残夜",
+    "name": "朱天 残夜",
+    "charge": "buff",
+    "active": "none",
+    "levels": 33
+  },
+  {
+    "id": "characters-4bd23ce9f5b48f",
+    "masterId": 49,
+    "previousName": "叢雲昏葉",
+    "name": "叢雲 昏葉",
+    "charge": "none",
+    "active": "none",
+    "levels": 33
+  },
+  {
+    "id": "characters-3e4ba57f2fc464",
+    "masterId": 51,
+    "previousName": "シャオレイ",
+    "name": "小夜守のシャオレイ",
+    "charge": "debuff",
+    "active": "buff",
+    "levels": 33
+  },
+  {
+    "id": "characters-8d6dc31ae1d0b3",
+    "masterId": 54,
+    "previousName": "ロウ",
+    "name": "ロウ",
+    "charge": "none",
+    "active": "none",
+    "levels": 33
+  },
+  {
+    "id": "characters-18d730ace2b5e1",
+    "masterId": 55,
+    "previousName": "ステラ",
+    "name": "ステラ",
+    "charge": "buff",
+    "active": "debuff",
+    "levels": 33
+  },
+  {
+    "id": "characters-c58dfe6dc02c1c",
+    "masterId": 56,
+    "previousName": "エルフリーデ",
+    "name": "エルフリーデ",
+    "charge": "debuff",
+    "active": "debuff",
+    "levels": 33
+  },
+  {
+    "id": "characters-ed15ee0606cf41",
+    "masterId": 57,
+    "previousName": "エーリカ",
+    "name": "エーリカ",
+    "charge": "debuff",
+    "active": "buff",
+    "levels": 33
+  },
+  {
+    "id": "characters-56d4d6a9a2ebb3",
+    "masterId": 58,
+    "previousName": "アレフ",
+    "name": "アレフ",
+    "charge": "buff",
+    "active": "none",
+    "levels": 33
+  },
+  {
+    "id": "characters-9b760cb1dad1f3",
+    "masterId": 59,
+    "previousName": "ライラ",
+    "name": "ライラ",
+    "charge": "debuff",
+    "active": "debuff",
+    "levels": 33
+  },
+  {
+    "id": "characters-64776704d00b57",
+    "masterId": 60,
+    "previousName": "ジタン",
+    "name": "ジタン",
+    "charge": "buff",
+    "active": "none",
+    "levels": 33
+  },
+  {
+    "id": "characters-cf15cfebb7a8ac",
+    "masterId": 61,
+    "previousName": "ビビ",
+    "name": "ビビ",
+    "charge": "buff",
+    "active": "none",
+    "levels": 33
+  },
+  {
+    "id": "characters-e2aa67d1e5ce83",
+    "masterId": 62,
+    "previousName": "水着・ウルファ",
+    "name": "ウルファ[遊泳]",
+    "charge": "buff",
+    "active": "none",
+    "levels": 33
+  },
+  {
+    "id": "characters-54762601d58632",
+    "masterId": 63,
+    "previousName": "水着・紫津乃",
+    "name": "紫津乃[炎天]",
+    "charge": "buff",
+    "active": "none",
+    "levels": 33
+  },
+  {
+    "id": "characters-5c19c5dfd9c3b4",
+    "masterId": 64,
+    "previousName": "2B",
+    "name": "２Ｂ",
+    "charge": "buff",
+    "active": "none",
+    "levels": 33
+  },
+  {
+    "id": "characters-5667fbfe034add",
+    "masterId": 65,
+    "previousName": "フィオ",
+    "name": "フィオ",
+    "charge": "none",
+    "active": "none",
+    "levels": 33
+  },
+  {
+    "id": "characters-dad57c5e040da2",
+    "masterId": 66,
+    "previousName": "カイネ",
+    "name": "カイネ",
+    "charge": "buff",
+    "active": "none",
+    "levels": 33
+  },
+  {
+    "id": "characters-c21461d7fa0d94",
+    "masterId": 67,
+    "previousName": "ゲラルデスカ",
+    "name": "ゲラルデスカ",
+    "charge": "debuff",
+    "active": "none",
+    "levels": 33
+  },
+  {
+    "id": "characters-f033f1e55af0cb",
+    "masterId": 68,
+    "previousName": "【蒼炎】ニュクス",
+    "name": "ニュクス[蒼炎]",
+    "charge": "debuff",
+    "active": "none",
+    "levels": 33
+  },
+  {
+    "id": "characters-6ff104c4cf1547",
+    "masterId": 69,
+    "previousName": "ギュスターヴ",
+    "name": "ギュスターヴ",
+    "charge": "buff",
+    "active": "debuff",
+    "levels": 33
+  },
+  {
+    "id": "characters-333b400adf68b4",
+    "masterId": 70,
+    "previousName": "ジニー",
+    "name": "ジニー",
+    "charge": "buff",
+    "active": "debuff",
+    "levels": 33
+  },
+  {
+    "id": "characters-b7e697a6f7f182",
+    "masterId": 71,
+    "previousName": "ティーダ",
+    "name": "ティーダ",
+    "charge": "buff",
+    "active": "debuff",
+    "levels": 33
+  },
+  {
+    "id": "characters-4af567ce870d78",
+    "masterId": 72,
+    "previousName": "ユウナ",
+    "name": "ユウナ",
+    "charge": "buff",
+    "active": "none",
+    "levels": 33
+  },
+  {
+    "id": "characters-7e4ca240547732",
+    "masterId": 73,
+    "previousName": "魔人・フィーナ",
+    "name": "魔人フィーナ",
+    "charge": "buff",
+    "active": "debuff",
+    "levels": 33
+  },
+  {
+    "id": "characters-1fc38c2a36427c",
+    "masterId": 75,
+    "previousName": "[情夏]エプレ",
+    "name": "エプレ[情夏]",
+    "charge": "debuff",
+    "active": "none",
+    "levels": 33
+  },
+  {
+    "id": "characters-f5a44e040bc9c5",
+    "masterId": 76,
+    "previousName": "[爽涼]サクヤ",
+    "name": "サクヤ[爽涼]",
+    "charge": "buff",
+    "active": "debuff",
+    "levels": 33
+  },
+  {
+    "id": "characters-game-81",
+    "masterId": 81,
+    "previousName": "シグルドリーヴァ[葬姫]",
+    "name": "シグルドリーヴァ[葬姫]",
+    "charge": "buff",
+    "active": "none",
+    "levels": 33
+  }
+]

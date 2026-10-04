@@ -1,0 +1,667 @@
+{
+  "equipmentMatched": 207,
+  "researchMatched": 419,
+  "numericResearch": 401,
+  "equipmentUnmatched": [],
+  "researchUnmatched": [],
+  "nameAliases": [
+    {
+      "id": "equipment-16f1799142bfaf",
+      "previous": "ママの被り物(NieRシリーズ)",
+      "master": "ママの被り物(NieRｼﾘｰｽﾞ)"
+    },
+    {
+      "id": "equipment-d97a8636566af1",
+      "previous": "コルデロスーツ",
+      "master": "コルテロスーツ"
+    },
+    {
+      "id": "equipment-670efc6643e256",
+      "previous": "星くずのローブ(SaGaシリーズ)",
+      "master": "星くずのローブ(SaGaｼﾘｰｽﾞ)"
+    },
+    {
+      "id": "equipment-099c0d5810be7f",
+      "previous": "コルデロブーツ",
+      "master": "コルテロブーツ"
+    },
+    {
+      "id": "equipment-e12d5642daecc4",
+      "previous": "白の契約(NieRシリーズ)",
+      "master": "白の契約(NieRｼﾘｰｽﾞ)"
+    },
+    {
+      "id": "equipment-e5943c1027e904",
+      "previous": "コノハナノサクヤヒメ",
+      "master": "コノハナノサクヤビメ"
+    },
+    {
+      "id": "equipment-d3de2cadf67fbd",
+      "previous": "エンバースクロー",
+      "master": "エンバースクロ―"
+    },
+    {
+      "id": "equipment-66081c7a9eb06f",
+      "previous": "世界を滅ぼした男の服(NieRシリーズ)",
+      "master": "世界を滅ぼした男の服(NieRｼﾘｰｽﾞ)"
+    },
+    {
+      "id": "equipment-4b7f1d63fe391e",
+      "previous": "タイタスグリーブ(SaGaシリーズ)",
+      "master": "タイタスグリーブ(SaGaｼﾘｰｽﾞ)"
+    },
+    {
+      "id": "equipment-92b0b020b214d8",
+      "previous": "ポッド042(NieRシリーズ)",
+      "master": "ポッド０４２(NieRｼﾘｰｽﾞ)"
+    },
+    {
+      "id": "equipment-cba73c05049ff0",
+      "previous": "コルデロマスク",
+      "master": "コルテロマスク"
+    },
+    {
+      "id": "equipment-4ecd6abc4f1c48",
+      "previous": "コルデロスカーフ",
+      "master": "コルテロスカーフ"
+    },
+    {
+      "id": "equipment-86f6f383516271",
+      "previous": "風切り羽根の帽子(SaGaシリーズ)",
+      "master": "風切り羽根の帽子(SaGaｼﾘｰｽﾞ)"
+    },
+    {
+      "id": "equipment-532695f3d0ef8e",
+      "previous": "ギュスターヴの剣(SaGaシリーズ)",
+      "master": "ギュスターヴの剣(SaGaｼﾘｰｽﾞ)"
+    }
+  ],
+  "unitDifferences": [
+    {
+      "id": "research-0-6",
+      "name": "食料生産量",
+      "previousUnit": "",
+      "masterUnit": "%",
+      "previousValues": [
+        1,
+        3,
+        6,
+        10,
+        15
+      ],
+      "masterValues": [
+        1,
+        3,
+        6,
+        10,
+        15
+      ]
+    },
+    {
+      "id": "research-0-7",
+      "name": "木材生産量",
+      "previousUnit": "",
+      "masterUnit": "%",
+      "previousValues": [
+        1,
+        3,
+        6,
+        10,
+        15
+      ],
+      "masterValues": [
+        1,
+        3,
+        6,
+        10,
+        15
+      ]
+    },
+    {
+      "id": "research-0-8",
+      "name": "金属生産量",
+      "previousUnit": "",
+      "masterUnit": "%",
+      "previousValues": [
+        1,
+        3,
+        6,
+        10,
+        15
+      ],
+      "masterValues": [
+        1,
+        3,
+        6,
+        10,
+        15
+      ]
+    },
+    {
+      "id": "research-0-9",
+      "name": "エーテル生産量",
+      "previousUnit": "",
+      "masterUnit": "%",
+      "previousValues": [
+        1,
+        3,
+        6,
+        10,
+        15
+      ],
+      "masterValues": [
+        1,
+        3,
+        6,
+        10,
+        15
+      ]
+    },
+    {
+      "id": "research-0-16",
+      "name": "資源保護(エーテル以外)",
+      "previousUnit": "",
+      "masterUnit": "%",
+      "previousValues": [
+        1,
+        2,
+        4,
+        6,
+        10
+      ],
+      "masterValues": [
+        1,
+        2,
+        4,
+        6,
+        10
+      ]
+    }
+  ],
+  "differences": [
+    {
+      "kind": "equipment",
+      "id": "equipment-cb10930b422891",
+      "label": "対妖魔素材倍化率",
+      "level": 2,
+      "previous": 9.3,
+      "master": 9.38
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-cb10930b422891",
+      "label": "対妖魔素材倍化率",
+      "level": 3,
+      "previous": 11.2,
+      "master": 11.25
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-cb10930b422891",
+      "label": "対妖魔素材倍化率",
+      "level": 4,
+      "previous": 13.1,
+      "master": 13.13
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-cb10930b422891",
+      "label": "対妖魔素材倍化率",
+      "level": 6,
+      "previous": 16.8,
+      "master": 16.88
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-7bbdc1430f3b3a",
+      "label": "攻撃力",
+      "level": 6,
+      "previous": 84.3,
+      "master": 84.38
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-7bbdc1430f3b3a",
+      "label": "光属性リーダー攻撃力",
+      "level": 6,
+      "previous": 59.6,
+      "master": 59.63
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-7bbdc1430f3b3a",
+      "label": "対宝庫攻撃力",
+      "level": 6,
+      "previous": 84.3,
+      "master": 84.38
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-6ec435255341da",
+      "label": "採集量",
+      "level": 2,
+      "previous": 8.1,
+      "master": 8.13
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-6ec435255341da",
+      "label": "採集量",
+      "level": 3,
+      "previous": 9.7,
+      "master": 9.75
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-6ec435255341da",
+      "label": "採集量",
+      "level": 4,
+      "previous": 11.3,
+      "master": 11.38
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-6ec435255341da",
+      "label": "採集量",
+      "level": 6,
+      "previous": 14.6,
+      "master": 14.63
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-fd4336d7647306",
+      "label": "採集量",
+      "level": 2,
+      "previous": 6.2,
+      "master": 6.25
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-fd4336d7647306",
+      "label": "採集量",
+      "level": 4,
+      "previous": 8.7,
+      "master": 8.75
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-fd4336d7647306",
+      "label": "採集量",
+      "level": 6,
+      "previous": 11.2,
+      "master": 11.25
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-90970ec4ca4a6b",
+      "label": "採集速度",
+      "level": 2,
+      "previous": 6.2,
+      "master": 6.25
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-90970ec4ca4a6b",
+      "label": "採集速度",
+      "level": 4,
+      "previous": 8.7,
+      "master": 8.75
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-90970ec4ca4a6b",
+      "label": "採集速度",
+      "level": 6,
+      "previous": 11.2,
+      "master": 11.25
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-66081c7a9eb06f",
+      "label": "採集量",
+      "level": 2,
+      "previous": 8.1,
+      "master": 8.13
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-66081c7a9eb06f",
+      "label": "採集量",
+      "level": 3,
+      "previous": 9.7,
+      "master": 9.75
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-66081c7a9eb06f",
+      "label": "採集量",
+      "level": 4,
+      "previous": 11.3,
+      "master": 11.38
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-66081c7a9eb06f",
+      "label": "採集量",
+      "level": 6,
+      "previous": 14.6,
+      "master": 14.63
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-66081c7a9eb06f",
+      "label": "採集速度",
+      "level": 2,
+      "previous": 11.2,
+      "master": 11.25
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-66081c7a9eb06f",
+      "label": "採集速度",
+      "level": 4,
+      "previous": 15.7,
+      "master": 15.75
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-66081c7a9eb06f",
+      "label": "採集速度",
+      "level": 6,
+      "previous": 20.2,
+      "master": 20.25
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-b97ee2bb654f57",
+      "label": "採集速度",
+      "level": 2,
+      "previous": 8.7,
+      "master": 8.75
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-b97ee2bb654f57",
+      "label": "採集速度",
+      "level": 4,
+      "previous": 12.2,
+      "master": 12.25
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-b97ee2bb654f57",
+      "label": "採集速度",
+      "level": 6,
+      "previous": 15.7,
+      "master": 15.75
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-341d1473319dae",
+      "label": "採集速度",
+      "level": 2,
+      "previous": 3.1,
+      "master": 3.13
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-341d1473319dae",
+      "label": "採集速度",
+      "level": 3,
+      "previous": 3.7,
+      "master": 3.75
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-341d1473319dae",
+      "label": "採集速度",
+      "level": 4,
+      "previous": 4.3,
+      "master": 4.38
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-341d1473319dae",
+      "label": "採集速度",
+      "level": 6,
+      "previous": 5.6,
+      "master": 5.63
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-3f64b128c4999e",
+      "label": "採集速度",
+      "level": 2,
+      "previous": 6.8,
+      "master": 6.88
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-3f64b128c4999e",
+      "label": "採集速度",
+      "level": 3,
+      "previous": 8.2,
+      "master": 8.25
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-3f64b128c4999e",
+      "label": "採集速度",
+      "level": 4,
+      "previous": 9.6,
+      "master": 9.63
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-3f64b128c4999e",
+      "label": "採集速度",
+      "level": 6,
+      "previous": 12.3,
+      "master": 12.38
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-5a9c8aaf3ecc01",
+      "label": "採集速度",
+      "level": 2,
+      "previous": 3.1,
+      "master": 3.13
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-5a9c8aaf3ecc01",
+      "label": "採集速度",
+      "level": 3,
+      "previous": 3.7,
+      "master": 3.75
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-5a9c8aaf3ecc01",
+      "label": "採集速度",
+      "level": 4,
+      "previous": 4.3,
+      "master": 4.38
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-5a9c8aaf3ecc01",
+      "label": "採集速度",
+      "level": 6,
+      "previous": 5.6,
+      "master": 5.63
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-8bf662f7b5934c",
+      "label": "採集速度",
+      "level": 2,
+      "previous": 20.6,
+      "master": 20.63
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-8bf662f7b5934c",
+      "label": "採集速度",
+      "level": 3,
+      "previous": 24.7,
+      "master": 24.75
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-8bf662f7b5934c",
+      "label": "採集速度",
+      "level": 4,
+      "previous": 28.8,
+      "master": 28.88
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-8bf662f7b5934c",
+      "label": "採集速度",
+      "level": 6,
+      "previous": 37.1,
+      "master": 37.13
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-8bf662f7b5934c",
+      "label": "採集量",
+      "level": 2,
+      "previous": 6.8,
+      "master": 6.88
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-8bf662f7b5934c",
+      "label": "採集量",
+      "level": 3,
+      "previous": 8.2,
+      "master": 8.25
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-8bf662f7b5934c",
+      "label": "採集量",
+      "level": 4,
+      "previous": 9.6,
+      "master": 9.63
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-8bf662f7b5934c",
+      "label": "採集量",
+      "level": 6,
+      "previous": 12.3,
+      "master": 12.38
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-8dcc78bd847551",
+      "label": "採集速度",
+      "level": 2,
+      "previous": 8.7,
+      "master": 8.75
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-8dcc78bd847551",
+      "label": "採集速度",
+      "level": 4,
+      "previous": 12.2,
+      "master": 12.25
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-8dcc78bd847551",
+      "label": "採集速度",
+      "level": 6,
+      "previous": 15.7,
+      "master": 15.75
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-c3c5ee2009608a",
+      "label": "採集量",
+      "level": 2,
+      "previous": 3.7,
+      "master": 3.75
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-c3c5ee2009608a",
+      "label": "採集量",
+      "level": 4,
+      "previous": 5.2,
+      "master": 5.25
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-1c0160ddfd33d7",
+      "label": "採集量",
+      "level": 2,
+      "previous": 4.3,
+      "master": 4.38
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-1c0160ddfd33d7",
+      "label": "採集量",
+      "level": 3,
+      "previous": 5.2,
+      "master": 5.25
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-1c0160ddfd33d7",
+      "label": "採集量",
+      "level": 4,
+      "previous": 6.1,
+      "master": 6.13
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-1c0160ddfd33d7",
+      "label": "採集量",
+      "level": 6,
+      "previous": 7.8,
+      "master": 7.88
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-adc3166a6d9d0d",
+      "label": "採集速度",
+      "level": 2,
+      "previous": 6.2,
+      "master": 6.25
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-adc3166a6d9d0d",
+      "label": "採集速度",
+      "level": 4,
+      "previous": 8.7,
+      "master": 8.75
+    },
+    {
+      "kind": "equipment",
+      "id": "equipment-adc3166a6d9d0d",
+      "label": "採集速度",
+      "level": 6,
+      "previous": 11.2,
+      "master": 11.25
+    },
+    {
+      "kind": "research",
+      "id": "research-0-18",
+      "label": "対魔獣攻撃力",
+      "level": 5,
+      "previous": 14,
+      "master": 15
+    }
+  ],
+  "anchors": {
+    "researchValues": 74,
+    "equipmentG1Values": 493
+  }
+}
