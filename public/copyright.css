@@ -1,0 +1,14 @@
+.copyright-notice{
+  margin-top:auto;
+  padding:14px 28px 18px;
+  border-top:1px solid var(--line);
+  color:var(--muted);
+  font-size:11px;
+  line-height:1.6;
+}
+.copyright-notice p{margin:0 0 4px}
+.copyright-notice .copyright-mark{color:var(--ink);font-weight:700}
+.copyright-notice a{color:var(--purple);text-decoration:underline;text-underline-offset:2px}
+@media(max-width:650px){
+  .copyright-notice{padding:13px 16px 18px;font-size:10px}
+}

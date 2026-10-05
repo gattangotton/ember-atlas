@@ -14,6 +14,10 @@
 
 GitHub Pagesで公開する場合は、このREADMEとアプリ本体を含むリポジトリがPublicになり、URLを知る人は誰でもアプリを開けます。GitHub Pagesではサーバー側ログインは使われず、個人の記録は各自のブラウザー内に保存されます。公開用ワークフローは`main`への反映後に`public/`を自動配信します。
 
+### GitHub Pagesの更新
+
+Codexでファイルを修正しただけでは、公開サイトには反映されません。変更を`main`ブランチへコミットしてGitHubにPushすると、GitHub Actionsが`public/`を再配信します。Actionsタブで「Deploy static app to GitHub Pages」が成功した後、同じ公開URLを再読み込みしてください。Codexには「この変更をGitHub Pagesへ反映して」と依頼できます。
+
 ## 利用者向けの機能
 
 - エンバース72人：属性・兵種・スキル効果で検索、所持・現在と目標のスキルLvを記録。
