@@ -1,0 +1,2521 @@
+{
+  "sha256": "11d4e0651c979a1361661c57f0795fa645e2b08b334177f420f4a30555316a68",
+  "nodes": 419,
+  "uniqueImages": 124,
+  "icons": {
+    "research-0-3": {
+      "path": "assets/game/research/00195.png",
+      "masterId": 11,
+      "iconId": 195,
+      "name": "建設速度"
+    },
+    "research-0-4": {
+      "path": "assets/game/research/00023.png",
+      "masterId": 21,
+      "iconId": 23,
+      "name": "行軍速度"
+    },
+    "research-0-5": {
+      "path": "assets/game/research/00029.png",
+      "masterId": 22,
+      "iconId": 29,
+      "name": "運搬量"
+    },
+    "research-0-6": {
+      "path": "assets/game/research/00004.png",
+      "masterId": 31,
+      "iconId": 4,
+      "name": "食料生産"
+    },
+    "research-0-7": {
+      "path": "assets/game/research/00002.png",
+      "masterId": 32,
+      "iconId": 2,
+      "name": "木材生産\nメインミッション対象"
+    },
+    "research-0-8": {
+      "path": "assets/game/research/00003.png",
+      "masterId": 33,
+      "iconId": 3,
+      "name": "金属生産"
+    },
+    "research-0-9": {
+      "path": "assets/game/research/00005.png",
+      "masterId": 41,
+      "iconId": 5,
+      "name": "エーテル生産"
+    },
+    "research-0-10": {
+      "path": "assets/game/research/00197.png",
+      "masterId": 42,
+      "iconId": 197,
+      "name": "装備製作エーテル効率"
+    },
+    "research-0-11": {
+      "path": "assets/game/research/00191.png",
+      "masterId": 51,
+      "iconId": 191,
+      "name": "食料採集速度"
+    },
+    "research-0-12": {
+      "path": "assets/game/research/00192.png",
+      "masterId": 52,
+      "iconId": 192,
+      "name": "木材採集速度"
+    },
+    "research-0-13": {
+      "path": "assets/game/research/00193.png",
+      "masterId": 53,
+      "iconId": 193,
+      "name": "金属採集速度"
+    },
+    "research-0-14": {
+      "path": "assets/game/research/00194.png",
+      "masterId": 61,
+      "iconId": 194,
+      "name": "エーテル採集速度"
+    },
+    "research-0-15": {
+      "path": "assets/game/research/00196.png",
+      "masterId": 62,
+      "iconId": 196,
+      "name": "研究速度\nメインミッション対象"
+    },
+    "research-0-16": {
+      "path": "assets/game/research/00179.png",
+      "masterId": 63,
+      "iconId": 179,
+      "name": "資源保護(エーテル以外)"
+    },
+    "research-0-17": {
+      "path": "assets/game/research/00190.png",
+      "masterId": 71,
+      "iconId": 190,
+      "name": "採集速度"
+    },
+    "research-0-18": {
+      "path": "assets/game/research/00100.png",
+      "masterId": 81,
+      "iconId": 100,
+      "name": "対魔獣攻撃力"
+    },
+    "research-0-19": {
+      "path": "assets/game/research/00023.png",
+      "masterId": 91,
+      "iconId": 23,
+      "name": "行軍速度"
+    },
+    "research-0-20": {
+      "path": "assets/game/research/00029.png",
+      "masterId": 92,
+      "iconId": 29,
+      "name": "運搬量"
+    },
+    "research-0-21": {
+      "path": "assets/game/research/00004.png",
+      "masterId": 101,
+      "iconId": 4,
+      "name": "食料生産"
+    },
+    "research-0-22": {
+      "path": "assets/game/research/00002.png",
+      "masterId": 102,
+      "iconId": 2,
+      "name": "木材生産\nメインミッション対象"
+    },
+    "research-0-23": {
+      "path": "assets/game/research/00003.png",
+      "masterId": 103,
+      "iconId": 3,
+      "name": "金属生産"
+    },
+    "research-0-24": {
+      "path": "assets/game/research/00005.png",
+      "masterId": 111,
+      "iconId": 5,
+      "name": "エーテル生産"
+    },
+    "research-0-25": {
+      "path": "assets/game/research/00197.png",
+      "masterId": 112,
+      "iconId": 197,
+      "name": "装備製作エーテル効率"
+    },
+    "research-0-26": {
+      "path": "assets/game/research/00088.png",
+      "masterId": 121,
+      "iconId": 88,
+      "name": "攻撃力\nメインミッション対象"
+    },
+    "research-0-27": {
+      "path": "assets/game/research/00191.png",
+      "masterId": 131,
+      "iconId": 191,
+      "name": "食料採集速度"
+    },
+    "research-0-28": {
+      "path": "assets/game/research/00192.png",
+      "masterId": 132,
+      "iconId": 192,
+      "name": "木材採集速度"
+    },
+    "research-0-29": {
+      "path": "assets/game/research/00193.png",
+      "masterId": 133,
+      "iconId": 193,
+      "name": "金属採集速度"
+    },
+    "research-0-30": {
+      "path": "assets/game/research/00194.png",
+      "masterId": 141,
+      "iconId": 194,
+      "name": "エーテル採集速度"
+    },
+    "research-0-31": {
+      "path": "assets/game/research/00196.png",
+      "masterId": 142,
+      "iconId": 196,
+      "name": "研究速度"
+    },
+    "research-0-32": {
+      "path": "assets/game/research/00179.png",
+      "masterId": 143,
+      "iconId": 179,
+      "name": "資源保護(エーテル以外)"
+    },
+    "research-0-33": {
+      "path": "assets/game/research/00190.png",
+      "masterId": 151,
+      "iconId": 190,
+      "name": "採集速度\nメインミッション対象"
+    },
+    "research-0-34": {
+      "path": "assets/game/research/00132.png",
+      "masterId": 161,
+      "iconId": 132,
+      "name": "集結部隊時攻撃力"
+    },
+    "research-0-35": {
+      "path": "assets/game/research/00023.png",
+      "masterId": 171,
+      "iconId": 23,
+      "name": "行軍速度"
+    },
+    "research-0-36": {
+      "path": "assets/game/research/00195.png",
+      "masterId": 172,
+      "iconId": 195,
+      "name": "建設速度"
+    },
+    "research-0-37": {
+      "path": "assets/game/research/00029.png",
+      "masterId": 173,
+      "iconId": 29,
+      "name": "運搬量"
+    },
+    "research-0-38": {
+      "path": "assets/game/research/00004.png",
+      "masterId": 181,
+      "iconId": 4,
+      "name": "食料生産"
+    },
+    "research-0-39": {
+      "path": "assets/game/research/00002.png",
+      "masterId": 182,
+      "iconId": 2,
+      "name": "木材生産"
+    },
+    "research-0-40": {
+      "path": "assets/game/research/00003.png",
+      "masterId": 183,
+      "iconId": 3,
+      "name": "金属生産"
+    },
+    "research-0-41": {
+      "path": "assets/game/research/00005.png",
+      "masterId": 191,
+      "iconId": 5,
+      "name": "エーテル生産"
+    },
+    "research-0-42": {
+      "path": "assets/game/research/00197.png",
+      "masterId": 192,
+      "iconId": 197,
+      "name": "装備製作エーテル効率"
+    },
+    "research-0-43": {
+      "path": "assets/game/research/00181.png",
+      "masterId": 201,
+      "iconId": 181,
+      "name": "資源地防衛時攻撃力\nメインミッション対象"
+    },
+    "research-0-44": {
+      "path": "assets/game/research/00191.png",
+      "masterId": 211,
+      "iconId": 191,
+      "name": "食料採集速度"
+    },
+    "research-0-45": {
+      "path": "assets/game/research/00192.png",
+      "masterId": 212,
+      "iconId": 192,
+      "name": "木材採集速度"
+    },
+    "research-0-46": {
+      "path": "assets/game/research/00193.png",
+      "masterId": 213,
+      "iconId": 193,
+      "name": "金属採集速度"
+    },
+    "research-0-47": {
+      "path": "assets/game/research/00194.png",
+      "masterId": 221,
+      "iconId": 194,
+      "name": "エーテル採集速度"
+    },
+    "research-0-48": {
+      "path": "assets/game/research/00196.png",
+      "masterId": 222,
+      "iconId": 196,
+      "name": "研究速度"
+    },
+    "research-0-49": {
+      "path": "assets/game/research/00179.png",
+      "masterId": 223,
+      "iconId": 179,
+      "name": "資源保護(エーテル以外)"
+    },
+    "research-0-50": {
+      "path": "assets/game/research/00029.png",
+      "masterId": 231,
+      "iconId": 29,
+      "name": "運搬量"
+    },
+    "research-0-51": {
+      "path": "assets/game/research/00128.png",
+      "masterId": 232,
+      "iconId": 128,
+      "name": "施設防衛時攻撃力"
+    },
+    "research-0-52": {
+      "path": "assets/game/research/00176.png",
+      "masterId": 241,
+      "iconId": 176,
+      "name": "最大歩兵収容数"
+    },
+    "research-0-53": {
+      "path": "assets/game/research/00177.png",
+      "masterId": 242,
+      "iconId": 177,
+      "name": "最大弓兵収容数"
+    },
+    "research-0-54": {
+      "path": "assets/game/research/00178.png",
+      "masterId": 243,
+      "iconId": 178,
+      "name": "最大騎兵収容数"
+    },
+    "research-0-55": {
+      "path": "assets/game/research/00004.png",
+      "masterId": 244,
+      "iconId": 4,
+      "name": "食料生産"
+    },
+    "research-0-56": {
+      "path": "assets/game/research/00002.png",
+      "masterId": 245,
+      "iconId": 2,
+      "name": "木材生産"
+    },
+    "research-0-57": {
+      "path": "assets/game/research/00003.png",
+      "masterId": 246,
+      "iconId": 3,
+      "name": "金属生産"
+    },
+    "research-0-58": {
+      "path": "assets/game/research/00005.png",
+      "masterId": 247,
+      "iconId": 5,
+      "name": "エーテル生産"
+    },
+    "research-0-59": {
+      "path": "assets/game/research/00100.png",
+      "masterId": 248,
+      "iconId": 100,
+      "name": "対魔獣攻撃力"
+    },
+    "research-0-60": {
+      "path": "assets/game/research/00128.png",
+      "masterId": 251,
+      "iconId": 128,
+      "name": "施設防衛時攻撃力"
+    },
+    "research-0-61": {
+      "path": "assets/game/research/00195.png",
+      "masterId": 252,
+      "iconId": 195,
+      "name": "建設速度\nメインミッション対象"
+    },
+    "research-0-62": {
+      "path": "assets/game/research/00019.png",
+      "masterId": 253,
+      "iconId": 19,
+      "name": "最大病院収容兵士数"
+    },
+    "research-0-63": {
+      "path": "assets/game/research/00214.png",
+      "masterId": 254,
+      "iconId": 214,
+      "name": "近衛歩兵治療速度"
+    },
+    "research-0-64": {
+      "path": "assets/game/research/00215.png",
+      "masterId": 255,
+      "iconId": 215,
+      "name": "近衛弓兵治療速度"
+    },
+    "research-0-65": {
+      "path": "assets/game/research/00216.png",
+      "masterId": 256,
+      "iconId": 216,
+      "name": "近衛騎兵治療速度"
+    },
+    "research-0-66": {
+      "path": "assets/game/research/00176.png",
+      "masterId": 261,
+      "iconId": 176,
+      "name": "最大歩兵収容数"
+    },
+    "research-0-67": {
+      "path": "assets/game/research/00177.png",
+      "masterId": 262,
+      "iconId": 177,
+      "name": "最大弓兵収容数"
+    },
+    "research-0-68": {
+      "path": "assets/game/research/00178.png",
+      "masterId": 263,
+      "iconId": 178,
+      "name": "最大騎兵収容数"
+    },
+    "research-0-69": {
+      "path": "assets/game/research/00004.png",
+      "masterId": 264,
+      "iconId": 4,
+      "name": "食料生産"
+    },
+    "research-0-70": {
+      "path": "assets/game/research/00002.png",
+      "masterId": 265,
+      "iconId": 2,
+      "name": "木材生産"
+    },
+    "research-0-71": {
+      "path": "assets/game/research/00003.png",
+      "masterId": 266,
+      "iconId": 3,
+      "name": "金属生産"
+    },
+    "research-0-72": {
+      "path": "assets/game/research/00005.png",
+      "masterId": 268,
+      "iconId": 5,
+      "name": "エーテル生産"
+    },
+    "research-0-73": {
+      "path": "assets/game/research/00132.png",
+      "masterId": 267,
+      "iconId": 132,
+      "name": "集結部隊時攻撃力"
+    },
+    "research-0-74": {
+      "path": "assets/game/research/00035.png",
+      "masterId": 271,
+      "iconId": 35,
+      "name": "兵士治療速度"
+    },
+    "research-0-75": {
+      "path": "assets/game/research/00033.png",
+      "masterId": 272,
+      "iconId": 33,
+      "name": "食料採集量"
+    },
+    "research-0-76": {
+      "path": "assets/game/research/00031.png",
+      "masterId": 273,
+      "iconId": 31,
+      "name": "木材採集量"
+    },
+    "research-0-77": {
+      "path": "assets/game/research/00032.png",
+      "masterId": 274,
+      "iconId": 32,
+      "name": "金属採集量"
+    },
+    "research-0-78": {
+      "path": "assets/game/research/00034.png",
+      "masterId": 275,
+      "iconId": 34,
+      "name": "エーテル採集量"
+    },
+    "research-0-79": {
+      "path": "assets/game/research/00088.png",
+      "masterId": 276,
+      "iconId": 88,
+      "name": "攻撃力"
+    },
+    "research-0-80": {
+      "path": "assets/game/research/00176.png",
+      "masterId": 281,
+      "iconId": 176,
+      "name": "最大歩兵収容数"
+    },
+    "research-0-81": {
+      "path": "assets/game/research/00177.png",
+      "masterId": 282,
+      "iconId": 177,
+      "name": "最大弓兵収容数"
+    },
+    "research-0-82": {
+      "path": "assets/game/research/00178.png",
+      "masterId": 283,
+      "iconId": 178,
+      "name": "最大騎兵収容数"
+    },
+    "research-0-83": {
+      "path": "assets/game/research/00004.png",
+      "masterId": 284,
+      "iconId": 4,
+      "name": "食料生産"
+    },
+    "research-0-84": {
+      "path": "assets/game/research/00002.png",
+      "masterId": 285,
+      "iconId": 2,
+      "name": "木材生産"
+    },
+    "research-0-85": {
+      "path": "assets/game/research/00003.png",
+      "masterId": 286,
+      "iconId": 3,
+      "name": "金属生産"
+    },
+    "research-0-86": {
+      "path": "assets/game/research/00005.png",
+      "masterId": 287,
+      "iconId": 5,
+      "name": "エーテル生産"
+    },
+    "research-0-87": {
+      "path": "assets/game/research/00197.png",
+      "masterId": 288,
+      "iconId": 197,
+      "name": "装備製作エーテル効率"
+    },
+    "research-0-88": {
+      "path": "assets/game/research/00100.png",
+      "masterId": 289,
+      "iconId": 100,
+      "name": "対魔獣攻撃力"
+    },
+    "research-0-89": {
+      "path": "assets/game/research/00128.png",
+      "masterId": 2810,
+      "iconId": 128,
+      "name": "施設防衛時攻撃力"
+    },
+    "research-0-90": {
+      "path": "assets/game/research/00132.png",
+      "masterId": 2811,
+      "iconId": 132,
+      "name": "集結部隊時攻撃力"
+    },
+    "research-0-91": {
+      "path": "assets/game/research/00176.png",
+      "masterId": 291,
+      "iconId": 176,
+      "name": "最大歩兵収容数"
+    },
+    "research-0-92": {
+      "path": "assets/game/research/00177.png",
+      "masterId": 292,
+      "iconId": 177,
+      "name": "最大弓兵収容数"
+    },
+    "research-0-93": {
+      "path": "assets/game/research/00178.png",
+      "masterId": 293,
+      "iconId": 178,
+      "name": "最大騎兵収容数"
+    },
+    "research-0-94": {
+      "path": "assets/game/research/00195.png",
+      "masterId": 294,
+      "iconId": 195,
+      "name": "建設速度"
+    },
+    "research-0-95": {
+      "path": "assets/game/research/00019.png",
+      "masterId": 295,
+      "iconId": 19,
+      "name": "最大病院収容兵士数"
+    },
+    "research-0-96": {
+      "path": "assets/game/research/00214.png",
+      "masterId": 296,
+      "iconId": 214,
+      "name": "近衛歩兵治療速度"
+    },
+    "research-0-97": {
+      "path": "assets/game/research/00215.png",
+      "masterId": 297,
+      "iconId": 215,
+      "name": "近衛弓兵治療速度"
+    },
+    "research-0-98": {
+      "path": "assets/game/research/00216.png",
+      "masterId": 298,
+      "iconId": 216,
+      "name": "近衛騎兵治療速度"
+    },
+    "research-0-99": {
+      "path": "assets/game/research/00033.png",
+      "masterId": 299,
+      "iconId": 33,
+      "name": "食料採集量"
+    },
+    "research-0-100": {
+      "path": "assets/game/research/00031.png",
+      "masterId": 2910,
+      "iconId": 31,
+      "name": "木材採集量"
+    },
+    "research-0-101": {
+      "path": "assets/game/research/00032.png",
+      "masterId": 2911,
+      "iconId": 32,
+      "name": "金属採集量"
+    },
+    "research-0-102": {
+      "path": "assets/game/research/00034.png",
+      "masterId": 2912,
+      "iconId": 34,
+      "name": "エーテル採集量"
+    },
+    "research-0-103": {
+      "path": "assets/game/research/00132.png",
+      "masterId": 2913,
+      "iconId": 132,
+      "name": "集結部隊時攻撃力"
+    },
+    "research-0-104": {
+      "path": "assets/game/research/00004.png",
+      "masterId": 2914,
+      "iconId": 4,
+      "name": "食料生産"
+    },
+    "research-0-105": {
+      "path": "assets/game/research/00002.png",
+      "masterId": 2915,
+      "iconId": 2,
+      "name": "木材生産"
+    },
+    "research-0-106": {
+      "path": "assets/game/research/00003.png",
+      "masterId": 2916,
+      "iconId": 3,
+      "name": "金属生産"
+    },
+    "research-0-107": {
+      "path": "assets/game/research/00005.png",
+      "masterId": 301,
+      "iconId": 5,
+      "name": "エーテル生産"
+    },
+    "research-0-108": {
+      "path": "assets/game/research/00088.png",
+      "masterId": 302,
+      "iconId": 88,
+      "name": "攻撃力"
+    },
+    "research-1-3": {
+      "path": "assets/game/research/00041.png",
+      "masterId": 31,
+      "iconId": 41,
+      "name": "兵士訓練資源効率\nメインミッション対象"
+    },
+    "research-1-4": {
+      "path": "assets/game/research/00122.png",
+      "masterId": 41,
+      "iconId": 122,
+      "name": "歩兵攻撃力"
+    },
+    "research-1-5": {
+      "path": "assets/game/research/00123.png",
+      "masterId": 42,
+      "iconId": 123,
+      "name": "弓兵攻撃力"
+    },
+    "research-1-6": {
+      "path": "assets/game/research/00124.png",
+      "masterId": 43,
+      "iconId": 124,
+      "name": "騎兵攻撃力"
+    },
+    "research-1-7": {
+      "path": "assets/game/research/00023.png",
+      "masterId": 51,
+      "iconId": 23,
+      "name": "行軍速度"
+    },
+    "research-1-8": {
+      "path": "assets/game/research/00088.png",
+      "masterId": 61,
+      "iconId": 88,
+      "name": "攻撃力\nメインミッション対象"
+    },
+    "research-1-9": {
+      "path": "assets/game/research/00185.png",
+      "masterId": 62,
+      "iconId": 185,
+      "name": "チャージスキル攻撃力"
+    },
+    "research-1-10": {
+      "path": "assets/game/research/00046.png",
+      "masterId": 71,
+      "iconId": 46,
+      "name": "上級歩兵解放"
+    },
+    "research-1-11": {
+      "path": "assets/game/research/00047.png",
+      "masterId": 72,
+      "iconId": 47,
+      "name": "上級弓兵解放"
+    },
+    "research-1-12": {
+      "path": "assets/game/research/00048.png",
+      "masterId": 73,
+      "iconId": 48,
+      "name": "上級騎兵解放"
+    },
+    "research-1-13": {
+      "path": "assets/game/research/00028.png",
+      "masterId": 81,
+      "iconId": 28,
+      "name": "集結部隊行軍速度"
+    },
+    "research-1-14": {
+      "path": "assets/game/research/00114.png",
+      "masterId": 91,
+      "iconId": 114,
+      "name": "火属性リーダー攻撃力"
+    },
+    "research-1-15": {
+      "path": "assets/game/research/00119.png",
+      "masterId": 92,
+      "iconId": 119,
+      "name": "水属性リーダー攻撃力\nメインミッション対象"
+    },
+    "research-1-16": {
+      "path": "assets/game/research/00116.png",
+      "masterId": 93,
+      "iconId": 116,
+      "name": "風属性リーダー攻撃力"
+    },
+    "research-1-17": {
+      "path": "assets/game/research/00118.png",
+      "masterId": 101,
+      "iconId": 118,
+      "name": "雷属性リーダー攻撃力"
+    },
+    "research-1-18": {
+      "path": "assets/game/research/00117.png",
+      "masterId": 102,
+      "iconId": 117,
+      "name": "土属性リーダー攻撃力"
+    },
+    "research-1-19": {
+      "path": "assets/game/research/00121.png",
+      "masterId": 111,
+      "iconId": 121,
+      "name": "闇属性リーダー攻撃力"
+    },
+    "research-1-20": {
+      "path": "assets/game/research/00120.png",
+      "masterId": 112,
+      "iconId": 120,
+      "name": "光属性リーダー攻撃力"
+    },
+    "research-1-21": {
+      "path": "assets/game/research/00130.png",
+      "masterId": 121,
+      "iconId": 130,
+      "name": "対施設攻撃力"
+    },
+    "research-1-22": {
+      "path": "assets/game/research/00182.png",
+      "masterId": 122,
+      "iconId": 182,
+      "name": "対資源地攻撃力"
+    },
+    "research-1-23": {
+      "path": "assets/game/research/00122.png",
+      "masterId": 131,
+      "iconId": 122,
+      "name": "歩兵攻撃力"
+    },
+    "research-1-24": {
+      "path": "assets/game/research/00123.png",
+      "masterId": 132,
+      "iconId": 123,
+      "name": "弓兵攻撃力\nメインミッション対象"
+    },
+    "research-1-25": {
+      "path": "assets/game/research/00124.png",
+      "masterId": 133,
+      "iconId": 124,
+      "name": "騎兵攻撃力"
+    },
+    "research-1-26": {
+      "path": "assets/game/research/00201.png",
+      "masterId": 141,
+      "iconId": 201,
+      "name": "歩兵防御効率"
+    },
+    "research-1-27": {
+      "path": "assets/game/research/00202.png",
+      "masterId": 142,
+      "iconId": 202,
+      "name": "弓兵防御効率"
+    },
+    "research-1-28": {
+      "path": "assets/game/research/00203.png",
+      "masterId": 143,
+      "iconId": 203,
+      "name": "騎兵防御効率"
+    },
+    "research-1-29": {
+      "path": "assets/game/research/00049.png",
+      "masterId": 151,
+      "iconId": 49,
+      "name": "精鋭歩兵解放"
+    },
+    "research-1-30": {
+      "path": "assets/game/research/00050.png",
+      "masterId": 152,
+      "iconId": 50,
+      "name": "精鋭弓兵解放"
+    },
+    "research-1-31": {
+      "path": "assets/game/research/00051.png",
+      "masterId": 153,
+      "iconId": 51,
+      "name": "精鋭騎兵解放"
+    },
+    "research-1-32": {
+      "path": "assets/game/research/00028.png",
+      "masterId": 161,
+      "iconId": 28,
+      "name": "集結部隊行軍速度\nメインミッション対象"
+    },
+    "research-1-33": {
+      "path": "assets/game/research/00024.png",
+      "masterId": 171,
+      "iconId": 24,
+      "name": "歩兵行軍速度"
+    },
+    "research-1-34": {
+      "path": "assets/game/research/00025.png",
+      "masterId": 172,
+      "iconId": 25,
+      "name": "弓兵行軍速度"
+    },
+    "research-1-35": {
+      "path": "assets/game/research/00026.png",
+      "masterId": 173,
+      "iconId": 26,
+      "name": "騎兵行軍速度"
+    },
+    "research-1-36": {
+      "path": "assets/game/research/00132.png",
+      "masterId": 181,
+      "iconId": 132,
+      "name": "集結部隊時攻撃力"
+    },
+    "research-1-37": {
+      "path": "assets/game/research/00128.png",
+      "masterId": 182,
+      "iconId": 128,
+      "name": "施設防衛時攻撃力"
+    },
+    "research-1-38": {
+      "path": "assets/game/research/00088.png",
+      "masterId": 191,
+      "iconId": 88,
+      "name": "攻撃力\nメインミッション対象"
+    },
+    "research-1-39": {
+      "path": "assets/game/research/00176.png",
+      "masterId": 201,
+      "iconId": 176,
+      "name": "最大歩兵収容数"
+    },
+    "research-1-40": {
+      "path": "assets/game/research/00177.png",
+      "masterId": 202,
+      "iconId": 177,
+      "name": "最大弓兵収容数"
+    },
+    "research-1-41": {
+      "path": "assets/game/research/00178.png",
+      "masterId": 203,
+      "iconId": 178,
+      "name": "最大騎兵収容数"
+    },
+    "research-1-42": {
+      "path": "assets/game/research/00185.png",
+      "masterId": 211,
+      "iconId": 185,
+      "name": "チャージスキル攻撃力"
+    },
+    "research-1-43": {
+      "path": "assets/game/research/00122.png",
+      "masterId": 221,
+      "iconId": 122,
+      "name": "歩兵攻撃力"
+    },
+    "research-1-44": {
+      "path": "assets/game/research/00123.png",
+      "masterId": 222,
+      "iconId": 123,
+      "name": "弓兵攻撃力"
+    },
+    "research-1-45": {
+      "path": "assets/game/research/00124.png",
+      "masterId": 223,
+      "iconId": 124,
+      "name": "騎兵攻撃力"
+    },
+    "research-1-46": {
+      "path": "assets/game/research/00201.png",
+      "masterId": 231,
+      "iconId": 201,
+      "name": "歩兵防御効率"
+    },
+    "research-1-47": {
+      "path": "assets/game/research/00202.png",
+      "masterId": 232,
+      "iconId": 202,
+      "name": "弓兵防御効率"
+    },
+    "research-1-48": {
+      "path": "assets/game/research/00203.png",
+      "masterId": 233,
+      "iconId": 203,
+      "name": "騎兵防御効率"
+    },
+    "research-1-49": {
+      "path": "assets/game/research/00052.png",
+      "masterId": 241,
+      "iconId": 52,
+      "name": "近衛歩兵解放\nメインミッション対象"
+    },
+    "research-1-50": {
+      "path": "assets/game/research/00053.png",
+      "masterId": 242,
+      "iconId": 53,
+      "name": "近衛弓兵解放"
+    },
+    "research-1-51": {
+      "path": "assets/game/research/00054.png",
+      "masterId": 243,
+      "iconId": 54,
+      "name": "近衛騎兵解放"
+    },
+    "research-1-52": {
+      "path": "assets/game/research/00146.png",
+      "masterId": 244,
+      "iconId": 146,
+      "name": "歩兵訓練数"
+    },
+    "research-1-53": {
+      "path": "assets/game/research/00147.png",
+      "masterId": 245,
+      "iconId": 147,
+      "name": "弓兵訓練数"
+    },
+    "research-1-54": {
+      "path": "assets/game/research/00148.png",
+      "masterId": 246,
+      "iconId": 148,
+      "name": "騎兵訓練数"
+    },
+    "research-1-55": {
+      "path": "assets/game/research/00211.png",
+      "masterId": 247,
+      "iconId": 211,
+      "name": "対宝庫攻撃力"
+    },
+    "research-1-56": {
+      "path": "assets/game/research/00128.png",
+      "masterId": 248,
+      "iconId": 128,
+      "name": "施設防衛時攻撃力"
+    },
+    "research-1-57": {
+      "path": "assets/game/research/00132.png",
+      "masterId": 251,
+      "iconId": 132,
+      "name": "集結部隊時攻撃力"
+    },
+    "research-1-58": {
+      "path": "assets/game/research/00213.png",
+      "masterId": 252,
+      "iconId": 213,
+      "name": "集結部隊時防御効率"
+    },
+    "research-1-59": {
+      "path": "assets/game/research/00114.png",
+      "masterId": 253,
+      "iconId": 114,
+      "name": "火属性リーダー攻撃力"
+    },
+    "research-1-60": {
+      "path": "assets/game/research/00119.png",
+      "masterId": 254,
+      "iconId": 119,
+      "name": "水属性リーダー攻撃力\nメインミッション対象"
+    },
+    "research-1-61": {
+      "path": "assets/game/research/00116.png",
+      "masterId": 255,
+      "iconId": 116,
+      "name": "風属性リーダー攻撃力"
+    },
+    "research-1-62": {
+      "path": "assets/game/research/00118.png",
+      "masterId": 261,
+      "iconId": 118,
+      "name": "雷属性リーダー攻撃力"
+    },
+    "research-1-63": {
+      "path": "assets/game/research/00117.png",
+      "masterId": 262,
+      "iconId": 117,
+      "name": "土属性リーダー攻撃力"
+    },
+    "research-1-64": {
+      "path": "assets/game/research/00121.png",
+      "masterId": 263,
+      "iconId": 121,
+      "name": "闇属性リーダー攻撃力"
+    },
+    "research-1-65": {
+      "path": "assets/game/research/00120.png",
+      "masterId": 264,
+      "iconId": 120,
+      "name": "光属性リーダー攻撃力"
+    },
+    "research-1-66": {
+      "path": "assets/game/research/00122.png",
+      "masterId": 265,
+      "iconId": 122,
+      "name": "歩兵攻撃力"
+    },
+    "research-1-67": {
+      "path": "assets/game/research/00123.png",
+      "masterId": 266,
+      "iconId": 123,
+      "name": "弓兵攻撃力"
+    },
+    "research-1-68": {
+      "path": "assets/game/research/00124.png",
+      "masterId": 267,
+      "iconId": 124,
+      "name": "騎兵攻撃力"
+    },
+    "research-1-69": {
+      "path": "assets/game/research/00132.png",
+      "masterId": 271,
+      "iconId": 132,
+      "name": "集結部隊時攻撃力"
+    },
+    "research-1-70": {
+      "path": "assets/game/research/00213.png",
+      "masterId": 272,
+      "iconId": 213,
+      "name": "集結部隊時防御効率"
+    },
+    "research-1-71": {
+      "path": "assets/game/research/00205.png",
+      "masterId": 273,
+      "iconId": 205,
+      "name": "対キザハシ攻撃力"
+    },
+    "research-1-72": {
+      "path": "assets/game/research/00088.png",
+      "masterId": 274,
+      "iconId": 88,
+      "name": "攻撃力"
+    },
+    "research-1-73": {
+      "path": "assets/game/research/00130.png",
+      "masterId": 275,
+      "iconId": 130,
+      "name": "対施設攻撃力"
+    },
+    "research-1-74": {
+      "path": "assets/game/research/00023.png",
+      "masterId": 276,
+      "iconId": 23,
+      "name": "行軍速度"
+    },
+    "research-1-75": {
+      "path": "assets/game/research/00028.png",
+      "masterId": 277,
+      "iconId": 28,
+      "name": "集結部隊行軍速度"
+    },
+    "research-1-76": {
+      "path": "assets/game/research/00114.png",
+      "masterId": 281,
+      "iconId": 114,
+      "name": "火属性リーダー攻撃力"
+    },
+    "research-1-77": {
+      "path": "assets/game/research/00119.png",
+      "masterId": 282,
+      "iconId": 119,
+      "name": "水属性リーダー攻撃力"
+    },
+    "research-1-78": {
+      "path": "assets/game/research/00116.png",
+      "masterId": 283,
+      "iconId": 116,
+      "name": "風属性リーダー攻撃力"
+    },
+    "research-1-79": {
+      "path": "assets/game/research/00118.png",
+      "masterId": 284,
+      "iconId": 118,
+      "name": "雷属性リーダー攻撃力"
+    },
+    "research-1-80": {
+      "path": "assets/game/research/00117.png",
+      "masterId": 285,
+      "iconId": 117,
+      "name": "土属性リーダー攻撃力"
+    },
+    "research-1-81": {
+      "path": "assets/game/research/00121.png",
+      "masterId": 286,
+      "iconId": 121,
+      "name": "闇属性リーダー攻撃力"
+    },
+    "research-1-82": {
+      "path": "assets/game/research/00120.png",
+      "masterId": 288,
+      "iconId": 120,
+      "name": "光属性リーダー攻撃力"
+    },
+    "research-1-83": {
+      "path": "assets/game/research/00088.png",
+      "masterId": 287,
+      "iconId": 88,
+      "name": "攻撃力"
+    },
+    "research-1-84": {
+      "path": "assets/game/research/00132.png",
+      "masterId": 289,
+      "iconId": 132,
+      "name": "集結部隊時攻撃力"
+    },
+    "research-1-85": {
+      "path": "assets/game/research/00128.png",
+      "masterId": 2810,
+      "iconId": 128,
+      "name": "施設防衛時攻撃力"
+    },
+    "research-1-86": {
+      "path": "assets/game/research/00122.png",
+      "masterId": 291,
+      "iconId": 122,
+      "name": "歩兵攻撃力"
+    },
+    "research-1-87": {
+      "path": "assets/game/research/00123.png",
+      "masterId": 292,
+      "iconId": 123,
+      "name": "弓兵攻撃力"
+    },
+    "research-1-88": {
+      "path": "assets/game/research/00124.png",
+      "masterId": 293,
+      "iconId": 124,
+      "name": "騎兵攻撃力"
+    },
+    "research-1-89": {
+      "path": "assets/game/research/00211.png",
+      "masterId": 294,
+      "iconId": 211,
+      "name": "対宝庫攻撃力"
+    },
+    "research-1-90": {
+      "path": "assets/game/research/00130.png",
+      "masterId": 295,
+      "iconId": 130,
+      "name": "対施設攻撃力"
+    },
+    "research-1-91": {
+      "path": "assets/game/research/00201.png",
+      "masterId": 296,
+      "iconId": 201,
+      "name": "歩兵防御効率"
+    },
+    "research-1-92": {
+      "path": "assets/game/research/00202.png",
+      "masterId": 297,
+      "iconId": 202,
+      "name": "弓兵防御効率"
+    },
+    "research-1-93": {
+      "path": "assets/game/research/00203.png",
+      "masterId": 298,
+      "iconId": 203,
+      "name": "騎兵防御効率"
+    },
+    "research-1-94": {
+      "path": "assets/game/research/00132.png",
+      "masterId": 301,
+      "iconId": 132,
+      "name": "集結部隊時攻撃力"
+    },
+    "research-1-95": {
+      "path": "assets/game/research/00009.png",
+      "masterId": 302,
+      "iconId": 9,
+      "name": "最大集結部隊兵士数"
+    },
+    "research-1-96": {
+      "path": "assets/game/research/00213.png",
+      "masterId": 303,
+      "iconId": 213,
+      "name": "集結部隊時防御効率"
+    },
+    "research-2-3": {
+      "path": "assets/game/research/00100.png",
+      "masterId": 31,
+      "iconId": 100,
+      "name": "対魔獣攻撃力\nメインミッション対象"
+    },
+    "research-2-4": {
+      "path": "assets/game/research/00149.png",
+      "masterId": 41,
+      "iconId": 149,
+      "name": "対魔獣素材倍化率"
+    },
+    "research-2-5": {
+      "path": "assets/game/research/00082.png",
+      "masterId": 42,
+      "iconId": 82,
+      "name": "対魔獣獲得経験値"
+    },
+    "research-2-6": {
+      "path": "assets/game/research/00185.png",
+      "masterId": 51,
+      "iconId": 185,
+      "name": "チャージスキル攻撃力"
+    },
+    "research-2-7": {
+      "path": "assets/game/research/00158.png",
+      "masterId": 61,
+      "iconId": 158,
+      "name": "対魔獣メモリ倍化率"
+    },
+    "research-2-8": {
+      "path": "assets/game/research/00023.png",
+      "masterId": 62,
+      "iconId": 23,
+      "name": "行軍速度"
+    },
+    "research-2-9": {
+      "path": "assets/game/research/00199.png",
+      "masterId": 71,
+      "iconId": 199,
+      "name": "アクティブスキル攻撃力"
+    },
+    "research-2-10": {
+      "path": "assets/game/research/00144.png",
+      "masterId": 81,
+      "iconId": 144,
+      "name": "Lv2集結魔獣討伐解放\nメインミッション対象"
+    },
+    "research-2-11": {
+      "path": "assets/game/research/00160.png",
+      "masterId": 91,
+      "iconId": 160,
+      "name": "対超獣メモリ倍化率"
+    },
+    "research-2-12": {
+      "path": "assets/game/research/00166.png",
+      "masterId": 92,
+      "iconId": 166,
+      "name": "対精霊メモリ倍化率"
+    },
+    "research-2-13": {
+      "path": "assets/game/research/00163.png",
+      "masterId": 93,
+      "iconId": 163,
+      "name": "対堕天メモリ倍化率"
+    },
+    "research-2-14": {
+      "path": "assets/game/research/00165.png",
+      "masterId": 101,
+      "iconId": 165,
+      "name": "対不浄メモリ倍化率"
+    },
+    "research-2-15": {
+      "path": "assets/game/research/00082.png",
+      "masterId": 102,
+      "iconId": 82,
+      "name": "対魔獣獲得経験値\nメインミッション対象"
+    },
+    "research-2-16": {
+      "path": "assets/game/research/00164.png",
+      "masterId": 103,
+      "iconId": 164,
+      "name": "対機甲メモリ倍化率"
+    },
+    "research-2-17": {
+      "path": "assets/game/research/00161.png",
+      "masterId": 111,
+      "iconId": 161,
+      "name": "対悪魔メモリ倍化率"
+    },
+    "research-2-18": {
+      "path": "assets/game/research/00162.png",
+      "masterId": 112,
+      "iconId": 162,
+      "name": "対妖魔メモリ倍化率"
+    },
+    "research-2-19": {
+      "path": "assets/game/research/00144.png",
+      "masterId": 121,
+      "iconId": 144,
+      "name": "Lv3集結魔獣討伐解放\nメインミッション対象"
+    },
+    "research-2-20": {
+      "path": "assets/game/research/00189.png",
+      "masterId": 131,
+      "iconId": 189,
+      "name": "対集結魔獣攻撃力"
+    },
+    "research-2-21": {
+      "path": "assets/game/research/00149.png",
+      "masterId": 141,
+      "iconId": 149,
+      "name": "対魔獣素材倍化率"
+    },
+    "research-2-22": {
+      "path": "assets/game/research/00082.png",
+      "masterId": 142,
+      "iconId": 82,
+      "name": "対魔獣獲得経験値"
+    },
+    "research-2-23": {
+      "path": "assets/game/research/00144.png",
+      "masterId": 151,
+      "iconId": 144,
+      "name": "Lv4集結魔獣討伐解放\nメインミッション対象"
+    },
+    "research-2-24": {
+      "path": "assets/game/research/00102.png",
+      "masterId": 161,
+      "iconId": 102,
+      "name": "対超獣攻撃力"
+    },
+    "research-2-25": {
+      "path": "assets/game/research/00108.png",
+      "masterId": 162,
+      "iconId": 108,
+      "name": "対精霊攻撃力"
+    },
+    "research-2-26": {
+      "path": "assets/game/research/00105.png",
+      "masterId": 163,
+      "iconId": 105,
+      "name": "対堕天攻撃力"
+    },
+    "research-2-27": {
+      "path": "assets/game/research/00185.png",
+      "masterId": 171,
+      "iconId": 185,
+      "name": "チャージスキル攻撃力"
+    },
+    "research-2-28": {
+      "path": "assets/game/research/00199.png",
+      "masterId": 172,
+      "iconId": 199,
+      "name": "アクティブスキル攻撃力"
+    },
+    "research-2-29": {
+      "path": "assets/game/research/00107.png",
+      "masterId": 181,
+      "iconId": 107,
+      "name": "対不浄攻撃力"
+    },
+    "research-2-30": {
+      "path": "assets/game/research/00106.png",
+      "masterId": 182,
+      "iconId": 106,
+      "name": "対機甲攻撃力"
+    },
+    "research-2-31": {
+      "path": "assets/game/research/00104.png",
+      "masterId": 191,
+      "iconId": 104,
+      "name": "対妖魔攻撃力"
+    },
+    "research-2-32": {
+      "path": "assets/game/research/00103.png",
+      "masterId": 192,
+      "iconId": 103,
+      "name": "対悪魔攻撃力"
+    },
+    "research-2-33": {
+      "path": "assets/game/research/00144.png",
+      "masterId": 201,
+      "iconId": 144,
+      "name": "Lv5集結魔獣討伐解放\nメインミッション対象"
+    },
+    "research-2-34": {
+      "path": "assets/game/research/00149.png",
+      "masterId": 211,
+      "iconId": 149,
+      "name": "対魔獣素材倍化率"
+    },
+    "research-2-35": {
+      "path": "assets/game/research/00082.png",
+      "masterId": 212,
+      "iconId": 82,
+      "name": "対魔獣獲得経験値"
+    },
+    "research-2-36": {
+      "path": "assets/game/research/00160.png",
+      "masterId": 221,
+      "iconId": 160,
+      "name": "対超獣メモリ倍化率"
+    },
+    "research-2-37": {
+      "path": "assets/game/research/00166.png",
+      "masterId": 222,
+      "iconId": 166,
+      "name": "対精霊メモリ倍化率"
+    },
+    "research-2-38": {
+      "path": "assets/game/research/00163.png",
+      "masterId": 223,
+      "iconId": 163,
+      "name": "対堕天メモリ倍化率"
+    },
+    "research-2-39": {
+      "path": "assets/game/research/00165.png",
+      "masterId": 231,
+      "iconId": 165,
+      "name": "対不浄メモリ倍化率"
+    },
+    "research-2-40": {
+      "path": "assets/game/research/00082.png",
+      "masterId": 232,
+      "iconId": 82,
+      "name": "対魔獣獲得経験値\nメインミッション対象"
+    },
+    "research-2-41": {
+      "path": "assets/game/research/00164.png",
+      "masterId": 233,
+      "iconId": 164,
+      "name": "対機甲メモリ倍化率"
+    },
+    "research-2-42": {
+      "path": "assets/game/research/00161.png",
+      "masterId": 241,
+      "iconId": 161,
+      "name": "対悪魔メモリ倍化率"
+    },
+    "research-2-43": {
+      "path": "assets/game/research/00162.png",
+      "masterId": 242,
+      "iconId": 162,
+      "name": "対妖魔メモリ倍化率"
+    },
+    "research-2-44": {
+      "path": "assets/game/research/00100.png",
+      "masterId": 243,
+      "iconId": 100,
+      "name": "対魔獣攻撃力"
+    },
+    "research-2-45": {
+      "path": "assets/game/research/00158.png",
+      "masterId": 244,
+      "iconId": 158,
+      "name": "対魔獣メモリ倍化率"
+    },
+    "research-2-46": {
+      "path": "assets/game/research/00189.png",
+      "masterId": 245,
+      "iconId": 189,
+      "name": "対集結魔獣攻撃力"
+    },
+    "research-2-47": {
+      "path": "assets/game/research/00102.png",
+      "masterId": 251,
+      "iconId": 102,
+      "name": "対超獣攻撃力"
+    },
+    "research-2-48": {
+      "path": "assets/game/research/00108.png",
+      "masterId": 252,
+      "iconId": 108,
+      "name": "対精霊攻撃力"
+    },
+    "research-2-49": {
+      "path": "assets/game/research/00105.png",
+      "masterId": 253,
+      "iconId": 105,
+      "name": "対堕天攻撃力"
+    },
+    "research-2-50": {
+      "path": "assets/game/research/00144.png",
+      "masterId": 254,
+      "iconId": 144,
+      "name": "Lv6集結魔獣討伐解放\nメインミッション対象"
+    },
+    "research-2-51": {
+      "path": "assets/game/research/00107.png",
+      "masterId": 261,
+      "iconId": 107,
+      "name": "対不浄攻撃力"
+    },
+    "research-2-52": {
+      "path": "assets/game/research/00205.png",
+      "masterId": 262,
+      "iconId": 205,
+      "name": "対キザハシ攻撃力"
+    },
+    "research-2-53": {
+      "path": "assets/game/research/00106.png",
+      "masterId": 263,
+      "iconId": 106,
+      "name": "対機甲攻撃力"
+    },
+    "research-2-54": {
+      "path": "assets/game/research/00104.png",
+      "masterId": 264,
+      "iconId": 104,
+      "name": "対妖魔攻撃力"
+    },
+    "research-2-55": {
+      "path": "assets/game/research/00103.png",
+      "masterId": 265,
+      "iconId": 103,
+      "name": "対悪魔攻撃力"
+    },
+    "research-2-56": {
+      "path": "assets/game/research/00189.png",
+      "masterId": 266,
+      "iconId": 189,
+      "name": "対集結魔獣攻撃力"
+    },
+    "research-2-57": {
+      "path": "assets/game/research/00088.png",
+      "masterId": 267,
+      "iconId": 88,
+      "name": "攻撃力"
+    },
+    "research-2-58": {
+      "path": "assets/game/research/00028.png",
+      "masterId": 268,
+      "iconId": 28,
+      "name": "集結部隊行軍速度"
+    },
+    "research-2-59": {
+      "path": "assets/game/research/00199.png",
+      "masterId": 271,
+      "iconId": 199,
+      "name": "アクティブスキル攻撃力"
+    },
+    "research-2-60": {
+      "path": "assets/game/research/00240.png",
+      "masterId": 272,
+      "iconId": 240,
+      "name": "対超獣防御効率"
+    },
+    "research-2-61": {
+      "path": "assets/game/research/00246.png",
+      "masterId": 273,
+      "iconId": 246,
+      "name": "対精霊防御効率"
+    },
+    "research-2-62": {
+      "path": "assets/game/research/00243.png",
+      "masterId": 274,
+      "iconId": 243,
+      "name": "対堕天防御効率"
+    },
+    "research-2-63": {
+      "path": "assets/game/research/00245.png",
+      "masterId": 275,
+      "iconId": 245,
+      "name": "対不浄防御効率"
+    },
+    "research-2-64": {
+      "path": "assets/game/research/00082.png",
+      "masterId": 276,
+      "iconId": 82,
+      "name": "対魔獣獲得経験値"
+    },
+    "research-2-65": {
+      "path": "assets/game/research/00244.png",
+      "masterId": 277,
+      "iconId": 244,
+      "name": "対機甲防御効率"
+    },
+    "research-2-66": {
+      "path": "assets/game/research/00101.png",
+      "masterId": 279,
+      "iconId": 101,
+      "name": "対龍攻撃力"
+    },
+    "research-2-67": {
+      "path": "assets/game/research/00242.png",
+      "masterId": 281,
+      "iconId": 242,
+      "name": "対妖魔防御効率"
+    },
+    "research-2-68": {
+      "path": "assets/game/research/00241.png",
+      "masterId": 282,
+      "iconId": 241,
+      "name": "対悪魔防御効率"
+    },
+    "research-2-69": {
+      "path": "assets/game/research/00132.png",
+      "masterId": 283,
+      "iconId": 132,
+      "name": "集結部隊時攻撃力"
+    },
+    "research-2-70": {
+      "path": "assets/game/research/00205.png",
+      "masterId": 284,
+      "iconId": 205,
+      "name": "対キザハシ攻撃力"
+    },
+    "research-2-71": {
+      "path": "assets/game/research/00213.png",
+      "masterId": 285,
+      "iconId": 213,
+      "name": "集結部隊時防御効率"
+    },
+    "research-2-72": {
+      "path": "assets/game/research/00151.png",
+      "masterId": 286,
+      "iconId": 151,
+      "name": "対超獣素材倍化率"
+    },
+    "research-2-73": {
+      "path": "assets/game/research/00157.png",
+      "masterId": 287,
+      "iconId": 157,
+      "name": "対精霊素材倍化率"
+    },
+    "research-2-74": {
+      "path": "assets/game/research/00154.png",
+      "masterId": 288,
+      "iconId": 154,
+      "name": "対堕天素材倍化率"
+    },
+    "research-2-75": {
+      "path": "assets/game/research/00156.png",
+      "masterId": 289,
+      "iconId": 156,
+      "name": "対不浄素材倍化率"
+    },
+    "research-2-76": {
+      "path": "assets/game/research/00155.png",
+      "masterId": 2810,
+      "iconId": 155,
+      "name": "対機甲素材倍化率"
+    },
+    "research-2-77": {
+      "path": "assets/game/research/00153.png",
+      "masterId": 2811,
+      "iconId": 153,
+      "name": "対妖魔素材倍化率"
+    },
+    "research-2-78": {
+      "path": "assets/game/research/00100.png",
+      "masterId": 2812,
+      "iconId": 100,
+      "name": "対魔獣攻撃力"
+    },
+    "research-2-79": {
+      "path": "assets/game/research/00152.png",
+      "masterId": 2813,
+      "iconId": 152,
+      "name": "対悪魔素材倍化率"
+    },
+    "research-2-80": {
+      "path": "assets/game/research/00102.png",
+      "masterId": 291,
+      "iconId": 102,
+      "name": "対超獣攻撃力"
+    },
+    "research-2-81": {
+      "path": "assets/game/research/00108.png",
+      "masterId": 292,
+      "iconId": 108,
+      "name": "対精霊攻撃力"
+    },
+    "research-2-82": {
+      "path": "assets/game/research/00105.png",
+      "masterId": 293,
+      "iconId": 105,
+      "name": "対堕天攻撃力"
+    },
+    "research-2-83": {
+      "path": "assets/game/research/00107.png",
+      "masterId": 294,
+      "iconId": 107,
+      "name": "対不浄攻撃力"
+    },
+    "research-2-84": {
+      "path": "assets/game/research/00106.png",
+      "masterId": 295,
+      "iconId": 106,
+      "name": "対機甲攻撃力"
+    },
+    "research-2-85": {
+      "path": "assets/game/research/00104.png",
+      "masterId": 296,
+      "iconId": 104,
+      "name": "対妖魔攻撃力"
+    },
+    "research-2-86": {
+      "path": "assets/game/research/00103.png",
+      "masterId": 297,
+      "iconId": 103,
+      "name": "対悪魔攻撃力"
+    },
+    "research-2-87": {
+      "path": "assets/game/research/00101.png",
+      "masterId": 298,
+      "iconId": 101,
+      "name": "対龍攻撃力"
+    },
+    "research-2-88": {
+      "path": "assets/game/research/00189.png",
+      "masterId": 299,
+      "iconId": 189,
+      "name": "対集結魔獣攻撃力"
+    },
+    "research-2-89": {
+      "path": "assets/game/research/00088.png",
+      "masterId": 2910,
+      "iconId": 88,
+      "name": "攻撃力"
+    },
+    "research-2-90": {
+      "path": "assets/game/research/00028.png",
+      "masterId": 2911,
+      "iconId": 28,
+      "name": "集結部隊行軍速度"
+    },
+    "research-2-91": {
+      "path": "assets/game/research/00144.png",
+      "masterId": 278,
+      "iconId": 144,
+      "name": "Lv7集結魔獣討伐解放"
+    },
+    "research-2-92": {
+      "path": "assets/game/research/00239.png",
+      "masterId": 301,
+      "iconId": 239,
+      "name": "対龍防御効率"
+    },
+    "research-2-93": {
+      "path": "assets/game/research/00150.png",
+      "masterId": 302,
+      "iconId": 150,
+      "name": "対龍素材倍化率"
+    },
+    "research-2-94": {
+      "path": "assets/game/research/00199.png",
+      "masterId": 303,
+      "iconId": 199,
+      "name": "アクティブスキル攻撃力"
+    },
+    "research-3-3": {
+      "path": "assets/game/research/00035.png",
+      "masterId": 211,
+      "iconId": 35,
+      "name": "兵士治療速度"
+    },
+    "research-3-4": {
+      "path": "assets/game/research/00232.png",
+      "masterId": 212,
+      "iconId": 232,
+      "name": "上級歩兵基礎攻撃力"
+    },
+    "research-3-5": {
+      "path": "assets/game/research/00233.png",
+      "masterId": 213,
+      "iconId": 233,
+      "name": "上級弓兵基礎攻撃力"
+    },
+    "research-3-6": {
+      "path": "assets/game/research/00234.png",
+      "masterId": 214,
+      "iconId": 234,
+      "name": "上級騎兵基礎攻撃力"
+    },
+    "research-3-7": {
+      "path": "assets/game/research/00201.png",
+      "masterId": 221,
+      "iconId": 201,
+      "name": "歩兵防御効率"
+    },
+    "research-3-8": {
+      "path": "assets/game/research/00202.png",
+      "masterId": 222,
+      "iconId": 202,
+      "name": "弓兵防御効率"
+    },
+    "research-3-9": {
+      "path": "assets/game/research/00203.png",
+      "masterId": 223,
+      "iconId": 203,
+      "name": "騎兵防御効率"
+    },
+    "research-3-10": {
+      "path": "assets/game/research/00211.png",
+      "masterId": 224,
+      "iconId": 211,
+      "name": "対宝庫攻撃力"
+    },
+    "research-3-11": {
+      "path": "assets/game/research/00235.png",
+      "masterId": 231,
+      "iconId": 235,
+      "name": "精鋭歩兵治療速度"
+    },
+    "research-3-12": {
+      "path": "assets/game/research/00236.png",
+      "masterId": 232,
+      "iconId": 236,
+      "name": "精鋭弓兵治療速度"
+    },
+    "research-3-13": {
+      "path": "assets/game/research/00237.png",
+      "masterId": 233,
+      "iconId": 237,
+      "name": "精鋭騎兵治療速度"
+    },
+    "research-3-14": {
+      "path": "assets/game/research/00229.png",
+      "masterId": 234,
+      "iconId": 229,
+      "name": "精鋭歩兵基礎攻撃力"
+    },
+    "research-3-15": {
+      "path": "assets/game/research/00230.png",
+      "masterId": 235,
+      "iconId": 230,
+      "name": "精鋭弓兵基礎攻撃力"
+    },
+    "research-3-16": {
+      "path": "assets/game/research/00231.png",
+      "masterId": 236,
+      "iconId": 231,
+      "name": "精鋭騎兵基礎攻撃力"
+    },
+    "research-3-17": {
+      "path": "assets/game/research/00132.png",
+      "masterId": 237,
+      "iconId": 132,
+      "name": "集結部隊時攻撃力"
+    },
+    "research-3-18": {
+      "path": "assets/game/research/00114.png",
+      "masterId": 241,
+      "iconId": 114,
+      "name": "火属性リーダー攻撃力"
+    },
+    "research-3-19": {
+      "path": "assets/game/research/00119.png",
+      "masterId": 242,
+      "iconId": 119,
+      "name": "水属性リーダー攻撃力"
+    },
+    "research-3-20": {
+      "path": "assets/game/research/00116.png",
+      "masterId": 243,
+      "iconId": 116,
+      "name": "風属性リーダー攻撃力"
+    },
+    "research-3-21": {
+      "path": "assets/game/research/00118.png",
+      "masterId": 244,
+      "iconId": 118,
+      "name": "雷属性リーダー攻撃力"
+    },
+    "research-3-22": {
+      "path": "assets/game/research/00117.png",
+      "masterId": 246,
+      "iconId": 117,
+      "name": "土属性リーダー攻撃力"
+    },
+    "research-3-23": {
+      "path": "assets/game/research/00121.png",
+      "masterId": 247,
+      "iconId": 121,
+      "name": "闇属性リーダー攻撃力"
+    },
+    "research-3-24": {
+      "path": "assets/game/research/00120.png",
+      "masterId": 248,
+      "iconId": 120,
+      "name": "光属性リーダー攻撃力"
+    },
+    "research-3-25": {
+      "path": "assets/game/research/00143.png",
+      "masterId": 245,
+      "iconId": 143,
+      "name": "部隊スロット"
+    },
+    "research-3-26": {
+      "path": "assets/game/research/00213.png",
+      "masterId": 251,
+      "iconId": 213,
+      "name": "集結部隊時防御効率"
+    },
+    "research-3-27": {
+      "path": "assets/game/research/00214.png",
+      "masterId": 252,
+      "iconId": 214,
+      "name": "近衛歩兵治療速度"
+    },
+    "research-3-28": {
+      "path": "assets/game/research/00215.png",
+      "masterId": 253,
+      "iconId": 215,
+      "name": "近衛弓兵治療速度"
+    },
+    "research-3-29": {
+      "path": "assets/game/research/00216.png",
+      "masterId": 254,
+      "iconId": 216,
+      "name": "近衛騎兵治療速度"
+    },
+    "research-3-30": {
+      "path": "assets/game/research/00226.png",
+      "masterId": 255,
+      "iconId": 226,
+      "name": "近衛歩兵基礎攻撃力"
+    },
+    "research-3-31": {
+      "path": "assets/game/research/00227.png",
+      "masterId": 256,
+      "iconId": 227,
+      "name": "近衛弓兵基礎攻撃力"
+    },
+    "research-3-32": {
+      "path": "assets/game/research/00228.png",
+      "masterId": 257,
+      "iconId": 228,
+      "name": "近衛騎兵基礎攻撃力"
+    },
+    "research-3-33": {
+      "path": "assets/game/research/00041.png",
+      "masterId": 261,
+      "iconId": 41,
+      "name": "兵士訓練資源効率"
+    },
+    "research-3-34": {
+      "path": "assets/game/research/00214.png",
+      "masterId": 262,
+      "iconId": 214,
+      "name": "近衛歩兵治療速度"
+    },
+    "research-3-35": {
+      "path": "assets/game/research/00215.png",
+      "masterId": 263,
+      "iconId": 215,
+      "name": "近衛弓兵治療速度"
+    },
+    "research-3-36": {
+      "path": "assets/game/research/00216.png",
+      "masterId": 264,
+      "iconId": 216,
+      "name": "近衛騎兵治療速度"
+    },
+    "research-3-37": {
+      "path": "assets/game/research/00122.png",
+      "masterId": 265,
+      "iconId": 122,
+      "name": "歩兵攻撃力"
+    },
+    "research-3-38": {
+      "path": "assets/game/research/00123.png",
+      "masterId": 266,
+      "iconId": 123,
+      "name": "弓兵攻撃力"
+    },
+    "research-3-39": {
+      "path": "assets/game/research/00124.png",
+      "masterId": 267,
+      "iconId": 124,
+      "name": "騎兵攻撃力"
+    },
+    "research-3-40": {
+      "path": "assets/game/research/00035.png",
+      "masterId": 271,
+      "iconId": 35,
+      "name": "兵士治療速度"
+    },
+    "research-3-41": {
+      "path": "assets/game/research/00226.png",
+      "masterId": 272,
+      "iconId": 226,
+      "name": "近衛歩兵基礎攻撃力"
+    },
+    "research-3-42": {
+      "path": "assets/game/research/00227.png",
+      "masterId": 273,
+      "iconId": 227,
+      "name": "近衛弓兵基礎攻撃力"
+    },
+    "research-3-43": {
+      "path": "assets/game/research/00228.png",
+      "masterId": 274,
+      "iconId": 228,
+      "name": "近衛騎兵基礎攻撃力"
+    },
+    "research-3-44": {
+      "path": "assets/game/research/00201.png",
+      "masterId": 275,
+      "iconId": 201,
+      "name": "歩兵防御効率"
+    },
+    "research-3-45": {
+      "path": "assets/game/research/00202.png",
+      "masterId": 276,
+      "iconId": 202,
+      "name": "弓兵防御効率"
+    },
+    "research-3-46": {
+      "path": "assets/game/research/00203.png",
+      "masterId": 277,
+      "iconId": 203,
+      "name": "騎兵防御効率"
+    },
+    "research-3-47": {
+      "path": "assets/game/research/00132.png",
+      "masterId": 278,
+      "iconId": 132,
+      "name": "集結部隊時攻撃力"
+    },
+    "research-3-48": {
+      "path": "assets/game/research/00114.png",
+      "masterId": 281,
+      "iconId": 114,
+      "name": "火属性リーダー攻撃力"
+    },
+    "research-3-49": {
+      "path": "assets/game/research/00119.png",
+      "masterId": 282,
+      "iconId": 119,
+      "name": "水属性リーダー攻撃力"
+    },
+    "research-3-50": {
+      "path": "assets/game/research/00116.png",
+      "masterId": 283,
+      "iconId": 116,
+      "name": "風属性リーダー攻撃力"
+    },
+    "research-3-51": {
+      "path": "assets/game/research/00118.png",
+      "masterId": 284,
+      "iconId": 118,
+      "name": "雷属性リーダー攻撃力"
+    },
+    "research-3-52": {
+      "path": "assets/game/research/00117.png",
+      "masterId": 286,
+      "iconId": 117,
+      "name": "土属性リーダー攻撃力"
+    },
+    "research-3-53": {
+      "path": "assets/game/research/00121.png",
+      "masterId": 287,
+      "iconId": 121,
+      "name": "闇属性リーダー攻撃力"
+    },
+    "research-3-54": {
+      "path": "assets/game/research/00120.png",
+      "masterId": 289,
+      "iconId": 120,
+      "name": "光属性リーダー攻撃力"
+    },
+    "research-3-55": {
+      "path": "assets/game/research/00248.png",
+      "masterId": 285,
+      "iconId": 248,
+      "name": "装備サブアビリティ強化"
+    },
+    "research-3-56": {
+      "path": "assets/game/research/00249.png",
+      "masterId": 288,
+      "iconId": 249,
+      "name": "メモリサブアビリティ強化"
+    },
+    "research-3-57": {
+      "path": "assets/game/research/00213.png",
+      "masterId": 291,
+      "iconId": 213,
+      "name": "集結部隊時防御効率"
+    },
+    "research-3-58": {
+      "path": "assets/game/research/00214.png",
+      "masterId": 292,
+      "iconId": 214,
+      "name": "近衛歩兵治療速度"
+    },
+    "research-3-59": {
+      "path": "assets/game/research/00215.png",
+      "masterId": 293,
+      "iconId": 215,
+      "name": "近衛弓兵治療速度"
+    },
+    "research-3-60": {
+      "path": "assets/game/research/00216.png",
+      "masterId": 294,
+      "iconId": 216,
+      "name": "近衛騎兵治療速度"
+    },
+    "research-3-61": {
+      "path": "assets/game/research/00226.png",
+      "masterId": 295,
+      "iconId": 226,
+      "name": "近衛歩兵基礎攻撃力"
+    },
+    "research-3-62": {
+      "path": "assets/game/research/00227.png",
+      "masterId": 296,
+      "iconId": 227,
+      "name": "近衛弓兵基礎攻撃力"
+    },
+    "research-3-63": {
+      "path": "assets/game/research/00228.png",
+      "masterId": 297,
+      "iconId": 228,
+      "name": "近衛騎兵基礎攻撃力"
+    },
+    "research-3-64": {
+      "path": "assets/game/research/00247.png",
+      "masterId": 301,
+      "iconId": 247,
+      "name": "メモリスロット解放"
+    },
+    "research-3-65": {
+      "path": "assets/game/research/00214.png",
+      "masterId": 302,
+      "iconId": 214,
+      "name": "近衛歩兵治療速度"
+    },
+    "research-3-66": {
+      "path": "assets/game/research/00215.png",
+      "masterId": 303,
+      "iconId": 215,
+      "name": "近衛弓兵治療速度"
+    },
+    "research-3-67": {
+      "path": "assets/game/research/00216.png",
+      "masterId": 304,
+      "iconId": 216,
+      "name": "近衛騎兵治療速度"
+    },
+    "research-4-3": {
+      "path": "assets/game/research/00082.png",
+      "masterId": 211,
+      "iconId": 82,
+      "name": "対魔獣獲得経験値"
+    },
+    "research-4-4": {
+      "path": "assets/game/research/00197.png",
+      "masterId": 212,
+      "iconId": 197,
+      "name": "装備製作エーテル効率"
+    },
+    "research-4-5": {
+      "path": "assets/game/research/00102.png",
+      "masterId": 221,
+      "iconId": 102,
+      "name": "対超獣攻撃力"
+    },
+    "research-4-6": {
+      "path": "assets/game/research/00108.png",
+      "masterId": 222,
+      "iconId": 108,
+      "name": "対精霊攻撃力"
+    },
+    "research-4-7": {
+      "path": "assets/game/research/00105.png",
+      "masterId": 223,
+      "iconId": 105,
+      "name": "対堕天攻撃力"
+    },
+    "research-4-8": {
+      "path": "assets/game/research/00107.png",
+      "masterId": 224,
+      "iconId": 107,
+      "name": "対不浄攻撃力"
+    },
+    "research-4-9": {
+      "path": "assets/game/research/00106.png",
+      "masterId": 226,
+      "iconId": 106,
+      "name": "対機甲攻撃力"
+    },
+    "research-4-10": {
+      "path": "assets/game/research/00104.png",
+      "masterId": 227,
+      "iconId": 104,
+      "name": "対妖魔攻撃力"
+    },
+    "research-4-11": {
+      "path": "assets/game/research/00103.png",
+      "masterId": 228,
+      "iconId": 103,
+      "name": "対悪魔攻撃力"
+    },
+    "research-4-12": {
+      "path": "assets/game/research/00101.png",
+      "masterId": 229,
+      "iconId": 101,
+      "name": "対龍攻撃力"
+    },
+    "research-4-13": {
+      "path": "assets/game/research/00250.png",
+      "masterId": 225,
+      "iconId": 250,
+      "name": "サポートエンバース解放"
+    },
+    "research-4-14": {
+      "path": "assets/game/research/00189.png",
+      "masterId": 231,
+      "iconId": 189,
+      "name": "対集結魔獣攻撃力"
+    },
+    "research-4-15": {
+      "path": "assets/game/research/00213.png",
+      "masterId": 232,
+      "iconId": 213,
+      "name": "集結部隊時防御効率"
+    },
+    "research-4-16": {
+      "path": "assets/game/research/00028.png",
+      "masterId": 233,
+      "iconId": 28,
+      "name": "集結部隊行軍速度"
+    },
+    "research-4-17": {
+      "path": "assets/game/research/00151.png",
+      "masterId": 241,
+      "iconId": 151,
+      "name": "対超獣素材倍化率"
+    },
+    "research-4-18": {
+      "path": "assets/game/research/00157.png",
+      "masterId": 242,
+      "iconId": 157,
+      "name": "対精霊素材倍化率"
+    },
+    "research-4-19": {
+      "path": "assets/game/research/00154.png",
+      "masterId": 243,
+      "iconId": 154,
+      "name": "対堕天素材倍化率"
+    },
+    "research-4-20": {
+      "path": "assets/game/research/00156.png",
+      "masterId": 244,
+      "iconId": 156,
+      "name": "対不浄素材倍化率"
+    },
+    "research-4-21": {
+      "path": "assets/game/research/00155.png",
+      "masterId": 246,
+      "iconId": 155,
+      "name": "対機甲素材倍化率"
+    },
+    "research-4-22": {
+      "path": "assets/game/research/00153.png",
+      "masterId": 247,
+      "iconId": 153,
+      "name": "対妖魔素材倍化率"
+    },
+    "research-4-23": {
+      "path": "assets/game/research/00152.png",
+      "masterId": 248,
+      "iconId": 152,
+      "name": "対悪魔素材倍化率"
+    },
+    "research-4-24": {
+      "path": "assets/game/research/00150.png",
+      "masterId": 249,
+      "iconId": 150,
+      "name": "対龍素材倍化率"
+    },
+    "research-4-25": {
+      "path": "assets/game/research/00248.png",
+      "masterId": 245,
+      "iconId": 248,
+      "name": "装備サブアビリティ強化"
+    },
+    "research-4-26": {
+      "path": "assets/game/research/00082.png",
+      "masterId": 251,
+      "iconId": 82,
+      "name": "対魔獣獲得経験値"
+    },
+    "research-4-27": {
+      "path": "assets/game/research/00185.png",
+      "masterId": 252,
+      "iconId": 185,
+      "name": "チャージスキル攻撃力"
+    },
+    "research-4-28": {
+      "path": "assets/game/research/00199.png",
+      "masterId": 253,
+      "iconId": 199,
+      "name": "アクティブスキル攻撃力"
+    },
+    "research-4-29": {
+      "path": "assets/game/research/00160.png",
+      "masterId": 261,
+      "iconId": 160,
+      "name": "対超獣メモリ倍化率"
+    },
+    "research-4-30": {
+      "path": "assets/game/research/00166.png",
+      "masterId": 262,
+      "iconId": 166,
+      "name": "対精霊メモリ倍化率\nメインミッション対象"
+    },
+    "research-4-31": {
+      "path": "assets/game/research/00163.png",
+      "masterId": 263,
+      "iconId": 163,
+      "name": "対堕天メモリ倍化率"
+    },
+    "research-4-32": {
+      "path": "assets/game/research/00165.png",
+      "masterId": 264,
+      "iconId": 165,
+      "name": "対不浄メモリ倍化率"
+    },
+    "research-4-33": {
+      "path": "assets/game/research/00164.png",
+      "masterId": 266,
+      "iconId": 164,
+      "name": "対機甲メモリ倍化率"
+    },
+    "research-4-34": {
+      "path": "assets/game/research/00162.png",
+      "masterId": 267,
+      "iconId": 162,
+      "name": "対妖魔メモリ倍化率"
+    },
+    "research-4-35": {
+      "path": "assets/game/research/00161.png",
+      "masterId": 268,
+      "iconId": 161,
+      "name": "対悪魔メモリ倍化率"
+    },
+    "research-4-36": {
+      "path": "assets/game/research/00159.png",
+      "masterId": 269,
+      "iconId": 159,
+      "name": "対龍メモリ倍化率"
+    },
+    "research-4-37": {
+      "path": "assets/game/research/00249.png",
+      "masterId": 265,
+      "iconId": 249,
+      "name": "メモリサブアビリティ強化"
+    },
+    "research-4-38": {
+      "path": "assets/game/research/00197.png",
+      "masterId": 271,
+      "iconId": 197,
+      "name": "装備製作エーテル効率"
+    },
+    "research-4-39": {
+      "path": "assets/game/research/00189.png",
+      "masterId": 272,
+      "iconId": 189,
+      "name": "対集結魔獣攻撃力"
+    },
+    "research-4-40": {
+      "path": "assets/game/research/00028.png",
+      "masterId": 273,
+      "iconId": 28,
+      "name": "集結部隊行軍速度"
+    },
+    "research-4-41": {
+      "path": "assets/game/research/00102.png",
+      "masterId": 281,
+      "iconId": 102,
+      "name": "対超獣攻撃力"
+    },
+    "research-4-42": {
+      "path": "assets/game/research/00108.png",
+      "masterId": 282,
+      "iconId": 108,
+      "name": "対精霊攻撃力"
+    },
+    "research-4-43": {
+      "path": "assets/game/research/00105.png",
+      "masterId": 283,
+      "iconId": 105,
+      "name": "対堕天攻撃力"
+    },
+    "research-4-44": {
+      "path": "assets/game/research/00107.png",
+      "masterId": 284,
+      "iconId": 107,
+      "name": "対不浄攻撃力"
+    },
+    "research-4-45": {
+      "path": "assets/game/research/00106.png",
+      "masterId": 286,
+      "iconId": 106,
+      "name": "対機甲攻撃力"
+    },
+    "research-4-46": {
+      "path": "assets/game/research/00104.png",
+      "masterId": 287,
+      "iconId": 104,
+      "name": "対妖魔攻撃力"
+    },
+    "research-4-47": {
+      "path": "assets/game/research/00103.png",
+      "masterId": 288,
+      "iconId": 103,
+      "name": "対悪魔攻撃力"
+    },
+    "research-4-48": {
+      "path": "assets/game/research/00101.png",
+      "masterId": 289,
+      "iconId": 101,
+      "name": "対龍攻撃力"
+    },
+    "research-4-49": {
+      "path": "assets/game/research/00250.png",
+      "masterId": 285,
+      "iconId": 250,
+      "name": "サポートエンバース解放"
+    },
+    "research-4-50": {
+      "path": "assets/game/research/00100.png",
+      "masterId": 291,
+      "iconId": 100,
+      "name": "対魔獣攻撃力"
+    },
+    "research-4-51": {
+      "path": "assets/game/research/00185.png",
+      "masterId": 292,
+      "iconId": 185,
+      "name": "チャージスキル攻撃力"
+    },
+    "research-4-52": {
+      "path": "assets/game/research/00199.png",
+      "masterId": 293,
+      "iconId": 199,
+      "name": "アクティブスキル攻撃力"
+    },
+    "research-4-53": {
+      "path": "assets/game/research/00151.png",
+      "masterId": 301,
+      "iconId": 151,
+      "name": "対超獣素材倍化率"
+    },
+    "research-4-54": {
+      "path": "assets/game/research/00157.png",
+      "masterId": 302,
+      "iconId": 157,
+      "name": "対精霊素材倍化率"
+    },
+    "research-4-55": {
+      "path": "assets/game/research/00154.png",
+      "masterId": 303,
+      "iconId": 154,
+      "name": "対堕天素材倍化率"
+    },
+    "research-4-56": {
+      "path": "assets/game/research/00156.png",
+      "masterId": 304,
+      "iconId": 156,
+      "name": "対不浄素材倍化率"
+    },
+    "research-4-57": {
+      "path": "assets/game/research/00155.png",
+      "masterId": 306,
+      "iconId": 155,
+      "name": "対機甲素材倍化率"
+    },
+    "research-4-58": {
+      "path": "assets/game/research/00153.png",
+      "masterId": 307,
+      "iconId": 153,
+      "name": "対妖魔素材倍化率"
+    },
+    "research-4-59": {
+      "path": "assets/game/research/00152.png",
+      "masterId": 308,
+      "iconId": 152,
+      "name": "対悪魔素材倍化率"
+    },
+    "research-4-60": {
+      "path": "assets/game/research/00150.png",
+      "masterId": 309,
+      "iconId": 150,
+      "name": "対龍素材倍化率"
+    },
+    "research-4-61": {
+      "path": "assets/game/research/00248.png",
+      "masterId": 305,
+      "iconId": 248,
+      "name": "装備サブアビリティ強化"
+    },
+    "research-4-62": {
+      "path": "assets/game/research/00189.png",
+      "masterId": 311,
+      "iconId": 189,
+      "name": "対集結魔獣攻撃力"
+    },
+    "research-4-63": {
+      "path": "assets/game/research/00213.png",
+      "masterId": 312,
+      "iconId": 213,
+      "name": "集結部隊時防御効率"
+    },
+    "research-4-64": {
+      "path": "assets/game/research/00028.png",
+      "masterId": 313,
+      "iconId": 28,
+      "name": "集結部隊行軍速度"
+    }
+  }
+}

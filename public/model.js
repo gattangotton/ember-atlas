@@ -1,4 +1,6 @@
 import {validateBuildingProgress} from './building-progress.js';
+import {validateMemoryInventory} from './memory-model.js';
+import {validateParties} from './party-model.js';
 import {abilityName} from './ability-names.js';
 import {validateCopies} from './equipment-inventory.js';
 import {validateMechanics,skillLevels,validateResearch} from './mechanics.js';
@@ -22,7 +24,7 @@ export function validateRecord(r){
  Object.assign(result,validateMechanics(r));result.name=result.name.trim();return result;
 }
 export function validateShare(v){
- if(v?.type!=='ember-atlas-progress'||![1,2].includes(v.version)||!v.profile||!Array.isArray(v.items)||v.items.length>5000)throw Error('育成状況ファイルの形式が違います。');
+ if(v?.type!=='ember-atlas-progress'||![1,2,3].includes(v.version)||!v.profile||!Array.isArray(v.items)||v.items.length>5000)throw Error('育成状況ファイルの形式が違います。');
  const p=v.profile;
  if(!validId(p.id)||typeof p.name!=='string'||!p.name.trim()||p.name.length>60)throw Error('プレイヤー情報を確認してください。');
  const items=v.items.map(x=>{
@@ -32,10 +34,18 @@ export function validateShare(v){
  });
  if(new Set(items.map(x=>x.id)).size!==items.length)throw Error('育成データに重複があります。');
  if(!Number.isFinite(Date.parse(v.exportedAt)))throw Error('共有日時が不正です。');
- return {type:v.type,version:v.version,profile:{id:p.id,name:p.name,alliance:String(p.alliance??'').slice(0,60)},exportedAt:v.exportedAt,items,...(v.version===2?{buildingProgress:validateBuildingProgress(v.buildingProgress||{}),research:validateResearch(v.research)}:{})};
+ return {type:v.type,version:v.version,profile:{id:p.id,name:p.name,alliance:String(p.alliance??'').slice(0,60)},exportedAt:v.exportedAt,items,...(v.version>=2?{buildingProgress:validateBuildingProgress(v.buildingProgress||{}),research:validateResearch(v.research)}:{}),...(v.version===3?{memoryInventory:sharedMemories(v.memoryInventory||{}),...(v.savedParties!==undefined?{savedParties:validateParties(v.savedParties)}:{})}:{})};
 }
-export function buildShare(profile,progress,records,research,buildingProgress={}){return {type:'ember-atlas-progress',version:research?2:1,profile:{id:profile.id,name:profile.name,alliance:profile.alliance},exportedAt:new Date().toISOString(),items:records.filter(r=>progress[r.id]).map(r=>({...((r.kind==='equipment'&&progress[r.id].instances!==undefined)?{instances:validateCopies(progress[r.id].instances,r)}:{}),id:r.id,name:r.name,kind:r.kind,owned:!!progress[r.id].owned,level:progress[r.id].level??0,target:progress[r.id].target??0,...(progress[r.id].skills?{skills:skillLevels(progress[r.id].skills)}:{}),...(progress[r.id].targetSkills?{targetSkills:skillLevels(progress[r.id].targetSkills)}:{})})),...(research?{buildingProgress:validateBuildingProgress(buildingProgress),research:validateResearch(research)}:{})};}
+export function buildShare(profile,progress,records,research,buildingProgress={},sharing){return {type:'ember-atlas-progress',version:sharing?3:research?2:1,profile:{id:profile.id,name:profile.name,alliance:profile.alliance},exportedAt:new Date().toISOString(),items:records.filter(r=>progress[r.id]).map(r=>({...((r.kind==='equipment'&&progress[r.id].instances!==undefined)?{instances:validateCopies(progress[r.id].instances,r)}:{}),id:r.id,name:r.name,kind:r.kind,owned:!!progress[r.id].owned,level:progress[r.id].level??0,target:progress[r.id].target??0,...(progress[r.id].skills?{skills:skillLevels(progress[r.id].skills)}:{}),...(progress[r.id].targetSkills?{targetSkills:skillLevels(progress[r.id].targetSkills)}:{})})),...(research?{buildingProgress:validateBuildingProgress(buildingProgress),research:validateResearch(research)}:{}),...(sharing?{memoryInventory:sharedMemories(sharing.memoryInventory||{}),...(sharing.savedParties!==undefined?{savedParties:validateParties(sharing.savedParties)}:{})}:{})};}
 export function equipmentTotal(records,selections){
  const values=selections.map(s=>{const r=records.find(r=>r.id===s.id);return r?.grades?.[s.grade-1]??null;});
  return values.some(v=>v===null)?null:Math.round(values.reduce((a,b)=>a+b,0)*10)/10;
+}
+
+// Shared copies deliberately omit private labels and notes. Unknown catalogue IDs
+// remain inspectable when another participant has newer common data.
+export function sharedMemories(input){
+ if(!input||typeof input!=='object'||Array.isArray(input)||Object.keys(input).some(id=>!/^memory-[\w-]+$/.test(id)))throw Error('共有メモリの形式が不正です。');
+ const clean=Object.fromEntries(Object.entries(input).map(([id,copies])=>{if(!Array.isArray(copies))throw Error('共有メモリの形式が不正です。');return [id,copies.map(c=>({...c,label:'',note:''}))];}));
+ return validateMemoryInventory(clean,Object.keys(clean).map(id=>({id})));
 }

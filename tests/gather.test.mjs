@@ -1,13 +1,13 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {calculateGather,gatherGearEffects,gatherTriggerEffects,gatherBase} from '../public/gather-model.js';
-test('Gather estimate reproduces the worksheet example and applies time-only boosts',()=>{
+test('Gather baseline matches worksheet; game drops add speed and items multiply speed',()=>{
  const x=calculateGather({resource:'食料',level:4,speed:375.7,amount:110.8});
  assert.ok(Math.abs(x.seconds/3600-1.261299138)<1e-8);assert.equal(Math.round(x.quantity),1264800);
  const boosted=calculateGather({resource:'食料',level:4,speed:375.7,amount:110.8,droplet:10,item:true});
- assert.ok(Math.abs(boosted.seconds-x.seconds*.9/1.5)<1e-8);assert.equal(boosted.quantity,x.quantity);
+ assert.ok(Math.abs(boosted.seconds-21600/(1+(375.7+10)/100)/1.5)<1e-8);assert.equal(boosted.quantity,x.quantity);
  assert.equal(calculateGather({resource:'エーテル',level:7}).quantity,900000);
- assert.throws(()=>calculateGather({resource:'食料',level:4,droplet:11}));
+ assert.throws(()=>calculateGather({resource:'食料',level:4,droplet:15}));
 });
 test('Resource-specific triggers use the Excel level curve, with no duplicate registered effect',()=>{
  const r={name:'ウラノス'};

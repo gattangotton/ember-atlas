@@ -1,4 +1,7 @@
 export async function initializeSession(isAdmin){
+ // GitHub Pages serves this app without the Node authentication endpoints.
+ // Repository Pages use the github.io host; local Node hosting keeps its normal auth flow.
+ if(location.hostname.endsWith('.github.io'))return {enabled:false,role:'admin'};
  const loginUrl='/login.html'+(isAdmin?'?role=admin':'');
  async function read(){const response=await fetch('/auth/session',{cache:'no-store'});if(!response.ok)throw Error('ログイン状態を確認できません。アプリを起動し直してください。');return response.json();}
  let session;

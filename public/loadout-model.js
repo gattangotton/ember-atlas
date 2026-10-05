@@ -2,12 +2,14 @@ import {effectKey} from './equipment-model.js';
 import {aggregateAbilities} from './strategy-model.js';
 import {lootContribution} from './loot-model.js';
 import {unlockedSlots} from './mechanics.js';
+import {gatherKind} from './gather-model.js';
 
 export const TRIGGER_KEYS=['trigger1','trigger2','trigger3'];
 export const SOURCE_LABELS={equipment:'武具',hero:'エンバース',memory:'メモリ',research:'研究',core:'コア',building:'施設',extra:'その他の拠点効果',manual:'記録した拠点合計',drop:'雫'};
 const finite=n=>typeof n==='number'&&Number.isFinite(n);
 const round=n=>Math.round(n*1e6)/1e6;
 export function effectWeight(name,context){
+ if(context.mode==='gather')return gatherKind(name,context.resource)===(context.objective==='speed'?'速度':'量')?1:0;
  const n=effectKey(name),race=effectKey(context.race),mode=context.mode||'loot',battle=context.battle||'field';
  const suffix=mode==='loot'?'素材倍化率':'攻撃力';
  if(n===`対${race}${suffix}`||n===`対魔獣${suffix}`)return 1;

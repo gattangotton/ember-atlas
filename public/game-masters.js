@@ -1,4 +1,5 @@
 import {abilityName} from './ability-names.js';
+import {gameBuildingRules} from './building-prerequisites.js';
 
 // Apply shipped facts before user overrides. No ownership or progress is seeded.
 export function withGameEquipment(record,data){
@@ -38,6 +39,7 @@ export function seedGameResearch(state,data,legacySpecs={}){
 }
 
 export function applyGameWorld(mechanics,buildingData,data,images={}){
+ buildingData.rules=gameBuildingRules(data);
  mechanics.research=mechanics.research.map(n=>data.researchCosts?.[n.id]?{...n,levels:structuredClone(data.researchCosts[n.id]),costSource:data.source}:n);
  buildingData.buildings=buildingData.buildings.map(b=>{
   const master=data.buildings?.[b.id];if(!master)return b;
@@ -53,3 +55,6 @@ export function withGameHero(record,data,override){
  const result={...record,...structuredClone(source),commonRevision:'pc-2026-10-03'};
  return override?.commonRevision===result.commonRevision?{...result,...override}:result;
 }
+
+// Verified game definitions replace obsolete manual common curves, never progress.
+export function seedGameBuildingEffects(state,game){for(const [id,effects] of Object.entries(game.buildingEffects||{}))state.buildingEffects[id]=structuredClone(effects);}

@@ -1,3 +1,4 @@
+import {GATHER_DROP_MAX} from './gather-drop-data.js';
 import {GATHER_REFERENCE as REF} from './gather-reference.js';
 import {abilityName} from './ability-names.js';
 export const RESOURCES=['食料','木材','金属','エーテル'];
@@ -33,9 +34,9 @@ export function gatherBase(groups,resource){return groups.flatMap(g=>{
  return g.sources.filter(s=>['研究','コアアビリティ','施設'].includes(s.kind)&&s.acquired).map(s=>({label:s.kind+' / '+s.label,name:g.name,kind,value:s.value}));
 });}
 export function calculateGather({resource,level,speed=0,amount=0,droplet=0,item=false}){
- if(!RESOURCES.includes(resource)||![4,5,6,7].includes(level)||![speed,amount,droplet].every(Number.isFinite)||speed<0||amount<0||droplet<0||droplet>10)throw Error('入力値の範囲を確認してください。');
+ if(!RESOURCES.includes(resource)||![4,5,6,7].includes(level)||![speed,amount,droplet].every(Number.isFinite)||speed<0||amount<0||droplet<0||droplet>GATHER_DROP_MAX)throw Error('入力値の範囲を確認してください。');
  const hours=REF.hours[level-4],baseAmount=REF.amounts[resource][level-4];
- const multiplier=(1+speed/100)*(item?1.5:1)/(1-droplet/100);
+ const multiplier=(1+(speed+droplet)/100)*(item?1.5:1);
  const seconds=hours*3600/multiplier,quantity=baseAmount*(1+amount/100);
  return {seconds,quantity,multiplier,efficiency:(multiplier-1)*100,quantityEfficiency:amount,perHour:quantity/(seconds/3600),baseAmount,baseHours:hours};
 }
