@@ -76,3 +76,16 @@ test('Automatic BOX suggestion respects budgets, targets, ether yield and leaves
  for(const b of Object.values(large.boxes))assert.ok(Object.values(b.allocations).reduce((a,b)=>a+b,0)<=b.count);
  assert.deepEqual(validateConsumableStock(JSON.parse(JSON.stringify(plan))),plan);
 });
+
+test('Item visibility migrates owned stock, preserves zero-count choices and protects nonzero inventory',()=>{
+ const before={counts:{'111':2,'101':0}};
+ const migrated=validateConsumableStock(before);
+ assert.deepEqual(migrated.selectedItems,['111']);
+ assert.deepEqual(before,{counts:{'111':2,'101':0}});
+ const selected=validateConsumableStock({...migrated,selectedItems:['101','101']});
+ assert.deepEqual(selected.selectedItems,['101','111']);
+ assert.deepEqual(consumableTotals(selected),consumableTotals(before));
+ assert.deepEqual(validateConsumableStock(JSON.parse(JSON.stringify(selected))),selected);
+ assert.deepEqual(validateConsumableStock({counts:{'111':0},selectedItems:[]}).selectedItems,[]);
+ for(const selectedItems of ['111',['missing'],[111],Array(106).fill('111')])assert.throws(()=>validateConsumableStock({selectedItems}));
+});

@@ -17,7 +17,11 @@ export function validateConsumableStock(input={}){
   if(Object.values(allocations).reduce((a,b)=>a+b,0)>b.count)throw Error('BOXの割り当て合計は所持数以内にしてください。');
   boxes[id]={count:b.count,allocations};
  }
- return {counts,loose,resources,seconds,kind,includeUniversal:input.includeUniversal??true,source,boxes};
+ const selected=input.selectedItems??[];
+ if(!Array.isArray(selected)||selected.length>CONSUMABLES.length||selected.some(id=>typeof id!=='string'||!CONSUMABLES.some(i=>i.id===id)))throw Error('表示するアイテムを確認してください。');
+ // Existing stock stays visible through migration and cannot be hidden by stale preferences.
+ const selectedItems=[...new Set([...selected,...Object.keys(counts).filter(id=>counts[id]>0)])];
+ return {counts,loose,resources,seconds,kind,includeUniversal:input.includeUniversal??true,source,boxes,selectedItems};
 }
 export function consumableTotals(input={}){
  const s=validateConsumableStock(input),resources=Object.fromEntries(Object.keys(RESOURCE_KINDS).map(k=>[k,s.loose[k]||0])),seconds=Object.fromEntries(Object.keys(SPEED_KINDS).map(k=>[k,0]));
