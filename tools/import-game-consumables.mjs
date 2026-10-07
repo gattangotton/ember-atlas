@@ -1,0 +1,20 @@
+import fs from 'node:fs';
+import {createHash} from 'node:crypto';
+import {decodeMessagePack} from './read-messagepack.mjs';
+const raw=fs.readFileSync('.work/game-master/Consumable'),rows=decodeMessagePack(raw);
+const resourceKinds={1:'food',2:'wood',4:'metal',8:'ether'},speedKinds={0:'universal',1:'training',2:'building',3:'research',4:'healing'};
+const items=rows.flatMap(r=>{
+ const type=r[-1]===1&&resourceKinds[r[9]]?'resource':r[-1]===2&&Object.hasOwn(speedKinds,r[10]||0)?'speed':null;
+ if(!type)return [];
+ const value=type==='resource'?r[10]:r[9];
+ if(!Number.isSafeInteger(value)||value<=0)throw Error('Invalid consumable '+r[0]);
+ const image='assets/game/consumable/'+String(r[2]).padStart(5,'0')+'.png';
+ if(!fs.existsSync('public/'+image))throw Error('Missing icon '+image);
+ return [{id:String(r[0]),name:r[3],type,kind:type==='resource'?resourceKinds[r[9]]:speedKinds[r[10]||0],value,rarity:r[5],image}];
+});
+const boxes=rows.filter(r=>[13013,13014].includes(r[0])).map(r=>({id:String(r[0]),name:r[3],grade:r[5],image:'assets/game/consumable/'+String(r[2]).padStart(5,'0')+'.png',choices:r[9].map(choice=>{const item=items.find(i=>i.id===String(choice[0]));if(!item||item.type!=='resource')throw Error('Unknown box reward');return {kind:item.kind,itemId:item.id,count:choice[1],value:item.value*choice[1]};})}));
+for(const box of boxes)if(!fs.existsSync('public/'+box.image))throw Error('Missing BOX image');
+fs.writeFileSync('public/consumable-data.js','// PC Consumable master; values are resources or seconds, not displayed name parsing.\nexport const CONSUMABLES='+JSON.stringify(items,null,2)+';\nexport const RESOURCE_BOXES='+JSON.stringify(boxes,null,2)+';\n');
+fs.writeFileSync('artifacts/consumable-data-audit.json',JSON.stringify({sha256:createHash('sha256').update(raw).digest('hex'),reviewedAt:'2026-10-07',resourceCount:items.filter(i=>i.type==='resource').length,speedCount:items.filter(i=>i.type==='speed').length,fields:{resource:{type:-1,kind:9,value:10},speed:{type:-1,kind:10,seconds:9},icon:2},excluded:'Random/choice boxes and percentage boosts are excluded until opened.'},null,2)+'\n');
+const audit=JSON.parse(fs.readFileSync('artifacts/consumable-data-audit.json'));audit.reviewedAt='2026-10-08';audit.boxes=boxes;audit.excluded='Random boxes, other choice boxes and percentage boosts excluded. G3/G4 resource choice boxes are allocation previews only.';fs.writeFileSync('artifacts/consumable-data-audit.json',JSON.stringify(audit,null,2)+'\n');
+console.log('items',items.length,'boxes',boxes.length);

@@ -1,0 +1,86 @@
+{
+  "sha256": "fc089d4e6df2aa12b7dec3561865cb91a77b237ffd6765469b5f469063d32bfc",
+  "reviewedAt": "2026-10-08",
+  "resourceCount": 68,
+  "speedCount": 37,
+  "fields": {
+    "resource": {
+      "type": -1,
+      "kind": 9,
+      "value": 10
+    },
+    "speed": {
+      "type": -1,
+      "kind": 10,
+      "seconds": 9
+    },
+    "icon": 2
+  },
+  "excluded": "Random boxes, other choice boxes and percentage boosts excluded. G3/G4 resource choice boxes are allocation previews only.",
+  "boxes": [
+    {
+      "id": "13013",
+      "name": "選べるG3資源獲得BOX",
+      "grade": 3,
+      "image": "assets/game/consumable/10002.png",
+      "choices": [
+        {
+          "kind": "food",
+          "itemId": "110",
+          "count": 1,
+          "value": 500000
+        },
+        {
+          "kind": "wood",
+          "itemId": "210",
+          "count": 1,
+          "value": 500000
+        },
+        {
+          "kind": "metal",
+          "itemId": "310",
+          "count": 1,
+          "value": 500000
+        },
+        {
+          "kind": "ether",
+          "itemId": "409",
+          "count": 1,
+          "value": 250000
+        }
+      ]
+    },
+    {
+      "id": "13014",
+      "name": "選べるG4資源獲得BOX",
+      "grade": 4,
+      "image": "assets/game/consumable/10002.png",
+      "choices": [
+        {
+          "kind": "food",
+          "itemId": "111",
+          "count": 1,
+          "value": 1000000
+        },
+        {
+          "kind": "wood",
+          "itemId": "211",
+          "count": 1,
+          "value": 1000000
+        },
+        {
+          "kind": "metal",
+          "itemId": "311",
+          "count": 1,
+          "value": 1000000
+        },
+        {
+          "kind": "ether",
+          "itemId": "410",
+          "count": 1,
+          "value": 500000
+        }
+      ]
+    }
+  ]
+}
