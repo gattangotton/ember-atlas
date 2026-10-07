@@ -3,6 +3,7 @@ import {aggregateAbilities} from './strategy-model.js';
 import {lootContribution} from './loot-model.js';
 import {unlockedSlots} from './mechanics.js';
 import {gatherKind} from './gather-model.js';
+import {memoryTypeKey} from './memory-selection.js';
 
 export const TRIGGER_KEYS=['trigger1','trigger2','trigger3'];
 export const SOURCE_LABELS={equipment:'武具',hero:'エンバース',memory:'メモリ',research:'研究',core:'コア',building:'施設',extra:'その他の拠点効果',manual:'記録した拠点合計',drop:'雫'};
@@ -77,8 +78,8 @@ export function simulateLoadout({context,gear=[],heroes=[],memories=[],drops=[],
  }
  const seenMemories=new Set();
  for(const m of memories){
-  if(!m.record)continue;const key=m.record.id+':'+(m.copy?.id||'catalog');
-  if(m.copy&&seenMemories.has(key))throw Error('同じメモリ個体は重複して編成できません。');seenMemories.add(key);
+  if(!m.record)continue;const key=memoryTypeKey(m.record);
+  if(seenMemories.has(key))throw Error('同じ名前のメモリは重複して編成できません。');seenMemories.add(key);
   if(m.record.mainEffectsKnown===false)unknown('memory',m.record.name,'固定効果未確認');
   for(const e of m.record.mainEffects||[])add(e.name,e.value,'memory',m.record.name+' / 固定',e.unit);
   for(const [i,e] of (m.copy?.subs||[]).entries()){

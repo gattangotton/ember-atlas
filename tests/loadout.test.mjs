@@ -72,10 +72,13 @@ test('Loss-trigger stacks are capped at six and are not added by default',()=>{
  assert.equal(simulateLoadout({context:{mode:'attack'},heroes:[{...h,record:r,stacks:3}],base:none}).total,36);
  assert.equal(simulateLoadout({context:{mode:'attack'},heroes:[{...h,record:r,stacks:20}],base:none}).total,72);
 });
-test('Same memory type allows distinct copies but rejects the same individual',()=>{
- assert.throws(()=>simulateLoadout({context,memories:[memory,memory],base:none}),/同じメモリ個体/);
+test('Same memory name rejects different copies and catalog duplicates',()=>{
+ assert.throws(()=>simulateLoadout({context,memories:[memory,memory],base:none}),/同じ名前のメモリ/);
  const second={...memory,copy:{...memory.copy,id:'two'}};
- assert.equal(simulateLoadout({context,memories:[memory,second],base:none}).total,34);
+ assert.throws(()=>simulateLoadout({context,memories:[memory,second],base:none}),/同じ名前/);
+ assert.throws(()=>simulateLoadout({context,memories:[{record:memory.record},{record:memory.record}],base:none}),/同じ名前/);
+ assert.throws(()=>simulateLoadout({context,memories:[memory,{...second,record:{...second.record,id:'alias'}}],base:none}),/同じ名前/);
+ assert.equal(simulateLoadout({context,memories:[memory,{...second,record:{...second.record,id:'other',name:'別メモリ'}}],base:none}).total,34);
  assert.throws(()=>simulateLoadout({context,heroes:[h,h],base:none}),/同じエンバース/);
 });
 test('Memory unknown, empty and zero sub effects are distinct',()=>{

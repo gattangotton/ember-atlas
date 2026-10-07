@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {recommendLoadout,ownedCandidates} from '../public/loadout-optimizer.js';
+import {normalizeMemorySelection} from '../public/memory-selection.js';
 import {simulateLoadout} from '../public/loadout-model.js';
 import {validateParties,validatePartySettings} from '../public/party-model.js';
 import {buildShare,validateShare} from '../public/model.js';
@@ -19,7 +20,7 @@ test('Gather objective switches recommendation; memory copies and gear subs part
  const context={mode:'gather',resource:'食料'};
  const a=recommendLoadout({context:{...context,objective:'amount'},candidates,heroCount:1,base:{mode:'none'}}),s=recommendLoadout({context:{...context,objective:'speed'},candidates,heroCount:1,base:{mode:'none'}});
  assert.equal(a.heroes[0].record.id,'amount');assert.equal(a.result.total,65);assert.equal(s.heroes[0].record.id,'speed');assert.equal(s.result.total,40);
- const ms=recommendLoadout({context:{mode:'loot',race:'悪魔'},candidates:{heroes:[],gear:[],memories:[memory('copy-a',10),memory('copy-b',20),memory('copy-c',5)]},base:{mode:'none'}});assert.equal(ms.result.total,30);assert.equal(new Set(ms.memories.map(m=>m.key)).size,2);
+ const ms=recommendLoadout({context:{mode:'loot',race:'悪魔'},candidates:{heroes:[],gear:[],memories:[memory('copy-a',10),memory('copy-b',20),{...memory('copy-c',5),record:{...memory('copy-c',5).record,id:'memory-2',name:'別メモリ'}}]},base:{mode:'none'}});assert.equal(ms.result.total,25);assert.equal(ms.memories[0].key,'copy-b');assert.equal(new Set(ms.memories.map(m=>m.key)).size,2);
 });
 test('Only owned copies and actual registered skill levels are eligible; inputs are untouched',()=>{
  const records=[hero('owned','火',[]).record,hero('other','水',[]).record,gear('g','武器',[]).record],state={progress:{owned:{owned:true,skills:{trigger1:2}},g:{owned:true,instances:[{id:'copy',grade:3,target:6,subAbilities:[null,null,null]}]}}};const before=structuredClone(state),r=ownedCandidates(records,state,[]);assert.deepEqual(r.heroes.map(h=>h.record.id),['owned']);assert.equal(r.heroes[0].levels.trigger1,2);assert.equal(r.gear[0].grade,3);assert.deepEqual(state,before);
@@ -35,4 +36,12 @@ test('Version 3 alliance sharing includes selected parties and strips memory not
  const profile={id:'p',name:'Player',alliance:'A'},memoryInventory={'memory-1':[{id:'copy',label:'private-label',note:'private-note',subs:Array.from({length:3},()=>({status:'empty',name:'',unit:'%',value:null}))}]};
  const v=buildShare(profile,{},[],{}, {},{memoryInventory,savedParties:[party]});assert.equal(v.version,3);assert.ok(!JSON.stringify(v).includes('private'));assert.deepEqual(validateShare(v),v);assert.equal(validateShare(v).savedParties.length,1);
  const omitted=buildShare(profile,{},[],{}, {},{memoryInventory});assert.equal(validateShare(omitted).savedParties,undefined);assert.equal(validateShare(buildShare(profile,{},[],{})).version,2);
+});
+
+test('Legacy saved selections remove later same-name copies without changing inventory',()=>{
+ const a=memory('a',10),b=memory('b',20),c={...memory('c',5),record:{...memory('c',5).record,id:'other',name:'別メモリ'}};
+ const keys=['a','b','c'],choices=[a,b,c],before=structuredClone(choices);
+ assert.deepEqual(normalizeMemorySelection(keys,choices),['a','','c']);
+ assert.deepEqual(normalizeMemorySelection(['missing','b','a'],choices),['','b','']);
+ assert.deepEqual(keys,['a','b','c']);assert.deepEqual(choices,before);
 });

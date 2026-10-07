@@ -31,3 +31,6 @@ button:hover{background-color:#f0f6f2}.base-category-tabs button:hover{backgroun
 .party-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:16px;margin-top:16px}.party-grid .panel{min-width:0;margin:0}.party-grid h2{overflow-wrap:anywhere}.party-grid .actions{flex-wrap:wrap}.sim-auto .actions{flex-wrap:wrap}
 
 .gather-key-results{display:grid;gap:16px;margin:18px 0}.gather-key-result+.gather-key-result{border-top:1px solid #ffffff24;padding-top:16px}.gather-result-label{display:block;color:#dcc397;font-size:12px;margin-bottom:4px}.gather-key-result>strong{display:block;font-size:49px;line-height:1.2;color:#f4d9a6;font-variant-numeric:tabular-nums;letter-spacing:-.04em}.gather-key-result strong small{font-size:16px;font-weight:500;margin-left:5px;letter-spacing:0;color:#dcc397}.gather-key-result>strong.gather-duration{display:flex;gap:12px;flex-wrap:wrap}.gather-duration>span{white-space:nowrap}@media(max-width:600px){.gather-key-result>strong{font-size:40px}.gather-key-result>strong.gather-duration{gap:8px}.gather-key-result strong small{font-size:14px;margin-left:3px}}
+
+/* Simulator grades are already visible beside the equipment name. */
+.sim-loadout .game-grade{display:none}

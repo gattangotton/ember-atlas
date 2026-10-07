@@ -28,3 +28,14 @@ test('Base inputs include acquired core/research/facility once, exclude gear and
  const x=gatherBase([{name:'食料の採集速度',unit:'%',sources},{name:'木材採集速度',unit:'%',sources}],'食料');
  assert.deepEqual(x.map(e=>e.value),[20,null]);
 });
+
+test('Reported 236.5% gains baseline 100% before item multiplier, matching screenshot within display precision',()=>{
+ const input={resource:'食料',level:6,speed:236.5,amount:319.8};
+ const plain=calculateGather(input),boost=calculateGather({...input,item:true});
+ assert.ok(Math.abs(boost.efficiency-404.75)<1e-9);
+ assert.ok(Math.abs(plain.seconds/boost.seconds-1.5)<1e-9);
+ assert.equal(boost.quantity,plain.quantity);
+ assert.equal(Math.floor((boost.efficiency+1e-9)*10)/10,404.7);
+ assert.ok(Math.abs(calculateGather({...input,speed:222.5,droplet:14,item:true}).efficiency-404.75)<1e-9);
+ assert.equal(calculateGather({...input,speed:0,item:true}).efficiency,50);
+});
