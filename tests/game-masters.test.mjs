@@ -18,7 +18,7 @@ test('All ten previously missing gear records have source values, slot and origi
   assert.ok(source.powerGrades.every(Number.isFinite));assert.ok(source.mainAbilities.every(a=>a.values.every(Number.isFinite)));
   assert.ok(fs.existsSync(new URL('../public/'+images.equipment[id],import.meta.url)));
  }
- assert.ok(Object.keys(data.buildings).length>0);assert.equal(Object.keys(data.researchCosts).length,419);
+ assert.ok(Object.keys(data.buildings).length>0);assert.equal(Object.keys(data.researchCosts).length,422);
 });
 
 test('October event equipment preserves six source grades, slots and the standard two sub slots',async()=>{
@@ -34,8 +34,8 @@ test('All existing equipment and research IDs map uniquely to local masters',()=
  assert.equal(equipment.length,207);assert.deepEqual(new Set(Object.keys(data.equipment)),new Set(equipment.map(r=>r.id)));
  assert.equal(new Set(Object.values(data.equipment).map(e=>e.masterId)).size,207);
  assert.deepEqual(new Set(Object.keys(data.researchMapping)),new Set(mechanics.research.map(r=>r.id)));
- assert.equal(new Set(Object.values(data.researchMapping).map(r=>r.groupId+':'+r.masterId)).size,419);
- assert.equal(Object.keys(validateResearchSpecs(data.researchSpecs,mechanics.research)).length,401);
+ assert.equal(new Set(Object.values(data.researchMapping).map(r=>r.groupId+':'+r.masterId)).size,422);
+ assert.equal(Object.keys(validateResearchSpecs(data.researchSpecs,mechanics.research)).length,404);
  for(const e of Object.values(data.equipment))assert.doesNotThrow(()=>validateMechanics(e));
  for(const [id,mapping] of Object.entries(data.researchMapping))if(mapping.kind==='unlock')assert.equal(data.researchSpecs[id],undefined);
 });

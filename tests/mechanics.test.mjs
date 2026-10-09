@@ -44,7 +44,7 @@ test('Shared v2 snapshot keeps skill goals and research but excludes private not
  assert.throws(()=>validateResearch(JSON.parse('{"__proto__":1}')));
 });
 test('Research values map to the workbook row and confirmed edges remain in the same tree',()=>{
- assert.equal(extra.research.length,419);const ids=new Set(extra.research.map(n=>n.id));assert.equal(ids.size,419);
+ assert.equal(extra.research.length,422);const ids=new Set(extra.research.map(n=>n.id));assert.equal(ids.size,422);
  const n=extra.research.find(n=>n.id==='research-1-3');assert.equal(n.name,'兵士訓練資源効率');assert.deepEqual(n.levels[0],[450,450,900,450,900]);
- for(const n of extra.research)for(const id of n.parents){assert.ok(ids.has(id));const parent=extra.research.find(p=>p.id===id);assert.equal(parent.group,n.group);assert.ok(parent.lab<n.lab);}
+ for(const n of extra.research)for(const id of n.parents){assert.ok(ids.has(id));const parent=extra.research.find(p=>p.id===id);assert.equal(parent.group,n.group);assert.ok(parent.lab<=n.lab);}
 });

@@ -1,7 +1,7 @@
 import {isGuardianGear} from './raid-data.js';
 // Canonical labels follow the base-ability screen. Only equivalent effects are aliases.
 export function abilityName(value){
- let s=String(value??'').normalize('NFKC').trim().replace(/倍加/g,'倍化').replace(/竜/g,'龍').replace(/建築/g,'建設').replace(/装備制作/g,'装備製作').replace(/治癒速度/g,'治療速度').replace(/収用兵士数/g,'収容兵士数');
+ let s=String(value??'').normalize('NFKC').trim().replace(/採取/g,'採集').replace(/倍加/g,'倍化').replace(/竜/g,'龍').replace(/建築/g,'建設').replace(/装備制作/g,'装備製作').replace(/治癒速度/g,'治療速度').replace(/収用兵士数/g,'収容兵士数');
  const aliases={'対魔獣経験値':'対魔獣獲得経験値','魔獣倍化':'対魔獣素材倍化率','龍倍化':'対龍素材倍化率','ヨルムン特攻':'対ヨルムンガンド攻撃力','治療速度効率':'兵士治療速度','治療速度':'兵士治療速度','治癒資源効率':'兵士治療資源効率','兵士治癒資源効率':'兵士治療資源効率','拠点防衛':'拠点防衛時攻撃力','集結攻撃力':'集結部隊時攻撃力','集結行軍速度':'集結部隊行軍速度','研究加速':'研究加速(秒)','建設加速':'建設加速(秒)'};
  if(/^[火水風雷土光闇]属性$/.test(s))s+='リーダー攻撃力';
  s=s.replace(/^(歩兵|弓兵|騎兵)行軍$/,'$1行軍速度').replace(/^対(魔獣|精霊|超獣|不浄|堕天|機甲|妖魔|悪魔|龍)攻撃$/,'対$1攻撃力').replace(/^(精霊|超獣|不浄|堕天|機甲|妖魔|悪魔|龍)・メモリ倍化$/,'対$1メモリ倍化率').replace(/^(食料|木材|金属|エーテル)生産$/,'$1生産量');

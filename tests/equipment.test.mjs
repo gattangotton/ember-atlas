@@ -8,7 +8,7 @@ import {equipmentG1Evidence,equipmentNameKey} from '../tools/equipment-g1-sep28.
 const cat=JSON.parse(readFileSync(new URL('../public/data/catalog.json',import.meta.url))),m=JSON.parse(readFileSync(new URL('../public/data/mechanics.json',import.meta.url)));
 const rs=[...cat.records,...m.extraRecords].map(r=>({...r,...m.additions[r.id]})).filter(r=>r.kind==='equipment');
 test('Equipment evidence retains power, independent grade values and source in catalogue round trip',()=>{
- assert.equal(equipmentEvidence.length,110);assert.equal(Object.values(EQUIPMENT_FILTERS).flat().length,60);
+ assert.equal(equipmentEvidence.length,110);assert.equal(Object.values(EQUIPMENT_FILTERS).flat().length,68);
  for(const e of equipmentEvidence){const r=rs.find(r=>equipmentNameKey(r.name)===equipmentNameKey(e.name)),latest=equipmentG1Evidence.find(x=>equipmentNameKey(x.name)===equipmentNameKey(e.name))||e;assert.ok(r,e.name);assert.equal(r.power,latest.power);assert.equal(validateRecord(r).power,latest.power);assert.deepEqual(validateRecord(r).powerGrades,r.powerGrades);assert.ok(r.equipmentEvidence);}
  const sword=rs.find(r=>r.name==='エクスカリバー(FFBE)');assert.equal(sword.powerGrades[5],27000);assert.equal(sword.mainAbilities.find(e=>e.name==='攻撃力').values[5],84.3);assert.equal(sword.mainAbilities[0].values[1],null);
  assert.equal(new Set(rs.map(r=>r.name)).size,rs.length);

@@ -5,7 +5,7 @@ import {validateResearchActivity,researchActivity} from '../public/research-acti
 import {GAME_RESEARCH_ICONS} from '../public/game-research-icons.js';
 import {researchIcon} from '../public/research-icons.js';
 const nodes=JSON.parse(fs.readFileSync(new URL('../public/data/mechanics.json',import.meta.url))).research;
-test('All 419 research panels have existing master-mapped icons, including archer training',()=>{
+test('All 422 research panels have existing master-mapped icons, including archer training',()=>{
  assert.equal(Object.keys(GAME_RESEARCH_ICONS).length,nodes.length);
  for(const n of nodes){const icon=GAME_RESEARCH_ICONS[n.id];assert.ok(fs.existsSync(new URL('../public/'+icon.path,import.meta.url)));assert.ok(researchIcon(n.name,n.id).includes(icon.path));}
  assert.equal(GAME_RESEARCH_ICONS['research-1-53'].iconId,147);

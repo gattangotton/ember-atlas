@@ -6,7 +6,7 @@ import {researchIcon} from '../public/research-icons.js';
 import {formatResource} from '../public/building-model.js';
 const nodes=JSON.parse(readFileSync(new URL('../public/data/mechanics.json',import.meta.url))).research;
 test('All research nodes appear once without overlap, independently of laboratory level',()=>{
- assert.equal(nodes.length,419);
+ assert.equal(nodes.length,422);
  for(let g=0;g<5;g++){
   const ns=nodes.filter(n=>n.id.startsWith(`research-${g}-`)),a=gameTreeLayout(ns,g);
   assert.equal(a.positions.size,ns.length);

@@ -1,3 +1,4 @@
+import {abilityName} from './ability-names.js';
 const text=(s,max)=>typeof s==='string'&&s.length<=max;
 export function validateMemoryInventory(input={},records=[]){
  if(!input||typeof input!=='object'||Array.isArray(input)||Object.keys(input).length>1000)throw Error('メモリの所持記録の形式が不正です。');
@@ -19,7 +20,10 @@ export function validateMemoryInventory(input={},records=[]){
  return result;
 }
 export function newMemoryCopy(id){return {id,label:'',note:'',subs:Array.from({length:3},()=>({status:'unknown',name:'',unit:'%',value:null}))};}
-export function filterMemories(records,inventory,{query='',rarity='',owned=false,acquisition=''}={}){
- const normalize=s=>String(s).normalize('NFKC').toLocaleLowerCase('ja');const q=normalize(query).trim();
- return records.filter(r=>(!rarity||r.rarity===Number(rarity))&&(!owned||inventory[r.id]?.length)&&(acquisition==='paid'?r.paidAvailable:acquisition==='nonpaid'?r.nonPaidAvailable:acquisition==='unknown'?!r.paidAvailable&&!r.nonPaidAvailable:true)&&normalize([r.name,...(r.acquisition||[]).map(a=>a.name),...r.mainEffects.map(e=>e.name),...(inventory[r.id]||[]).flatMap(c=>[c.label,...c.subs.map(s=>s.name)])].join(' ')).includes(q));
+export function memoryEffectNames(record,inventory={},scope='all'){
+ return [...new Set([...(scope==='sub'?[]:(record.mainEffects||[]).map(e=>e.name)),...(scope==='main'?[]:(inventory[record.id]||[]).flatMap(c=>c.subs.filter(s=>s.status==='set').map(s=>s.name)))].map(abilityName))];
+}
+export function filterMemories(records,inventory,{query='',rarity='',owned=false,acquisition='',ability='',scope='all'}={}){
+ const normalize=s=>abilityName(s).toLocaleLowerCase('ja');const q=normalize(query).trim(),wanted=abilityName(ability);
+ return records.filter(r=>(!rarity||r.rarity===Number(rarity))&&(!owned||inventory[r.id]?.length)&&(acquisition==='paid'?r.paidAvailable:acquisition==='nonpaid'?r.nonPaidAvailable:acquisition==='unknown'?!r.paidAvailable&&!r.nonPaidAvailable:true)&&(!wanted||memoryEffectNames(r,inventory,scope).some(n=>n===wanted))&&normalize([r.name,...(r.acquisition||[]).map(a=>a.name),...memoryEffectNames(r,inventory),...(inventory[r.id]||[]).map(c=>c.label)].join(' ')).includes(q));
 }

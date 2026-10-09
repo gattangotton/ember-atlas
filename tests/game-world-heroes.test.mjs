@@ -38,7 +38,7 @@ test('Game common values replace obsolete edits; edits after this revision remai
 });
 test('Research and all facility levels receive exact master costs; appearance changes follow master levels',()=>{
  const mechanics=read('mechanics'),b=read('buildings');b.buildings=expandAltarBuildings(b.buildings);applyGameWorld(mechanics,b,game,images);
- assert.equal(mechanics.research.length,419);
+ assert.equal(mechanics.research.length,422);
  assert.deepEqual(mechanics.research.find(n=>n.id==='research-0-4').levels[4].slice(0,4),[2800,1400,1400,1400]);
  const castle=b.buildings.find(x=>x.id==='building-1');assert.equal(castle.levels[0].seconds,2);assert.deepEqual(castle.levels[0].resources,[1000,1000,1500,0]);
  assert.notEqual(castle.levels[0].image,castle.levels[5].image);
