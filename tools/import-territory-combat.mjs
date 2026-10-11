@@ -1,0 +1,20 @@
+import fs from 'node:fs';
+import {createHash} from 'node:crypto';
+import {decodeMessagePack} from './read-messagepack.mjs';
+const root=process.argv[2]||'C:/Users/takah/AppData/LocalLow/SquareEnix/EmberStoria/Fdfb6zs93olkPI9L/Cache/Masters/_';
+const files={};
+const read=name=>{const b=fs.readFileSync(root+'/'+name);files[name]={sha256:createHash('sha256').update(b).digest('hex')};return decodeMessagePack(b);};
+const bonus=read('DeckBonus'),heroes=read('Hero'),efficiency=read('SoldierOperationEfficiency'),birthplaces=read('HeroBirthplace'),fields=read('FieldSetting'),origins=read('MonsterOrigin'),help=read('Help');
+const elements={1:'火',2:'水',3:'風',4:'土',5:'雷',7:'光',8:'闇'},troops={0:'歩兵',1:'弓兵',2:'騎兵'};
+const slots={1:'second',2:'third',3:'support'},kinds={0:'troop',1:'element',2:'birthplace',3:'level'};
+const bonuses={};for(const b of bonus[0]){if(!slots[b[1]]||!kinds[b[-1]]||b[-1]===3&&b[3]!==1)throw Error('Review DeckBonus');(bonuses[slots[b[1]]]??={})[kinds[b[-1]]]=b[2]/100;}
+const worlds=fields.filter(f=>/ワールド/.test(f[1]));if(!worlds.length||new Set(worlds.map(f=>JSON.stringify(f[34]))).size!==1)throw Error('World elemental tables diverge');
+const affinities=worlds[0][34].flatMap(a=>a[1].map(d=>({from:elements[a[0]],to:elements[d[0]],monster:d[2]/10000,troop:d[1]/10000})));
+const heroData=Object.fromEntries(heroes.filter(h=>h[25]!==false).map(h=>[h[0],{name:h[2],birthplace:h[28]?.[1]??null,efficiency:Object.fromEntries((efficiency.find(e=>e[0]===h[8])?.[2]||[]).map(e=>[troops[e[0]??0],e[1]/10000]))}]));
+const sim=JSON.parse(fs.readFileSync('public/data/game-simulation.json'));
+const bosses=Object.fromEntries(sim.bosses.map(b=>{const rows=origins.filter(o=>b.masterIds.includes(o[0])),els=[...new Set(rows.map(o=>elements[o[5]]))];return [b.id,els.length===1?els[0]:null];}));
+const rules=help.flatMap(h=>(h[2]||[]).filter(s=>['編成ボーナス','得意兵種','属性相性','アビリティ効果の補足'].includes(s[0])).map(s=>({source:'Help '+h[0],title:s[0],text:s[1].filter(x=>x[-1]===1).map(x=>x[0]).join('\n')})));
+const data={capturedAt:'2026-10-11',bonuses,equivalentBirthplaces:bonus[2].map(g=>g[0]),birthplaces:Object.fromEntries(birthplaces.map(b=>[b[0]??0,(b[2]+' '+b[3]).trim()])),heroes:heroData,bosses,affinities};
+fs.writeFileSync('public/territory-combat-data.js','// Generated from local game masters; see artifacts/territory-combat-audit.json.\nexport const TERRITORY_COMBAT='+JSON.stringify(data,null,2)+';\n');
+fs.writeFileSync('artifacts/territory-combat-audit.json',JSON.stringify({files,data,rules,interpretation:{deckBonus:'DeckBonus union Soldier/Elemental/Birthplace/Level; targets Second/Third/Support. Ratio raw/100 = percent. Lv coefficient uses divisor 1.',efficiency:'Hero[8] -> SoldierOperationEfficiency. Infantry/Archer/Cavalry IDs 0/1/2. raw/10000 = factor.',affinity:'World FieldSetting[34] monster column, Help 4 attribute relation.',comparison:'(1 + attackBonus/100) × (1 + deckBonus/100) × leaderEfficiency × attributeFactor. A comparison model, not a verified damage formula.',excluded:'Enemy defence, soldier tier/count, charge rotation, transient buffs/debuffs, support triggers and cross-team skill carryover are not simulated.'}},null,2)+'\n');
+console.log({heroes:Object.keys(heroData).length,bonuses,bosses});
