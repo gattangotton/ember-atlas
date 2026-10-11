@@ -1,3 +1,4 @@
+import {chargeSkillEffects} from './charge-model.js';
 import {effectKey} from './equipment-model.js';
 import {aggregateAbilities} from './strategy-model.js';
 import {lootContribution} from './loot-model.js';
@@ -111,5 +112,6 @@ export function simulateLoadout({context,gear=[],heroes=[],memories=[],drops=[],
  if(base.mode==='manual')notices.push('記録した拠点合計で研究・コア・施設を置き換えています。編成や雫を含まない拠点値を使ってください。');
  const rows=Object.entries(SOURCE_LABELS).map(([source,label])=>{const es=entries.filter(e=>e.source===source);return {source,label,entries:es,total:round(es.reduce((n,e)=>n+(e.value??0),0)),unknown:es.filter(e=>e.value===null).length};});
  const total=round(rows.reduce((n,r)=>n+r.total,0)),unknownCount=rows.reduce((n,r)=>n+r.unknown,0);
- return {entries,rows,total,unknown:unknownCount,notices,ignored,expectation:context.mode==='loot'?lootExpectation(total):null};
+ const charge=context.mode==='attack'&&context.chargeEffects==='active'?chargeSkillEffects(heroes,state,context):null;
+ return {charge,comparisonIndex:(1+total/100)*(charge?.factor??1),entries,rows,total,unknown:unknownCount+(charge?.unknown??0),notices,ignored,expectation:context.mode==='loot'?lootExpectation(total):null};
 }

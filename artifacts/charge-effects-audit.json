@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-10-11",
+  "skillSha256": "f8b9dee91582c65cb74ee7b35250123ed0d8d7b997de7e322dc018f8b1976a42",
+  "heroes": 72,
+  "mismatches": [],
+  "help": [
+    7,
+    61,
+    123
+  ],
+  "model": "Opt-in active-state scenario. Max per effect kind; outgoing + enemy incoming capped at 200%, own incoming + enemy outgoing floored at -75%. No uptime, direct power conversion or support/cross-party charges.",
+  "verification": {
+    "tests": 188,
+    "passed": 188,
+    "browser": [
+      "single skill levels 1 to 7: combined bonus 6% to 42%",
+      "single save/reload retains active mode and Lv7",
+      "multi-party save/reload retains active mode",
+      "off mode removes charge summary after recalculation",
+      "390px viewport no horizontal overflow",
+      "no JavaScript errors"
+    ],
+    "scope": "Active-state buffs/debuffs only. Potency and duration displayed for reference, not converted into direct damage or uptime."
+  }
+}

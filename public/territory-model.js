@@ -1,3 +1,4 @@
+import {chargeSkillEffects} from './charge-model.js';
 import {TERRITORY_COMBAT as DATA} from './territory-combat-data.js';
 import {simulateLoadout} from './loadout-model.js';
 import {memoryTypeKey} from './memory-selection.js';
@@ -24,7 +25,7 @@ export function combatFactors(heroes,context,state={},data=DATA){
 }
 export function evaluateTerritoryTeam({heroes,...args},data=DATA){
  const result=simulateLoadout({...args,heroes:heroes.filter(h=>!h.support)}),factors=combatFactors(heroes,args.context,args.state,data);
- return {result,factors,index:round((1+result.total/100)*factors.factor),unknown:result.unknown+factors.unknown};
+ return {result,factors,index:round(result.comparisonIndex*factors.factor),unknown:result.unknown+factors.unknown};
 }
 
 // Maximum-weight matching. The team/type intermediate node prevents duplicate
@@ -48,6 +49,8 @@ export function recommendTerritory({candidates,context,state={},teamCount=2,hero
  const heroes=candidates.heroes;if(heroes.length<teamCount*heroCount)throw Error(`${teamCount}部隊には最低${teamCount*heroCount}人の所持エンバースが必要です。`);
  if(heroes.length<teamCount*(heroCount+supportCount))throw Error('サポートを含めた所持エンバースが不足しています。');
  const cache=new Map(),baseCache=new Map();
+ const chargeGroups=context.chargeEffects==='active'?new Map(heroes.map(h=>[h.record.id,chargeSkillEffects([h],state,context).groups])):null;
+ const chargeFactor=hs=>{if(!chargeGroups)return 1;let own=0,enemy=0;for(const h of hs){if(h.support)continue;const g=chargeGroups.get(h.record.id);own=Math.max(own,g?.outgoing||0);enemy=Math.max(enemy,g?.enemyIncoming||0);}return 1+Math.min(200,own+enemy)/100;};
  const ctxFor=(leader,t)=>({...context,mode:'attack',battle:'fieldBoss',troop:t,element:leader.record.element});
  const key=c=>c.troop+'/'+c.element;
  const contribution=(item,c,field)=>{const k=key(c)+'/'+field+'/'+(item.key||item.record.id);if(!cache.has(k))cache.set(k,simulateLoadout({context:c,base:{mode:'none'},[field]:[item]}));return cache.get(k);};
@@ -57,8 +60,8 @@ export function recommendTerritory({candidates,context,state={},teamCount=2,hero
   const c=ctxFor(leader,t),base=baseFor(c),gear=LOOT_SLOTS.reduce((n,s)=>n+Math.max(0,...candidates.gear.filter(x=>x.record.slot===s).map(x=>contribution(x,c,'gear').total)),0);
   const seen=new Set(),memory=[...candidates.memories].sort((a,b)=>contribution(b,c,'memories').total-contribution(a,c,'memories').total).filter(x=>{const k=memoryTypeKey(x.record);if(seen.has(k))return false;seen.add(k);return true;}).slice(0,memoryCount).reduce((n,x)=>n+Math.max(0,contribution(x,c,'memories').total),0);
   for(const second of heroes.filter(h=>h!==leader)){
-   const thirds=heroCount===2?[null]:heroes.filter(h=>h!==leader&&h!==second).map(h=>({h,value:contribution(h,c,'heroes').total+formationBonus([leader,second,h],state,data).total})).sort((a,b)=>b.value-a.value).slice(0,3).map(x=>x.h);
-   for(const third of thirds){const hs=[leader,second,...(third?[third]:[])],f=combatFactors(hs,c,state,data),attack=base.total+hs.reduce((n,h)=>n+contribution(h,c,'heroes').total,0),upper=(1+(attack+gear+memory)/100)*f.factor;pool.push({heroes:hs,context:c,upper,ids:hs.map(h=>h.record.id)});}
+   const thirds=heroCount===2?[null]:heroes.filter(h=>h!==leader&&h!==second).map(h=>({h,value:(1+(base.total+gear+memory+[leader,second,h].reduce((n,x)=>n+contribution(x,c,'heroes').total,0))/100)*combatFactors([leader,second,h],c,state,data).factor*chargeFactor([leader,second,h])})).sort((a,b)=>b.value-a.value).slice(0,3).map(x=>x.h);
+   for(const third of thirds){const hs=[leader,second,...(third?[third]:[])],f=combatFactors(hs,c,state,data),attack=base.total+hs.reduce((n,h)=>n+contribution(h,c,'heroes').total,0),upper=(1+(attack+gear+memory)/100)*f.factor*chargeFactor(hs);pool.push({heroes:hs,context:c,upper,ids:hs.map(h=>h.record.id)});}
   }
  }
  pool.sort((a,b)=>b.upper-a.upper||a.ids.join().localeCompare(b.ids.join()));
@@ -81,7 +84,7 @@ export function recommendTerritory({candidates,context,state={},teamCount=2,hero
  for(const b of beam.slice(0,40)){
   const teams=b.teams.map(t=>({...t,heroes:[...t.heroes],gear:[],memories:[]}));
   if(supportCount){const remaining=heroes.filter(h=>!b.used.has(h.record.id)),assigned=allocateItems(remaining.map(h=>({...h,key:h.record.id})),teams,supportCount,(h,t)=>{const old=combatFactors(t.heroes,t.context,state,data).factor,now=combatFactors([...t.heroes,{...h,support:true}],t.context,state,data).factor;return t.upper*(now/old-1);});teams.forEach((t,i)=>t.heroes.push(...assigned[i].map(h=>({...h,support:true}))));}
-  const factors=teams.map(t=>combatFactors(t.heroes,t.context,state,data).factor);
+  const factors=teams.map(t=>combatFactors(t.heroes,t.context,state,data).factor*chargeFactor(t.heroes));
   for(const slot of LOOT_SLOTS){const assigned=allocateItems(candidates.gear.filter(g=>g.record.slot===slot),teams,1,(g,t,i)=>contribution(g,t.context,'gear').total*factors[i],{shared});teams.forEach((t,i)=>t.gear.push(...assigned[i]));}
   const memories=allocateItems(candidates.memories,teams,memoryCount,(m,t,i)=>contribution(m,t.context,'memories').total*factors[i],{shared,typeKey:m=>memoryTypeKey(m.record)});teams.forEach((t,i)=>{t.memories=memories[i];Object.assign(t,evaluateTerritoryTeam({...common,state,context:t.context,heroes:t.heroes,gear:t.gear,memories:t.memories},data));});
   const score=teams.reduce((n,t)=>n+t.index,0),unknown=teams.reduce((n,t)=>n+t.unknown,0);
