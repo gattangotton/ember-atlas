@@ -12,7 +12,8 @@ export function validateCopies(items,record){
    if(a===null)return null;
    if(!slots[i])throw Error(`サブ枠${i+1}はこの強化段階では登録できません。`);
    if(typeof a?.name!=='string'||!a.name.trim()||a.name.length>200||typeof a.value!=='number'||!Number.isFinite(a.value)||Math.abs(a.value)>1e7)throw Error('サブアビリティの効果名と％を入力してください。');
-   return {name:a.name.trim(),value:a.value};
+   if(a.unit!==undefined&&(typeof a.unit!=='string'||a.unit.length>20))throw Error('サブアビリティの単位が不正です。');
+   return {name:a.name.trim(),value:a.value,...(a.unit!==undefined?{unit:a.unit}:{})};
   })};
  });
 }

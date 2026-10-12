@@ -8,6 +8,7 @@ export const ADMIN_CONTROLS=[
  '[data-equipment="patterns"]','[data-equipment="power-edit"]','[data-equipment^="pattern-"]','[data-equipment="from-record"]','[data-equipment="apply-pattern"]',
  '[data-lab="spec"]','[data-lab="suggest-pattern"]','[data-lab="apply-pattern"]',
  '[data-building="edit"]','[data-building-effects]','[data-building-effect-add]','[data-building-effect-remove]',
+ '#sub-candidate-form','[data-candidate-edit]','[data-candidate-add]','[data-candidate-remove]',
  '#record-form','#character-editor-form','#mechanics-form','#patterns-form','#equipment-pattern-form','#equipment-power-form','#lab-spec-form','#building-rule-form','#building-effects-form','#foundation-form','#foundation-apply',
  '.ember-data-actions','.forge-evidence','#forge-tab-data','#forge-data','a[href="#foundation"]','a[href="#sources"]','a[href="#ember-sources"]',
 ];

@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "capturedAt": "2026-10-12",
+  "source": "PC版Equipment/Enhancerには解放条件のみ。候補一覧はGetCandidateEquipmentPrefixes/GetCandidateEnhancerPrefixesの応答であり、ローカル保存を確認できていない。未確認リスト・上限を推定しない。",
+  "records": {}
+}

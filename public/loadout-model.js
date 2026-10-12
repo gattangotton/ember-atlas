@@ -57,12 +57,12 @@ export function simulateLoadout({context,gear=[],heroes=[],memories=[],drops=[],
    const selected=lootContribution(r,item.grade,context.race,item.subAbilities).entries;
    for(const e of selected)add(e.name.replace('（元資料）',''),e.value,'equipment',r.name+' / '+e.source);
    for(const e of r.mainAbilities||[])if(!selected.some(x=>effectKey(x.name.replace('（元資料）',''))===effectKey(e.name)))add(e.name,e.values?.[item.grade-1],'equipment',r.name+' / メイン',e.unit);
-   for(const e of item.subAbilities||[])if(e&&!selected.some(x=>x.source==='サブ'&&effectKey(x.name)===effectKey(e.name)))add(e.name,e.value,'equipment',r.name+' / サブ');
+   for(const e of item.subAbilities||[])if(e&&!selected.some(x=>x.source==='サブ'&&effectKey(x.name)===effectKey(e.name)))add(e.name,e.value,'equipment',r.name+' / サブ',e.unit??'%');
    if(selected.some(e=>e.name==='メイン効果未登録'))unknown('equipment',r.name,'メイン効果未登録');
   }else{
    if(!r.mainAbilities?.length)unknown('equipment',r.name,'メイン効果未登録');
    for(const e of r.mainAbilities||[])add(e.name,e.values?.[item.grade-1],'equipment',r.name+' / メイン',e.unit);
-   for(const e of item.subAbilities||[])if(e)add(e.name,e.value,'equipment',r.name+' / サブ');
+   for(const e of item.subAbilities||[])if(e)add(e.name,e.value,'equipment',r.name+' / サブ',e.unit??'%');
   }
   if(item.owned)unlockedSlots(r,item.grade).forEach((open,i)=>{if(open&&!item.subAbilities?.[i])unknown('equipment',r.name,`サブ${i+1}未確認`);});
  }

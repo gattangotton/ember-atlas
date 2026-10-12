@@ -14,7 +14,8 @@ export function validateMemoryInventory(input={},records=[]){
     if(s.status==='set'&&!s.name.trim())throw Error('登録するサブアビリティ名を入力してください。');
     return s.status==='set'?{status:s.status,name:s.name.trim(),unit:s.unit,value:s.value}:{status:s.status,name:'',unit:'%',value:null};
    });
-   return {id:c.id,label:c.label.trim(),note:c.note,subs};
+   if(c.unlockedSlots!==undefined){if(!Number.isInteger(c.unlockedSlots)||c.unlockedSlots<0||c.unlockedSlots>3||subs.some((s,i)=>i>=c.unlockedSlots&&s.status!=='empty'))throw Error('解放枠とサブアビリティの状態が一致していません。');}
+   return {id:c.id,label:c.label.trim(),note:c.note,subs,...(c.unlockedSlots!==undefined?{unlockedSlots:c.unlockedSlots}:{})};
   });
  }
  return result;
