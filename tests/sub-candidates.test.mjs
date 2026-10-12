@@ -50,7 +50,8 @@ test('武具の秒やスキルLvを百分率へ加算せず、共有でも単位
 });
 test('メモリの解放数は個体別。個体IDと実測サブを残し、未確認を推定しない',()=>{
  const old=newMemoryCopy('old');assert.equal(memoryUnlocked(old),null);
- const next=resizeMemoryCopies([old],3,(()=>{let i=0;return()=>`new-${++i}`;})());assert.equal(next[0].id,'old');assert.equal(memoryUnlocked(next[1]),0);assert.equal(next[1].subs.every(s=>s.status==='empty'),true);assert.equal(old.unlockedSlots,undefined);
+ const next=resizeMemoryCopies([old],3,(()=>{let i=0;return()=>`new-${++i}`;})());assert.equal(next[0].id,'old');assert.equal(memoryUnlocked(next[1]),1);assert.deepEqual(next[1].subs.map(s=>s.status),['unknown','empty','empty']);assert.equal(old.unlockedSlots,undefined);
+ assert.throws(()=>setMemoryUnlocked(next[1],0),/1～3/);
  next[1]=setMemoryUnlocked(next[1],2);assert.deepEqual(next[1].subs.map(s=>s.status),['unknown','unknown','empty']);next[1].subs[1]={status:'set',name:'食料採集速度',value:0,unit:'%'};
  assert.throws(()=>setMemoryUnlocked(next[1],1),/解除/);
  const inventory=validateMemoryInventory({'memory-test':next},[{id:'memory-test'}]);assert.equal(inventory['memory-test'][1].unlockedSlots,2);assert.equal(inventory['memory-test'][1].subs[1].value,0);
@@ -58,6 +59,8 @@ test('メモリの解放数は個体別。個体IDと実測サブを残し、未
  assert.throws(()=>validateMemoryInventory({'memory-test':[{...next[1],unlockedSlots:1}]},[{id:'memory-test'}]),/一致/);
  assert.throws(()=>resizeMemoryCopies(next,201,()=>''));
  assert.equal(resizeMemoryCopies(next,1,()=>'' )[0].id,'old');
+ const archived={...newMemoryCopy('closed'),unlockedSlots:0,subs:Array.from({length:3},()=>({status:'empty',name:'',unit:'%',value:null}))};
+ assert.deepEqual(resizeMemoryCopies([archived],1,()=>''),[archived]);assert.equal(validateMemoryInventory({'memory-test':[archived]},[{id:'memory-test'}])['memory-test'][0].unlockedSlots,0);
 });
 test('同名メモリのメインは同じでも個体ごとの実測サブを反映する',()=>{
  const memory={id:'memory-test',name:'テスト用',mainEffects:[{name:'採集速度',unit:'%',value:20}],subCandidateSlots:[[{name:'食料採集速度',unit:'%',max:10}],[{name:'採集速度',unit:'%',max:15}],[{name:'食料採集量',unit:'%',max:60}]]};
@@ -81,4 +84,7 @@ test('確認済み枠の登録UIはその枠の選択肢だけ。既存候補外
  const html=subPicker('sub-test','',esc,false,{candidates:[{name:'食料採集速度',max:15,unit:'%'}]});assert.match(html,/select name="sub-test"/);assert.ok(!html.includes('木材採集速度'));assert.ok(!html.includes('data-sub-type'));
  assert.match(subPicker('sub-test','旧名称',esc,false,{candidates:[]}),/既存登録・候補外/);
  assert.match(subPicker('sub-test','',esc,false,{candidates:null}),/候補未照合/);
+ const helper=subPicker('sub-test','食料採集量',esc);assert.match(helper,/種類からアビリティを選ぶ/);
+ for(const resource of ['食料','木材','金属','エーテル'])for(const effect of ['採集量','採集速度'])assert.ok(helper.includes(`data-sub-choice="${resource+effect}"`));
+ assert.ok(!subPicker('closed','',esc,true).includes('data-sub-choice'));
 });

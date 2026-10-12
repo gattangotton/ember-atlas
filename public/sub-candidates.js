@@ -44,10 +44,10 @@ export function candidateOpenSlots(record,item){
 }
 export function resizeMemoryCopies(copies,count,makeId){
  if(!Number.isInteger(count)||count<0||count>200)throw Error('所持数は0～200個にしてください。');
- const next=structuredClone(copies.slice(0,count));while(next.length<count)next.push({id:makeId(),label:'',note:'',unlockedSlots:0,subs:Array.from({length:3},()=>({status:'empty',name:'',unit:'%',value:null}))});return next;
+ const next=structuredClone(copies.slice(0,count));while(next.length<count)next.push({id:makeId(),label:'',note:'',unlockedSlots:1,subs:Array.from({length:3},(_,i)=>({status:i===0?'unknown':'empty',name:'',unit:'%',value:null}))});return next;
 }
 export function setMemoryUnlocked(copy,count){
- if(!Number.isInteger(count)||count<0||count>3)throw Error('解放枠は0～3にしてください。');
+ if(!Number.isInteger(count)||count<1||count>3)throw Error('解放枠は1～3にしてください。');
  if(copy.subs.some((s,i)=>i>=count&&s.status==='set'))throw Error('枠を閉じる前に、その枠の登録を解除してください。');
  return {...copy,unlockedSlots:count,subs:copy.subs.map((s,i)=>i>=count?{status:'empty',name:'',unit:'%',value:null}:s.status==='empty'?{...s,status:'unknown'}:s)};
 }
