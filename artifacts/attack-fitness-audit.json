@@ -1,0 +1,88 @@
+{
+  "verifiedAt": "2026-10-12T05:03:57.287Z",
+  "files": {
+    "DeckBonus": {
+      "sha256": "2a0288c7e9fac9ef88366f37fb55f99e60d21fa48c5d20a0757a3ee540910aba",
+      "unchangedFromImport": true
+    },
+    "Hero": {
+      "sha256": "e6325cea424b2c3cd15d5466ded76f9f2b5022db933b07da289275242864be2a",
+      "unchangedFromImport": true
+    },
+    "SoldierOperationEfficiency": {
+      "sha256": "d45c26a9c2ecd2d2979b7beb6f3e6121d645f9e20dedbbcfab796a8f1fd25a64",
+      "unchangedFromImport": true
+    },
+    "HeroBirthplace": {
+      "sha256": "3677a91c7e32bbbda0124953536022b3978b7b3dd5f821416e63aee8081ded68",
+      "unchangedFromImport": true
+    },
+    "FieldSetting": {
+      "sha256": "49fc50736c86c224e4b42651a0171c54f4ec5514db4d3b45938e40210ca14a9c",
+      "unchangedFromImport": true
+    },
+    "MonsterOrigin": {
+      "sha256": "daf73b611c12df59fe2c843c7c4e12556a1b42c36ae4c5980d47b1e473d4dbc2",
+      "unchangedFromImport": true
+    },
+    "Help": {
+      "sha256": "1836bfac08a91af21e9b93953e8598ab4883f3337b6a17483258ec6ba64e7866",
+      "unchangedFromImport": true
+    },
+    "Skill": {
+      "sha256": "f8b9dee91582c65cb74ee7b35250123ed0d8d7b997de7e322dc018f8b1976a42",
+      "unchangedFromImport": true
+    }
+  },
+  "bonuses": {
+    "second": {
+      "troop": 10,
+      "element": 5,
+      "birthplace": 1,
+      "level": 0.2
+    },
+    "third": {
+      "troop": 5,
+      "element": 2.5,
+      "birthplace": 0.5,
+      "level": 0.1
+    },
+    "support": {
+      "troop": 1,
+      "element": 0.5,
+      "birthplace": 0.1,
+      "level": 0.05
+    }
+  },
+  "rules": [
+    {
+      "source": "Help 3",
+      "title": "編成ボーナス",
+      "text": "編成ボーナスは編成されたすべての兵士の能力を引き上げるボーナスです。\r\nリーダーと同じ属性、同じ得意兵種、同じ出身世界のエンバースを\r\nセカンド/サード/サポートに編成することで\r\n編成ボーナスを獲得することができます。\r\n\r\nリーダーとの相性とは別に、セカンド/サード/サポートに編成される\r\nエンバースのレベルが高いとより高い編成ボーナスを獲得することができます。\r\n\r\nセカンド/サード/サポートの配置によって、編成ボーナスの倍率が変わります。\r\nセカンドが最も高く、サポートが最も低い倍率になります。\r\nそのため同じエンバースでも、どの枠に編成するかによって\r\n獲得できるボーナス値が変わります。\r\n詳細なボーナス値はエンバース編成画面の各エンバースの右上に表示されます。"
+    },
+    {
+      "source": "Help 4",
+      "title": "属性相性",
+      "text": "属性には兵種と同様、相性が設定されています。\r\n属性相性は部隊と魔獣のバトルのダメージ量に影響を与え、\r\n有利属性の相手への攻撃はダメージ量が増えます。\r\n\r\n火＞風＞土＞雷＞水＞火の順に相性有利となり、ダメージ量が増えます。\r\n光と闇は相互にダメージ量が増えます。\r\n\r\n魔獣とのバトルでは属性相性による影響が強く、\r\n部隊同士のバトルでは属性相性による影響が弱くなります。\r\n部隊同士のバトルでは属性相性と同時に兵種相性が影響します。"
+    },
+    {
+      "source": "Help 7",
+      "title": "チャージスキル",
+      "text": "チャージスキルはそれぞれのエンバースが所持している強力な攻撃です。\r\n一定回数の通常攻撃をすることで自動的に発動します。\r\n\r\nチャージスキルの発動順序は、リーダー → セカンド → サードとなり、\r\nリーダーのスキルの発動は10回目の通常攻撃と同時に発動します。\r\n　※移動を挟んでいない場合は10ターン目、20ターン目、...と発動します\r\n\r\nセカンドとサードのチャージスキルはリーダーのチャージスキルの発動から、\r\n2ターン後、4ターン後となります。\r\n　※移動を挟んでいない場合、セカンドは12ターン目、22ターン目、...\r\n　　サードは14ターン目、24ターン目、...と発動します\r\n\r\nチャージスキルの属性はスキルの説明文に記載された属性となります。\r\n\r\nチャージスキルは戦闘可能な対象に効果が適用されます。\r\n　※行軍不可の対象(拠点・宝庫など)にも行軍速度低下のデバフは適用されます"
+    },
+    {
+      "source": "Help 61",
+      "title": "アビリティ効果の補足",
+      "text": "・素材倍化率\n　┗倍化率100%毎に最低獲得量の倍率が+1ずつされ、\n　　端数の確率でさらに獲得量増加の抽選をします\n　　倍化率100%未満時、抽選で獲得量2倍\n　　倍化率101%以上時、最低獲得量2倍、抽選で獲得量3倍となります\n\n・部隊時攻撃力\n　┗部隊として出撃している場合にのみ効果を発揮します\n　　集結部隊でも効果を発揮します\n　　アリーナでも効果を発揮します\n　　施設に駐屯している部隊では効果を発揮しません\n　　宝庫を防衛している部隊や資源地で採集している部隊では\n　　効果を発揮しません\n\n・攻撃力\n　┗自身の部隊に編成された兵士に対して効果を発揮します\n　　兵種に関わらず、すべての兵種に対して効果を発揮します\n　　\n・対歩兵攻撃力\n　┗指定された兵種が7割以上編成された部隊に対して効果を発揮します\n　　弓兵や騎兵を指定する場合も同様です\n\n・歩兵攻撃力\n　┗自身の部隊に編成された兵種に対して効果を発揮します\n　　対象の兵種を部隊に編成していれば魔獣にも効果を発揮します\n　　対兵種アビリティのような編成比率に関する条件はありません\n　　アビリティの効果量表示は100％歩兵で編成した場合の効果量を表します\n　　歩兵編成が100％ではない比率になる場合、比率分効果量が減少します\n　　弓兵や騎兵を指定する場合も同様です\n\n・歩兵防御効率\n　┗自身の部隊に編成された兵種に対して効果を発揮します\n　　対象の兵種を部隊に編成していれば魔獣にも効果を発揮します\n　　対兵種アビリティのような編成比率に関する条件はありません\n　　攻撃力と違い、防御効率の効果量は部隊で共通となります\n　　アビリティの効果量表示は100％歩兵で編成した場合の効果量を表します\n　　歩兵編成が100％ではない比率になる場合、比率分効果量が減少します\n　　弓兵や騎兵を指定する場合も同様です\n\n・対大型魔獣攻撃力\n　┗大型魔獣とはレイド魔獣と集結魔獣が対象となります\n\n・対施設攻撃力、施設防衛時攻撃力\n　┗施設とはゲート、泉、拠点、ポータル、アルター、要塞、ソドムが対象となります\n　　宝庫、秘宝庫、資源地は対象外です\n\n・対宝庫攻撃力\n　┗宝庫、秘宝庫に対して効果を発揮します\n\n・建設加速(秒)と建設速度\n　┗建設加速(秒)アビリティは、建設速度アビリティの効果を\n　　適用後に秒の単位でさらに建設時間を短縮するアビリティです\n　　研究加速(秒)と研究速度のアビリティも同様の順序で\n　　研究時間が短縮されます\n\n・与ダメージ\n　┗自分の与ダメージ増加と相手の被ダメージ増加は累積します\n　　累積時上限200%\n\n・被ダメージ\n　┗自分の被ダメージ減少と相手の与ダメージ減少は累積します\n　　累積時下限-75%\n\n・コイン獲得量\n　┗アビリティ名に記載のある特定のコインが獲得できる期間にて\n　　魔獣討伐時に獲得できるコインの量を対象アビリティの効果量に\n　　応じて増加します\n　　例)\n　　アビリティ「ニュクス[蒼炎]コイン獲得量」は\n　　魔獣討伐時にニュクス[蒼炎]コインの獲得量が対象です\n\n　　ストーリーでのバトルやレイドバトル、魔獣討伐時以外では増加しません\n　　また、魔獣討伐時にコインが入手できない場合については\n　　このアビリティの効果は発動しません\n　　集結攻撃時では、対象アビリティを所持しているプレイヤーのみに\n　　効果が発動します\n\n・サポートエンバース解放\n　┗部隊にサポートエンバースを編成できるようになります。\n　　サポートエンバースを設定した際の効果は、レイドバトルと同様に\n　　部隊の編成ボーナスが増えます。\n　　ストーリー、レイドバトル、アリーナ部隊以外で効果を発揮します\n\n・装備サブアビリティ強化\n　┗装備製作時およびシャッフル時に抽選されるサブアビリティの候補から、\n　　アビリティの効果量に応じて、【最も効果量が低い候補を1つ分除外します】\n　　除外された候補は、サブアビリティの候補一覧からも非表示となります\n　　除外されない他の候補の抽選確率は、\n　　除外後の抽選内容ですべて再計算され上昇します\n\n・メモリサブアビリティ強化\n　┗メモリ生成時およびシャッフル時に抽選されるサブアビリティの候補から、\n　　アビリティの効果量に応じて、【最も効果量が低い候補を1つ分除外します】\n　　除外された候補は、サブアビリティの候補一覧からも非表示となります\n　　サブアビリティの提供割合一覧からも非表示となります\n　　除外されない他の候補の抽選確率は、\n　　除外後の抽選内容ですべて再計算され上昇します\n\n※アップデートによりアビリティの注釈が増減することがあります\n　補足が必要になるアビリティの種類が増減することがあります\n※効果の適用範囲に指定がない限り、\n　フィールド、アリーナ、レイドバトル、ストーリーいずれでも有効です"
+    }
+  ],
+  "model": {
+    "scale": "100 times the existing team comparison index. Baseline = 100; not a percentage or a damage prediction.",
+    "candidates": "Replace exactly one selected slot, keeping gear/memory/base and the other slots fixed. Leader replacement recalculates leader element. Duplicate hero options disabled.",
+    "partner": "Ordered second/third combinations, plus remaining supports chosen by DeckBonus. Optional troop/element/origin match filter.",
+    "support": "Only DeckBonus: no trigger, charge or active skill contributions. Hero level taken from registered progress; unknown levels receive no guessed level bonus.",
+    "charge": "Optional existing active buff/debuff comparison: strongest same kind, outgoing plus enemy incoming capped at 200%. Power/rotation/healing/defence debuffs are displayed as source text, not converted to damage.",
+    "affinity": "World monster coefficient (FieldSetting[34]), used for normal/counter only. Charge has its own skill element (Help 7), not automatically the leader element; no guessed multiplier for charge.",
+    "auto": "Each leader compared with gear and memories optimized for that element/troop, then partners/supports selected. This is a comparison search, not a verified optimal combat simulation."
+  }
+}

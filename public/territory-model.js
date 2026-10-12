@@ -9,7 +9,8 @@ export function formationBonus(heroes,state={},data=DATA){
  const leader=heroes[0]?.record,origin=leader&&heroCombat(leader,data)?.birthplace,rows=[];let unknown=0;
  const sameWorld=(a,b)=>a!=null&&b!=null&&a!==0&&b!==0&&(a===b||data.equivalentBirthplaces.some(g=>g.includes(a)&&g.includes(b)));
  for(let i=1;i<heroes.length;i++){
-  const h=heroes[i],r=h.record,slot=h.support?'support':i===1?'second':'third',b=data.bonuses[slot],level=h.heroLevel??state.progress?.[r.id]?.level??0,world=heroCombat(r,data)?.birthplace;
+  const h=heroes[i],r=h?.record;if(!r)continue;
+  const slot=h.support?'support':h.slot||(i===1?'second':'third'),b=data.bonuses[slot],level=h.heroLevel??state.progress?.[r.id]?.level??0,world=heroCombat(r,data)?.birthplace;
   const matches={troop:!!leader?.troop&&leader.troop===r.troop,element:!!leader?.element&&leader.element===r.element,birthplace:sameWorld(origin,world)};
   if(!level)unknown++;if(origin==null||world==null)unknown++;
   const parts={...Object.fromEntries(Object.entries(matches).map(([k,v])=>[k,v?b[k]:0])),level:level*b.level};
@@ -24,7 +25,8 @@ export function combatFactors(heroes,context,state={},data=DATA){
  return {bonus,efficiency:efficiency??1,affinity,attributeApplied,attributeUnknown,unknown:bonus.unknown+(efficiency==null?1:0)+(attributeUnknown?1:0),factor:(1+bonus.total/100)*(efficiency??1)*affinity};
 }
 export function evaluateTerritoryTeam({heroes,...args},data=DATA){
- const result=simulateLoadout({...args,heroes:heroes.filter(h=>!h.support)}),factors=combatFactors(heroes,args.context,args.state,data);
+ const selected=heroes.filter(h=>h?.record);
+ const result=simulateLoadout({...args,heroes:selected.filter(h=>!h.support)}),factors=combatFactors(heroes,args.context,args.state,data);
  return {result,factors,index:round(result.comparisonIndex*factors.factor),unknown:result.unknown+factors.unknown};
 }
 
