@@ -17,28 +17,27 @@ test('候補はアイテム・枠単位で独立し、未知と空の確定リ�
  assert.throws(()=>validateCandidateCatalog({'equipment-test':{source:'test',slots:[[{name:'採取速度',max:1},{name:'採集速度',max:2}],[],[]]}}),/重複/);
  assert.throws(()=>validateCandidateCatalog({'equipment-test':{source:'test',slots:[[{name:'採集速度',max:NaN}],[],[]]}}));
 });
-test('スロット内候補は加算せず最大1種類。資源とグレードを一致させる',()=>{
+test('候補比較はメインのみ。実際のサブ効果とグレード・資源別の計算は保持する',()=>{
  const r=withCandidates(record,catalog);const item={record:r,grade:5,owned:true,subAbilities:[{name:'食料採集速度',value:3},null,null]};
- const s=candidateScore(item,'gear',context);assert.equal(s.main,30);assert.equal(s.sub,3);assert.equal(s.cap,35);assert.equal(s.upper,65);assert.equal(s.actual,33);
- assert.equal(candidateScore({...item,grade:1},'gear',context).cap,15);
- assert.equal(candidateScore({...item,grade:6},'gear',context).cap,35); // Normal equipment never unlocks slot 3.
- assert.equal(candidateScore({...item,record:{...r,raid:'yes'},grade:6},'gear',context).cap,1034);
- assert.equal(candidateScore(item,'gear',{...context,resource:'木材'}).cap,50);
+ const s=candidateScore(item,'gear',context);assert.equal(s.main,30);assert.equal(s.sub,3);assert.equal(s.actual,33);assert.equal(s.cap,undefined);assert.equal(s.upper,undefined);
+ assert.equal(candidateScore({...item,grade:1},'gear',context).main,10);
+ assert.equal(candidateScore({...item,grade:6},'gear',context).main,40);
+ assert.equal(candidateScore(item,'gear',{...context,resource:'木材'}).sub,0);
  assert.equal(simulateLoadout({context,gear:[item],base:{mode:'none'}}).total,33); // The ceiling does not enter the actual simulation.
 });
-test('未確認候補・上限・解放数をゼロの上限に変換しない',()=>{
- const raw=candidateScore({record,grade:5,subAbilities:[]},'gear',context);assert.equal(raw.upper,null);assert.equal(raw.unknown,2);
+test('候補プールや上限の有無に関わらずメインを比較し、未確認メインを明示する',()=>{
+ const raw=candidateScore({record,grade:5,subAbilities:[]},'gear',context);assert.equal(raw.main,30);assert.equal(raw.mainUnknown,0);
  const r=withCandidates(record,{'equipment-test':{slots:[[{name:'食料採集速度',unit:'%',max:null}],[],null]}});
- assert.equal(candidateScore({record:r,grade:1,subAbilities:[]},'gear',context).upper,null);
- const partial={...record,subCandidates:[{slot:1,name:'採集速度',value:4}]};assert.equal(slotCandidates(partial,1)[0].max,4);assert.equal(candidateScore({record:partial,grade:1},'gear',context).upper,null);
- assert.equal(candidateScore({record:{...r,mainAbilities:[{name:'採集速度',unit:'%',values:[null]}]},grade:1},'gear',context).upper,null);
+ assert.equal(candidateScore({record:r,grade:1,subAbilities:[]},'gear',context).main,10);
+ const partial={...record,subCandidates:[{slot:1,name:'採集速度',value:4}]};assert.equal(slotCandidates(partial,1)[0].max,4);assert.equal(candidateScore({record:partial,grade:1},'gear',context).main,10);
+ const missing=candidateScore({record:{...r,mainAbilities:[{name:'採集速度',unit:'%',values:[null]}]},grade:1},'gear',context);assert.equal(missing.main,0);assert.ok(missing.mainUnknown>0);
 });
-test('武具の上限は選択グレードに合わせ、未確認グレードを他の値で補わない',()=>{
+test('過去のグレード別上限設定は保持するがメイン比較に使わない',()=>{
  const config=validateCandidateCatalog({'equipment-test':{source:'検証用グレード表',slots:[[{name:'食料採集速度',unit:'%',max:999,gradeMax:[2,4,null,8,10,12]}],[],null]}});
  const r=withCandidates(record,config);
- assert.equal(candidateScore({record:r,grade:1},'gear',context).cap,2);
- assert.equal(candidateScore({record:r,grade:5},'gear',context).cap,10);
- assert.equal(candidateScore({record:r,grade:3},'gear',context).upper,null);
+ assert.equal(candidateScore({record:r,grade:1},'gear',context).main,10);
+ assert.equal(candidateScore({record:r,grade:5},'gear',context).main,30);
+ assert.equal(candidateScore({record:r,grade:3},'gear',context).main,20);
  assert.equal(slotCandidates(r,1,6)[0].max,12);
  assert.equal(slotCandidates(r,1)[0].gradeMax.length,6);
  assert.throws(()=>validateCandidateCatalog({'equipment-test':{source:'test',slots:[[{name:'採集速度',max:null,gradeMax:[1,2]}],[],null]}}));
@@ -60,15 +59,17 @@ test('メモリの解放数は個体別。個体IDと実測サブを残し、未
  assert.throws(()=>resizeMemoryCopies(next,201,()=>''));
  assert.equal(resizeMemoryCopies(next,1,()=>'' )[0].id,'old');
 });
-test('同名メモリでもコピーの解放枠に応じて候補の上限が変わる',()=>{
+test('同名メモリのメインは同じでも個体ごとの実測サブを反映する',()=>{
  const memory={id:'memory-test',name:'テスト用',mainEffects:[{name:'採集速度',unit:'%',value:20}],subCandidateSlots:[[{name:'食料採集速度',unit:'%',max:10}],[{name:'採集速度',unit:'%',max:15}],[{name:'食料採集量',unit:'%',max:60}]]};
  const copies=resizeMemoryCopies([],2,(()=>{let i=0;return()=>`c${++i}`;})());copies[0]=setMemoryUnlocked(copies[0],1);copies[1]=setMemoryUnlocked(copies[1],3);
- assert.equal(candidateScore({record:memory,copy:copies[0]},'memory',context).upper,30);assert.equal(candidateScore({record:memory,copy:copies[1]},'memory',context).upper,45);
- assert.equal(candidateScore({record:memory},'memory',context).cap,25);
+ copies[0].subs[0]={status:'set',name:'食料採集速度',unit:'%',value:4};copies[1].subs[1]={status:'set',name:'採集速度',unit:'%',value:9};
+ const a=candidateScore({record:memory,copy:copies[0]},'memory',context),b=candidateScore({record:memory,copy:copies[1]},'memory',context);
+ assert.equal(a.main,20);assert.equal(b.main,20);assert.equal(a.sub,4);assert.equal(b.sub,9);assert.equal(a.actual,24);assert.equal(b.actual,29);
+ assert.equal(candidateScore({record:memory},'memory',context).actual,20);
 });
-test('候補順は上限合計順。未確認は現在の判明値で比較し、同値は安定順',()=>{
- const items=[{key:'low',label:'あ',candidateScore:{upper:10,actual:10}},{key:'high',label:'い',candidateScore:{upper:50,actual:2}},{key:'unknown',label:'う',candidateScore:{upper:null,actual:40}},{key:'tie',label:'え',candidateScore:{upper:50,actual:3}}];
- assert.deepEqual(items.sort(compareCandidateScores).map(x=>x.key),['tie','high','unknown','low']);
+test('候補順はメインのみ。サブ・上限で逆転せず、同値は既知と名前の安定順',()=>{
+ const items=[{key:'low',label:'あ',candidateScore:{main:10,actual:1000,upper:1000}},{key:'high',label:'い',candidateScore:{main:50,actual:50}},{key:'unknown',label:'あ',candidateScore:{main:50,mainUnknown:1,actual:9999}},{key:'tie',label:'う',candidateScore:{main:50,actual:100}}];
+ assert.deepEqual(items.sort(compareCandidateScores).map(x=>x.key),['high','tie','unknown','low']);
 });
 test('ゲーム内の効果辞書は候補一覧ではなく名称の入力補助として保持する',async()=>{
  const {GAME_ABILITY_NAMES}=await import('../public/game-ability-names.js');assert.equal(GAME_ABILITY_NAMES.length,395);assert.ok(GAME_ABILITY_NAMES.includes('食料採集速度'));
