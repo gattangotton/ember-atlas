@@ -1,3 +1,4 @@
+import {OFFICIAL_ROADMAP,roadmapDialog} from './roadmap-ui.js';
 import {withCandidates,validateCandidateCatalog} from './sub-candidates.js';
 import {createCandidateUI} from './sub-candidate-ui.js';
 import {NEW_ROUTES,newBadge} from './whats-new.js';
@@ -164,6 +165,7 @@ document.addEventListener('click',e=>{const menu=e.target.closest('[data-menu-to
 document.addEventListener('click',e=>{const b=e.target.closest('[data-character-filter]');if(!b)return;const key=b.dataset.characterFilter,value=b.dataset.value;if(key==='element')element=value;else if(key==='troop')troop=value;else if(key.startsWith('skill-'))characterFilters.skills[key.slice(6)]=value;else characterFilters[key]=value;page=1;const group=b.closest('fieldset');group.querySelectorAll('button').forEach(x=>{const active=x===b;x.setAttribute('aria-pressed',String(active));x.classList.toggle('selected',active);});renderResults();});
 document.addEventListener('click',e=>{const b=e.target.closest('[data-action]');if(!b)return;const id=b.dataset.id;try{switch(b.dataset.action){
  case 'utility-open':$('#dialog').close();break;case 'raid-index':$('#dialog').close();break;case 'navigate':navigate(b.dataset.route);break;case 'close':$('#dialog').close();break;case 'profile':profileForm();break;
+ case 'official-roadmap':modal(OFFICIAL_ROADMAP.title,roadmapDialog(esc),true);break;
  case 'detail':details(id,Number(b.dataset.grade)||1);break;case 'progress-edit':progressForm(id);break;case 'record-add':recordForm();break;case 'record-edit':recordForm(id);break;
  case 'reset-source-values':{
   const r=records.find(x=>x.id===id);if(!r?.siteEvidence)break;

@@ -1,0 +1,194 @@
+{
+  "capturedAt": "2026-10-17",
+  "added": {
+    "heroes": [
+      {
+        "masterId": 82,
+        "name": "リアム[夜魔]"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "equipment-pc-20016",
+        "masterId": 20016,
+        "name": "チリアットグローブ"
+      }
+    ],
+    "memories": [
+      {
+        "masterId": 78,
+        "name": "書庫の奥の吸血鬼"
+      },
+      {
+        "masterId": 79,
+        "name": "エンバース対抗大運動会"
+      },
+      {
+        "masterId": 10032,
+        "name": "ゲーリュオーン"
+      }
+    ]
+  },
+  "changedEquipment": [],
+  "files": {
+    "Ability": {
+      "sha256": "04083826fc3186eb3b9063c6c1c810cbe1376f5a10a2abcc11ed135dcb41382a",
+      "changed": false
+    },
+    "Equipment": {
+      "sha256": "39a375b914d3ee6c82b89aa1b69b2636b914fc051f2324886fe8284dc28baf4b",
+      "changed": true
+    },
+    "Research": {
+      "sha256": "ee8b690e10fc69ca5326090e81684fb30c89ac35d6b0a9c555b69220ff55cbc2",
+      "changed": true
+    },
+    "Building": {
+      "sha256": "f392ef95fecdc6c7640dc3d41b9474dfcbaa350e8b43c5cc3488f12c23297378",
+      "changed": true
+    },
+    "Hero": {
+      "sha256": "886d7d286799552fdeb7fe36977d3eca9444722ac79d41bd89f548a644082aa6",
+      "changed": true
+    },
+    "Skill": {
+      "sha256": "5368d394f4318da2e6db31b5420079200f40313625e79e68d37b88b04daa56a6",
+      "changed": true
+    },
+    "HeroActiveSkillLevel": {
+      "sha256": "3b3e5cf7f3f6243668134555be2095db8261401de7ac1a551a9dabb6f66c9203",
+      "changed": true
+    },
+    "CoreAbility": {
+      "sha256": "61827c1b151b4112b5b9ac43022efe2ee5dc7d2abdeeff69c595a0dfa64df487",
+      "changed": true
+    },
+    "Enhancer": {
+      "sha256": "aef1be7fce13f767767d8d2d3693fa7489cbc760d6f216d036b90859e80eec9e",
+      "changed": true
+    },
+    "ShopPack": {
+      "sha256": "6e68e2b957885f94835632be9840437646e66916d84995ba783b2da5275dbcc3",
+      "changed": true
+    },
+    "ShopItem": {
+      "sha256": "3b4851e6efd23a72d67ce1560099f4d47fab28651b42c9192ebf2b03eea16d82",
+      "changed": true
+    },
+    "Shop": {
+      "sha256": "c1f39b52dd6df2f4bd522fdb6ff16bac0709270ee9fc33a9197fa50d243706d0",
+      "changed": true
+    },
+    "Event": {
+      "sha256": "ec007b5c6089434c566d9261e6906b2a893667f1a48fab7d94f376b0c4abedac",
+      "changed": true
+    },
+    "Consumable": {
+      "sha256": "22c5040e3d397d6b59835b2e1c777bddcbd2ae020aa97b40f4c593ec051d22d3",
+      "changed": true
+    },
+    "Piece": {
+      "sha256": "599448c3f00837183c9a0d28658efba8ceaa6e27143b895d17cd7fefa681b504",
+      "changed": true
+    },
+    "Announcement": {
+      "sha256": "5c4f836499cab86c140aa3405df3e77efc4fc08e5d43f1d88d8892ed1e7394fe",
+      "changed": true
+    },
+    "DeckBonus": {
+      "sha256": "2a0288c7e9fac9ef88366f37fb55f99e60d21fa48c5d20a0757a3ee540910aba",
+      "changed": false
+    },
+    "SoldierOperationEfficiency": {
+      "sha256": "d45c26a9c2ecd2d2979b7beb6f3e6121d645f9e20dedbbcfab796a8f1fd25a64",
+      "changed": true
+    },
+    "HeroBirthplace": {
+      "sha256": "3677a91c7e32bbbda0124953536022b3978b7b3dd5f821416e63aee8081ded68",
+      "changed": true
+    },
+    "FieldSetting": {
+      "sha256": "49fc50736c86c224e4b42651a0171c54f4ec5514db4d3b45938e40210ca14a9c",
+      "changed": true
+    },
+    "MonsterOrigin": {
+      "sha256": "daf73b611c12df59fe2c843c7c4e12556a1b42c36ae4c5980d47b1e473d4dbc2",
+      "changed": false
+    },
+    "Help": {
+      "sha256": "a6fc464246bcd5a75ed3b05d90c2161ab25df0637fdfaa96a7f172f437b42fc4",
+      "changed": true
+    },
+    "TroopAbilityAggregation": {
+      "sha256": "f0f250285eaf7e19f7741c013ebeb320ab46fb0951d85248051701beb5d4a639",
+      "changed": false
+    },
+    "EnhancerSetting": {
+      "sha256": "62f9fe1cf7fca8a4c326c6d091d40364fe0139579909f023442f5278fab0e1ba",
+      "changed": false
+    },
+    "FieldArtifact": {
+      "sha256": "ebb67ba4d982c64ba259ff7419c0d7ff4825ec45cd8ae705f4ee5efce50a2ea8",
+      "changed": false
+    }
+  },
+  "images": {
+    "hero-thumbnail-00082.png": {
+      "asset": "Assets/SwitchingAssets/Remote/Hero/Thumbnail/00082.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "46f14e7380175297b114454507e74d4f2133547d80787807647e27b38c9a693c"
+    },
+    "hero-portrait-00082.png": {
+      "asset": "Assets/SwitchingAssets/Remote/Hero/Portrait/00082.png",
+      "width": 148,
+      "height": 240,
+      "sha256": "8553f537593314c9b97f8236ca370137c4bee9f0fd935e81026bd7d58de43166"
+    },
+    "equipment-largethumbnail-00108.png": {
+      "asset": "Assets/SwitchingAssets/Remote/Equipment/LargeThumbnail/00108.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "d855a0d7158a02ed8b70374531a5ae62b73ca40dca8f77b69f403d46eb089790"
+    },
+    "enhancer-thumbnail-10018.png": {
+      "asset": "Assets/SwitchingAssets/Remote/Enhancer/Thumbnail/10018.png",
+      "width": 256,
+      "height": 256,
+      "sha256": "5f2ced743c1b92b6e9c97e3cb28fc6e99aa1afd9e70c60a648582e7f5f23baf0"
+    },
+    "enhancer-thumbnail-00079.png": {
+      "asset": "Assets/SwitchingAssets/Remote/Enhancer/Thumbnail/00079.png",
+      "width": 256,
+      "height": 256,
+      "sha256": "5365390d961051f7f8621adc77954dd2959a3d2ce0ec721bc1d6d5b511caecef"
+    },
+    "enhancer-thumbnail-00078.png": {
+      "asset": "Assets/SwitchingAssets/Remote/Enhancer/Thumbnail/00078.png",
+      "width": 256,
+      "height": 256,
+      "sha256": "60cb0ec561df4cd56ceedf4efb93b5b941ca5dbe2fa7deb678ca357ed160b498"
+    },
+    "roadmap-2026-08.png": {
+      "asset": "Assets/SwitchingAssets/Remote/Document/Detail/00574.png",
+      "width": 720,
+      "height": 400,
+      "sha256": "1ab11593983ecabdadcdc26c2f5062bb72f57f0fdcf08d1e085169e22aabdacf"
+    }
+  },
+  "roadmap": {
+    "announcementId": 841,
+    "imageId": 574,
+    "title": "ロードマップ(2026/8月版)公開！",
+    "publishedAt": "2026-08-06",
+    "checkedAt": "2026-10-17",
+    "latestInCachedAnnouncements": true
+  },
+  "relatedData": {
+    "existingHeroSkills": "unchanged after full source comparison",
+    "researchCostsAndEffects": "unchanged; includes the previously imported military II nodes 305/306/307",
+    "buildingCostsAndEffects": "unchanged; Building 2015 is a decorative statue, not a levelled construction facility",
+    "memory10032Acquisition": "unconfirmed; not labelled paid or free",
+    "territory": "Hero 82 origin/efficiency imported; charge 82 classified as debuff from enemy incoming damage increase"
+  }
+}

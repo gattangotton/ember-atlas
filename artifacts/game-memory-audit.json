@@ -1,6 +1,6 @@
 {
-  "total": 90,
-  "imported": 82,
+  "total": 93,
+  "imported": 85,
   "unnamedExcluded": [
     1,
     4,
@@ -21,9 +21,9 @@
       "name": "テンプルドラゴン"
     }
   ],
-  "images": 82,
-  "generationCosts": 82,
-  "paidSources": 43,
+  "images": 85,
+  "generationCosts": 85,
+  "paidSources": 45,
   "eventExchangeOrMonsterSources": 34,
   "acquisitionUnconfirmed": [
     {
@@ -45,6 +45,10 @@
     {
       "id": "memory-10029",
       "name": "オルム"
+    },
+    {
+      "id": "memory-10032",
+      "name": "ゲーリュオーン"
     }
   ],
   "subAbilityCandidates": "Enhancer field 8 contains empty objects; candidate values and probabilities are not inferred."

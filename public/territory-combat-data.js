@@ -1,6 +1,6 @@
 // Generated from local game masters; see artifacts/territory-combat-audit.json.
 export const TERRITORY_COMBAT={
-  "capturedAt": "2026-10-11",
+  "capturedAt": "2026-10-17",
   "bonuses": {
     "second": {
       "troop": 10,
@@ -695,6 +695,15 @@ export const TERRITORY_COMBAT={
         "歩兵": 0.8,
         "弓兵": 0.8,
         "騎兵": 1
+      }
+    },
+    "82": {
+      "name": "リアム[夜魔]",
+      "birthplace": 6,
+      "efficiency": {
+        "歩兵": 0.8,
+        "弓兵": 1,
+        "騎兵": 0.8
       }
     }
   },

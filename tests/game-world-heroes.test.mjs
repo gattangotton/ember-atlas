@@ -9,8 +9,8 @@ import {expandAltarBuildings} from '../public/building-definitions.js';
 const read=n=>JSON.parse(fs.readFileSync(new URL('../public/data/'+n+'.json',import.meta.url)));
 const heroes=read('game-heroes'),game=read('game-masters'),images=read('game-images');
 const hero=id=>Object.entries(heroes.characters).find(([,r])=>r.masterId===id);
-test('All 72 heroes have five complete skill descriptions, valid numeric tables and cumulative cores',()=>{
- assert.equal(Object.keys(heroes.characters).length,72);assert.equal(heroes.extraRecords.length,1);
+test('All 73 heroes have five complete skill descriptions, valid numeric tables and cumulative cores',()=>{
+ assert.equal(Object.keys(heroes.characters).length,73);assert.equal(heroes.extraRecords.length,2);
  for(const [id,r] of Object.entries(heroes.characters)){
   validateRecord({id,kind:'characters',...r,portrait:images.heroes[id]});
   for(const [k,n] of Object.entries({charge:7,active:5,trigger1:7,trigger2:7,trigger3:7})){assert.equal(r.skillDescriptions[k].length,n);assert.ok(r.skillDescriptions[k].every(t=>t.length>0));assert.ok(r.skills[k].effects.length);}
@@ -46,6 +46,6 @@ test('Research and all facility levels receive exact master costs; appearance ch
  for(const building of b.buildings)for(const l of building.levels){assert.ok(l.resources.every(v=>Number.isFinite(v)&&v>=0));assert.ok(l.image);}
 });
 test('Every published native texture exists and all requested asset groups are complete',()=>{
- assert.equal(Object.keys(images.equipment).length,207);assert.equal(Object.keys(images.heroes).length,72);assert.equal(Object.keys(images.raids).length,6);assert.equal(Object.keys(images.icons).length,11);assert.equal(images.missing.length,0);
+ assert.equal(Object.keys(images.equipment).length,208);assert.equal(Object.keys(images.heroes).length,73);assert.equal(Object.keys(images.raids).length,6);assert.equal(Object.keys(images.icons).length,11);assert.equal(images.missing.length,0);
  for(const group of ['equipment','heroes','raids','icons','buildings'])for(const p of Object.values(images[group]))assert.ok(fs.existsSync(new URL('../public/'+p,import.meta.url)),p);
 });

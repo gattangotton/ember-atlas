@@ -4,7 +4,7 @@
       "sha256": "2a0288c7e9fac9ef88366f37fb55f99e60d21fa48c5d20a0757a3ee540910aba"
     },
     "Hero": {
-      "sha256": "e6325cea424b2c3cd15d5466ded76f9f2b5022db933b07da289275242864be2a"
+      "sha256": "886d7d286799552fdeb7fe36977d3eca9444722ac79d41bd89f548a644082aa6"
     },
     "SoldierOperationEfficiency": {
       "sha256": "d45c26a9c2ecd2d2979b7beb6f3e6121d645f9e20dedbbcfab796a8f1fd25a64"
@@ -19,11 +19,11 @@
       "sha256": "daf73b611c12df59fe2c843c7c4e12556a1b42c36ae4c5980d47b1e473d4dbc2"
     },
     "Help": {
-      "sha256": "1836bfac08a91af21e9b93953e8598ab4883f3337b6a17483258ec6ba64e7866"
+      "sha256": "a6fc464246bcd5a75ed3b05d90c2161ab25df0637fdfaa96a7f172f437b42fc4"
     }
   },
   "data": {
-    "capturedAt": "2026-10-11",
+    "capturedAt": "2026-10-17",
     "bonuses": {
       "second": {
         "troop": 10,
@@ -718,6 +718,15 @@
           "歩兵": 0.8,
           "弓兵": 0.8,
           "騎兵": 1
+        }
+      },
+      "82": {
+        "name": "リアム[夜魔]",
+        "birthplace": 6,
+        "efficiency": {
+          "歩兵": 0.8,
+          "弓兵": 1,
+          "騎兵": 0.8
         }
       }
     },

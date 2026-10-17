@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "capturedAt": "2026-10-03",
-  "source": "PC版ローカルマスター（2026-10-03取得）",
+  "capturedAt": "2026-10-17",
+  "source": "PC版ローカルマスター（2026-10-17照合）",
   "files": {
     "Ability": {
       "sha256": "04083826fc3186eb3b9063c6c1c810cbe1376f5a10a2abcc11ed135dcb41382a",
@@ -9,22 +9,22 @@
       "versionHex": "3461636663623566636637663939393336303830313635366535643732316631"
     },
     "Equipment": {
-      "sha256": "904301e4ffa339dcfa9092d89e04e614adcb74b7e9ae18c2b26844112ba55beb",
+      "sha256": "39a375b914d3ee6c82b89aa1b69b2636b914fc051f2324886fe8284dc28baf4b",
       "bytes": 153849,
       "versionHex": "3431376130316539373262306434613439666331333061613736663230313261"
     },
     "Research": {
-      "sha256": "11d4e0651c979a1361661c57f0795fa645e2b08b334177f420f4a30555316a68",
+      "sha256": "ee8b690e10fc69ca5326090e81684fb30c89ac35d6b0a9c555b69220ff55cbc2",
       "bytes": 198243,
       "versionHex": "6166326331643335326338646266623739346462353530373565316533633634"
     },
     "Building": {
-      "sha256": "fb534eee3a8b79ec9f2160e64a605ab88c4bffa61c53b60a89d9c4aa00a2840a",
-      "bytes": 72679
+      "sha256": "f392ef95fecdc6c7640dc3d41b9474dfcbaa350e8b43c5cc3488f12c23297378",
+      "bytes": 72788
     },
     "Help": {
-      "sha256": "a9da8ecba86fec856078790c77986623ca34cc039daf4b1c37aa420bd0534ce0",
-      "bytes": 197600
+      "sha256": "a6fc464246bcd5a75ed3b05d90c2161ab25df0637fdfaa96a7f172f437b42fc4",
+      "bytes": 197736
     }
   },
   "extraRecords": [
@@ -170,6 +170,17 @@
         "sheet": "PC版 Equipment",
         "row": 50201
       }
+    },
+    {
+      "id": "equipment-pc-20016",
+      "kind": "equipment",
+      "name": "チリアットグローブ",
+      "slot": "装飾",
+      "note": "チリアットの脚刃があしらわれた危険なグローブ。\n刃の硬さと鋭さはそのまま武器としても遜色がない。\n戦場を駆けるだけでも敵の目には恐怖が浮かぶだろう。",
+      "source": {
+        "sheet": "PC版 Equipment",
+        "row": 20016
+      }
     }
   ],
   "equipment": {
@@ -226,7 +237,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 221。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 221。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -293,7 +304,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 50092。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 50092。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -360,7 +371,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 20011。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 20011。各グレードの合計値。",
       "raid": "yes",
       "unlockGrades": [
         1,
@@ -427,7 +438,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 40001。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 40001。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -494,7 +505,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 10001。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 10001。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -561,7 +572,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 151。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 151。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -628,7 +639,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 50031。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 50031。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -695,7 +706,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 212。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 212。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -762,7 +773,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 121。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 121。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -829,7 +840,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 101。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 101。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -896,7 +907,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 20062。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 20062。各グレードの合計値。",
       "raid": "yes",
       "unlockGrades": [
         1,
@@ -963,7 +974,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 226。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 226。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -1030,7 +1041,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 172。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 172。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -1097,7 +1108,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 112。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 112。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -1164,7 +1175,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 20002。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 20002。各グレードの合計値。",
       "raid": "yes",
       "unlockGrades": [
         1,
@@ -1231,7 +1242,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 20042。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 20042。各グレードの合計値。",
       "raid": "yes",
       "unlockGrades": [
         1,
@@ -1298,7 +1309,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 252。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 252。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -1365,7 +1376,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 122。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 122。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -1432,7 +1443,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 50032。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 50032。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -1499,7 +1510,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 132。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 132。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -1566,7 +1577,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 50002。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 50002。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -1633,7 +1644,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 50093。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 50093。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -1700,7 +1711,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 50083。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 50083。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -1767,7 +1778,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 133。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 133。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -1834,7 +1845,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 20013。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 20013。各グレードの合計値。",
       "raid": "yes",
       "unlockGrades": [
         1,
@@ -1901,7 +1912,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 10003。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 10003。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -1968,7 +1979,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 183。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 183。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -2035,7 +2046,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 50202。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 50202。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -2102,7 +2113,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 193。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 193。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -2169,7 +2180,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 203。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 203。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -2249,7 +2260,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 273。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 273。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -2317,7 +2328,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 20014。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 20014。各グレードの合計値。",
       "raid": "yes",
       "unlockGrades": [
         1,
@@ -2384,7 +2395,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 124。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 124。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -2451,7 +2462,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 154。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 154。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -2518,7 +2529,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 114。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 114。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -2585,7 +2596,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 10014。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 10014。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -2652,7 +2663,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 184。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 184。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -2719,7 +2730,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 194。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 194。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -2786,7 +2797,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 204。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 204。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -2853,7 +2864,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 215。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 215。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -2920,7 +2931,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 104。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 104。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -2987,7 +2998,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 20065。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 20065。各グレードの合計値。",
       "raid": "yes",
       "unlockGrades": [
         1,
@@ -3054,7 +3065,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 10006。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 10006。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -3121,7 +3132,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 20025。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 20025。各グレードの合計値。",
       "raid": "yes",
       "unlockGrades": [
         1,
@@ -3188,7 +3199,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 20055。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 20055。各グレードの合計値。",
       "raid": "yes",
       "unlockGrades": [
         1,
@@ -3255,7 +3266,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 105。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 105。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -3322,7 +3333,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 20015。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 20015。各グレードの合計値。",
       "raid": "yes",
       "unlockGrades": [
         1,
@@ -3389,7 +3400,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 175。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 175。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -3456,7 +3467,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 205。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 205。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -3523,7 +3534,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 235。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 235。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -3590,7 +3601,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 50015。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 50015。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -3657,7 +3668,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 50025。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 50025。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -3724,7 +3735,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 125。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 125。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -3791,7 +3802,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 115。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 115。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -3858,7 +3869,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 40002。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 40002。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -3925,7 +3936,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 40004。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 40004。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -3992,7 +4003,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 20001。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 20001。各グレードの合計値。",
       "raid": "yes",
       "unlockGrades": [
         1,
@@ -4059,7 +4070,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 20051。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 20051。各グレードの合計値。",
       "raid": "yes",
       "unlockGrades": [
         1,
@@ -4126,7 +4137,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 20003。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 20003。各グレードの合計値。",
       "raid": "yes",
       "unlockGrades": [
         1,
@@ -4193,7 +4204,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 20053。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 20053。各グレードの合計値。",
       "raid": "yes",
       "unlockGrades": [
         1,
@@ -4260,7 +4271,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 20004。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 20004。各グレードの合計値。",
       "raid": "yes",
       "unlockGrades": [
         1,
@@ -4327,7 +4338,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 20054。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 20054。各グレードの合計値。",
       "raid": "yes",
       "unlockGrades": [
         1,
@@ -4381,7 +4392,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 20005。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 20005。各グレードの合計値。",
       "raid": "yes",
       "unlockGrades": [
         1,
@@ -4447,7 +4458,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 20041。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 20041。各グレードの合計値。",
       "raid": "yes",
       "unlockGrades": [
         1,
@@ -4514,7 +4525,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 20012。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 20012。各グレードの合計値。",
       "raid": "yes",
       "unlockGrades": [
         1,
@@ -4581,7 +4592,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 20043。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 20043。各グレードの合計値。",
       "raid": "yes",
       "unlockGrades": [
         1,
@@ -4648,7 +4659,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 20044。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 20044。各グレードの合計値。",
       "raid": "yes",
       "unlockGrades": [
         1,
@@ -4715,7 +4726,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 20045。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 20045。各グレードの合計値。",
       "raid": "yes",
       "unlockGrades": [
         1,
@@ -4782,7 +4793,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 20022。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 20022。各グレードの合計値。",
       "raid": "yes",
       "unlockGrades": [
         1,
@@ -4849,7 +4860,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 20023。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 20023。各グレードの合計値。",
       "raid": "yes",
       "unlockGrades": [
         1,
@@ -4916,7 +4927,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 20063。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 20063。各グレードの合計値。",
       "raid": "yes",
       "unlockGrades": [
         1,
@@ -4983,7 +4994,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 20024。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 20024。各グレードの合計値。",
       "raid": "yes",
       "unlockGrades": [
         1,
@@ -5050,7 +5061,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 20064。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 20064。各グレードの合計値。",
       "raid": "yes",
       "unlockGrades": [
         1,
@@ -5117,7 +5128,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 50402。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 50402。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -5184,7 +5195,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 50301。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 50301。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -5251,7 +5262,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 261。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 261。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -5318,7 +5329,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 241。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 241。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -5385,7 +5396,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 50502。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 50502。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -5452,7 +5463,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 50401。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 50401。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -5519,7 +5530,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 50101。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 50101。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -5586,7 +5597,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 50102。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 50102。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -5653,7 +5664,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 50081。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 50081。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -5720,7 +5731,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 50072。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 50072。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -5787,7 +5798,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 10011。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 10011。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -5854,7 +5865,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 251。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 251。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -5921,7 +5932,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 231。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 231。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -5988,7 +5999,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 171。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 171。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -6055,7 +6066,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 141。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 141。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -6122,7 +6133,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 50011。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 50011。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -6189,7 +6200,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 50001。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 50001。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -6243,7 +6254,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 81。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 81。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -6296,7 +6307,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 131。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 131。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -6349,7 +6360,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 50501。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 50501。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -6402,7 +6413,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 50082。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 50082。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -6468,7 +6479,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 31。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 31。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -6522,7 +6533,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 111。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 111。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -6588,7 +6599,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 11。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 11。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -6642,7 +6653,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 1。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 1。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -6682,7 +6693,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 21。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 21。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -6747,7 +6758,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 262。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 262。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -6814,7 +6825,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 242。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 242。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -6881,7 +6892,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 222。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 222。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -6948,7 +6959,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 202。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 202。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -7028,7 +7039,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 282。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 282。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -7070,7 +7081,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 72。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 72。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -7109,7 +7120,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 62。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 62。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -7161,7 +7172,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 10002。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 10002。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -7227,7 +7238,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 32。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 32。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -7294,7 +7305,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 40003。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 40003。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -7361,7 +7372,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 263。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 263。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -7428,7 +7439,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 243。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 243。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -7495,7 +7506,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 233。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 233。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -7562,7 +7573,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 214。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 214。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -7629,7 +7640,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 143。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 143。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -7696,7 +7707,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 83。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 83。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -7750,7 +7761,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 253。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 253。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -7803,7 +7814,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 73。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 73。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -7869,7 +7880,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 223。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 223。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -7923,7 +7934,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 123。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 123。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -7989,7 +8000,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 33。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 33。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -8030,7 +8041,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 23。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 23。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -8095,7 +8106,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 13。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 13。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -8136,7 +8147,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 3。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 3。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -8201,7 +8212,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 264。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 264。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -8268,7 +8279,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 244。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 244。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -8322,7 +8333,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 10004。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 10004。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -8388,7 +8399,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 274。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 274。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -8455,7 +8466,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 234。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 234。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -8509,7 +8520,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 224。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 224。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -8562,7 +8573,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 134。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 134。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -8628,7 +8639,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 34。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 34。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -8695,7 +8706,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 14。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 14。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -8736,7 +8747,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 4。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 4。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -8801,7 +8812,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 40005。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 40005。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -8868,7 +8879,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 50503。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 50503。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -8935,7 +8946,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 284。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 284。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -8989,7 +9000,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 10015。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 10015。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -9042,7 +9053,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 255。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 255。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -9095,7 +9106,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 145。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 145。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -9148,7 +9159,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 135。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 135。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -9201,7 +9212,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 85。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 85。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -9254,7 +9265,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 10005。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 10005。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -9320,7 +9331,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 50403。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 50403。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -9361,7 +9372,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 35。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 35。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -9426,7 +9437,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 15。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 15。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -9467,7 +9478,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 5。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 5。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -9532,7 +9543,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 185。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 185。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -9573,7 +9584,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 75。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 75。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -9638,7 +9649,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 283。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 283。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -9692,7 +9703,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 50103。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 50103。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -9745,7 +9756,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 64。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 64。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -9811,7 +9822,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 50071。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 50071。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -9865,7 +9876,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 181。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 181。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -9905,7 +9916,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 71。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 71。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -9970,7 +9981,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 192。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 192。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -10024,7 +10035,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 82。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 82。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -10064,7 +10075,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 52。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 52。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -10116,7 +10127,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 232。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 232。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -10182,7 +10193,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 12。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 12。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -10249,7 +10260,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 144。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 144。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -10316,7 +10327,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 84。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 84。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -10370,7 +10381,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 50302。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 50302。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -10423,7 +10434,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 74。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 74。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -10476,7 +10487,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 54。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 54。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -10529,7 +10540,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 50073。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 50073。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -10569,7 +10580,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 24。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 24。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -10634,7 +10645,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 156。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 156。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -10688,7 +10699,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 195。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 195。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -10741,7 +10752,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 225。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 225。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -10807,7 +10818,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 20006。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 20006。各グレードの合計値。",
       "raid": "yes",
       "unlockGrades": [
         1,
@@ -10848,7 +10859,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 65。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 65。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -10887,7 +10898,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 55。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 55。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -10926,7 +10937,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 25。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 25。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -10991,7 +11002,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 10013。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 10013。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -11045,7 +11056,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 173。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 173。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -11098,7 +11109,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 153。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 153。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -11164,7 +11175,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 103。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 103。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -11218,7 +11229,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 63。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 63。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -11271,7 +11282,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 53。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 53。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -11324,7 +11335,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 113。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 113。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -11390,7 +11401,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 10012。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 10012。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -11457,7 +11468,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 272。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 272。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -11524,7 +11535,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 182。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 182。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -11591,7 +11602,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 152。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 152。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -11645,7 +11656,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 142。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 142。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -11685,7 +11696,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 22。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 22。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -11737,7 +11748,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 102。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 102。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -11777,7 +11788,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 2。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 2。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -11842,7 +11853,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 281。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 281。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -11909,7 +11920,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 271。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 271。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -11976,7 +11987,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 50021。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 50021。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -12030,7 +12041,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 201。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 201。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -12096,7 +12107,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 191。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 191。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -12137,7 +12148,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 61。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 61。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -12202,7 +12213,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 50601。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 50601。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -12269,7 +12280,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 50602。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 50602。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -12336,7 +12347,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 50603。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 50603。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -12377,7 +12388,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 51。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 51。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -12442,7 +12453,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 50041。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 50041。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -12509,7 +12520,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 50044。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 50044。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -12576,7 +12587,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 50051。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 50051。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -12630,7 +12641,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 50055。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 50055。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -12696,7 +12707,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 50061。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 50061。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -12763,7 +12774,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 50062。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 50062。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -12817,7 +12828,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 50063。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 50063。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -12883,7 +12894,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 50091。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 50091。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -12950,7 +12961,7 @@
           "pattern": ""
         }
       ],
-      "equipmentEvidence": "PC版ローカルマスター（2026-10-05再照合） / Equipment ID 50201。％は保存整数÷100、G1～G6の各段階の合計値。",
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 50201。各グレードの合計値。",
       "raid": "no",
       "unlockGrades": [
         1,
@@ -12962,6 +12973,73 @@
         1002,
         1011,
         1218
+      ]
+    },
+    "equipment-pc-20016": {
+      "name": "チリアットグローブ",
+      "slot": "装飾",
+      "power": 13000,
+      "powerGrades": [
+        13000,
+        16250,
+        19500,
+        22750,
+        26000,
+        29250
+      ],
+      "mainAbilities": [
+        {
+          "name": "対精霊攻撃力",
+          "unit": "%",
+          "values": [
+            137,
+            171.25,
+            205.5,
+            239.75,
+            274,
+            308.25
+          ],
+          "pattern": ""
+        },
+        {
+          "name": "対精霊素材倍化率",
+          "unit": "%",
+          "values": [
+            13,
+            16.25,
+            19.5,
+            22.75,
+            26,
+            29.25
+          ],
+          "pattern": ""
+        },
+        {
+          "name": "対精霊メモリ倍化率",
+          "unit": "%",
+          "values": [
+            9,
+            11.25,
+            13.5,
+            15.75,
+            18,
+            20.25
+          ],
+          "pattern": ""
+        }
+      ],
+      "masterId": 20016,
+      "abilityIds": [
+        1108,
+        508,
+        608
+      ],
+      "equipmentEvidence": "PC版ローカルマスター（2026-10-17再照合） / Equipment ID 20016。各グレードの合計値。",
+      "raid": "yes",
+      "unlockGrades": [
+        1,
+        5,
+        6
       ]
     }
   },
@@ -21975,7 +22053,7 @@
     }
   },
   "summary": {
-    "equipment": 207,
+    "equipment": 208,
     "research": 422,
     "numericResearch": 404,
     "unlockResearch": 18
@@ -49569,7 +49647,7 @@
       ]
     }
   },
-  "equipmentReviewedAt": "2026-10-05",
+  "equipmentReviewedAt": "2026-10-17",
   "buildingEffects": {
     "building-1": [
       {

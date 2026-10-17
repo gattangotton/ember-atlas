@@ -646,5 +646,14 @@
     "charge": "buff",
     "active": "none",
     "levels": 33
+  },
+  {
+    "id": "characters-game-82",
+    "masterId": 82,
+    "previousName": "リアム[夜魔]",
+    "name": "リアム[夜魔]",
+    "charge": "debuff",
+    "active": "none",
+    "levels": 33
   }
 ]

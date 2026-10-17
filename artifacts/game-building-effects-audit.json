@@ -1635,7 +1635,7 @@
   ],
   "files": {
     "Building": {
-      "sha256": "fb534eee3a8b79ec9f2160e64a605ab88c4bffa61c53b60a89d9c4aa00a2840a"
+      "sha256": "f392ef95fecdc6c7640dc3d41b9474dfcbaa350e8b43c5cc3488f12c23297378"
     },
     "Ability": {
       "sha256": "04083826fc3186eb3b9063c6c1c810cbe1376f5a10a2abcc11ed135dcb41382a"
@@ -1644,7 +1644,7 @@
       "sha256": "ebb67ba4d982c64ba259ff7419c0d7ff4825ec45cd8ae705f4ee5efce50a2ea8"
     },
     "Consumable": {
-      "sha256": "fc089d4e6df2aa12b7dec3561865cb91a77b237ffd6765469b5f469063d32bfc"
+      "sha256": "22c5040e3d397d6b59835b2e1c777bddcbd2ae020aa97b40f4c593ec051d22d3"
     }
   },
   "gatherDrops": [

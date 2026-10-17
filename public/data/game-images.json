@@ -207,7 +207,8 @@
     "equipment-pc-50062": "assets/game/equipment-largethumbnail-00291.png",
     "equipment-pc-50063": "assets/game/equipment-largethumbnail-00292.png",
     "equipment-pc-50091": "assets/game/equipment-largethumbnail-00303.png",
-    "equipment-pc-50201": "assets/game/equipment-largethumbnail-00306.png"
+    "equipment-pc-50201": "assets/game/equipment-largethumbnail-00306.png",
+    "equipment-pc-20016": "assets/game/equipment-largethumbnail-00108.png"
   },
   "heroes": {
     "characters-440a28ef782ea8": "assets/game/hero-thumbnail-00002.png",
@@ -281,7 +282,8 @@
     "characters-7e4ca240547732": "assets/game/hero-thumbnail-00073.png",
     "characters-1fc38c2a36427c": "assets/game/hero-thumbnail-00075.png",
     "characters-f5a44e040bc9c5": "assets/game/hero-thumbnail-00076.png",
-    "characters-game-81": "assets/game/hero-thumbnail-00081.png"
+    "characters-game-81": "assets/game/hero-thumbnail-00081.png",
+    "characters-game-82": "assets/game/hero-thumbnail-00082.png"
   },
   "buildings": {
     "101": "assets/game/building-largethumbnail-00101.png",

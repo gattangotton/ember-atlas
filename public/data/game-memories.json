@@ -1,42 +1,42 @@
 {
   "version": 1,
-  "capturedAt": "2026-10-03",
+  "capturedAt": "2026-10-17",
   "files": {
     "Enhancer": {
-      "sha256": "b6bda402e092a56b143a97461754fc8a5558d2e3ff89e14bb268709c449458b8",
-      "bytes": 67701
+      "sha256": "aef1be7fce13f767767d8d2d3693fa7489cbc760d6f216d036b90859e80eec9e",
+      "bytes": 70263
     },
     "Ability": {
       "sha256": "04083826fc3186eb3b9063c6c1c810cbe1376f5a10a2abcc11ed135dcb41382a",
       "bytes": 26481
     },
     "ShopPack": {
-      "sha256": "5f79c01f9250b82cd1ffc7d3633eb50d45a9bf9e381ddb8df1af7aff0b2c8d9e",
-      "bytes": 330705
+      "sha256": "6e68e2b957885f94835632be9840437646e66916d84995ba783b2da5275dbcc3",
+      "bytes": 338035
     },
     "ShopItem": {
-      "sha256": "fb4d81c75322944dbeaf83a19f3e90814c6268f3e0ecdc2b5c7beb451a1e05b5",
-      "bytes": 40405
+      "sha256": "3b4851e6efd23a72d67ce1560099f4d47fab28651b42c9192ebf2b03eea16d82",
+      "bytes": 40477
     },
     "Shop": {
-      "sha256": "37583c11d04f329a7dc64adac614eda69b98e837b4527f0ac14c6a69eac14ead",
-      "bytes": 40367
+      "sha256": "c1f39b52dd6df2f4bd522fdb6ff16bac0709270ee9fc33a9197fa50d243706d0",
+      "bytes": 40407
     },
     "Event": {
-      "sha256": "14478d6d81c408a0c80a8f29878a72c737ea3778c93c7141d5e56aa78cb7fa1a",
-      "bytes": 598366
+      "sha256": "ec007b5c6089434c566d9261e6906b2a893667f1a48fab7d94f376b0c4abedac",
+      "bytes": 611117
     },
     "Consumable": {
-      "sha256": "fc089d4e6df2aa12b7dec3561865cb91a77b237ffd6765469b5f469063d32bfc",
-      "bytes": 81819
+      "sha256": "22c5040e3d397d6b59835b2e1c777bddcbd2ae020aa97b40f4c593ec051d22d3",
+      "bytes": 81979
     },
     "Piece": {
-      "sha256": "1a0ecf8871ae6988e7991970504a7d8d9d0b930b1320f5e059c31cb5a801c20a",
-      "bytes": 21969
+      "sha256": "599448c3f00837183c9a0d28658efba8ceaa6e27143b895d17cd7fefa681b504",
+      "bytes": 22547
     },
     "Announcement": {
-      "sha256": "c0d221aaf6157fe8a6315f0f5fdea5d411ca2b2aea2c256fac27268a4caa574c",
-      "bytes": 3323339
+      "sha256": "5c4f836499cab86c140aa3405df3e77efc4fc08e5d43f1d88d8892ed1e7394fe",
+      "bytes": 3416520
     }
   },
   "records": [
@@ -91,7 +91,7 @@
       ],
       "paidAvailable": true,
       "nonPaidAvailable": false,
-      "source": "PC版 Enhancer 2（2026-10-03取得）"
+      "source": "PC版 Enhancer 2（2026-10-17取得）"
     },
     {
       "id": "memory-3",
@@ -138,7 +138,7 @@
       ],
       "paidAvailable": true,
       "nonPaidAvailable": false,
-      "source": "PC版 Enhancer 3（2026-10-03取得）"
+      "source": "PC版 Enhancer 3（2026-10-17取得）"
     },
     {
       "id": "memory-8",
@@ -185,7 +185,7 @@
       ],
       "paidAvailable": true,
       "nonPaidAvailable": false,
-      "source": "PC版 Enhancer 8（2026-10-03取得）"
+      "source": "PC版 Enhancer 8（2026-10-17取得）"
     },
     {
       "id": "memory-10",
@@ -238,7 +238,7 @@
       ],
       "paidAvailable": true,
       "nonPaidAvailable": false,
-      "source": "PC版 Enhancer 10（2026-10-03取得）"
+      "source": "PC版 Enhancer 10（2026-10-17取得）"
     },
     {
       "id": "memory-13",
@@ -291,7 +291,7 @@
       ],
       "paidAvailable": true,
       "nonPaidAvailable": false,
-      "source": "PC版 Enhancer 13（2026-10-03取得）"
+      "source": "PC版 Enhancer 13（2026-10-17取得）"
     },
     {
       "id": "memory-14",
@@ -344,7 +344,7 @@
       ],
       "paidAvailable": true,
       "nonPaidAvailable": false,
-      "source": "PC版 Enhancer 14（2026-10-03取得）"
+      "source": "PC版 Enhancer 14（2026-10-17取得）"
     },
     {
       "id": "memory-15",
@@ -397,7 +397,7 @@
       ],
       "paidAvailable": true,
       "nonPaidAvailable": false,
-      "source": "PC版 Enhancer 15（2026-10-03取得）"
+      "source": "PC版 Enhancer 15（2026-10-17取得）"
     },
     {
       "id": "memory-16",
@@ -450,7 +450,7 @@
       ],
       "paidAvailable": true,
       "nonPaidAvailable": false,
-      "source": "PC版 Enhancer 16（2026-10-03取得）"
+      "source": "PC版 Enhancer 16（2026-10-17取得）"
     },
     {
       "id": "memory-17",
@@ -503,7 +503,7 @@
       ],
       "paidAvailable": true,
       "nonPaidAvailable": false,
-      "source": "PC版 Enhancer 17（2026-10-03取得）"
+      "source": "PC版 Enhancer 17（2026-10-17取得）"
     },
     {
       "id": "memory-18",
@@ -556,7 +556,7 @@
       ],
       "paidAvailable": true,
       "nonPaidAvailable": false,
-      "source": "PC版 Enhancer 18（2026-10-03取得）"
+      "source": "PC版 Enhancer 18（2026-10-17取得）"
     },
     {
       "id": "memory-19",
@@ -609,7 +609,7 @@
       ],
       "paidAvailable": true,
       "nonPaidAvailable": false,
-      "source": "PC版 Enhancer 19（2026-10-03取得）"
+      "source": "PC版 Enhancer 19（2026-10-17取得）"
     },
     {
       "id": "memory-20",
@@ -662,7 +662,7 @@
       ],
       "paidAvailable": true,
       "nonPaidAvailable": false,
-      "source": "PC版 Enhancer 20（2026-10-03取得）"
+      "source": "PC版 Enhancer 20（2026-10-17取得）"
     },
     {
       "id": "memory-21",
@@ -715,7 +715,7 @@
       ],
       "paidAvailable": true,
       "nonPaidAvailable": false,
-      "source": "PC版 Enhancer 21（2026-10-03取得）"
+      "source": "PC版 Enhancer 21（2026-10-17取得）"
     },
     {
       "id": "memory-25",
@@ -768,7 +768,7 @@
       ],
       "paidAvailable": true,
       "nonPaidAvailable": false,
-      "source": "PC版 Enhancer 25（2026-10-03取得）"
+      "source": "PC版 Enhancer 25（2026-10-17取得）"
     },
     {
       "id": "memory-26",
@@ -821,7 +821,7 @@
       ],
       "paidAvailable": true,
       "nonPaidAvailable": false,
-      "source": "PC版 Enhancer 26（2026-10-03取得）"
+      "source": "PC版 Enhancer 26（2026-10-17取得）"
     },
     {
       "id": "memory-27",
@@ -874,7 +874,7 @@
       ],
       "paidAvailable": true,
       "nonPaidAvailable": false,
-      "source": "PC版 Enhancer 27（2026-10-03取得）"
+      "source": "PC版 Enhancer 27（2026-10-17取得）"
     },
     {
       "id": "memory-30",
@@ -927,7 +927,7 @@
       ],
       "paidAvailable": true,
       "nonPaidAvailable": false,
-      "source": "PC版 Enhancer 30（2026-10-03取得）"
+      "source": "PC版 Enhancer 30（2026-10-17取得）"
     },
     {
       "id": "memory-31",
@@ -980,7 +980,7 @@
       ],
       "paidAvailable": true,
       "nonPaidAvailable": false,
-      "source": "PC版 Enhancer 31（2026-10-03取得）"
+      "source": "PC版 Enhancer 31（2026-10-17取得）"
     },
     {
       "id": "memory-32",
@@ -1033,7 +1033,7 @@
       ],
       "paidAvailable": false,
       "nonPaidAvailable": true,
-      "source": "PC版 Enhancer 32（2026-10-03取得）"
+      "source": "PC版 Enhancer 32（2026-10-17取得）"
     },
     {
       "id": "memory-33",
@@ -1086,7 +1086,7 @@
       ],
       "paidAvailable": false,
       "nonPaidAvailable": true,
-      "source": "PC版 Enhancer 33（2026-10-03取得）"
+      "source": "PC版 Enhancer 33（2026-10-17取得）"
     },
     {
       "id": "memory-34",
@@ -1139,7 +1139,7 @@
       ],
       "paidAvailable": true,
       "nonPaidAvailable": false,
-      "source": "PC版 Enhancer 34（2026-10-03取得）"
+      "source": "PC版 Enhancer 34（2026-10-17取得）"
     },
     {
       "id": "memory-35",
@@ -1192,7 +1192,7 @@
       ],
       "paidAvailable": true,
       "nonPaidAvailable": false,
-      "source": "PC版 Enhancer 35（2026-10-03取得）"
+      "source": "PC版 Enhancer 35（2026-10-17取得）"
     },
     {
       "id": "memory-36",
@@ -1245,7 +1245,7 @@
       ],
       "paidAvailable": true,
       "nonPaidAvailable": false,
-      "source": "PC版 Enhancer 36（2026-10-03取得）"
+      "source": "PC版 Enhancer 36（2026-10-17取得）"
     },
     {
       "id": "memory-44",
@@ -1298,7 +1298,7 @@
       ],
       "paidAvailable": true,
       "nonPaidAvailable": false,
-      "source": "PC版 Enhancer 44（2026-10-03取得）"
+      "source": "PC版 Enhancer 44（2026-10-17取得）"
     },
     {
       "id": "memory-45",
@@ -1345,7 +1345,7 @@
       ],
       "paidAvailable": false,
       "nonPaidAvailable": true,
-      "source": "PC版 Enhancer 45（2026-10-03取得）"
+      "source": "PC版 Enhancer 45（2026-10-17取得）"
     },
     {
       "id": "memory-46",
@@ -1398,7 +1398,7 @@
       ],
       "paidAvailable": true,
       "nonPaidAvailable": false,
-      "source": "PC版 Enhancer 46（2026-10-03取得）"
+      "source": "PC版 Enhancer 46（2026-10-17取得）"
     },
     {
       "id": "memory-47",
@@ -1439,7 +1439,7 @@
       ],
       "paidAvailable": false,
       "nonPaidAvailable": true,
-      "source": "PC版 Enhancer 47（2026-10-03取得）"
+      "source": "PC版 Enhancer 47（2026-10-17取得）"
     },
     {
       "id": "memory-48",
@@ -1492,7 +1492,7 @@
       ],
       "paidAvailable": true,
       "nonPaidAvailable": false,
-      "source": "PC版 Enhancer 48（2026-10-03取得）"
+      "source": "PC版 Enhancer 48（2026-10-17取得）"
     },
     {
       "id": "memory-49",
@@ -1533,7 +1533,7 @@
       ],
       "paidAvailable": false,
       "nonPaidAvailable": true,
-      "source": "PC版 Enhancer 49（2026-10-03取得）"
+      "source": "PC版 Enhancer 49（2026-10-17取得）"
     },
     {
       "id": "memory-54",
@@ -1586,7 +1586,7 @@
       ],
       "paidAvailable": true,
       "nonPaidAvailable": false,
-      "source": "PC版 Enhancer 54（2026-10-03取得）"
+      "source": "PC版 Enhancer 54（2026-10-17取得）"
     },
     {
       "id": "memory-55",
@@ -1639,7 +1639,7 @@
       ],
       "paidAvailable": true,
       "nonPaidAvailable": false,
-      "source": "PC版 Enhancer 55（2026-10-03取得）"
+      "source": "PC版 Enhancer 55（2026-10-17取得）"
     },
     {
       "id": "memory-56",
@@ -1692,7 +1692,7 @@
       ],
       "paidAvailable": true,
       "nonPaidAvailable": false,
-      "source": "PC版 Enhancer 56（2026-10-03取得）"
+      "source": "PC版 Enhancer 56（2026-10-17取得）"
     },
     {
       "id": "memory-57",
@@ -1745,7 +1745,7 @@
       ],
       "paidAvailable": true,
       "nonPaidAvailable": false,
-      "source": "PC版 Enhancer 57（2026-10-03取得）"
+      "source": "PC版 Enhancer 57（2026-10-17取得）"
     },
     {
       "id": "memory-58",
@@ -1792,7 +1792,7 @@
       ],
       "paidAvailable": false,
       "nonPaidAvailable": true,
-      "source": "PC版 Enhancer 58（2026-10-03取得）"
+      "source": "PC版 Enhancer 58（2026-10-17取得）"
     },
     {
       "id": "memory-59",
@@ -1845,7 +1845,7 @@
       ],
       "paidAvailable": true,
       "nonPaidAvailable": false,
-      "source": "PC版 Enhancer 59（2026-10-03取得）"
+      "source": "PC版 Enhancer 59（2026-10-17取得）"
     },
     {
       "id": "memory-60",
@@ -1886,7 +1886,7 @@
       ],
       "paidAvailable": false,
       "nonPaidAvailable": true,
-      "source": "PC版 Enhancer 60（2026-10-03取得）"
+      "source": "PC版 Enhancer 60（2026-10-17取得）"
     },
     {
       "id": "memory-61",
@@ -1939,7 +1939,7 @@
       ],
       "paidAvailable": true,
       "nonPaidAvailable": false,
-      "source": "PC版 Enhancer 61（2026-10-03取得）"
+      "source": "PC版 Enhancer 61（2026-10-17取得）"
     },
     {
       "id": "memory-62",
@@ -1986,7 +1986,7 @@
       ],
       "paidAvailable": false,
       "nonPaidAvailable": true,
-      "source": "PC版 Enhancer 62（2026-10-03取得）"
+      "source": "PC版 Enhancer 62（2026-10-17取得）"
     },
     {
       "id": "memory-63",
@@ -2039,7 +2039,7 @@
       ],
       "paidAvailable": true,
       "nonPaidAvailable": false,
-      "source": "PC版 Enhancer 63（2026-10-03取得）"
+      "source": "PC版 Enhancer 63（2026-10-17取得）"
     },
     {
       "id": "memory-64",
@@ -2092,7 +2092,7 @@
       ],
       "paidAvailable": true,
       "nonPaidAvailable": false,
-      "source": "PC版 Enhancer 64（2026-10-03取得）"
+      "source": "PC版 Enhancer 64（2026-10-17取得）"
     },
     {
       "id": "memory-65",
@@ -2145,7 +2145,7 @@
       ],
       "paidAvailable": true,
       "nonPaidAvailable": false,
-      "source": "PC版 Enhancer 65（2026-10-03取得）"
+      "source": "PC版 Enhancer 65（2026-10-17取得）"
     },
     {
       "id": "memory-66",
@@ -2192,7 +2192,7 @@
       ],
       "paidAvailable": false,
       "nonPaidAvailable": true,
-      "source": "PC版 Enhancer 66（2026-10-03取得）"
+      "source": "PC版 Enhancer 66（2026-10-17取得）"
     },
     {
       "id": "memory-67",
@@ -2245,7 +2245,7 @@
       ],
       "paidAvailable": true,
       "nonPaidAvailable": false,
-      "source": "PC版 Enhancer 67（2026-10-03取得）"
+      "source": "PC版 Enhancer 67（2026-10-17取得）"
     },
     {
       "id": "memory-68",
@@ -2298,7 +2298,7 @@
       ],
       "paidAvailable": true,
       "nonPaidAvailable": false,
-      "source": "PC版 Enhancer 68（2026-10-03取得）"
+      "source": "PC版 Enhancer 68（2026-10-17取得）"
     },
     {
       "id": "memory-69",
@@ -2351,7 +2351,7 @@
       ],
       "paidAvailable": true,
       "nonPaidAvailable": false,
-      "source": "PC版 Enhancer 69（2026-10-03取得）"
+      "source": "PC版 Enhancer 69（2026-10-17取得）"
     },
     {
       "id": "memory-70",
@@ -2404,7 +2404,7 @@
       ],
       "paidAvailable": true,
       "nonPaidAvailable": false,
-      "source": "PC版 Enhancer 70（2026-10-03取得）"
+      "source": "PC版 Enhancer 70（2026-10-17取得）"
     },
     {
       "id": "memory-71",
@@ -2445,7 +2445,7 @@
       ],
       "paidAvailable": false,
       "nonPaidAvailable": true,
-      "source": "PC版 Enhancer 71（2026-10-03取得）"
+      "source": "PC版 Enhancer 71（2026-10-17取得）"
     },
     {
       "id": "memory-72",
@@ -2498,7 +2498,7 @@
       ],
       "paidAvailable": true,
       "nonPaidAvailable": false,
-      "source": "PC版 Enhancer 72（2026-10-03取得）"
+      "source": "PC版 Enhancer 72（2026-10-17取得）"
     },
     {
       "id": "memory-73",
@@ -2557,7 +2557,7 @@
       ],
       "paidAvailable": true,
       "nonPaidAvailable": false,
-      "source": "PC版 Enhancer 73（2026-10-03取得）"
+      "source": "PC版 Enhancer 73（2026-10-17取得）"
     },
     {
       "id": "memory-74",
@@ -2610,7 +2610,7 @@
       ],
       "paidAvailable": true,
       "nonPaidAvailable": false,
-      "source": "PC版 Enhancer 74（2026-10-03取得）"
+      "source": "PC版 Enhancer 74（2026-10-17取得）"
     },
     {
       "id": "memory-75",
@@ -2663,7 +2663,7 @@
       ],
       "paidAvailable": true,
       "nonPaidAvailable": false,
-      "source": "PC版 Enhancer 75（2026-10-03取得）"
+      "source": "PC版 Enhancer 75（2026-10-17取得）"
     },
     {
       "id": "memory-76",
@@ -2722,7 +2722,7 @@
       ],
       "paidAvailable": true,
       "nonPaidAvailable": false,
-      "source": "PC版 Enhancer 76（2026-10-03取得）"
+      "source": "PC版 Enhancer 76（2026-10-17取得）"
     },
     {
       "id": "memory-77",
@@ -2775,7 +2775,119 @@
       ],
       "paidAvailable": true,
       "nonPaidAvailable": false,
-      "source": "PC版 Enhancer 77（2026-10-03取得）"
+      "source": "PC版 Enhancer 77（2026-10-17取得）"
+    },
+    {
+      "id": "memory-78",
+      "masterId": 78,
+      "name": "書庫の奥の吸血鬼",
+      "rarity": 5,
+      "description": "「えーと……じゃあ、こんなポーズはどうですか？」\n\nリアムは書庫の奥に置かれた玉座にもたれ、足を組んで見せた。\n深い色合いのマントに、慎重に選び抜かれた宝石飾り、口元から覗く牙まで、細部までこだわって仕上げた衣装をまとう姿は、さながら本物の吸血鬼のようだ。\n\n「仮装コンテスト用のエントリー写真、妥協はできませんからね」\n\nそう語る彼が携えているのは、吸血鬼伝説についてつづられた一冊だ。衣装づくりのあいだ、リアムはその本を何度も読み返してきた。\n背後に並ぶ書物もまた、完璧な一着を作るために読み込んできたものばかりだ。\n\n「今年の一位は、僕がいただきますよ！」\n\n自信たっぷりにカメラを見据えながら、リアムは宣言した。",
+      "mainEffects": [
+        {
+          "abilityId": 1102,
+          "name": "対超獣攻撃力",
+          "unit": "%",
+          "value": 80
+        },
+        {
+          "abilityId": 502,
+          "name": "対超獣素材倍化率",
+          "unit": "%",
+          "value": 20
+        },
+        {
+          "abilityId": 1007,
+          "name": "土属性リーダー攻撃力",
+          "unit": "%",
+          "value": 30
+        },
+        {
+          "abilityId": 3301,
+          "name": "スタン時間短縮(秒)",
+          "unit": "秒",
+          "value": 1
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00078.png",
+      "imageId": 78,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 78"
+      },
+      "acquisition": [
+        {
+          "type": "paid",
+          "name": "書庫の奥の吸血鬼メモリ オーブパック(初回)",
+          "master": "ShopPack 14041",
+          "detail": "メモリのかけらを含むパック"
+        },
+        {
+          "type": "paid",
+          "name": "書庫の奥の吸血鬼メモリ オーブパック",
+          "master": "ShopPack 14042",
+          "detail": "メモリのかけらを含むパック"
+        }
+      ],
+      "paidAvailable": true,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 78（2026-10-17取得）"
+    },
+    {
+      "id": "memory-79",
+      "masterId": 79,
+      "name": "エンバース対抗大運動会",
+      "rarity": 5,
+      "description": "清々しい秋空の下で行われるエンバース対抗運動会。\n次の種目は借り物競走。代表選手が一斉にスタートし、お題の紙を手に取る。\n\n「ニュクスの刀ぁ？　おいニュクス、どこだ、出てきやがれ！！」\n\nよりにもよって犬猿の仲であるニュクスの持ち物を引き当ててしまったアイテールは、怒鳴りながら会場を見渡す。が、当のニュクスの姿はどこにもない。\n\n一方、エイルの顔からは血の気が引いた。\n\n「キエル＝ガンさんの……マスク……？」\n\n彼はマスクを外すのか？　『貸してください』などと自分がお願いしていいのか？　そもそもアレは外せるものなのか……エイルは紙を手にしたまま立ち尽くす。\n\nそんな中、涼しい顔でゴールへ走る影がひとつ。\n\n「ゴール。えへへっ、わたしが一番っ！」\n\n周囲が騒然とする中、輝かしい皇帝の冠を手にしたアイーシャが堂々とゴールテープを切るのだった。",
+      "mainEffects": [
+        {
+          "abilityId": 120,
+          "name": "採集量",
+          "unit": "%",
+          "value": 16
+        },
+        {
+          "abilityId": 1900,
+          "name": "行軍速度",
+          "unit": "%",
+          "value": 6
+        },
+        {
+          "abilityId": 114,
+          "name": "木材採集量",
+          "unit": "%",
+          "value": 10
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-00079.png",
+      "imageId": 79,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 79"
+      },
+      "acquisition": [
+        {
+          "type": "paid",
+          "name": "エンバース対抗大運動会メモリ オーブパック(初回)",
+          "master": "ShopPack 13951",
+          "detail": "メモリのかけらを含むパック"
+        },
+        {
+          "type": "paid",
+          "name": "エンバース対抗大運動会メモリ オーブパック",
+          "master": "ShopPack 13952",
+          "detail": "メモリのかけらを含むパック"
+        }
+      ],
+      "paidAvailable": true,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 79（2026-10-17取得）"
     },
     {
       "id": "memory-80",
@@ -2816,7 +2928,7 @@
       ],
       "paidAvailable": false,
       "nonPaidAvailable": true,
-      "source": "PC版 Enhancer 80（2026-10-03取得）"
+      "source": "PC版 Enhancer 80（2026-10-17取得）"
     },
     {
       "id": "memory-10001",
@@ -2857,7 +2969,7 @@
       ],
       "paidAvailable": false,
       "nonPaidAvailable": true,
-      "source": "PC版 Enhancer 10001（2026-10-03取得）"
+      "source": "PC版 Enhancer 10001（2026-10-17取得）"
     },
     {
       "id": "memory-10002",
@@ -2898,7 +3010,7 @@
       ],
       "paidAvailable": false,
       "nonPaidAvailable": true,
-      "source": "PC版 Enhancer 10002（2026-10-03取得）"
+      "source": "PC版 Enhancer 10002（2026-10-17取得）"
     },
     {
       "id": "memory-10003",
@@ -2939,7 +3051,7 @@
       ],
       "paidAvailable": false,
       "nonPaidAvailable": true,
-      "source": "PC版 Enhancer 10003（2026-10-03取得）"
+      "source": "PC版 Enhancer 10003（2026-10-17取得）"
     },
     {
       "id": "memory-10004",
@@ -2980,7 +3092,7 @@
       ],
       "paidAvailable": false,
       "nonPaidAvailable": true,
-      "source": "PC版 Enhancer 10004（2026-10-03取得）"
+      "source": "PC版 Enhancer 10004（2026-10-17取得）"
     },
     {
       "id": "memory-10005",
@@ -3027,7 +3139,7 @@
       ],
       "paidAvailable": false,
       "nonPaidAvailable": true,
-      "source": "PC版 Enhancer 10005（2026-10-03取得）"
+      "source": "PC版 Enhancer 10005（2026-10-17取得）"
     },
     {
       "id": "memory-10006",
@@ -3074,7 +3186,7 @@
       ],
       "paidAvailable": false,
       "nonPaidAvailable": true,
-      "source": "PC版 Enhancer 10006（2026-10-03取得）"
+      "source": "PC版 Enhancer 10006（2026-10-17取得）"
     },
     {
       "id": "memory-10007",
@@ -3102,7 +3214,7 @@
       ],
       "paidAvailable": false,
       "nonPaidAvailable": true,
-      "source": "PC版 Enhancer 10007（2026-10-03取得）"
+      "source": "PC版 Enhancer 10007（2026-10-17取得）"
     },
     {
       "id": "memory-10008",
@@ -3143,7 +3255,7 @@
       ],
       "paidAvailable": false,
       "nonPaidAvailable": true,
-      "source": "PC版 Enhancer 10008（2026-10-03取得）"
+      "source": "PC版 Enhancer 10008（2026-10-17取得）"
     },
     {
       "id": "memory-10009",
@@ -3171,7 +3283,7 @@
       ],
       "paidAvailable": false,
       "nonPaidAvailable": true,
-      "source": "PC版 Enhancer 10009（2026-10-03取得）"
+      "source": "PC版 Enhancer 10009（2026-10-17取得）"
     },
     {
       "id": "memory-10010",
@@ -3212,7 +3324,7 @@
       ],
       "paidAvailable": false,
       "nonPaidAvailable": true,
-      "source": "PC版 Enhancer 10010（2026-10-03取得）"
+      "source": "PC版 Enhancer 10010（2026-10-17取得）"
     },
     {
       "id": "memory-10011",
@@ -3253,7 +3365,7 @@
       ],
       "paidAvailable": false,
       "nonPaidAvailable": true,
-      "source": "PC版 Enhancer 10011（2026-10-03取得）"
+      "source": "PC版 Enhancer 10011（2026-10-17取得）"
     },
     {
       "id": "memory-10012",
@@ -3324,7 +3436,7 @@
       ],
       "paidAvailable": false,
       "nonPaidAvailable": true,
-      "source": "PC版 Enhancer 10012（2026-10-03取得）"
+      "source": "PC版 Enhancer 10012（2026-10-17取得）"
     },
     {
       "id": "memory-10013",
@@ -3389,7 +3501,7 @@
       ],
       "paidAvailable": false,
       "nonPaidAvailable": true,
-      "source": "PC版 Enhancer 10013（2026-10-03取得）"
+      "source": "PC版 Enhancer 10013（2026-10-17取得）"
     },
     {
       "id": "memory-10014",
@@ -3422,12 +3534,6 @@
       },
       "acquisition": [
         {
-          "type": "event",
-          "name": "神無月のレイドチャレンジ",
-          "master": "Event 6013",
-          "detail": "イベント報酬のメモリのかけら"
-        },
-        {
           "type": "exchange",
           "name": "メモリメダル",
           "master": "ShopItem 40014 / Shop 90005",
@@ -3442,7 +3548,7 @@
       ],
       "paidAvailable": false,
       "nonPaidAvailable": true,
-      "source": "PC版 Enhancer 10014（2026-10-03取得）"
+      "source": "PC版 Enhancer 10014（2026-10-17取得）"
     },
     {
       "id": "memory-10015",
@@ -3525,7 +3631,7 @@
       ],
       "paidAvailable": false,
       "nonPaidAvailable": true,
-      "source": "PC版 Enhancer 10015（2026-10-03取得）"
+      "source": "PC版 Enhancer 10015（2026-10-17取得）"
     },
     {
       "id": "memory-10016",
@@ -3560,7 +3666,7 @@
       ],
       "paidAvailable": false,
       "nonPaidAvailable": true,
-      "source": "PC版 Enhancer 10016（2026-10-03取得）"
+      "source": "PC版 Enhancer 10016（2026-10-17取得）"
     },
     {
       "id": "memory-10017",
@@ -3588,7 +3694,7 @@
       "acquisition": [],
       "paidAvailable": false,
       "nonPaidAvailable": false,
-      "source": "PC版 Enhancer 10017（2026-10-03取得）"
+      "source": "PC版 Enhancer 10017（2026-10-17取得）"
     },
     {
       "id": "memory-10018",
@@ -3616,7 +3722,7 @@
       "acquisition": [],
       "paidAvailable": false,
       "nonPaidAvailable": false,
-      "source": "PC版 Enhancer 10018（2026-10-03取得）"
+      "source": "PC版 Enhancer 10018（2026-10-17取得）"
     },
     {
       "id": "memory-10019",
@@ -3644,7 +3750,7 @@
       "acquisition": [],
       "paidAvailable": false,
       "nonPaidAvailable": false,
-      "source": "PC版 Enhancer 10019（2026-10-03取得）"
+      "source": "PC版 Enhancer 10019（2026-10-17取得）"
     },
     {
       "id": "memory-10020",
@@ -3715,7 +3821,7 @@
       ],
       "paidAvailable": false,
       "nonPaidAvailable": true,
-      "source": "PC版 Enhancer 10020（2026-10-03取得）"
+      "source": "PC版 Enhancer 10020（2026-10-17取得）"
     },
     {
       "id": "memory-10021",
@@ -3750,7 +3856,7 @@
       ],
       "paidAvailable": false,
       "nonPaidAvailable": true,
-      "source": "PC版 Enhancer 10021（2026-10-03取得）"
+      "source": "PC版 Enhancer 10021（2026-10-17取得）"
     },
     {
       "id": "memory-10022",
@@ -3785,7 +3891,7 @@
       ],
       "paidAvailable": false,
       "nonPaidAvailable": true,
-      "source": "PC版 Enhancer 10022（2026-10-03取得）"
+      "source": "PC版 Enhancer 10022（2026-10-17取得）"
     },
     {
       "id": "memory-10023",
@@ -3813,7 +3919,7 @@
       "acquisition": [],
       "paidAvailable": false,
       "nonPaidAvailable": false,
-      "source": "PC版 Enhancer 10023（2026-10-03取得）"
+      "source": "PC版 Enhancer 10023（2026-10-17取得）"
     },
     {
       "id": "memory-10027",
@@ -3848,7 +3954,7 @@
       ],
       "paidAvailable": false,
       "nonPaidAvailable": true,
-      "source": "PC版 Enhancer 10027（2026-10-03取得）"
+      "source": "PC版 Enhancer 10027（2026-10-17取得）"
     },
     {
       "id": "memory-10028",
@@ -3900,6 +4006,12 @@
         },
         {
           "type": "event",
+          "name": "神無月のレイドチャレンジ",
+          "master": "Event 6013",
+          "detail": "イベント報酬のメモリのかけら"
+        },
+        {
+          "type": "event",
           "name": "ヨルムンガンド登場記念レイドチャレンジ",
           "master": "Event 6022",
           "detail": "イベント報酬のメモリのかけら"
@@ -3925,7 +4037,7 @@
       ],
       "paidAvailable": false,
       "nonPaidAvailable": true,
-      "source": "PC版 Enhancer 10028（2026-10-03取得）"
+      "source": "PC版 Enhancer 10028（2026-10-17取得）"
     },
     {
       "id": "memory-10029",
@@ -3953,7 +4065,7 @@
       "acquisition": [],
       "paidAvailable": false,
       "nonPaidAvailable": false,
-      "source": "PC版 Enhancer 10029（2026-10-03取得）"
+      "source": "PC版 Enhancer 10029（2026-10-17取得）"
     },
     {
       "id": "memory-10030",
@@ -3988,7 +4100,7 @@
       ],
       "paidAvailable": false,
       "nonPaidAvailable": true,
-      "source": "PC版 Enhancer 10030（2026-10-03取得）"
+      "source": "PC版 Enhancer 10030（2026-10-17取得）"
     },
     {
       "id": "memory-10031",
@@ -4029,7 +4141,41 @@
       ],
       "paidAvailable": false,
       "nonPaidAvailable": true,
-      "source": "PC版 Enhancer 10031（2026-10-03取得）"
+      "source": "PC版 Enhancer 10031（2026-10-17取得）"
+    },
+    {
+      "id": "memory-10032",
+      "masterId": 10032,
+      "name": "ゲーリュオーン",
+      "rarity": 5,
+      "description": "「三つの首は過去を、現在を、そして未来を見据える」\n-『(仮)ゲーリュオーン伝承』\n\n※仮説明文: リリースまでに正式な設定文言へ差し替えること。\n三つの頭と巨躯を持つ魔獣。",
+      "mainEffects": [
+        {
+          "abilityId": 1005,
+          "name": "水属性リーダー攻撃力",
+          "unit": "%",
+          "value": 35
+        },
+        {
+          "abilityId": 1900,
+          "name": "行軍速度",
+          "unit": "%",
+          "value": 4.5
+        }
+      ],
+      "mainEffectsKnown": true,
+      "image": "assets/game/enhancer-thumbnail-10018.png",
+      "imageId": 10018,
+      "maxSubSlots": 3,
+      "generation": {
+        "fragments": 100,
+        "ether": 50000,
+        "source": "Piece 10032"
+      },
+      "acquisition": [],
+      "paidAvailable": false,
+      "nonPaidAvailable": false,
+      "source": "PC版 Enhancer 10032（2026-10-17取得）"
     }
   ],
   "abilityNames": [

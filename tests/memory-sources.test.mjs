@@ -14,7 +14,7 @@ test('Published memory database includes native art, generation costs and indepe
  for(const r of data.records){assert.ok(r.image);assert.ok(fs.existsSync(new URL('../public/'+r.image,import.meta.url)));assert.ok(r.generation.fragments>0);assert.ok(r.generation.ether>0);}
  const halloween=data.records.find(r=>r.masterId===77);assert.equal(halloween.paidAvailable,true);assert.equal(halloween.nonPaidAvailable,false);assert.equal(halloween.generation.fragments,100);assert.ok(halloween.acquisition.some(a=>a.master==='ShopPack 13921'));
  const event=data.records.find(r=>r.masterId===80);assert.equal(event.paidAvailable,false);assert.ok(event.acquisition.some(a=>a.name==='パンプキンレリック'));
- assert.equal(filterMemories(data.records,{},{acquisition:'paid'}).length,43);
+ assert.equal(filterMemories(data.records,{},{acquisition:'paid'}).length,45);
  assert.equal(filterMemories(data.records,{},{acquisition:'nonpaid',query:'フロートアイ'}).length,1);
  assert.equal(filterMemories(data.records,{},{acquisition:'unknown',query:'骸'}).length,1);
 });

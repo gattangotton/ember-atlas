@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import {newMemoryCopy,validateMemoryInventory,filterMemories} from '../public/memory-model.js';
 const data=JSON.parse(fs.readFileSync(new URL('../public/data/game-memories.json',import.meta.url)));
 test('Memory common data excludes unnamed placeholders and preserves unknown fixed effects',()=>{
- assert.equal(data.records.length,82);assert.equal(new Set(data.records.map(r=>r.id)).size,82);
+ assert.equal(data.records.length,85);assert.equal(new Set(data.records.map(r=>r.id)).size,85);
  assert.equal(data.records.find(r=>r.id==='memory-10001').mainEffects[0].value,20);
  const unknown=data.records.filter(r=>!r.mainEffectsKnown);assert.deepEqual(unknown.map(r=>r.name),['忘れられし者','テンプルドラゴン']);
  for(const r of data.records){assert.ok(r.name.trim());assert.equal(r.maxSubSlots,3);assert.ok(r.mainEffects.every(e=>Number.isFinite(e.value)));}

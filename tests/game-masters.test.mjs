@@ -25,14 +25,14 @@ test('October event equipment preserves six source grades, slots and the standar
  const {unlockedSlots}=await import('../public/mechanics.js');
  assert.deepEqual(data.extraRecords.filter(r=>Number(r.id.split("-").at(-1))>=50601).map(r=>r.name),['スイートスケアリー','ナイトメアロッド','紅月のイヤーカフ']);
  assert.deepEqual(data.extraRecords.filter(r=>Number(r.id.split("-").at(-1))>=50601).map(r=>r.slot),['武器','武器','装飾']);
- for(const r of data.extraRecords){assert.deepEqual(unlockedSlots(r,6),[true,true,false]);assert.equal(data.equipment[r.id].powerGrades.length,6);assert.ok(data.equipment[r.id].mainAbilities.every(a=>a.values.length===6&&a.values.every(Number.isFinite)));}
+ for(const r of data.extraRecords){const master=data.equipment[r.id];assert.deepEqual(unlockedSlots({...r,...master},6),[true,true,master.raid==='yes']);assert.equal(master.powerGrades.length,6);assert.ok(master.mainAbilities.every(a=>a.values.length===6&&a.values.every(Number.isFinite)));}
  const sweet=data.equipment['equipment-pc-50601'];assert.deepEqual(sweet.powerGrades,[11500,14375,17250,20125,23000,25875]);assert.deepEqual(sweet.mainAbilities.find(a=>a.name==='光属性リーダー攻撃力').values,[23.5,29.38,35.25,41.13,47,52.88]);
 });
 
 test('All existing equipment and research IDs map uniquely to local masters',()=>{
  const equipment=[...catalog.records,...mechanics.extraRecords,...data.extraRecords].filter(r=>r.kind==='equipment');
- assert.equal(equipment.length,207);assert.deepEqual(new Set(Object.keys(data.equipment)),new Set(equipment.map(r=>r.id)));
- assert.equal(new Set(Object.values(data.equipment).map(e=>e.masterId)).size,207);
+ assert.equal(equipment.length,208);assert.deepEqual(new Set(Object.keys(data.equipment)),new Set(equipment.map(r=>r.id)));
+ assert.equal(new Set(Object.values(data.equipment).map(e=>e.masterId)).size,208);
  assert.deepEqual(new Set(Object.keys(data.researchMapping)),new Set(mechanics.research.map(r=>r.id)));
  assert.equal(new Set(Object.values(data.researchMapping).map(r=>r.groupId+':'+r.masterId)).size,422);
  assert.equal(Object.keys(validateResearchSpecs(data.researchSpecs,mechanics.research)).length,404);

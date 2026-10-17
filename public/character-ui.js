@@ -1,11 +1,12 @@
 import {SKILLS,ROMAN,coreThresholds,coreUnlockText,skillLevels,coreStage,coreEffects,inferCharge} from './mechanics.js';
 import {gameIcon} from './game-icons.js';
+import {contentNewBadge} from './whats-new.js';
 
 const tones={火:'#ed795c',水:'#55b8e9',風:'#60c5a0',雷:'#d9b655',土:'#c49a66',光:'#d8c37c',闇:'#a68cde'};
 export function characterCard(r,p,{esc,portrait,favorite,compared}){
  const lv=skillLevels(p.skills),stage=coreStage(p.owned,lv,r);
  return `<article class="ember-card ${p.owned?'is-owned':''}" style="--ember-accent:${tones[r.element]||'#a68cde'}">
- <div class="ember-card-top"><span class="ember-state">${p.owned?'◆ 所持':'◇ 未所持'}</span><span class="stars">${esc(r.rarity||'')}</span><button class="ember-favorite" data-action="favorite" data-id="${r.id}" aria-label="${esc(r.name)}をお気に入り${favorite?'から解除':'に追加'}" aria-pressed="${favorite}">${favorite?'★':'☆'}</button></div>
+ <div class="ember-card-top"><span class="ember-state">${p.owned?'◆ 所持':'◇ 未所持'}</span><span class="stars">${esc(r.rarity||'')}${contentNewBadge(r.id)}</span><button class="ember-favorite" data-action="favorite" data-id="${r.id}" aria-label="${esc(r.name)}をお気に入り${favorite?'から解除':'に追加'}" aria-pressed="${favorite}">${favorite?'★':'☆'}</button></div>
  <button class="ember-identity" data-action="detail" data-id="${r.id}" aria-label="${esc(r.name)}の詳細">${portrait(r)}<span><strong>${esc(r.name)}</strong><span class="ember-icons">${gameIcon(r.element,esc)}${gameIcon(r.troop,esc)}</span></span></button>
  <div class="ember-core"><span>CORE ${stage?ROMAN[stage-1]:'—'}</span><div class="ember-current-effects">${coreEffects(r).map(e=>`<div><strong>${esc(e.name)}</strong><small>${stage?'現在 '+(e.values[stage-1]==null?'未確認':esc(e.values[stage-1])+esc(e.unit)):'未解放 · 0'+esc(e.unit)}</small></div>`).join('')}</div></div>
  <div class="ember-levels">${Object.entries(SKILLS).map(([k,s])=>`<span title="${s.label} Lv.${lv[k]} / ${s.max}" class="${lv[k]===s.max?'is-max':''}"><small>${{charge:'C',active:'A',trigger1:'T1',trigger2:'T2',trigger3:'T3'}[k]}</small><b>${lv[k]||'—'}</b><i style="--level:${lv[k]/s.max*100}%"></i></span>`).join('')}</div>

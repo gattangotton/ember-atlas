@@ -4,6 +4,7 @@ import {abilityName} from '../public/ability-names.js';
 import {validateMechanics} from '../public/mechanics.js';
 import {createHash} from 'node:crypto';
 const files={};
+const capturedAt=process.env.GAME_CAPTURE_DATE||'2026-10-03';
 const read=n=>{const b=fs.readFileSync('.work/game-master/'+n);files[n]={sha256:createHash('sha256').update(b).digest('hex'),bytes:b.length};return decodeMessagePack(b);};
 const heroes=read('Hero'),skills=new Map(read('Skill').map(x=>[x[0],x])),active=new Map(read('HeroActiveSkillLevel').map(x=>[x[0],x])),cores=new Map(read('CoreAbility').map(x=>[x[0],x])),abilities=new Map(read('Ability').map(x=>[x[0],x]));
 const catalog=JSON.parse(fs.readFileSync('public/data/catalog.json'));
@@ -11,7 +12,7 @@ const reviewed=JSON.parse(fs.readFileSync(new URL('./game-hero-map.json',import.
 const old=catalog.records.filter(r=>r.kind==='characters');if(old.length!==Object.keys(reviewed).length||old.some(r=>!reviewed[r.id]))throw Error('Review hero mapping');
 const mapping=new Map(old.map(r=>[reviewed[r.id].masterId,r]));
 const chargeBuff=new Set([7,12,21,26,29,38,41,43,48,58,60,62,63,64,69,70,71,72,73,81,47,55,61,66,76]);
-const chargeDebuff=new Set([2,5,9,10,17,18,19,25,27,28,32,33,36,39,40,44,51,56,57,59,67,68,75]);
+const chargeDebuff=new Set([2,5,9,10,17,18,19,25,27,28,32,33,36,39,40,44,51,56,57,59,67,68,75,82]);
 const activeBuff=new Set([7,9,11,12,14,15,18,20,26,27,33,39,42,44,51,57]);
 const activeDebuff=new Set([47,55,56,59,69,70,71,73,76]);
 const clean=s=>String(s||'').replace(/<[^>]*>/g,'').replace(/\r/g,'');
@@ -28,10 +29,10 @@ function textEffects(descriptions){
  const keys=[...new Set(maps.flatMap(m=>[...m.keys()]))];return keys.map(k=>({name:k,unit:maps.find(m=>m.has(k)).get(k).unit,values:maps.map(m=>m.get(k)?.value??null),pattern:''}));
 }
 function effect(id,raw){const a=abilities.get(id);if(!a||![0,1].includes(a[1]??0))throw Error('Ability '+id);return {name:abilityName(a[3]),unit:a[1]===1?'%':/\(秒\)$/.test(a[3])?'秒':'',value:raw/(a[1]===1?100:1)};}
-const out={version:1,capturedAt:'2026-10-03',files,characters:{},extraRecords:[]},audit=[];
+const out={version:1,capturedAt,files,characters:{},extraRecords:[]},audit=[];
 for(const h of heroes){
  const r=mapping.get(h[0])||{id:'characters-game-'+h[0],kind:'characters',name:h[2]};
- const record={masterId:h[0],name:h[2],rarity:'☆'+h[6],element:({1:'火',2:'水',3:'風',4:'土',5:'雷',7:'光',8:'闇'})[h[5]],troop:({1:'統率',2:'歩兵',3:'弓兵',4:'騎兵'})[h[4]],skills:{},skillDescriptions:{},coreEffects:[],note:'PC版ゲーム設定（2026-10-03取得）。バフ＝自分・味方の強化、デバフ＝敵への弱体。回復・状態異常解除だけの効果は別記。'};
+ const record={masterId:h[0],name:h[2],rarity:'☆'+h[6],element:({1:'火',2:'水',3:'風',4:'土',5:'雷',7:'光',8:'闇'})[h[5]],troop:({1:'統率',2:'歩兵',3:'弓兵',4:'騎兵'})[h[4]],skills:{},skillDescriptions:{},coreEffects:[],note:`PC版ゲーム設定（${capturedAt}取得）。バフ＝自分・味方の強化、デバフ＝敵への弱体。回復・状態異常解除だけの効果は別記。`};
  for(const [key,id] of [['charge',h[20][1]],['active',h[19][0]],...h[21].map((t,i)=>['trigger'+(i+1),t[1]])]){
   const s=skills.get(id),descriptions=(key==='active'?active.get(h[19][1])[2].map(l=>l[2]):(s[20]||s[13]).map(l=>l[1])).map(clean);
   if(descriptions.length!==(key==='active'?5:7))throw Error('Skill levels '+id);
