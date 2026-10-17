@@ -1,4 +1,4 @@
-import {RAID_BOSSES,RAID_SLOTS,GUARDIAN_GEAR,RAID_EXTRA_GEAR} from './raid-data.js';
+import {RAID_BOSSES,RAID_SLOTS,GUARDIAN_GEAR,RAID_EXTRA_GEAR} from './raid-data.js?v=20261017-eclipse';
 export function raidPage(records,esc){
  const equipment=new Map(records.filter(r=>r.kind==='equipment').map(r=>[r.id,r]));
  const external=(url,label)=>`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${label} ↗</a>`;

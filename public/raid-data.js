@@ -1,4 +1,4 @@
-import {gameImages} from './game-image-paths.js';
+import {gameImages} from './game-image-paths.js?v=20261017-eclipse';
 // Equipment correspondence: supplied Excel, レイド装備. Null means no released slot
 // in the checked source set, not a missing database record. Checked 2026-09-28.
 export const RAID_SLOTS=['武器','頭部','身体','脚部','装飾'];
