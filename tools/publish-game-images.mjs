@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import {createHash} from 'node:crypto';
 import {decodeMessagePack} from './read-messagepack.mjs';
 const game=JSON.parse(fs.readFileSync('public/data/game-masters.json')),heroes=JSON.parse(fs.readFileSync('public/data/game-heroes.json'));
 const equipment=decodeMessagePack(fs.readFileSync('.work/game-master/Equipment'));
@@ -9,9 +10,16 @@ function choose(kind,id,variants){const key=String(id).padStart(5,'0');for(const
 for(const [id,e] of Object.entries(game.equipment)){const master=equipment.find(x=>x[0]===e.masterId);const p=choose('equipment',master[2],['largethumbnail','thumbnail']);if(p)out.equipment[id]=p;}
 for(const [id,h] of Object.entries(heroes.characters)){const p=choose('hero',h.masterId,['thumbnail','icon']);if(p)out.heroes[id]=p;}
 for(const id of new Set(Object.values(game.buildings).flatMap(b=>b.levels.map(l=>l.imageId)))){const p=choose('building',id,['largethumbnail','thumbnail']);if(p)out.buildings[id]=p;}
-// Full-screen artwork matched visually against the six existing named boss
-// references; use clean original art instead of screenshots with game controls.
-for(const [name,id] of Object.entries({malacoda:1,chiliat:17,eclipse:23,magatsu:22,malboro:24,jormungand:26}))out.raids[name]=choose('monster',id,['fullscreen']);
+// MonsterOrigin[7] is the artwork reference, distinct from the origin ID.
+// Resolve by the exact boss name so a visually similar monster cannot replace it.
+const originBytes=fs.readFileSync('.work/game-master/MonsterOrigin'),origins=decodeMessagePack(originBytes),raidEvidence=[];
+for(const [key,name] of Object.entries({malacoda:'マラコーダ',chiliat:'チリアット',eclipse:'エクリプス',magatsu:'禍ツ神千刃',malboro:'モルボル',jormungand:'ヨルムンガンド'})){
+ const rows=origins.filter(r=>r[1]===name&&r[0]<10000),ids=[...new Set(rows.map(r=>r[7]?.[0]))];
+ if(!rows.length||ids.length!==1||!Number.isInteger(ids[0])||rows.some(r=>r[7]?.[-1]!==2))throw Error('Unverified boss image: '+name);
+ out.raids[key]=choose('monster',ids[0],['fullscreen']);
+ raidEvidence.push({boss:key,name,originIds:rows.map(r=>r[0]),imageId:ids[0],image:out.raids[key]});
+}
+fs.writeFileSync('artifacts/raid-image-mapping-audit.json',JSON.stringify({source:'MonsterOrigin[7] / Monster FullScreen',sha256:createHash('sha256').update(originBytes).digest('hex'),bosses:raidEvidence},null,2)+'\n');
 for(const [name,id] of Object.entries({fire:1,water:2,wind:3,earth:4,thunder:5,light:7,dark:8}))out.icons[name]=copy('commander-elementaltype-'+String(id).padStart(2,'0')+'.png');
 for(const [name,id] of Object.entries({leader:1,infantry:2,archer:3,cavalry:4}))out.icons[name]=copy('commander-charactertype-'+String(id).padStart(2,'0')+'.png');
 for(let g=1;g<=6;g++){copy('atlas-SmallThumbnail-base_0'+g+'.png');copy('atlas-SmallThumbnail-frame_0'+g+'.png');}

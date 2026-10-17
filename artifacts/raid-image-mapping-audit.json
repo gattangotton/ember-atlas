@@ -1,0 +1,65 @@
+{
+  "source": "MonsterOrigin[7] / Monster FullScreen",
+  "sha256": "daf73b611c12df59fe2c843c7c4e12556a1b42c36ae4c5980d47b1e473d4dbc2",
+  "bosses": [
+    {
+      "boss": "malacoda",
+      "name": "マラコーダ",
+      "originIds": [
+        2004,
+        5001
+      ],
+      "imageId": 1,
+      "image": "assets/game/monster-fullscreen-00001.png"
+    },
+    {
+      "boss": "chiliat",
+      "name": "チリアット",
+      "originIds": [
+        2001,
+        5011
+      ],
+      "imageId": 17,
+      "image": "assets/game/monster-fullscreen-00017.png"
+    },
+    {
+      "boss": "eclipse",
+      "name": "エクリプス",
+      "originIds": [
+        2008,
+        5021
+      ],
+      "imageId": 15,
+      "image": "assets/game/monster-fullscreen-00015.png"
+    },
+    {
+      "boss": "magatsu",
+      "name": "禍ツ神千刃",
+      "originIds": [
+        2010,
+        5031
+      ],
+      "imageId": 22,
+      "image": "assets/game/monster-fullscreen-00022.png"
+    },
+    {
+      "boss": "malboro",
+      "name": "モルボル",
+      "originIds": [
+        2012
+      ],
+      "imageId": 24,
+      "image": "assets/game/monster-fullscreen-00024.png"
+    },
+    {
+      "boss": "jormungand",
+      "name": "ヨルムンガンド",
+      "originIds": [
+        2015,
+        5041
+      ],
+      "imageId": 26,
+      "image": "assets/game/monster-fullscreen-00026.png"
+    }
+  ]
+}
