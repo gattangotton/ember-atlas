@@ -1,4 +1,20 @@
+import {cloudConfig} from './cloud-config.js';
+import {cloudApi,setCsrf,setIdentity} from './cloud-api.js';
 export async function initializeSession(isAdmin){
+ if(cloudConfig.enabled){
+  let session;
+  try{session=await cloudApi('session');}catch(e){document.querySelector('#app').textContent=e.message;throw e;}
+  if(!session.user){location.replace('./cloud-login.html');throw Error('Login required');}
+  if(isAdmin&&!session.user.site_admin){location.replace('./');throw Error('Administrator required');}
+  setCsrf(session.csrf);setIdentity(session.user.id);
+  document.addEventListener('click',async e=>{
+   if(!e.target.closest('[data-session-logout]'))return;
+   if(!window.dispatchEvent(new CustomEvent('cloud-before-logout',{cancelable:true})))return;
+   try{await cloudApi('logout',{data:{}});location.replace('./cloud-login.html');}
+   catch(err){document.querySelector('#toast').textContent=err.message;}
+  });
+  return {...session,cloud:true};
+ }
  // GitHub Pages serves this app without the Node authentication endpoints.
  // Repository Pages use the github.io host; local Node hosting keeps its normal auth flow.
  if(location.hostname.endsWith('.github.io'))return {enabled:false,role:'admin'};
