@@ -1,10 +1,16 @@
+import {openRoomMedia} from './room-media.js';
+import {roomAvatars,avatarById} from './room-avatars.js';
 import {cloudConfig} from './cloud-config.js';
 import {cloudApi,apiUrl} from './cloud-api.js';
 import {roomCanManage,roomCanChangeMember,chronological,ownMessage,boardMode} from './cloud-room-view.js';
 
 export function createCloudRoom({session,esc,modal,toast,api=cloudApi}){
  let rooms=[],selected='',kind='board',parent=null,before=0,loading=false,version=0,threads=[],shownPosts=[],treeHidden=false,treeMore=false,treeLoadedOlder=false;
+ let treeChoice=null,roomObserver;
  const expanded=new Set();
+ const avatarHtml=(id,name)=>{const a=avatarById(id);return a?`<img src="${esc(a.path)}" alt="${esc(a.name)}" loading="lazy">`:esc(name?.slice(0,1)||'？');};
+ function syncTree(){const root=document.querySelector('#cloud-room');if(!root)return;treeHidden=treeChoice??root.clientWidth<760;const tree=root.querySelector('#room-tree');if(!tree)return;tree.hidden=treeHidden;root.querySelector('.room-board-layout').classList.toggle('tree-hidden',treeHidden);const b=root.querySelector('[data-room-tree-toggle]');b.setAttribute('aria-expanded',String(!treeHidden));b.textContent=treeHidden?'☰ 話題を選ぶ':'☰ ツリーを隠す';}
+
  const active=()=>!!document.querySelector('#cloud-room');
  const current=()=>rooms.find(r=>r.id===selected);
  const status=text=>{const el=document.querySelector('#room-status');if(el)el.textContent=text;};
@@ -14,13 +20,13 @@ export function createCloudRoom({session,esc,modal,toast,api=cloudApi}){
  async function loadRooms(){
   try{rooms=(await api('rooms')).rooms;if(!active())return;
    if(!rooms.some(r=>r.id===selected)){selected=rooms[0]?.id||'';parent=null;kind='board';threads=[];treeLoadedOlder=false;expanded.clear();}
-   toolbar();content();await refresh();
+   toolbar();content();roomObserver?.disconnect();roomObserver=new ResizeObserver(syncTree);roomObserver.observe(document.querySelector('#cloud-room'));await refresh();
   }catch(e){status(e.message);}
  }
  function toolbar(){
   const a=current();document.querySelector('#cloud-room').dataset.mode=boardMode(kind);
   document.querySelector('#room-alliance-name').textContent=a?.name||'';
-  document.querySelector('#room-toolbar').innerHTML=`<div class="room-toolbar"><div class="room-tabs" aria-label="コミュニケーションの種類">${a?`<button class="room-tab room-tab-board" data-room-tab="board" aria-pressed="${kind!=='chat'}"><span aria-hidden="true">▤</span> 掲示板</button><button class="room-tab room-tab-chat" data-room-tab="chat" aria-pressed="${kind==='chat'}"><span aria-hidden="true">💬</span> チャット</button>`:''}</div><div class="room-tools">${rooms.length>1?`<label>同盟を切り替え <select data-room-select aria-label="同盟を選択">${rooms.map(r=>`<option value="${esc(r.id)}" ${r.id===selected?'selected':''}>${esc(r.name)}</option>`).join('')}</select></label>`:''}${roomCanManage(session.user,a)?`<button data-room-manage>${session.user.site_admin?'全体管理者':'サブ管理者'} · メンバー・招待管理</button>`:''}</div></div>${a?`<p class="room-usage ${Number(a.used_bytes)>=Number(a.quota_bytes)*.8?'warn':''}">${a.member_count} / ${a.member_limit}人 · 添付 ${bytes(a.used_bytes)} / ${bytes(a.quota_bytes)}${Number(a.used_bytes)>=Number(a.quota_bytes)*.8?' · 容量が少なくなっています':''}</p>`:'<p>参加している同盟がありません。管理者から招待コードを受け取ってください。</p>'}`;
+  document.querySelector('#room-toolbar').innerHTML=`<div class="room-toolbar"><div class="room-tabs" aria-label="コミュニケーションの種類">${a?`<button class="room-tab room-tab-board" data-room-tab="board" aria-pressed="${kind!=='chat'}"><span aria-hidden="true">▤</span> 掲示板</button><button class="room-tab room-tab-chat" data-room-tab="chat" aria-pressed="${kind==='chat'}"><span aria-hidden="true">💬</span> チャット</button>`:''}</div><div class="room-tools">${cloudConfig.provider==='supabase'?`<button class="room-profile-edit" data-room-avatar><span class="room-message-avatar">${avatarHtml(session.user.avatar,session.user.name)}</span> アイコンを変更</button>`:''}${rooms.length>1?`<label>同盟を切り替え <select data-room-select aria-label="同盟を選択">${rooms.map(r=>`<option value="${esc(r.id)}" ${r.id===selected?'selected':''}>${esc(r.name)}</option>`).join('')}</select></label>`:''}${roomCanManage(session.user,a)?`<button data-room-manage>${session.user.site_admin?'全体管理者':'サブ管理者'} · メンバー・招待管理</button>`:''}</div></div>${a?`<p class="room-usage ${Number(a.used_bytes)>=Number(a.quota_bytes)*.8?'warn':''}">${a.member_count} / ${a.member_limit}人 · 添付 ${bytes(a.used_bytes)} / ${bytes(a.quota_bytes)}${Number(a.used_bytes)>=Number(a.quota_bytes)*.8?' · 容量が少なくなっています':''}</p>`:'<p>参加している同盟がありません。管理者から招待コードを受け取ってください。</p>'}`;
  }
  function compose(){return `<form class="room-compose" data-room-form="post"><input type="hidden" name="client_id" value="${crypto.randomUUID()}">${kind==='board'?'<label class="field">新しい話題のタイトル<input name="title" maxlength="120" placeholder="例：今週のレイド作戦" required></label>':''}<label class="field">${kind==='chat'?'メッセージ':parent?'この話題に返信':'本文'}<textarea name="body" maxlength="4000" placeholder="${kind==='chat'?'メッセージを入力…':'仲間に伝えたいことを書いてください'}"></textarea></label><div class="room-compose-bottom"><label class="room-attachment">＋ 画像・動画<input name="file" type="file" aria-label="画像・動画を添付" accept="image/jpeg,image/png,image/webp,video/mp4,video/webm"></label><button class="primary">${kind==='chat'?'送信 ↑':parent?'返信を投稿':'話題を作成'}</button></div><div data-room-preview></div><small class="room-file-hint">画像5MB（1920px以内に縮小）・動画20MB／同盟で月5本まで</small></form>`;}
  function content(){
@@ -29,20 +35,20 @@ export function createCloudRoom({session,esc,modal,toast,api=cloudApi}){
   const controls='<div class="room-feed-tools"><button data-room-refresh>最新を表示</button><button data-room-older>以前の投稿</button></div>';
   if(kind==='chat')root.innerHTML=`<section class="room-chat"><header class="room-chat-heading"><div><strong>${esc(current().name)}</strong><small>チャット · 表示中は約10秒ごとに更新</small></div><span class="room-live">● メンバー限定</span></header>${controls}<div id="room-posts" class="room-chat-feed" aria-label="チャットの会話"></div><button class="room-new-messages" data-room-bottom hidden>新しいメッセージ ↓</button>${compose()}</section>`;
   else root.innerHTML=`<div class="room-board-actions"><button data-room-tree-toggle aria-expanded="${!treeHidden}" aria-controls="room-tree">${treeHidden?'☰ ツリーを表示':'☰ ツリーを隠す'}</button><button data-room-new>＋ 新しい話題</button><span>掲示板 · 約30秒ごとに更新</span></div><div class="room-board-layout ${treeHidden?'tree-hidden':''}"><aside id="room-tree" class="room-tree" aria-label="掲示板の話題と返信" ${treeHidden?'hidden':''}></aside><section class="room-thread-main"><header id="room-thread-heading"></header>${controls}<div id="room-posts" class="room-board-feed" aria-label="掲示板の投稿"></div>${compose()}</section></div>`;
-  renderTree();
+  renderTree();syncTree();
  }
  function renderTree(){
   const tree=document.querySelector('#room-tree');if(!tree)return;
   const treeHtml=`<div class="room-tree-heading"><strong>話題のツリー</strong><span>${threads.length}件読込済み</span></div><nav><ul>${threads.map(p=>`<li><div class="room-tree-row ${Number(parent)===p.id?'selected':''}"><button class="room-tree-fold" data-tree-expand="${p.id}" aria-expanded="${expanded.has(p.id)}" aria-label="${esc(p.title||'削除された話題')}の階層を切り替え">${expanded.has(p.id)?'▾':'▸'}</button><button class="room-tree-title" data-room-thread="${p.id}" ${Number(parent)===p.id?'aria-current="true"':''}>${esc(p.title||'削除された話題')}</button></div>${expanded.has(p.id)?`<ul class="room-tree-children"><li><button data-room-thread="${p.id}">話題の本文</button></li>${Number(parent)===p.id?chronological(shownPosts).map(r=>`<li><button data-room-jump="${r.id}">${esc(r.name)}：${esc(r.body?.slice(0,24)||'添付・削除された返信')}</button></li>`).join(''):`<li><button data-room-thread="${p.id}">返信を読む</button></li>`}</ul>`:''}</li>`).join('')||'<li class="room-empty">まだ話題がありません。</li>'}</ul></nav>${treeMore?'<button data-tree-older>以前の話題を読み込む</button>':''}`;
   if(tree.roomMarkup!==treeHtml){tree.innerHTML=treeHtml;tree.roomMarkup=treeHtml;}
   const heading=document.querySelector('#room-thread-heading');const thread=threads.find(p=>p.id===Number(parent));
-  const headingHtml=parent?`<p class="eyebrow">TOPIC / REPLIES</p><h2>${esc(thread?.title||'選択した話題')}</h2>`:'<p class="eyebrow">BULLETIN BOARD</p><h2>話題を選ぶ・新しく作る</h2><p>左のツリーから話題を選ぶと、本文と返信がまとまって表示されます。</p>';
+  const headingHtml=parent?`<p class="eyebrow">TOPIC / REPLIES</p><h2>${esc(thread?.title||'選択した話題')}</h2>`:'<p class="eyebrow">BULLETIN BOARD</p><h2>話題を選ぶ・新しく作る</h2><p>話題を選んで会話に参加。新しい相談も、ここから。</p>';
   if(heading.roomMarkup!==headingHtml){heading.innerHTML=headingHtml;heading.roomMarkup=headingHtml;}
  }
  function postHtml(p){
   const file=p.file_url||(p.file_id&&cloudConfig.provider!=='supabase'?apiUrl('file',{id:p.file_id}).href:'');
   const mine=ownMessage(p,session.user),chat=kind==='chat';
-  return `<article id="room-message-${p.id}" class="room-post ${chat?'chat-message '+(mine?'is-mine':'is-other'):'board-post'}"><span class="room-message-avatar" aria-hidden="true">${esc(p.name?.slice(0,1)||'？')}</span><div class="room-message-content"><small class="room-message-author">${esc(p.name)}${mine?' · あなた':''}</small><div class="room-bubble">${p.title?`<h3>${esc(p.title)}</h3>`:''}<p>${esc(p.body|| (Number(p.deleted)?'削除された投稿':''))}</p>${file?(p.mime.startsWith('image/')?`<a href="${esc(file)}" target="_blank" rel="noreferrer"><img src="${esc(file)}" alt="投稿の添付画像" loading="lazy"></a>`:`<video src="${esc(file)}" controls preload="none" playsinline></video>`):''}</div><div class="room-message-meta"><time>${new Date(Number(p.created_at)*1000).toLocaleString('ja-JP',chat?{hour:'2-digit',minute:'2-digit'}:undefined)}</time>${kind==='board'&&!Number(p.deleted)?`<button data-room-thread="${p.id}">話題を開く →</button>`:''}${p.can_delete?`<button data-room-delete="${p.id}" aria-label="${esc(p.name)}の投稿を削除">削除</button>`:''}</div></div></article>`;
+  return `<article id="room-message-${p.id}" class="room-post ${chat?'chat-message '+(mine?'is-mine':'is-other'):'board-post'}"><span class="room-message-avatar" aria-hidden="true">${avatarHtml(p.avatar,p.name)}</span><div class="room-message-content"><small class="room-message-author">${esc(p.name)}${mine?' · あなた':''}</small><div class="room-bubble">${p.title?`<h3>${esc(p.title)}</h3>`:''}<p>${esc(p.body|| (Number(p.deleted)?'削除された投稿':''))}</p>${file?`<button type="button" class="room-media-thumb ${p.mime?.startsWith('video/')?'is-video':''}" data-room-media="${p.id}" aria-label="${p.mime?.startsWith('video/')?'動画を拡大して再生':'画像を拡大'}">${p.mime?.startsWith('image/')?`<img src="${esc(file)}" alt="投稿の添付画像" loading="lazy">`:`<video src="${esc(file)}#t=0.1" preload="metadata" muted playsinline aria-hidden="true"></video><span class="room-media-play" aria-hidden="true">▶</span>`}<span class="room-media-caption">${p.mime?.startsWith('video/')?'動画を見る':'拡大して見る ↗'}</span></button>`:''}</div><div class="room-message-meta"><time>${new Date(Number(p.created_at)*1000).toLocaleString('ja-JP',chat?{hour:'2-digit',minute:'2-digit'}:undefined)}</time>${kind==='board'&&!Number(p.deleted)?`<button data-room-thread="${p.id}">話題を開く →</button>`:''}${p.can_delete?`<button data-room-delete="${p.id}" aria-label="${esc(p.name)}の投稿を削除">削除</button>`:''}</div></div></article>`;
  }
  async function refresh(){
   if(!active()||!selected)return;const v=version;if(loading===v+1)return;loading=v+1;
@@ -68,6 +74,8 @@ export function createCloudRoom({session,esc,modal,toast,api=cloudApi}){
     }
     target.dataset.signature=signature;
    }
+   // Renew expiring thumbnail links without rebuilding the conversation or resetting scroll.
+   for(const p of signaturePosts){const button=target.querySelector('[data-room-media="'+p.id+'"]');if(!button||!p.file_url)continue;const media=button.querySelector('img,video');const src=p.file_url+(p.mime?.startsWith('video/')?'#t=0.1':'');if(media.getAttribute('src')!==src)media.setAttribute('src',src);}
    target.dataset.oldest=String(Math.min(...result.posts.map(p=>p.id)));renderTree();
    const older=document.querySelector('[data-room-older]');if(older){older.hidden=mode==='board';older.disabled=result.posts.length<50;}
    status(pageBefore?'以前の投稿を表示中です。「最新を表示」で戻れます。':'');
@@ -112,12 +120,15 @@ export function createCloudRoom({session,esc,modal,toast,api=cloudApi}){
  document.addEventListener('click',async e=>{
   const b=e.target.closest('button');if(!b)return;
   try{
+   if(b.hasAttribute('data-room-avatar'))modal('自分のアイコン',`<p>ゲーム内の英雄から選べます。掲示板とチャットで共通のアイコンです。</p><div class="room-avatar-grid"><button data-avatar-id="" aria-label="名前の頭文字を使う">頭文字</button>${roomAvatars.map(a=>`<button data-avatar-id="${esc(a.id)}" aria-pressed="${session.user.avatar===a.id}"><img src="${esc(a.path)}" alt="" loading="lazy"><span>${esc(a.name)}</span></button>`).join('')}</div>`,true);
+   if(b.hasAttribute('data-avatar-id')){b.disabled=true;try{await api('profile-avatar',{data:{avatar:b.dataset.avatarId}});session.user.avatar=b.dataset.avatarId;toolbar();await refresh();b.closest('dialog')?.close();toast('アイコンを変更しました');}finally{b.disabled=false;}}
+   if(b.hasAttribute('data-room-media')){const id=Number(b.dataset.roomMedia),p=[...shownPosts,...threads].find(p=>p.id===id);if(!p)return;b.disabled=true;try{const v=version;let file=p.file_url;if(cloudConfig.provider==='supabase'){const result=await api('posts',{params:{alliance:selected,kind:p.parent?'reply':kind==='chat'?'chat':'board',...(p.parent?{parent:p.parent}:{}),before:id+1}});file=result.posts.find(x=>x.id===id&&!Number(x.deleted))?.file_url;}else file=apiUrl('file',{id:p.file_id}).href;if(v!==version||!active())return;if(!file)throw Error('添付が削除されたか、閲覧できなくなりました。');openRoomMedia({url:file,video:p.mime?.startsWith('video/'),label:p.name+'さんの添付',origin:b});}finally{b.disabled=false;}}
    if(b.hasAttribute('data-room-tab')){kind=b.dataset.roomTab;parent=null;toolbar();content();await refresh();}
    if(b.hasAttribute('data-room-refresh')){before=0;const posts=document.querySelector('#room-posts');if(posts)delete posts.dataset.signature;await refresh();}
    if(b.hasAttribute('data-room-older')){before=Number(document.querySelector('#room-posts').dataset.oldest);await refresh();}
-   if(b.hasAttribute('data-room-thread')){parent=Number(b.dataset.roomThread);expanded.add(parent);kind='reply';toolbar();content();await refresh();}
+   if(b.hasAttribute('data-room-thread')){if(document.querySelector('#cloud-room').clientWidth<760)treeChoice=true;parent=Number(b.dataset.roomThread);expanded.add(parent);kind='reply';toolbar();content();await refresh();}
    if(b.hasAttribute('data-tree-expand')){const id=Number(b.dataset.treeExpand);if(expanded.has(id))expanded.delete(id);else expanded.add(id);renderTree();}
-   if(b.hasAttribute('data-room-tree-toggle')){treeHidden=!treeHidden;document.querySelector('#room-tree').hidden=treeHidden;document.querySelector('.room-board-layout').classList.toggle('tree-hidden',treeHidden);b.setAttribute('aria-expanded',String(!treeHidden));b.textContent=treeHidden?'☰ ツリーを表示':'☰ ツリーを隠す';}
+   if(b.hasAttribute('data-room-tree-toggle')){treeHidden=!treeHidden;treeChoice=treeHidden;document.querySelector('#room-tree').hidden=treeHidden;document.querySelector('.room-board-layout').classList.toggle('tree-hidden',treeHidden);b.setAttribute('aria-expanded',String(!treeHidden));b.textContent=treeHidden?'☰ ツリーを表示':'☰ ツリーを隠す';}
    if(b.hasAttribute('data-room-jump'))document.getElementById('room-message-'+b.dataset.roomJump)?.scrollIntoView({behavior:'smooth',block:'center'});
    if(b.hasAttribute('data-room-new')){kind='board';parent=null;toolbar();content();await refresh();document.querySelector('.room-compose input[name=title]')?.focus();}
    if(b.hasAttribute('data-room-bottom')){const feed=document.querySelector('#room-posts');feed.scrollTop=feed.scrollHeight;b.hidden=true;}

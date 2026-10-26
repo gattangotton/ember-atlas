@@ -1,6 +1,6 @@
 # 同盟ルームの更新手順（Supabaseで運用中の方向け）
 
-今回の変更は、掲示板のツリー表示、チャットの吹き出し表示、同盟ごとのサブ管理者です。画面の更新と、Supabaseの更新が必要です。既存の投稿・メンバー・添付データを削除する処理はありません。
+今回の変更は、端末サイズに応じた掲示板、画像・動画の拡大ビュー、ゲーム内英雄アイコンです。前回のサブ管理者機能も含みます。画面の更新と、Supabaseの更新が必要です。既存の投稿・メンバー・添付データを削除する処理はありません。
 
 ## 1. Supabaseを更新する
 
@@ -8,7 +8,8 @@
 2. 左側の **SQL Editor** → **New query** を開きます。
 3. このパソコンの `C:\Users\takah\Documents\ember-atlas\supabase\migrations\002_room_design_roles.sql` をメモ帳などで開き、全文をコピーします。
 4. SQL Editorに貼り付け、**Run** を押します。
-5. エラーが出ていないことを確認します。通常は `Success. No rows returned` と表示されます。
+5. 続けて新しいクエリーで `supabase/migrations/003_room_avatars.sql` の全文も実行します。002が既に実行済みなら今回は003だけで構いません。
+6. エラーが出ていないことを確認します。通常は `Success. No rows returned` と表示されます。
 
 既に運用中なので、`001_alliance.sql` や管理者指定SQLを再実行する必要はありません。002は再実行しても投稿・メンバーを初期化しません。
 
@@ -18,7 +19,7 @@
 
 ```powershell
 cd C:\Users\takah\Documents\ember-atlas
-git add public/cloud-room.js public/cloud-room-view.js public/cloud.css public/supabase-login.js public/supabase-adapter.js public/auth-validation.js supabase/migrations/002_room_design_roles.sql docs/ROOM_UPDATE.md
+git add public/cloud-room.js public/cloud-room-view.js public/room-media.js public/room-avatars.js public/cloud.css public/supabase-login.js public/supabase-adapter.js public/auth-validation.js supabase/migrations/002_room_design_roles.sql supabase/migrations/003_room_avatars.sql docs/ROOM_UPDATE.md
 git commit -m "Redesign alliance board and chat"
 git push origin main
 ```
@@ -47,8 +48,17 @@ GitHubの **Actions** で最新の実行が緑色の **Success** になったら
 
 ## 検証範囲
 
-登録画面も更新しています。メールアドレスとパスワードの確認用入力欄、パスワード表示の切り替え、登録確認メールの再送と不達時の案内を追加しました。今回の登録画面更新だけなら追加SQLは不要です。前回の002が未実行の場合は先に実行してください。
+登録画面も更新しています。メールアドレスとパスワードの確認用入力欄、パスワード表示の切り替え、登録確認メールの再送と不達時の案内を追加しました。登録画面の変更だけなら追加SQLは不要でしたが、今回のアイコン保存には003が必要です。前回の002が未実行の場合は先に実行してください。
 
 登録確認メールの再送はSupabaseの公式の再送機能を使います（[公式資料](https://supabase.com/docs/reference/javascript/auth-resend)）。実際の配信には、プロジェクトのメール確認設定・送信サービス設定が必要です。画面の更新でメール送信上限や送信先制限が解除されるわけではありません。
 
 画面はサンプルデータで確認し、権限はローカルのPostgreSQL互換環境で検証しています。更新後は実際の一般メンバーとサブ管理者のアカウントでも、表示・招待・投稿を確認してください。
+
+## 添付・画面・アイコンの使い方
+
+- 投稿の添付は小さなサムネイルです。押すと背景が暗くぼけた拡大ビューを開きます。画像・動画は元の縦横比と画面サイズに合わせ、小さな画像を無理に引き伸ばしません。大きい画像は「原寸で見る」に切り替えられます。閉じるボタン・背景・Escキーで戻ります。
+- 小さな画面では「話題を選ぶ」からツリーを開きます。話題を選ぶとツリーを閉じ、本文と返信へ移ります。端末を回転しても入力中の本文は保持します。
+- 「アイコンを変更」で73種類のゲーム内英雄画像、または名前の頭文字を選べます。本人のアカウントに保存し、過去の投稿も現在のアイコンで表示します。
+- 画像のサムネイルは表示サイズを小さくしたものです。別の圧縮画像をサーバーに追加する処理はありません。動画は自動再生せず、拡大ビュー内で再生します。
+
+デザイン調査では、[Discourseのサイドバーとコミュニティ画面](https://www.discourse.org/features)、[PhotoSwipeの画面に合わせた拡大表示](https://photoswipe.com/adjusting-zoom-level/)を参考にしました。外部ライブラリの追加はなく、このアプリ用に実装しています。アイコンは既存の `game-heroes.json` と `game-image-paths.js` の対応を確認し、同梱済みの画像から選んでいます。
