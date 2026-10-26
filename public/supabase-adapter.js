@@ -25,6 +25,7 @@ export function createSupabaseAdapter({client,getIdentity=()=>'',redirectUrl,pre
    return {confirmationRequired:!r.session};
   }
   if(action==='forgot') {await unwrap(client.auth.resetPasswordForEmail(data.email.trim(),{redirectTo:redirectUrl}));return {};}
+  if(action==='resend') {await unwrap(client.auth.resend({type:'signup',email:data.email.trim(),options:{emailRedirectTo:redirectUrl}}));return {};}
   if(action==='recover') {await checkedUser();await unwrap(client.auth.updateUser({password:data.password}));await unwrap(client.auth.signOut({scope:'others'}));return {};}
   if(action==='setup')throw Error('管理者の設定はSupabaseの管理画面で行います。設置手順の「あなたを管理者にする」を確認してください。');
   if(action==='session'){if(!await user())return {enabled:true,user:null};return rpc('session');}
