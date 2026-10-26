@@ -62,3 +62,18 @@ GitHubの **Actions** で最新の実行が緑色の **Success** になったら
 - 画像のサムネイルは表示サイズを小さくしたものです。別の圧縮画像をサーバーに追加する処理はありません。動画は自動再生せず、拡大ビュー内で再生します。
 
 デザイン調査では、[Discourseのサイドバーとコミュニティ画面](https://www.discourse.org/features)、[PhotoSwipeの画面に合わせた拡大表示](https://photoswipe.com/adjusting-zoom-level/)を参考にしました。外部ライブラリの追加はなく、このアプリ用に実装しています。アイコンは既存の `game-heroes.json` と `game-image-paths.js` の対応を確認し、同梱済みの画像から選んでいます。
+
+## 入力欄の折りたたみ（2026-10-27追加）
+
+掲示板・チャットの入力欄は通常閉じています。「新しい話題を書く」「返信を書く」「メッセージを書く」を押すと開きます。開いた入力欄の「入力欄を開いたままにする」にチェックすると、投稿後・画面切り替え後も開いた状態を維持します。固定設定は、このブラウザーにアカウントごとに記憶します。
+
+固定を解除するにはチェックを外します。「入力欄を閉じる」で折りたたんでも、その入力欄の文章と選択済み添付は残ります。別の話題・画面へ切り替えたり再読み込みした場合の下書き保存は行いません。固定していない場合は、投稿成功後に自動で閉じます。投稿に失敗した場合は入力欄と内容を残します。
+
+この追加変更だけならSQL更新は不要です。前回までの更新が公開済みなら、以下で反映できます。
+
+```powershell
+cd C:\Users\takah\Documents\ember-atlas
+git add public/cloud-room.js public/cloud.css docs/ROOM_UPDATE.md
+git commit -m "Make alliance composers collapsible"
+git push origin main
+```
