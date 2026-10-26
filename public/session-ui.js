@@ -2,6 +2,10 @@ import {cloudConfig} from './cloud-config.js';
 import {cloudApi,setCsrf,setIdentity} from './cloud-api.js';
 export async function initializeSession(isAdmin){
  if(cloudConfig.enabled){
+  // Guest mode never opens a cloud session or reads cloud records. Admin entry still requires authentication.
+  if(!isAdmin&&new URLSearchParams(location.search).get('mode')==='guest'){
+   return {enabled:false,role:'user',cloud:false,guest:true};
+  }
   let session;
   try{session=await cloudApi('session');}catch(e){document.querySelector('#app').textContent=e.message;throw e;}
   if(!session.user){location.replace('./cloud-login.html');throw Error('Login required');}
