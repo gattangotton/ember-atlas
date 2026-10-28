@@ -24,10 +24,11 @@ export function withCandidates(record,catalog={}){
  const v=catalog[record.id];return v?{...record,subCandidateSlots:v.slots,subCandidateSource:v.source}:record;
 }
 export function slotCandidates(record,slot,grade){
- if(record.subCandidateSlots){const list=record.subCandidateSlots[slot-1];return list&&grade!==undefined?list.map(c=>({...c,max:c.gradeMax?(c.gradeMax[grade-1]??null):c.max})):list;}
+ const allowed=c=>!(record.kind==='equipment'||record.id?.startsWith('equipment-'))||!abilityName(c.name).includes('素材倍化率');
+ if(record.subCandidateSlots){const list=record.subCandidateSlots[slot-1]?.filter(allowed)??null;return list&&grade!==undefined?list.map(c=>({...c,max:c.gradeMax?(c.gradeMax[grade-1]??null):c.max})):list;}
  // Honour previous per-item settings for choices, but do not infer that a
  // partially entered lottery table establishes the maximum (see scorer).
- const rows=(record.subCandidates||[]).filter(c=>c.slot===slot);
+ const rows=(record.subCandidates||[]).filter(c=>c.slot===slot&&allowed(c));
  if(rows.length){const groups=new Map();for(const c of rows){const name=abilityName(c.name),prior=groups.get(name);groups.set(name,{name,unit:c.unit||'%',max:c.value===null||prior?.max===null?null:Math.max(prior?.max??-Infinity,c.value)});}return [...groups.values()];}
  return null;
 }

@@ -88,3 +88,10 @@ test('確認済み枠の登録UIはその枠の選択肢だけ。既存候補外
  for(const resource of ['食料','木材','金属','エーテル'])for(const effect of ['採集量','採集速度'])assert.ok(helper.includes(`data-sub-choice="${resource+effect}"`));
  assert.ok(!subPicker('closed','',esc,true).includes('data-sub-choice'));
 });
+
+test('武具の素材倍化サブ候補を除外し、メモリの候補と元の記録を保持する',()=>{
+ const slots=[[{name:'対魔獣素材倍化率',unit:'%',max:14.3},{name:'対悪魔攻撃力',unit:'%',max:113}],[],null];
+ const gear={id:'equipment-reference',subCandidateSlots:slots};
+ assert.deepEqual(slotCandidates(gear,1).map(c=>c.name),['対悪魔攻撃力']);
+ assert.equal(slotCandidates({id:'memory-reference',subCandidateSlots:slots},1).length,2);assert.equal(slots[0].length,2);
+});

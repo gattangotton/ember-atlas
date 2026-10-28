@@ -13,7 +13,7 @@ const node={id:'research-a',name:'対悪魔素材倍化率',group:'討伐①',do
 const state={progress:{'hero-a':{owned:true,skills:{}}},research:{'research-a':1},researchSpecs:{'research-a':{ability:node.name,unit:'%',values:[8,16]}},abilityUser:{manual:{'対悪魔素材倍化率|%':{total:50}},extras:[]}};
 test('All selected sources combine, research and globally owned core contribute exactly once',()=>{
  const result=simulateLoadout({context,heroes:[h],gear:[gear],memories:[memory],records:[hero],nodes:[node],state,drops:[{ability:'対悪魔素材倍化率',name:'雫',value:9}]});
- assert.equal(result.total,64);assert.equal(result.unknown,0);
+ assert.equal(result.total,62);assert.match(result.ignored[0],/武具のサブ/);assert.equal(result.unknown,0);
  assert.equal(result.rows.find(x=>x.source==='hero').total,16);assert.equal(result.rows.find(x=>x.source==='core').total,4);assert.equal(result.rows.find(x=>x.source==='research').total,8);
  assert.equal(simulateLoadout({context,records:[hero],nodes:[node],state}).total,12,'Owned core does not require selection');
 });
@@ -85,8 +85,8 @@ test('Memory unknown, empty and zero sub effects are distinct',()=>{
  const m=structuredClone(memory);m.copy.subs=[{status:'unknown'},{status:'empty'},{status:'set',name:'対悪魔素材倍化率',unit:'%',value:0}];
  const r=simulateLoadout({context,memories:[m],base:none});assert.equal(r.total,15);assert.equal(r.unknown,1);
 });
-test('Only unlocked missing gear subs count as unknown, and grade missing is not G1',()=>{
- const g={...gear,owned:true,grade:1,subAbilities:[null,null,null]};assert.equal(simulateLoadout({context,gear:[g],base:none}).unknown,1);
+test('Attack counts missing unlocked subs; loot excludes all gear subs but still tracks missing main values',()=>{
+ const g={...gear,owned:true,grade:1,subAbilities:[null,null,null]};assert.equal(simulateLoadout({context,gear:[g],base:none}).unknown,0);assert.equal(simulateLoadout({context:{...context,mode:'attack'},gear:[g],base:none}).unknown,1);
  const missing=structuredClone(gear);missing.record.mainAbilities[0].values[5]=null;assert.equal(simulateLoadout({context,gear:[missing],base:none}).unknown,1);
 });
 test('Loot thresholds 0, 100 and 200 preserve guaranteed multipliers and fractional chance',()=>{

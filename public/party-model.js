@@ -18,6 +18,8 @@ export function validatePartySettings(v,allowTerritory=true){
  if(!['auto','manual','none'].includes(v.base?.mode))throw Error('拠点の設定が不正です。');
  const resource=v.resource??'食料',resourceLevel=v.resourceLevel??6,droplet=v.droplet??0,objective=v.objective??'amount';
  if(!['食料','木材','金属','エーテル'].includes(resource)||![4,5,6,7].includes(resourceLevel)||!number(droplet,0,GATHER_DROP_MAX)||!['speed','amount'].includes(objective))throw Error('採集の設定が不正です。');
+ const goalTarget=v.goalTarget??0,goalSub=v.goalSub??0,goalUncertain=v.goalUncertain!==false;
+ if(!number(goalTarget,0,1e7)||!number(goalSub,0,1e7))throw Error('目標値・サブ能力の追加量が不正です。');
  let territory;
  if(v.territory!==undefined){
   if(!allowTerritory||v.battle!=='fieldBoss'||!v.owned)throw Error('複数部隊の設定が不正です。');
@@ -31,6 +33,6 @@ export function validatePartySettings(v,allowTerritory=true){
    return {settings,supports:[...t.supports]};});
   territory={options:{teamCount:o.teamCount,troop:o.troop,supportCount:o.supportCount,shared:o.shared,enemyElement:o.enemyElement},teams};
  }
- return {...(territory?{territory}:{}),enemyElement,heroSort,partnerMatch,supportCount,supports:[...supports],chargeEffects:v.chargeEffects??'off',battle:v.battle,race:v.race,grade:v.grade,boss:v.boss,tab:v.tab,troop:v.troop,attackType:v.attackType,owned:v.owned===true,heroes,memories,gear,heroSettings,drops,thirdHero:v.thirdHero===true,thirdMemory:v.thirdMemory===true,base:{mode:v.base.mode,...Object.fromEntries(['research','core','building','extra'].map(k=>[k,v.base[k]===true]))},resource,resourceLevel,droplet,objective,gatherItem:v.gatherItem===true};
+ return {goalTarget,goalSub,goalUncertain,...(territory?{territory}:{}),enemyElement,heroSort,partnerMatch,supportCount,supports:[...supports],chargeEffects:v.chargeEffects??'off',battle:v.battle,race:v.race,grade:v.grade,boss:v.boss,tab:v.tab,troop:v.troop,attackType:v.attackType,owned:v.owned===true,heroes,memories,gear,heroSettings,drops,thirdHero:v.thirdHero===true,thirdMemory:v.thirdMemory===true,base:{mode:v.base.mode,...Object.fromEntries(['research','core','building','extra'].map(k=>[k,v.base[k]===true]))},resource,resourceLevel,droplet,objective,gatherItem:v.gatherItem===true};
 }
 export function validateParties(input=[]){if(!Array.isArray(input)||input.length>100)throw Error('保存編成は100件以内です。');const seen=new Set();return input.map(p=>{if(!p||!id(p.id)||seen.has(p.id)||!Object.hasOwn(PARTY_MODES,p.mode)||!text(p.name,80)||!p.name.trim()||!Number.isFinite(Date.parse(p.updatedAt)))throw Error('保存編成の形式が不正です。');seen.add(p.id);if(p.mode!=='attack'&&p.settings?.territory)throw Error('複数部隊は種族別攻撃力で保存してください。');const result=p.result||{};if(!number(result.total,-1e9,1e9)||!Number.isInteger(result.unknown)||!number(result.unknown,0,10000))throw Error('保存した計算結果が不正です。');return {id:p.id,name:p.name.trim(),mode:p.mode,updatedAt:p.updatedAt,settings:validatePartySettings(p.settings),result:{total:result.total,unknown:result.unknown}};});}

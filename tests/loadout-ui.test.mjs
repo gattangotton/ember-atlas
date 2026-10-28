@@ -24,3 +24,25 @@ test('Attack screen selects compatible partners, saves supports and reloads the 
   const gather=createLoadoutUI(common,'gather');assert.match(gather.page(),/採集資源量/);assert.doesNotMatch(gather.page(),/fitness-controls/);
  }finally{delete globalThis.document;}
 });
+
+test('Goal inputs, recommendations, manual choices, invalidation and saved settings work in both simulators',()=>{
+ const listeners={};globalThis.document={addEventListener:(name,f)=>(listeners[name]??=[]).push(f)};
+ try{
+  const nodes=[{id:'research-test',name:'対悪魔素材倍化率',lab:0,group:'討伐①',documentedMax:2,levels:[[10,0,0,0,10],[20,0,0,0,20]]}];
+  const state={profile:{id:'goal'},progress:{},researchSpecs:{'research-test':{ability:'対悪魔素材倍化率',unit:'%',values:[10,20],requirementsKnown:true,requirements:[]}}};let saved;
+  const ui=createLoadoutUI({$:()=>null,esc:x=>String(x??''),records:()=>[],state:()=>state,toast:()=>{},data:()=>({research:nodes}),evidence:()=>({}),memories:()=>({records:[]}),simulation:()=>({bosses:[],drops:[]}),saveParty:(mode,s)=>saved=validatePartySettings(s)},'loot');
+  ui.page();
+  const change=(sim,value)=>listeners.change.at(-1)({target:{dataset:{sim},value,closest:()=>true}});
+  const click=dataset=>{const b={dataset,closest:()=>true};listeners.click.at(-1)({target:{closest:selector=>selector==='[data-goal-action]'?(dataset.goalAction?b:null):b}});};
+  change('goalTarget','25');change('goalSub','5');click({goalAction:'calculate'});
+  assert.match(ui.page(),/時間優先/);assert.match(ui.page(),/計画後の合計<b>25%/);
+  click({goalAction:'choose',goalIndex:'1'});assert.match(ui.page(),/Lv.0 → 2/);
+  listeners.change.at(-1)({target:{dataset:{goalCandidate:'research:research-test:2'},checked:false,closest:()=>true}});
+  assert.match(ui.page(),/計画後の合計<b>5%/);
+  click({goalAction:'calculate'});state.research={'research-test':1};assert.doesNotMatch(ui.page(),/class="goal-plans"/,'external progress changes invalidate cached proposals');
+  click({simAction:'save'});assert.equal(saved.goalTarget,25);assert.equal(saved.goalSub,5);ui.load(saved);assert.match(ui.page(),/data-sim="goalTarget" value="25"/);
+  change('race','龍');assert.doesNotMatch(ui.page(),/class="goal-plans"/);
+  const attack=createLoadoutUI({$:()=>null,esc:x=>String(x??''),records:()=>[],state:()=>state,toast:()=>{},data:()=>({research:[]}),evidence:()=>({}),memories:()=>({records:[]}),simulation:()=>({bosses:[],drops:[]}),saveParty:()=>{}},'attack');
+  assert.match(attack.page(),/目標達成プラン/);assert.match(attack.page(),/113%/);assert.match(ui.page(),/14.3%/);
+ }finally{delete globalThis.document;}
+});
