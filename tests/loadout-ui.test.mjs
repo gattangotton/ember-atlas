@@ -30,7 +30,7 @@ test('Goal inputs, recommendations, manual choices, invalidation and saved setti
  try{
   const nodes=[{id:'research-test',name:'対悪魔素材倍化率',lab:0,group:'討伐①',documentedMax:2,levels:[[10,0,0,0,10],[20,0,0,0,20]]}];
   const state={profile:{id:'goal'},progress:{},researchSpecs:{'research-test':{ability:'対悪魔素材倍化率',unit:'%',values:[10,20],requirementsKnown:true,requirements:[]}}};let saved;
-  const ui=createLoadoutUI({$:()=>null,esc:x=>String(x??''),records:()=>[],state:()=>state,toast:()=>{},data:()=>({research:nodes}),evidence:()=>({}),memories:()=>({records:[]}),simulation:()=>({bosses:[],drops:[]}),saveParty:(mode,s)=>saved=validatePartySettings(s)},'loot');
+  const ui=createLoadoutUI({goalAccess:{allowed:()=>true},$:()=>null,esc:x=>String(x??''),records:()=>[],state:()=>state,toast:()=>{},data:()=>({research:nodes}),evidence:()=>({}),memories:()=>({records:[]}),simulation:()=>({bosses:[],drops:[]}),saveParty:(mode,s)=>saved=validatePartySettings(s)},'loot');
   ui.page();
   const change=(sim,value)=>listeners.change.at(-1)({target:{dataset:{sim},value,closest:()=>true}});
   const click=dataset=>{const b={dataset,closest:()=>true};listeners.click.at(-1)({target:{closest:selector=>selector==='[data-goal-action]'?(dataset.goalAction?b:null):b}});};
@@ -42,7 +42,7 @@ test('Goal inputs, recommendations, manual choices, invalidation and saved setti
   click({goalAction:'calculate'});state.research={'research-test':1};assert.doesNotMatch(ui.page(),/class="goal-plans"/,'external progress changes invalidate cached proposals');
   click({simAction:'save'});assert.equal(saved.goalTarget,25);assert.equal(saved.goalSub,5);ui.load(saved);assert.match(ui.page(),/data-sim="goalTarget" value="25"/);
   change('race','龍');assert.doesNotMatch(ui.page(),/class="goal-plans"/);
-  const attack=createLoadoutUI({$:()=>null,esc:x=>String(x??''),records:()=>[],state:()=>state,toast:()=>{},data:()=>({research:[]}),evidence:()=>({}),memories:()=>({records:[]}),simulation:()=>({bosses:[],drops:[]}),saveParty:()=>{}},'attack');
+  const attack=createLoadoutUI({goalAccess:{allowed:()=>true},$:()=>null,esc:x=>String(x??''),records:()=>[],state:()=>state,toast:()=>{},data:()=>({research:[]}),evidence:()=>({}),memories:()=>({records:[]}),simulation:()=>({bosses:[],drops:[]}),saveParty:()=>{}},'attack');
   assert.match(attack.page(),/目標達成プラン/);assert.match(attack.page(),/113%/);assert.match(ui.page(),/14.3%/);
  }finally{delete globalThis.document;}
 });

@@ -19,12 +19,12 @@ import {validatePartySettings} from './party-model.js';
 const fmt=n=>Number(n.toFixed(3)).toLocaleString('ja-JP');
 const gatherResource=n=>n>=1_000_000?(n/1_000_000).toFixed(2)+'M':n.toLocaleString('ja-JP',{maximumFractionDigits:2});
 const BATTLES={field:'フィールド魔獣',fieldBoss:'領域改稿・フィールドボス',raid:'レイドバトル',rally:'集結魔獣（号令側）'};
-export function createLoadoutUI({$,esc,records,state,toast,data,evidence,memories:memoryData,simulation,saveParty,buildings=()=>({buildings:[]})},mode='loot'){
+export function createLoadoutUI({$,esc,records,state,toast,data,evidence,memories:memoryData,simulation,saveParty,buildings=()=>({buildings:[]}),goalAccess},mode='loot'){
  const prefix=mode;
  const initial=()=>({goalTarget:0,goalSub:0,goalUncertain:true,resource:'食料',resourceLevel:6,objective:'amount',droplet:0,gatherItem:false,race:'悪魔',boss:mode==='attack'?'malacoda':'',battle:mode==='attack'?'fieldBoss':'field',grade:6,owned:true,tab:'hero',gear:{},heroes:['','',''],heroSettings:{},memories:['','',''],thirdHero:false,thirdMemory:false,drops:{},troop:'歩兵',attackType:mode==='attack'?'normal':'all',chargeEffects:'off',enemyElement:'auto',heroSort:mode==='attack'?'fitness':'main',partnerMatch:'any',supportCount:0,supports:['',''],base:{mode:'auto',research:true,core:true,building:true,extra:true}});
  let v=initial(),profile='',baseline=null,autoNote='',territoryMode=false;
  const territory=mode==='attack'?createTerritoryUI({esc,state,records,memories:memoryData,settings:()=>v,common:()=>{const {heroes,gear,memories,...args}=input();return {...args,memoryCount:memCount()};},refresh:()=>refresh(),toast,saveParty,apply:s=>{v={...initial(),...s};territoryMode=false;refresh();}}):{reset(){}};
- const goalPlanner=createGoalPlannerUI({esc,input,total,buildings,settings:()=>v});
+ const goalPlanner=createGoalPlannerUI({esc,input,total,buildings,settings:()=>v,access:goalAccess});
  const select=(name,label,list,current,attrs='')=>`<label class="field">${label}<select data-sim="${name}" ${attrs}>${list.map(([key,text,disabled])=>`<option value="${esc(key)}" ${String(current)===String(key)?'selected':''} ${disabled?'disabled':''}>${esc(text)}</option>`).join('')}</select></label>`;
  const check=(name,label,value,disabled=false)=>`<label class="check"><input type="checkbox" data-sim="${name}" ${value?'checked':''} ${disabled?'disabled':''}>${label}</label>`;
  const button=(action,text,cls='')=>`<button type="button" class="${cls}" data-sim-action="${action}">${text}</button>`;
@@ -138,5 +138,6 @@ export function createLoadoutUI({$,esc,records,state,toast,data,evidence,memorie
   refresh(action.startsWith('tab-')?action:'');
  });
  document.addEventListener('keydown',e=>{const tab=e.target.closest('[role="tab"][data-sim-action]');if(!tab?.closest(`[data-simulator="${prefix}"]`)||!['ArrowLeft','ArrowRight','Home','End'].includes(e.key))return;e.preventDefault();if(!tab.dataset.simAction.startsWith('tab-'))return;const tabs=['hero','gear','memory'],i=tabs.indexOf(v.tab);v.tab=tabs[e.key==='Home'?0:e.key==='End'?2:(i+(e.key==='ArrowRight'?1:2))%3];refresh('tab-'+v.tab);});
+ document.addEventListener('submit',async e=>{const form=e.target;if(!form.matches?.('[data-planner-beta]')||!form.closest(`[data-simulator="${prefix}"]`))return;e.preventDefault();const button=form.querySelector('button');button.disabled=true;await goalPlanner.unlock(new FormData(form).get('inviteCode'));refresh();});
  return {page,load(settings){goalPlanner.invalidate();profile=state().profile.id;const checked=validatePartySettings(settings),bundle=checked.territory;delete checked.territory;v={...initial(),...checked};territoryMode=!!bundle;if(bundle)territory.load(bundle);baseline=null;autoNote='保存編成を読み込みました。武具・メモリ・拠点は現在の記録で再計算します。';const before=JSON.stringify([v.heroes,v.gear,v.memories]);dropInvalid();if(before!==JSON.stringify([v.heroes,v.gear,v.memories]))autoNote+=' 現在見つからない所持品・同名の重複メモリは選択を解除しました。';}};
 }
