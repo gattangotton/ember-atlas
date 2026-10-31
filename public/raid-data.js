@@ -1,4 +1,4 @@
-import {gameImages} from './game-image-paths.js?v=20261017-eclipse';
+import {gameImages} from './game-image-paths.js?v=20261101-gallery';
 // Equipment correspondence: supplied Excel, レイド装備. Null means no released slot
 // in the checked source set, not a missing database record. Checked 2026-09-28.
 export const RAID_SLOTS=['武器','頭部','身体','脚部','装飾'];
@@ -15,9 +15,11 @@ export const RAID_BOSSES=[
 export const RAID_EXTRA_GEAR={malacoda:['equipment-d1b910cf47b734'],chiliat:['equipment-pc-20016']};
 const byEquipment=new Map(RAID_BOSSES.flatMap(b=>[...b.gear,...(RAID_EXTRA_GEAR[b.id]||[])].filter(Boolean).map(id=>[id,b])));
 export const raidBossFor=id=>byEquipment.get(id)||null;
-export function raidBadge(record,esc){if(isGuardianGear(record))return `<a class="raid-badge guardian-badge" href="#raids" data-action="raid-index">◇ 特殊武具 · G6でサブ3枠</a>`;const b=raidBossFor(record.id);return b||record.raid==='yes'?`<a class="raid-badge" href="#raids" data-action="raid-index">◆ レイド武具${b?' · '+esc(b.name):''}</a>`:'';}
+export function raidBadge(record,esc){if(isSpecialGear(record))return `<a class="raid-badge guardian-badge" href="#raids" data-action="raid-index">◇ 特殊武具 · G6でサブ3枠</a>`;const b=raidBossFor(record.id);return b||record.raid==='yes'?`<a class="raid-badge" href="#raids" data-action="raid-index">◆ レイド武具${b?' · '+esc(b.name):''}</a>`:'';}
 
 // User-confirmed special equipment: Guardian motif, not raid-material equipment.
 export const GUARDIAN_GEAR=['equipment-cb10930b422891','equipment-d412bf1bb736ce','equipment-a7f0cb806ec093','equipment-cb7c3c9a0271c3','equipment-2a3bca30311f9f'];
 export const isGuardianGear=record=>GUARDIAN_GEAR.includes(typeof record==='string'?record:record.id);
-export const hasThirdSubSlot=record=>isGuardianGear(record)||record.raid==='yes'||!!raidBossFor(record.id);
+export const SEA_KINGDOM_GEAR=['equipment-pc-40011','equipment-pc-40012','equipment-pc-40013','equipment-pc-40014','equipment-pc-40015'];
+export const isSpecialGear=record=>isGuardianGear(record)||SEA_KINGDOM_GEAR.includes(typeof record==='string'?record:record.id);
+export const hasThirdSubSlot=record=>isSpecialGear(record)||record.raid==='yes'||!!raidBossFor(record.id);

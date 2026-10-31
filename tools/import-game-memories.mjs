@@ -23,9 +23,11 @@ const records=source.filter(m=>m[3]?.trim()).map(m=>{
   if(!text?.includes(announcement.token)||!text.includes(m[3]+'のメモリ'))throw Error('Memory acquisition announcement mismatch '+m[0]);
   acquisition.push({type:'monster',name:announcement.name,detail:announcement.detail,master:'Announcement '+announcement.announcement});
  }
+ const dated=announcements.filter(a=>/開催|登場|追加/.test(a[7]||'')&&!/予告/.test(a[7])&&[m[3]+'のメモリ',m[3]+'メモリ'].some(token=>JSON.stringify(a[10]).includes(token)||a[7].includes(token))).map(a=>{const md=a[7].match(/\((\d{1,2})\/(\d{1,2})\)/),stamp=a[8]?.[0]?.[0];if(!md||!stamp?.hex)return null;const year=new Date(parseInt(stamp.hex,16)*1000).getUTCFullYear();return {date:year+'-'+md[1].padStart(2,'0')+'-'+md[2].padStart(2,'0'),id:a[0],direct:a[7].includes(m[3])};}).filter(Boolean).sort((a,b)=>a.date.localeCompare(b.date));
+ const release=dated.find(a=>a.direct)||dated[0];
  const piece=pieces.find(p=>p[-1]===2&&p[7]===m[0]);
  const generation=piece?{fragments:piece[4],ether:piece[5]?.find(c=>c[-1]===1&&c[0]===8)?.[1]??null,source:'Piece '+piece[0]}:null;
- return {id:'memory-'+m[0],masterId:m[0],name:m[3],rarity:m[5],description:m[4]||'',mainEffects:effects,mainEffectsKnown:!!m[7]?.length,image,imageId:m[2],maxSubSlots:3,generation,acquisition,paidAvailable:acquisition.some(a=>a.type==='paid'),nonPaidAvailable:acquisition.some(a=>['event','exchange','monster'].includes(a.type)),source:'PC版 Enhancer '+m[0]+'（'+capturedAt+'取得）'};
+ return {id:'memory-'+m[0],masterId:m[0],releaseDate:release?.date||null,releaseSource:release?'Announcement '+release.id:null,name:m[3],rarity:m[5],description:m[4]||'',mainEffects:effects,mainEffectsKnown:!!m[7]?.length,image,imageId:m[2],maxSubSlots:3,generation,acquisition,paidAvailable:acquisition.some(a=>a.type==='paid'),nonPaidAvailable:acquisition.some(a=>['event','exchange','monster'].includes(a.type)),source:'PC版 Enhancer '+m[0]+'（'+capturedAt+'取得）'};
 });
 const data={version:1,capturedAt,files,records,abilityNames:[...new Set([...abilities.values()].map(a=>abilityName(a[3])).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'ja'))};
 fs.writeFileSync('public/data/game-memories.json',JSON.stringify(data,null,2)+'\n');

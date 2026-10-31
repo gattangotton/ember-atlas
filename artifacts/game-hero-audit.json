@@ -655,5 +655,14 @@
     "charge": "debuff",
     "active": "none",
     "levels": 33
+  },
+  {
+    "id": "characters-game-83",
+    "masterId": 83,
+    "previousName": "ライトニング",
+    "name": "ライトニング",
+    "charge": "none",
+    "active": "buff",
+    "levels": 33
   }
 ]

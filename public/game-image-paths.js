@@ -209,7 +209,20 @@ export const gameImages={
     "equipment-pc-50063": "assets/game/equipment-largethumbnail-00292.png",
     "equipment-pc-50091": "assets/game/equipment-largethumbnail-00303.png",
     "equipment-pc-50201": "assets/game/equipment-largethumbnail-00306.png",
-    "equipment-pc-20016": "assets/game/equipment-largethumbnail-00108.png"
+    "equipment-pc-20016": "assets/game/equipment-largethumbnail-00108.png",
+    "equipment-pc-291": "assets/game/equipment-largethumbnail-00330.png",
+    "equipment-pc-292": "assets/game/equipment-largethumbnail-00327.png",
+    "equipment-pc-293": "assets/game/equipment-largethumbnail-00324.png",
+    "equipment-pc-294": "assets/game/equipment-largethumbnail-00331.png",
+    "equipment-pc-295": "assets/game/equipment-largethumbnail-00325.png",
+    "equipment-pc-40011": "assets/game/equipment-largethumbnail-00205.png",
+    "equipment-pc-40012": "assets/game/equipment-largethumbnail-00206.png",
+    "equipment-pc-40013": "assets/game/equipment-largethumbnail-00207.png",
+    "equipment-pc-40014": "assets/game/equipment-largethumbnail-00208.png",
+    "equipment-pc-40015": "assets/game/equipment-largethumbnail-00209.png",
+    "equipment-pc-50701": "assets/game/equipment-largethumbnail-00326.png",
+    "equipment-pc-50702": "assets/game/equipment-largethumbnail-00328.png",
+    "equipment-pc-50703": "assets/game/equipment-largethumbnail-00329.png"
   },
   "heroes": {
     "characters-440a28ef782ea8": "assets/game/hero-thumbnail-00002.png",
@@ -284,7 +297,8 @@ export const gameImages={
     "characters-1fc38c2a36427c": "assets/game/hero-thumbnail-00075.png",
     "characters-f5a44e040bc9c5": "assets/game/hero-thumbnail-00076.png",
     "characters-game-81": "assets/game/hero-thumbnail-00081.png",
-    "characters-game-82": "assets/game/hero-thumbnail-00082.png"
+    "characters-game-82": "assets/game/hero-thumbnail-00082.png",
+    "characters-game-83": "assets/game/hero-thumbnail-00083.png"
   },
   "buildings": {
     "101": "assets/game/building-largethumbnail-00101.png",

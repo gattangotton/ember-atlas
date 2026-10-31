@@ -6322,6 +6322,181 @@
       "master": 4502400
     },
     {
+      "id": "research-2-66",
+      "level": 1,
+      "column": 0,
+      "previous": "4.7M",
+      "master": 3000000
+    },
+    {
+      "id": "research-2-66",
+      "level": 1,
+      "column": 1,
+      "previous": "10.0M",
+      "master": 6400000
+    },
+    {
+      "id": "research-2-66",
+      "level": 1,
+      "column": 2,
+      "previous": "4.7M",
+      "master": 3000000
+    },
+    {
+      "id": "research-2-66",
+      "level": 1,
+      "column": 3,
+      "previous": "4.7M",
+      "master": 3000000
+    },
+    {
+      "id": "research-2-66",
+      "level": 1,
+      "column": 4,
+      "previous": 540000,
+      "master": 375000
+    },
+    {
+      "id": "research-2-66",
+      "level": 2,
+      "column": 0,
+      "previous": "9.4M",
+      "master": 6000000
+    },
+    {
+      "id": "research-2-66",
+      "level": 2,
+      "column": 1,
+      "previous": "20.0M",
+      "master": 12800000
+    },
+    {
+      "id": "research-2-66",
+      "level": 2,
+      "column": 2,
+      "previous": "9.4M",
+      "master": 6000000
+    },
+    {
+      "id": "research-2-66",
+      "level": 2,
+      "column": 3,
+      "previous": "9.4M",
+      "master": 6000000
+    },
+    {
+      "id": "research-2-66",
+      "level": 2,
+      "column": 4,
+      "previous": 810000,
+      "master": 562800
+    },
+    {
+      "id": "research-2-66",
+      "level": 3,
+      "column": 0,
+      "previous": 18800000,
+      "master": 12000000
+    },
+    {
+      "id": "research-2-66",
+      "level": 3,
+      "column": 1,
+      "previous": 40000000,
+      "master": 25600000
+    },
+    {
+      "id": "research-2-66",
+      "level": 3,
+      "column": 2,
+      "previous": 18800000,
+      "master": 12000000
+    },
+    {
+      "id": "research-2-66",
+      "level": 3,
+      "column": 3,
+      "previous": 18800000,
+      "master": 12000000
+    },
+    {
+      "id": "research-2-66",
+      "level": 3,
+      "column": 4,
+      "previous": 1620000,
+      "master": 1125600
+    },
+    {
+      "id": "research-2-66",
+      "level": 4,
+      "column": 0,
+      "previous": "37.6M",
+      "master": 24000000
+    },
+    {
+      "id": "research-2-66",
+      "level": 4,
+      "column": 1,
+      "previous": "80.0M",
+      "master": 51200000
+    },
+    {
+      "id": "research-2-66",
+      "level": 4,
+      "column": 2,
+      "previous": "37.6M",
+      "master": 24000000
+    },
+    {
+      "id": "research-2-66",
+      "level": 4,
+      "column": 3,
+      "previous": "37.6M",
+      "master": 24000000
+    },
+    {
+      "id": "research-2-66",
+      "level": 4,
+      "column": 4,
+      "previous": 3240000,
+      "master": 2251200
+    },
+    {
+      "id": "research-2-66",
+      "level": 5,
+      "column": 0,
+      "previous": "75.2M",
+      "master": 48000000
+    },
+    {
+      "id": "research-2-66",
+      "level": 5,
+      "column": 1,
+      "previous": "160.0M",
+      "master": 102400000
+    },
+    {
+      "id": "research-2-66",
+      "level": 5,
+      "column": 2,
+      "previous": "75.2M",
+      "master": 48000000
+    },
+    {
+      "id": "research-2-66",
+      "level": 5,
+      "column": 3,
+      "previous": "75.2M",
+      "master": 48000000
+    },
+    {
+      "id": "research-2-66",
+      "level": 5,
+      "column": 4,
+      "previous": 6480000,
+      "master": 4502400
+    },
+    {
       "id": "research-2-67",
       "level": 1,
       "column": 1,

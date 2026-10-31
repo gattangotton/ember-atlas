@@ -3,16 +3,16 @@
   "capturedAt": "2026-10-04",
   "files": {
     "Ability": {
-      "sha256": "04083826fc3186eb3b9063c6c1c810cbe1376f5a10a2abcc11ed135dcb41382a"
+      "sha256": "b40fd9d63a4a7bd457aab4b772b4a8cf169b41274f2e409f2b7a9fd89dc2cc3a"
     },
     "FieldArtifact": {
       "sha256": "ebb67ba4d982c64ba259ff7419c0d7ff4825ec45cd8ae705f4ee5efce50a2ea8"
     },
     "MonsterOrigin": {
-      "sha256": "daf73b611c12df59fe2c843c7c4e12556a1b42c36ae4c5980d47b1e473d4dbc2"
+      "sha256": "733b8b748230509852709ec40f88dc09aad35501a9e5b2b8cd0645624a798aad"
     },
     "Help": {
-      "sha256": "a9da8ecba86fec856078790c77986623ca34cc039daf4b1c37aa420bd0534ce0"
+      "sha256": "13017b0bdead418d3958a201987975b1973013b133adad786b3fc92c9f6b92fc"
     },
     "TroopAbilityAggregation": {
       "sha256": "f0f250285eaf7e19f7741c013ebeb320ab46fb0951d85248051701beb5d4a639"
@@ -21,7 +21,7 @@
       "sha256": "62f9fe1cf7fca8a4c326c6d091d40364fe0139579909f023442f5278fab0e1ba"
     },
     "Research": {
-      "sha256": "11d4e0651c979a1361661c57f0795fa645e2b08b334177f420f4a30555316a68"
+      "sha256": "8c860a4dbf5ac5cbd729ab04717537c66b220a73200a36fbe0def9d686018076"
     }
   },
   "drops": [

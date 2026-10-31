@@ -31,6 +31,6 @@ test('Sports memory applies common and resource-specific gathering quantity; unc
  const sports=mem.find(r=>r.id==='memory-79'),geryon=mem.find(r=>r.id==='memory-10032');assert.equal(sports.paidAvailable,true);
  const value=resource=>simulateLoadout({context:{mode:'gather',objective:'amount',resource},memories:[{record:sports}],base:{mode:'none'}}).total;
  assert.equal(value('木材'),26);assert.equal(value('食料'),16);
- assert.deepEqual(geryon.acquisition,[]);assert.equal(geryon.paidAvailable,false);assert.equal(geryon.nonPaidAvailable,false);assert.equal(geryon.mainEffects.find(e=>e.name==='水属性リーダー攻撃力').value,35);
+ assert.deepEqual(geryon.acquisition,[]);assert.equal(geryon.paidAvailable,false);assert.equal(geryon.nonPaidAvailable,false);assert.equal(geryon.mainEffects.find(e=>e.name==='光属性リーダー攻撃力').value,35);
  for(const record of [sports,geryon,mem.find(r=>r.id==='memory-78')])assert.ok(fs.existsSync(new URL('../public/'+record.image,import.meta.url)));
 });

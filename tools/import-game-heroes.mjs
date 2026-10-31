@@ -13,7 +13,7 @@ const old=catalog.records.filter(r=>r.kind==='characters');if(old.length!==Objec
 const mapping=new Map(old.map(r=>[reviewed[r.id].masterId,r]));
 const chargeBuff=new Set([7,12,21,26,29,38,41,43,48,58,60,62,63,64,69,70,71,72,73,81,47,55,61,66,76]);
 const chargeDebuff=new Set([2,5,9,10,17,18,19,25,27,28,32,33,36,39,40,44,51,56,57,59,67,68,75,82]);
-const activeBuff=new Set([7,9,11,12,14,15,18,20,26,27,33,39,42,44,51,57]);
+const activeBuff=new Set([83,7,9,11,12,14,15,18,20,26,27,33,39,42,44,51,57]);
 const activeDebuff=new Set([47,55,56,59,69,70,71,73,76]);
 const clean=s=>String(s||'').replace(/<[^>]*>/g,'').replace(/\r/g,'');
 // Numeric label extraction retains amplification, target-specific headings and

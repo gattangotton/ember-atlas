@@ -1,6 +1,6 @@
 {
-  "total": 93,
-  "imported": 85,
+  "total": 96,
+  "imported": 88,
   "unnamedExcluded": [
     1,
     4,
@@ -21,10 +21,10 @@
       "name": "テンプルドラゴン"
     }
   ],
-  "images": 85,
-  "generationCosts": 85,
-  "paidSources": 45,
-  "eventExchangeOrMonsterSources": 34,
+  "images": 88,
+  "generationCosts": 88,
+  "paidSources": 46,
+  "eventExchangeOrMonsterSources": 36,
   "acquisitionUnconfirmed": [
     {
       "id": "memory-10017",

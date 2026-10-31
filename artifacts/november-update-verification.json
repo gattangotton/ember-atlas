@@ -1,0 +1,129 @@
+{
+  "checkedAt": "2026-11-01",
+  "counts": {
+    "heroes": 74,
+    "equipment": 221,
+    "memories": 88,
+    "research": 429
+  },
+  "researchAdded": [
+    {
+      "id": "research-3-74",
+      "groupId": 4,
+      "masterId": 311,
+      "name": "兵士治療速度",
+      "lab": 31,
+      "kind": "ability",
+      "abilityId": 220
+    },
+    {
+      "id": "research-3-75",
+      "groupId": 4,
+      "masterId": 312,
+      "name": "近衛歩兵基礎攻撃力",
+      "lab": 31,
+      "kind": "ability",
+      "abilityId": 1038
+    },
+    {
+      "id": "research-3-76",
+      "groupId": 4,
+      "masterId": 313,
+      "name": "近衛弓兵基礎攻撃力",
+      "lab": 31,
+      "kind": "ability",
+      "abilityId": 1039
+    },
+    {
+      "id": "research-3-77",
+      "groupId": 4,
+      "masterId": 314,
+      "name": "近衛騎兵基礎攻撃力",
+      "lab": 31,
+      "kind": "ability",
+      "abilityId": 1040
+    },
+    {
+      "id": "research-3-78",
+      "groupId": 4,
+      "masterId": 315,
+      "name": "歩兵防御効率",
+      "lab": 31,
+      "kind": "ability",
+      "abilityId": 2001
+    },
+    {
+      "id": "research-3-79",
+      "groupId": 4,
+      "masterId": 316,
+      "name": "弓兵防御効率",
+      "lab": 31,
+      "kind": "ability",
+      "abilityId": 2002
+    },
+    {
+      "id": "research-3-80",
+      "groupId": 4,
+      "masterId": 317,
+      "name": "騎兵防御効率",
+      "lab": 31,
+      "kind": "ability",
+      "abilityId": 2003
+    }
+  ],
+  "changedResearchCosts": [
+    "research-2-66"
+  ],
+  "memoryDates": {
+    "known": 62,
+    "unknown": [
+      "memory-13",
+      "memory-15",
+      "memory-33",
+      "memory-54",
+      "memory-55",
+      "memory-10001",
+      "memory-10002",
+      "memory-10003",
+      "memory-10004",
+      "memory-10005",
+      "memory-10006",
+      "memory-10007",
+      "memory-10008",
+      "memory-10009",
+      "memory-10010",
+      "memory-10011",
+      "memory-10012",
+      "memory-10013",
+      "memory-10014",
+      "memory-10017",
+      "memory-10018",
+      "memory-10019",
+      "memory-10023",
+      "memory-10028",
+      "memory-10029",
+      "memory-10032"
+    ],
+    "method": "Memory name explicitly suffixed by メモリ or のメモリ in dated announcement, direct pack title preferred; earliest confirmed announcement is not guaranteed first release. Unknown dates sort last; future dates marked upcoming."
+  },
+  "changedMemoryEffects": [
+    {
+      "id": "memory-10032",
+      "name": "ゲーリュオーン",
+      "effects": [
+        {
+          "abilityId": 1010,
+          "name": "光属性リーダー攻撃力",
+          "unit": "%",
+          "value": 35
+        },
+        {
+          "abilityId": 1900,
+          "name": "行軍速度",
+          "unit": "%",
+          "value": 4.5
+        }
+      ]
+    }
+  ]
+}

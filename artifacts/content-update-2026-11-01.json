@@ -1,0 +1,195 @@
+{
+  "capturedAt": "2026-11-01",
+  "added": {
+    "heroes": [
+      {
+        "masterId": 83,
+        "name": "ライトニング"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "equipment-pc-291",
+        "masterId": 291,
+        "name": "ブレイズエッジ(FF13)"
+      },
+      {
+        "id": "equipment-pc-292",
+        "masterId": 292,
+        "name": "スーパーリボン(FF13)"
+      },
+      {
+        "id": "equipment-pc-293",
+        "masterId": 293,
+        "name": "ライトニングの服(FF13)"
+      },
+      {
+        "id": "equipment-pc-294",
+        "masterId": 294,
+        "name": "ヴァニラの靴(FF13)"
+      },
+      {
+        "id": "equipment-pc-295",
+        "masterId": 295,
+        "name": "ウィッチブレス(FF13)"
+      },
+      {
+        "id": "equipment-pc-40011",
+        "masterId": 40011,
+        "name": "アトランティス"
+      },
+      {
+        "id": "equipment-pc-40012",
+        "masterId": 40012,
+        "name": "制海の冠"
+      },
+      {
+        "id": "equipment-pc-40013",
+        "masterId": 40013,
+        "name": "波の征衣"
+      },
+      {
+        "id": "equipment-pc-40014",
+        "masterId": 40014,
+        "name": "海流の歩み"
+      },
+      {
+        "id": "equipment-pc-40015",
+        "masterId": 40015,
+        "name": "海の抱擁"
+      },
+      {
+        "id": "equipment-pc-50701",
+        "masterId": 50701,
+        "name": "オメガウェポン(FF13)"
+      },
+      {
+        "id": "equipment-pc-50702",
+        "masterId": 50702,
+        "name": "バインドロッド(FF13)"
+      },
+      {
+        "id": "equipment-pc-50703",
+        "masterId": 50703,
+        "name": "パワーグローブ(FF13)"
+      }
+    ],
+    "memories": [
+      {
+        "masterId": 83,
+        "name": "生き方は自分で決める"
+      },
+      {
+        "masterId": 84,
+        "name": "運命を乗り越える剣閃"
+      },
+      {
+        "masterId": 10033,
+        "name": "ベヒーモス"
+      }
+    ]
+  },
+  "changedEquipment": [],
+  "files": {
+    "Ability": {
+      "sha256": "b40fd9d63a4a7bd457aab4b772b4a8cf169b41274f2e409f2b7a9fd89dc2cc3a",
+      "changed": true
+    },
+    "Equipment": {
+      "sha256": "35bae723a8243c188a17e2cf3eae8a378583f70a74f3afe13840f8afce7a22cc",
+      "changed": true
+    },
+    "Research": {
+      "sha256": "8c860a4dbf5ac5cbd729ab04717537c66b220a73200a36fbe0def9d686018076",
+      "changed": true
+    },
+    "Building": {
+      "sha256": "cbe06128d853b0f29635e2d75e27248c71e1b3ca36029e9a82d08984b42e1957",
+      "changed": true
+    },
+    "Hero": {
+      "sha256": "ceecbd92a17677bd4204f9b4a6da1dece444dc4f0045e1db0889584cf077d286",
+      "changed": true
+    },
+    "Skill": {
+      "sha256": "2efdef682609171898d4418a83c398a3c7009877db761329c7cd42484795aef7",
+      "changed": true
+    },
+    "HeroActiveSkillLevel": {
+      "sha256": "b960b4c1a9c2bcd15b5c45eaf11a2a789a6029cc8643039178f603daa361efd2",
+      "changed": true
+    },
+    "CoreAbility": {
+      "sha256": "d8101c3f9518ddd857e44bfb9b361c0de170c80179b0066b19e9a16c11c05318",
+      "changed": true
+    },
+    "Enhancer": {
+      "sha256": "52f41b6ffba873cfd8a58f1f2a4360c2e97c4944adffcc30739ac500206e38dc",
+      "changed": true
+    },
+    "ShopPack": {
+      "sha256": "e08b85327ec1b5de1cd009db6311b302248a75e5df774ad97200ac7d6be4108a",
+      "changed": true
+    },
+    "ShopItem": {
+      "sha256": "c2e1b5a884a0af914f48541936b52a8df022a4c2852e416b4eca37fdafaeaf3d",
+      "changed": true
+    },
+    "Shop": {
+      "sha256": "1588b86a68da6a11704007779565ec37870e57052811cc200f0d73fedce9988d",
+      "changed": true
+    },
+    "Event": {
+      "sha256": "714bf0b5dc4e5390ece81f911a55d35746d2d972eed45405f056a5ee84fc0ce3",
+      "changed": true
+    },
+    "Consumable": {
+      "sha256": "e905527d928007c0b1e579df4e2213981b88f5147cdda4b694fbf2fe1611e515",
+      "changed": true
+    },
+    "Piece": {
+      "sha256": "4d025fb581eb27959de10da534aad6e17d8c69371d8be6cc5daf2e553210b5ab",
+      "changed": true
+    },
+    "Announcement": {
+      "sha256": "546b29693767aa4995ab30e7b1c57db0025c534c6e33bde44bee64ca027653d3",
+      "changed": true
+    },
+    "DeckBonus": {
+      "sha256": "73a97cc040398e9c864f3cd13803852eef76b5df534e8a33c85a97ad4dbfa4d9",
+      "changed": true
+    },
+    "SoldierOperationEfficiency": {
+      "sha256": "d45c26a9c2ecd2d2979b7beb6f3e6121d645f9e20dedbbcfab796a8f1fd25a64",
+      "changed": false
+    },
+    "HeroBirthplace": {
+      "sha256": "2fc003a5c6386aa4bfcf4b027b486976229167739bdc5e5b4dea5e39920f3169",
+      "changed": true
+    },
+    "FieldSetting": {
+      "sha256": "49fc50736c86c224e4b42651a0171c54f4ec5514db4d3b45938e40210ca14a9c",
+      "changed": false
+    },
+    "MonsterOrigin": {
+      "sha256": "733b8b748230509852709ec40f88dc09aad35501a9e5b2b8cd0645624a798aad",
+      "changed": true
+    },
+    "Help": {
+      "sha256": "13017b0bdead418d3958a201987975b1973013b133adad786b3fc92c9f6b92fc",
+      "changed": true
+    },
+    "TroopAbilityAggregation": {
+      "sha256": "f0f250285eaf7e19f7741c013ebeb320ab46fb0951d85248051701beb5d4a639",
+      "changed": false
+    },
+    "EnhancerSetting": {
+      "sha256": "62f9fe1cf7fca8a4c326c6d091d40364fe0139579909f023442f5278fab0e1ba",
+      "changed": false
+    },
+    "FieldArtifact": {
+      "sha256": "ebb67ba4d982c64ba259ff7419c0d7ff4825ec45cd8ae705f4ee5efce50a2ea8",
+      "changed": false
+    }
+  }
+}

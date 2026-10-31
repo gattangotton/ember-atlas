@@ -16,7 +16,7 @@ test('NEW expires at exactly fourteen days in Japan time, independently for rele
  assert.match(newBadge('2026-10-17',start+NEW_DURATION_MS-1),/NEW/);
  assert.equal(newBadge('2026-10-17',start+NEW_DURATION_MS),'');
  assert.equal(isNew('bad',start),false);
- const now=Date.parse('2026-11-01T00:00:00+09:00');assert.equal(routeNewBadge('characters',now),'');assert.match(routeNewBadge('loot',now),/NEW/);
+ const now=Date.parse('2026-11-01T00:00:00+09:00');assert.match(routeNewBadge('characters',now),/NEW/);assert.match(routeNewBadge('loot',now),/NEW/);
 });
 test('shared prerequisites and alternate levels are charged and counted once; current progress is subtracted',()=>{
  const args={context,nodes:[node('a',[2,5]),node('b',[10]),node('c',[20])],state:{research:{a:1},researchSpecs:{a:spec([2,5]),b:spec([10],[{id:'a',level:2}]),c:spec([20],[{id:'a',level:2}])}}};

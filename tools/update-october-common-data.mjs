@@ -3,7 +3,7 @@ import {createHash} from 'node:crypto';
 import {decodeMessagePack} from './read-messagepack.mjs';
 import {abilityName} from '../public/ability-names.js';
 import {validateMechanics} from '../public/mechanics.js';
-const capturedAt='2026-10-17',cache=process.argv[2]||'C:/Users/takah/AppData/LocalLow/SquareEnix/EmberStoria/Fdfb6zs93olkPI9L/Cache/Masters/_';
+const capturedAt=process.env.GAME_CAPTURE_DATE||'2026-10-17',cache=process.argv[2]||'C:/Users/takah/AppData/LocalLow/SquareEnix/EmberStoria/Fdfb6zs93olkPI9L/Cache/Masters/_';
 const hash=b=>createHash('sha256').update(b).digest('hex');
 const read=n=>decodeMessagePack(fs.readFileSync(cache+'/'+n));
 const load=n=>JSON.parse(fs.readFileSync('public/data/'+n+'.json'));
@@ -25,6 +25,7 @@ const abilities=new Map(read('Ability').map(r=>[r[0],r])),slots=['武器','身�
 // Update the source-backed entries in place. Keep the audited research costs,
 // prerequisite mappings, building curves and stable catalogue IDs intact.
 for(const e of read('Equipment')){
+ const starts=e[15]?.[0]?.[0];if(starts?.extension===-1&&parseInt(starts.hex,16)*1000>Date.parse(capturedAt+'T23:59:59+09:00'))continue;
  let id=Object.keys(game.equipment).find(id=>game.equipment[id].masterId===e[0]);
  if(!id){id='equipment-pc-'+e[0];game.extraRecords.push({id,kind:'equipment',name:e[3],slot:slots[e[5]??0],note:e[4]||'',source:{sheet:'PC版 Equipment',row:e[0]}});report.added.equipment.push({id,masterId:e[0],name:e[3]});}
  const old=game.equipment[id],grades=e[11],ids=[...new Set(grades.flatMap(g=>g[2].map(a=>a[0])))];
@@ -39,5 +40,5 @@ for(const e of read('Equipment')){
 game.files={...game.files,...Object.fromEntries(['Ability','Equipment','Research','Building'].map(n=>[n,{...game.files[n],sha256:report.files[n].sha256}]))};
 game.capturedAt=capturedAt;game.source=`PC版ローカルマスター（${capturedAt}照合）`;game.equipmentReviewedAt=capturedAt;game.summary.equipment=Object.keys(game.equipment).length;
 fs.writeFileSync('public/data/game-masters.json',JSON.stringify(game,null,2)+'\n');
-fs.writeFileSync('artifacts/october-content-update-audit.json',JSON.stringify(report,null,2)+'\n');
+fs.writeFileSync(`artifacts/content-update-${capturedAt}.json`,JSON.stringify(report,null,2)+'\n');
 console.log({added:report.added,changedEquipment:report.changedEquipment.map(r=>r.name),changedMasters:Object.entries(report.files).filter(([,v])=>v.changed).map(([n])=>n)});

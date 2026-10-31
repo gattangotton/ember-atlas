@@ -52,7 +52,7 @@ export function applyGameWorld(mechanics,buildingData,data,images={}){
 // ownership, growth progress and memos live separately and are never changed.
 export function withGameHero(record,data,override){
  const source=data.characters?.[record.id];if(!source)return record;
- const result={...record,...structuredClone(source),commonRevision:'pc-2026-10-03'};
+ const result={...record,...structuredClone(source),commonRevision:'pc-'+(data.capturedAt||'2026-10-03')};
  return override?.commonRevision===result.commonRevision?{...result,...override}:result;
 }
 
