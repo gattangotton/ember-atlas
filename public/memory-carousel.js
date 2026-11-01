@@ -11,8 +11,9 @@ export function carouselView(records,esc){
 export function mountMemoryCarousel(root){
  const track=root?.querySelector('.orbit-track');if(!track)return;
  const cards=[...track.querySelectorAll('.orbit-card')],caption=root.querySelector('.orbit-caption'),slider=root.querySelector('.orbit-slider');let frame=0,active=0,drag=null,suppress=false;
+ const touchLayout=matchMedia('(hover: none) and (pointer: coarse)');
  const update=()=>{frame=0;const width=track.clientWidth,step=cards[0].parentElement.offsetWidth,center=track.scrollLeft+width/2;
-  cards.forEach((card,i)=>{const slot=card.parentElement,d=(slot.offsetLeft+step/2-center)/step,clamp=Math.max(-3,Math.min(3,d));card.style.transform=`translateY(${Math.abs(clamp)*18}px) translateZ(${-Math.abs(clamp)*70}px) rotateY(${-clamp*22}deg) scale(${1-Math.abs(clamp)*.08})`;card.style.opacity=Math.abs(d)>3?'0':String(1-Math.abs(clamp)*.20);card.style.pointerEvents=Math.abs(d)>3?'none':'';card.tabIndex=Math.abs(d)<.55?0:-1;card.classList.toggle('is-center',Math.abs(d)<.55);});
+  cards.forEach((card,i)=>{const slot=card.parentElement,d=(slot.offsetLeft+step/2-center)/step,clamp=Math.max(-3,Math.min(3,d));card.style.transform=touchLayout.matches?'none':`translateY(${Math.abs(clamp)*18}px) translateZ(${-Math.abs(clamp)*70}px) rotateY(${-clamp*22}deg) scale(${1-Math.abs(clamp)*.08})`;card.style.opacity=Math.abs(d)>3?'0':String(1-Math.abs(clamp)*.20);card.style.pointerEvents=Math.abs(d)>3?'none':'';card.tabIndex=Math.abs(d)<.55?0:-1;card.classList.toggle('is-center',Math.abs(d)<.55);});
   active=Math.max(0,Math.min(cards.length-1,Math.round(track.scrollLeft/step)));caption.textContent=`${active+1} / ${cards.length} — ${cards[active].querySelector('strong').textContent}`;
   slider.value=String(active+1);slider.setAttribute('aria-valuetext',caption.textContent);
   root.querySelector('[data-orbit-step="-1"]').disabled=active===0;root.querySelector('[data-orbit-step="1"]').disabled=active===cards.length-1;

@@ -1,4 +1,4 @@
-import {sortMemories,carouselView,mountMemoryCarousel} from './memory-carousel.js?v=20261101-slider';
+import {sortMemories,carouselView,mountMemoryCarousel} from './memory-carousel.js?v=20261101-touch';
 import {contentNewBadge,newBadge} from './whats-new.js';
 import {memoryUnlocked,resizeMemoryCopies,setMemoryUnlocked} from './sub-candidates.js';
 import {filterMemories,memoryEffectNames,validateMemoryInventory,newMemoryCopy} from './memory-model.js';
