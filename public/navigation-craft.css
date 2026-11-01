@@ -16,6 +16,14 @@
 .sidebar .nav.active{margin-right:-1px}.sidebar .nav-group-heading:has(.nav.active){margin-right:-1px}
 .sidebar .side-bottom,.sidebar .local-note,.sidebar .local-note .hint,.sidebar .nav-disclosure{color:#e0f3ef}
 }
-.command-hero{background:linear-gradient(115deg,#e0f3e9,#e2f2f7)}
+
 .command-primary,button.primary{background:linear-gradient(115deg,#23896d,#247f9d);color:white}
 :focus-visible{outline-color:#268ba0}
+/* Keep the city artwork behind the dashboard introduction. */
+.command-hero{position:relative;isolation:isolate;background:#12343b}
+.command-hero::before{content:'';position:absolute;inset:-8px;z-index:-1;background:linear-gradient(95deg,#0c242ef2,#102f37d9 46%,#143f4675),url('./assets/world/city.png') center 45%/cover;filter:blur(3px);pointer-events:none}
+/* Global light button hover must not wash out gallery labels. */
+.memory-orbit .orbit-card:hover,.memory-orbit .orbit-card:focus-visible,.memory-orbit .orbit-card:active{background:linear-gradient(145deg,#376b76,#122b40);color:#fff;border-color:#b3e4d6}
+.memory-orbit .orbit-card strong{color:#fff;text-shadow:0 1px 4px #061b2c}
+.memory-orbit .orbit-card small{color:#d2e8ea}
+.memory-orbit .orbit-card:hover{box-shadow:0 0 28px #79d5c240,0 22px 32px #0008}
