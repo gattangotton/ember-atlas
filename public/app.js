@@ -14,7 +14,7 @@ import {validateParties} from './party-model.js';
 import {initializeSession} from './session-ui.js';
 import {personalDataPage,adminPage,createTutorial} from './release-ui.js?v=20261101';
 import {installWorkspacePolicy,workspaceRoute} from './workspace-policy.js';
-import {dashboard} from './dashboard-ui.js';
+import {dashboard} from './dashboard-ui.js?v=20261101-craft';
 import {createMemoryUI} from './memory-ui.js?v=20261101-slider';
 import {validateMemoryInventory} from './memory-model.js';
 import {withGameEquipment,seedGameResearch,seedGameBuildingEffects,gameEquipmentOverride,applyGameWorld,withGameHero} from './game-masters.js';
@@ -146,7 +146,7 @@ function home(){return dashboard({records,state,nodes:mechanics.research,memorie
 function isTraining(p){return p?.skills?Object.keys(SKILLS).some(k=>(p.targetSkills?.[k]||0)>(p.skills[k]||0)):false;}
 function progressRow(r){const p=state.progress[r.id]||{};return `<div class="progress-row">${domain.portrait(r)}<div class="grow"><b>${esc(r.name)}</b><small>${domain.summary(p,r)}</small></div><button class="small" data-action="progress-edit" data-id="${r.id}">記録する</button></div>`;}
 function library(){const isEquip=route==='equipment';const all=records.filter(r=>r.kind===route);
- return header(KINDS[route]+(isEquip?'ライブラリ':'図鑑'),isEquip?'固有メイン効果、グレードごとの成長、サブアビリティの抽選候補を管理。':'初期レア度・属性・兵種・チャージ効果・育成状況から探す。',`<button data-action="record-add" class="primary">${icon('plus')} ${KINDS[route]}を追加</button>`,'DATABASE')+`<div class="toolbar"><label class="searchbox">${icon('search')}<input id="search" aria-label="名称やスキルで検索" placeholder="名称・スキル・効果を検索" value="${esc(query)}"></label>${isEquip?`<select id="troop" aria-label="装備部位で絞り込み">${options([...new Set(all.map(r=>r.slot).filter(Boolean))],troop,'すべての部位')}</select>`:''}<label class="check"><input class="checkbox" type="checkbox" id="only-favorite" ${onlyFavorite?'checked':''}>お気に入り</label><button data-action="clear">条件をクリア</button></div>${isEquip?'':characterFilterUI(characterFilters,element,troop)}<div id="results"></div>`;
+ return header(KINDS[route]+(isEquip?'ライブラリ':'図鑑'),isEquip?'固有メイン効果、グレードごとの成長、サブアビリティの抽選候補を管理。':'初期レア度・属性・兵種・チャージ効果・育成状況から探す。',`<button data-action="record-add" class="primary">${icon('plus')} ${KINDS[route]}を追加</button>`,'DATABASE')+`<div class="toolbar"><label class="searchbox">${icon('search')}<input id="search" aria-label="名称やスキルで検索" placeholder="名称・スキル・効果を検索" value="${esc(query)}"></label>${isEquip?`<select id="troop" aria-label="装備部位で絞り込み">${options([...new Set(all.map(r=>r.slot).filter(Boolean))],troop,'すべての部位')}</select>`:''}<label class="check"><input class="checkbox" type="checkbox" id="only-favorite" ${onlyFavorite?'checked':''}>お気に入り</label><button data-action="clear">条件をクリア</button></div>${isEquip?'':`<details class="ember-filter-fold"><summary>フィルタ <span data-filter-summary>${characterFilters.rarity?esc(characterFilters.rarity)+'スタート · ':''}条件を展開・折りたたみ</span></summary>${characterFilterUI(characterFilters,element,troop)}</details>`}<div id="results"></div>`;
 }
 function filtered(){return filterRecords(records,{kind:route,query,element,troop,owned:onlyOwned,progress:state.progress}).filter(r=>(route!=='characters'||matchesCharacter(r,state.progress[r.id],characterFilters))&&(!onlyFavorite||state.favorites.includes(r.id)));}
 function renderResults(){const list=filtered();const totalPages=Math.max(1,Math.ceil(list.length/12));page=Math.min(page,totalPages);const subset=list.slice((page-1)*12,page*12);

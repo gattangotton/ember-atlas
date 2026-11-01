@@ -7,7 +7,7 @@ test('Dashboard renders new equipment using the same native portrait paths as th
  const masters=read('game-masters'),images=read('game-images');
  const records=masters.extraRecords.map(r=>({...r,portrait:images.equipment[r.id]}));
  const html=dashboard({records,state:{profile:{name:'test'}},nodes:[],memories:[],esc:String,icon:()=>'',progressRow:()=>''});
- for(const r of records.filter(r=>r.id.startsWith("equipment-pc-506")))assert.ok(html.includes('src="'+r.portrait+'"'));
+ for(const r of records.filter(r=>r.id.startsWith("equipment-pc-4001")||r.id.startsWith("equipment-pc-507")||/^equipment-pc-29[1-5]$/.test(r.id)))assert.ok(html.includes('src="'+r.portrait+'"'));
  assert.ok(!html.includes('src=""'));
 });
 test('Dashboard counts owned copies, researched nodes and actionable skill goals without seeding progress',()=>{
