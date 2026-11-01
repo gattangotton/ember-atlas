@@ -16,3 +16,10 @@
  .orbit-caption{height:3em;line-height:1.5;overflow:hidden;margin-block:10px;overflow-anchor:none}
  .orbit-controls{min-height:65px}
 }
+/* Paint containment fixes each snap slot's bounds while its artwork tilts.
+   Touch depth updates only after momentum scrolling has settled. */
+@media(hover:none) and (pointer:coarse){
+ .orbit-slot{contain:layout paint;overflow:hidden;padding-block:14px}
+ .orbit-card{transition:transform 220ms ease-out;backface-visibility:hidden;transform-origin:center}
+}
+@media(prefers-reduced-motion:reduce){.orbit-card{transition:none!important}}

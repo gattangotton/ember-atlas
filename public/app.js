@@ -15,7 +15,7 @@ import {initializeSession} from './session-ui.js';
 import {personalDataPage,adminPage,createTutorial} from './release-ui.js?v=20261101';
 import {installWorkspacePolicy,workspaceRoute} from './workspace-policy.js';
 import {dashboard} from './dashboard-ui.js?v=20261101-craft';
-import {createMemoryUI} from './memory-ui.js?v=20261101-touch';
+import {createMemoryUI} from './memory-ui.js?v=20261101-depth';
 import {validateMemoryInventory} from './memory-model.js';
 import {withGameEquipment,seedGameResearch,seedGameBuildingEffects,gameEquipmentOverride,applyGameWorld,withGameHero} from './game-masters.js';
 import {gameImages} from './game-image-paths.js?v=20261101-gallery';
