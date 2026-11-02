@@ -1,4 +1,4 @@
-import {equipmentRoadmap} from './equipment-roadmap.js?v=20261102';
+import {equipmentRoadmap} from './equipment-roadmap.js?v=20261102-table';
 import {roadmapButton} from './roadmap-ui.js';
 import {releaseHighlights} from './whats-new.js';
 import {equipmentCopies} from './equipment-inventory.js';
